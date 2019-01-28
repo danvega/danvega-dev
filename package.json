@@ -1,0 +1,18 @@
+{
+  "name": "danvega-me",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/remark-prismjs": "0.0.4",
+    "@gridsome/source-filesystem": "^0.2.0",
+    "@gridsome/transformer-remark": "^0.1.3",
+    "bulma": "^0.7.2",
+    "gridsome": "^0.4.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  }
+}
