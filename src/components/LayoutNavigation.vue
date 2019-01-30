@@ -21,20 +21,18 @@
         <g-link class="navbar-item is-uppercase" :to="{ name: 'speaking' }">Speaking</g-link>
       </div>
     </div>
-    <div class="navbar-end is-hidden-mobile is-hidden-tablet-only">
-      <a href="http://twitter.com/therealdanvega" class="navbar-item"><i class="fab fa-twitter"></i></a>
-      <a href="https://github.com/cfaddict/" class="navbar-item"><i class="fab fa-github"></i></a>
-      <a href="http://www.youtube.com/therealdanvega" class="navbar-item"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.reddit.com/u/therealdanvega" class="navbar-item"><i class="fab fa-reddit"></i></a>
-      <a href="https://www.instagram.com/thedanvega/" class="navbar-item"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/danvega/" class="navbar-item"><i class="fab fa-linkedin"></i></a>
-    </div>
+    <social-links/>
   </nav>
 </template>
 
 <script>
+import SocialLinks from '@/components/SocialLinks';
+
 export default {
   name: "LayoutNavigation",
+  components: {
+    SocialLinks
+  },
   data() {
     return {
     };
