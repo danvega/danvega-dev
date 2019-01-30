@@ -30,3 +30,39 @@ odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque
 omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum
 odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+
+``` javascript
+{ 
+    "id": 1,
+    "fullname": "Jonathan Stark",
+    "title": "Software Developer",
+    "avatar": "img/user_1.png",
+    "social": {
+        "github": "github_username",
+        "reddit": "reddit_username",
+        "twitter": "twitter_username",
+        "instagram": "instagram_username",
+        "facebook": "facebook_username"
+    },
+    "stats": {
+        "posts": "150",
+        "likes": "680",
+        "followers": "199"
+    }
+}
+```
+
+## HTML
+
+``` html
+<template>
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <layout-navigation></layout-navigation>
+      <slot/>
+      <layout-footer/>
+    </div>
+  </div>
+
+</template>
+```

@@ -11,7 +11,8 @@
     "@gridsome/source-filesystem": "^0.2.0",
     "@gridsome/transformer-remark": "^0.1.3",
     "bulma": "^0.7.2",
-    "gridsome": "^0.4.0",
+    "gridsome": "^0.4.5",
+    "gridsome-plugin-remark-shiki": "^0.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0"
   }
