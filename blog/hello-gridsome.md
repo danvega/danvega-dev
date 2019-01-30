@@ -2,9 +2,10 @@
 slug: hello-gridsome
 title: Hello, Gridsome! 
 date: 2019-01-24 08:00:00
+excerpt: 'This is my first post using my new blog!'
+tags: html,javascript
+cover: '../src/assets/img/blog/vuejs.png'
 ---
-
-![VueJS](../src/img/vuejs.png)
 
 # Things I Love
 

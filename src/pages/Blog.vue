@@ -9,8 +9,8 @@
         <h2 class="title is-3">
           <g-link :to="post.node.path">{{post.node.title}}</g-link>
         </h2>
-        <small class="subtitle is-6">{{ new Date(post.node.date).toLocaleDateString() }} • ☕️ 5 min read</small>
-        <p>This is a new place for me to write and ramble about anything.</p>
+        <small class="subtitle is-6">{{ new Date(post.node.date).toLocaleDateString() }} • ☕️ {{post.node.timeToRead}} min read</small>
+        <p v-if="post.node.excerpt">{{post.node.excerpt}}</p>
       </div>
     </div>
   </Layout>
@@ -18,14 +18,18 @@
 
 <page-query>
 query {
-  posts: allPost {
+  posts:allPost{
     totalCount
     edges {
       node {
-        id
-        title
-        slug
-        path
+        id,
+        title,
+        slug,
+        tags,
+        excerpt,
+        cover,
+        timeToRead,
+        path,
         date
       }
     }
