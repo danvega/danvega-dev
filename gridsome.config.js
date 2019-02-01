@@ -14,10 +14,11 @@ module.exports = {
         route: '/blog/:slug',
         resolveAbsolutePaths: true,
         remark: {
+          autolinkClassName: 'fas fa-hashtag',
           externalLinksTarget: '_blank',
           externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
           plugins: [
-            // zeit
+            // | quietlight | Material-Theme-Default 
             [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ]
           ]
         }

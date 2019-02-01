@@ -30,7 +30,14 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="scss">
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #2c3e50
+}
 h1 {
     margin-top: 20px !important;
     /* font-size: 1.95rem !important; */
@@ -40,3 +47,4 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 </style>
+

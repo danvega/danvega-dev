@@ -1,11 +1,10 @@
 <template>
   <Layout>
-    <div class="content is-medium">
+    <div class="content">
       <h1 class="title is-2">Hi, I’m Dan Vega.</h1>
-      <p>I am a Software Engineer living just outside of one of my favorite places in the world, Cleveland, Ohio. I am a self-taught programmer who firmly believes that you can accomplish anything in this life if you put your mind to it, roll up your sleeves and are willing to put in the work.</p>
-      <p>I have been writing software for over 18+ years now and I use my knowledge, passion, and influence to help other developers achieve their goals. I teach online and currently, have over 30,000 students.</p>
-      <p>When I am not writing software, I have a number of things that really keep me busy. I love to read books, listen to podcasts and watch online courses. I have a real thirst for knowledge and it consumes me every single day of the week. I also love to run & lift heavy weights which keep me balanced throughout the week.</p>
-
+<p>I am a Software Engineer living just outside of one of my favorite places in the world, Cleveland, Ohio. I am a self-taught programmer who firmly believes that you can accomplish anything in this life if you put your mind to it, roll up your sleeves and are willing to put in the work.</p>
+        <p>I have been writing software for over 20+ years now and I use my knowledge, passion, and influence to help other developers achieve their goals. I teach online and currently, have over 65,000 students.</p>
+        <p>In my personal life I am a husband to my best friend in the world and a father to a little princess. I enjoy reading, running and lifting weights to get me through the week.</p>
       <h2 class="title is-3">My Journey</h2>
       <p>My journey to becoming a computer programmer did not start out at a fancy university. I like to give my mom some credit for making me take a typing class in high school that I excelled in, which sparked my interest in computers, thanks, mom! After high school, I was working as a landscaper and one day I just decided that this was not the life for me. I decided to enroll at a local college for a programming certification in Applied Computer Sciences. Once I completed this certification, I did some freelancing to hone my skills, and soon after I landed my first job at a startup in San Francisco! It was difficult leaving my friends and family, but I was so excited for this opportunity and quickly packed my bags for the west coast.</p>
       <p>My educational journey did not stop there. I like to consider myself a lifelong learner. I believe having a passion for learning really is the secret to success in life. While I was living in California, I hired a teaching assistant from UC Berkeley to tutor me in computer programming. I spent most of my nights far from home immersing myself in Java programming books to advance my skills, and it certainly paid off!</p>

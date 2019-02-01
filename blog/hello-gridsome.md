@@ -1,69 +1,75 @@
 ---
 slug: hello-gridsome
 title: Hello, Gridsome! 
-date: 2019-01-24 08:00:00
-excerpt: 'This is my first post using my new blog!'
-tags: html,javascript
-cover: '../src/assets/img/blog/vuejs.png'
+date: 2019-01-31 10:00:00
+published: true
+excerpt: A quick write up on why I started a new blog and what I plan to do with it.
+tags: vue
+cover: ../src/assets/img/blog/gridsome.png
 ---
 
-# Things I Love
+-update image to dev.to size
 
-* Love Gridsome 📗
-* Love Vue ✅
-* Love JavaScript ☕️
+
+I would like to welcome you to a new side project of mine. I thought I would take this opportunity to tell you about the motivation behind creating this website and the technologies that power it.
+
+## Blogging
+
+a little background on blogging
 
 ## Gridsome
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque
-omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum
-odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+Why gridsome?
 
-## Vue
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque
-omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum
-odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
-
-
-## JavaScript
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque
-omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum
-odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
-
-``` javascript
-{ 
-    "id": 1,
-    "fullname": "Jonathan Stark",
-    "title": "Software Developer",
-    "avatar": "img/user_1.png",
-    "social": {
-        "github": "github_username",
-        "reddit": "reddit_username",
-        "twitter": "twitter_username",
-        "instagram": "instagram_username",
-        "facebook": "facebook_username"
-    },
-    "stats": {
-        "posts": "150",
-        "likes": "680",
-        "followers": "199"
-    }
-}
-```
-
-## HTML
-
-``` html
+``` vue
+<!-- Counter.vue -->
 <template>
-  <div class="columns is-centered">
-    <div class="column is-half">
-      <layout-navigation></layout-navigation>
-      <slot/>
-      <layout-footer/>
-    </div>
+  <div>
+    <button @click="crement(-1)">-</button> {{ count }}
+    <button @click="crement(1)">+</button>
   </div>
-
 </template>
+
+<script>
+// Helper function to apply changes to the data
+function setData(vm, changes) {
+  for (let item in changes) {
+    vm[item] = changes[item]
+  }
+}
+
+export default {
+  name: "counter",
+  props: {
+    reducer: {
+      type: Function,
+      required: false,
+      // Use all the changes by default
+      default: (vm, changes) => {
+        return {
+          ...changes
+        }
+      }
+    }
+  },
+  data() {
+    return {
+      count: 0
+    }
+  },
+  methods: {
+    crement(amount) {
+      // Grab the subset of changes from the user
+      // via the reducer prop (i.e. the Data reducer)
+      //                      ┌─────this guy
+      const changes = this.reducer(this.$data, {
+        count: this.count + amount
+      })
+      // Apply the changes
+      setData(this, changes)
+    }
+  }
+}
+</script>
 ```
+

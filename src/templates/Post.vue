@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="article content is-medium">
+    <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
-      <small class="subtitle">January 27, 2019 • ☕️ {{ $page.post.timeToRead }} min read</small>
+      <small class="about">January 27, 2019 • ☕️ {{ $page.post.timeToRead }} min read</small>
       <g-image v-if="$page.post.cover" :src="$page.post.cover" />
       <article v-html="$page.post.content" class="article"/>
     </div>
@@ -33,5 +33,8 @@ export default {
 </script>
 
 <style>
+.article-title {
+  margin-bottom:0px !important;
+}
 
 </style>
