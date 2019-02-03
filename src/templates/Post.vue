@@ -30,12 +30,13 @@ query Post ($path: String!) {
 <script>
 export default {
   metaInfo() {
+    console.log(this.$page.post);
     return {
       title: this.$page.post.title,
       meta: [
         { name: 'twitter:title', content: this.$page.post.title },
         { name: 'twitter:site', content: '@therealdanvega' },
-        { name: 'twitter:image', content: this.$page.post.cover },
+        { name: 'twitter:image', content: this.$page.post.cover.src },
         { name: 'twitter:creator', content: '@therealdanvega' }
       ]
     };
