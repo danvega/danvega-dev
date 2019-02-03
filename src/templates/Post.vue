@@ -27,12 +27,17 @@ query Post ($path: String!) {
 }
 </page-query>
 
-
 <script>
 export default {
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta: [
+        { name: 'twitter:title', content: this.$page.post.title },
+        { name: 'twitter:site', content: '@therealdanvega' },
+        { name: 'twitter:image', content: this.$page.post.cover },
+        { name: 'twitter:creator', content: '@therealdanvega' }
+      ]
     };
   },
   mounted() {
