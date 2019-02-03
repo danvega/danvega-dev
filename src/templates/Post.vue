@@ -41,9 +41,7 @@ export default {
         { name: 'twitter:creator', content: '@therealdanvega' },
         { property: 'og:updated_time', content: this.$page.post.date },
         { property: 'og:image', content: this.$page.post.cover.src  },
-        { property: 'og:image:secure_url', content: this.$page.post.cover.src  },
-        { property: 'og:image:width', content: '1000'},
-        { property: 'og:image:width', content: '492'}
+        { property: 'og:image:secure_url', content: this.$page.post.cover.src  }
       ]
     };
   },
