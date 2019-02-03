@@ -30,7 +30,6 @@ query Post ($path: String!) {
 <script>
 export default {
   metaInfo() {
-    console.log(this.$page.post.cover);
     return {
       title: this.$page.post.title,
       meta: [
