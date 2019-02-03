@@ -2,7 +2,7 @@
   <Layout>
     <h1 class="title is-1">Speaking</h1>
     <div class="content">
-        <p>This is just a few of the events I have spoken at in the past. I will be updating this page soon to contain a lot more detail.</p>
+      <p>This is just a few of the events I have spoken at in the past. I have an <a href="https://github.com/cfaddict/danvega-me/issues/3">open issue</a> to update this page with a lot more detail.</p>
       <ul>
           <li>
               <a href="https://www.meetup.com/vuecle/events/257002211/" target="_blank">

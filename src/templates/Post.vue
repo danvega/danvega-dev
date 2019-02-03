@@ -3,8 +3,13 @@
     <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
       <small class="about">January 27, 2019 • ☕️ {{ $page.post.timeToRead }} min read</small>
-      <g-image v-if="$page.post.cover" :src="$page.post.cover" />
+      <g-image v-if="$page.post.cover" :src="$page.post.cover" class="cover"/>
       <article v-html="$page.post.content" class="article"/>
+      <div id="convertkit" align="center"></div>
+    </div>
+    <div class="comments">
+      <h2 class="title is-3">Comments</h2>
+      <div id="disqus_thread"></div>         
     </div>
   </Layout>
 </template>
@@ -16,7 +21,8 @@ query Post ($path: String!) {
     content
     timeToRead,
     tags,
-    cover
+    cover,
+    slug
   }
 }
 </page-query>
@@ -28,13 +34,45 @@ export default {
     return {
       title: this.$page.post.title
     };
+  },
+  created() {
+      const disqus_config = function () {
+        page.url = window.location.href;
+        page.identifier = this.$page.post.slug;
+      };
+
+      const d = document, s = d.createElement('script');
+      s.src = 'https://danvegame.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+  },
+  mounted() {
+    let converkit = document.createElement('script');
+    converkit.setAttribute('src', 'https://f.convertkit.com/44cc02ed05/38739557e4.js');
+    converkit.setAttribute('data-uid','44cc02ed05');
+    document.getElementById('convertkit').appendChild(converkit);
   }
 };
 </script>
 
 <style>
+.cover {
+  margin-top:10px;
+}
+.article {
+  margin-top:20px;
+}
+.article h2 {
+  margin: 20px 0 10px 0 !important;
+}
 .article-title {
   margin-bottom:0px !important;
 }
-
+.icon.icon-link {
+  display: none;
+}
+#convertkit {
+  margin: 40px 0 0 0;
+  width:100% !important;
+}
 </style>

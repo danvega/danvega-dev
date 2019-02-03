@@ -5,6 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  siteName: "Dan Vega",
+  siteUrl: "http://localhost:8080",
+  siteDescription: "Person blog of Dan Vega",
+  icon: "src/img/danvega-favicon.png",
   plugins: [
     {
       use: '@gridsome/source-filesystem',
