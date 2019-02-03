@@ -30,6 +30,7 @@ query Post ($path: String!) {
 <script>
 export default {
   metaInfo() {
+    console.log(this.$page.post.cover);
     return {
       title: this.$page.post.title,
       meta: [
@@ -38,7 +39,12 @@ export default {
         { name: 'twitter:title', content: this.$page.post.title },
         { name: 'twitter:site', content: '@therealdanvega' },
         { name: 'twitter:image', content: this.$page.post.cover.src },
-        { name: 'twitter:creator', content: '@therealdanvega' }
+        { name: 'twitter:creator', content: '@therealdanvega' },
+        { property: 'og:updated_time', content: this.$page.post.date },
+        { property: 'og:image', content: this.$page.post.cover.src  },
+        { property: 'og:image:secure_url', content: this.$page.post.cover.src  },
+        { property: 'og:image:width', content: '1000'},
+        { property: 'og:image:width', content: '492'}
       ]
     };
   },
