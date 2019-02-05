@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "newpost": "node ./scripts/newpost.js"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.2.0",
