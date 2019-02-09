@@ -5,6 +5,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import Bulma from 'bulma'
 
 
+
 export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
@@ -18,5 +19,5 @@ export default function (Vue, {router, head, isClient}) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Oswald'
   })
-
+  
 }
