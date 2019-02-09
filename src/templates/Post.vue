@@ -2,7 +2,7 @@
   <Layout>
     <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
-      <small class="about">January 27, 2019 • ☕️ {{ $page.post.timeToRead }} min read</small>
+      <small class="about">📅 {{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read • 👨‍💻 {{$page.post.author}} </small>
       <g-image v-if="$page.post.cover" :src="$page.post.cover" class="cover"/>
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
@@ -22,26 +22,35 @@ query Post ($path: String!) {
     timeToRead,
     tags,
     cover,
-    slug
+    slug,
+    date,
+    author
   }
 }
 </page-query>
 
 <script>
+import moment from 'moment'
+
 export default {
   metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
+        // twitter-card: https://cards-dev.twitter.com/validator
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:description', content: this.$page.post.excerpt },
         { name: 'twitter:title', content: this.$page.post.title },
         { name: 'twitter:site', content: '@therealdanvega' },
         { name: 'twitter:image', content: this.$page.post.cover.src },
         { name: 'twitter:creator', content: '@therealdanvega' },
+        // open-graph
         { property: 'og:updated_time', content: this.$page.post.date },
         { property: 'og:image', content: this.$page.post.cover.src  },
         { property: 'og:image:secure_url', content: this.$page.post.cover.src  }
+      ],
+      script: [
+        { src: 'https://platform.twitter.com/widgets.js', async: true }
       ]
     };
   },
@@ -62,6 +71,12 @@ export default {
     s.src = 'https://danvegame.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
+  },
+  computed: {
+    formatCreatedOn() {
+      const formattedDate = moment(this.$page.post.date).format('MMMM DD, YYYY');
+      return formattedDate;
+    }
   }
 };
 </script>
