@@ -7,10 +7,12 @@
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
     </div>
+    <!--
     <div class="comments">
       <h2 class="title is-3">Comments</h2>
       <div id="disqus_thread"></div>         
     </div>
+    -->
   </Layout>
 </template>
 
@@ -62,10 +64,12 @@ export default {
     document.getElementById('convertkit').appendChild(converkit);
 
     // diqus
+    /*
     const disqus_config = function () {
       page.url = window.location.href;
       page.identifier = this.$page.post.slug;
     };
+    */
 
     const d = document, s = d.createElement('script');
     s.src = 'https://danvegame.disqus.com/embed.js';
