@@ -23,7 +23,8 @@ module.exports = {
           externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
           plugins: [
             // | quietlight | Material-Theme-Default 
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ]
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ],
+            [ 'gridsome-plugin-remark-twitter', {} ]
           ]
         }
       }
