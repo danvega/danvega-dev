@@ -69,12 +69,13 @@ export default {
       page.url = window.location.href;
       page.identifier = this.$page.post.slug;
     };
-    */
 
     const d = document, s = d.createElement('script');
     s.src = 'https://danvegame.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
+        */
+
   },
   computed: {
     formatCreatedOn() {
