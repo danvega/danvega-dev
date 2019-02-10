@@ -44,7 +44,7 @@ export default {
         { name: 'twitter:description', content: this.$page.post.excerpt },
         { name: 'twitter:title', content: this.$page.post.title },
         { name: 'twitter:site', content: '@therealdanvega' },
-        { name: 'twitter:image', content: this.$page.post.cover.src },
+        { name: 'twitter:image', content: 'http://www.danvega.me' + this.$page.post.cover.src },
         { name: 'twitter:creator', content: '@therealdanvega' },
         // open-graph
         { property: 'og:updated_time', content: this.$page.post.date },
