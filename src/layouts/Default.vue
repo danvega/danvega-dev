@@ -38,7 +38,11 @@ body {
     font-size: 16px;
     color: #2c3e50
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    margin:0 20px !important;
+  }
+}
 ::selection {
     color: white;
     background: #FF4E46;
