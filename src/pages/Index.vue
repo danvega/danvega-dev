@@ -15,7 +15,7 @@ export default {
     title: 'Welcome to my website',
     meta: [
       { name: 'author', content: 'Dan Vega' },
-      { name: 'google-site-verification', content: '4oZxHExZGD3TGYq8BSAi5a9t9XaFhaSnaOd92Kg2MpE'}
+      { name: 'google-site-verification', content: 'QAgV9Q_4DY1l8dMEs9BrGv1qzJaJWn7_KilM5F7-nAo'}
     ]
   }
 }
