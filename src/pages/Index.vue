@@ -14,7 +14,8 @@ export default {
   metaInfo: {
     title: 'Welcome to my website',
     meta: [
-      { name: 'author', content: 'Dan Vega' }
+      { name: 'author', content: 'Dan Vega' },
+      { name: 'google-site-verification', content: '4oZxHExZGD3TGYq8BSAi5a9t9XaFhaSnaOd92Kg2MpE'}
     ]
   }
 }
