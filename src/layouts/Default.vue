@@ -38,6 +38,11 @@ body {
     font-size: 16px;
     color: #2c3e50
 }
+
+::selection {
+    color: white;
+    background: #FF4E46;
+}
 h1 {
     margin-top: 20px !important;
     /* font-size: 1.95rem !important; */
