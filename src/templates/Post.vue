@@ -44,11 +44,11 @@ export default {
         { name: 'twitter:description', content: this.$page.post.excerpt },
         { name: 'twitter:title', content: this.$page.post.title },
         { name: 'twitter:site', content: '@therealdanvega' },
-        { name: 'twitter:image', content: `http://www.danvega.me${this.$page.post.cover.src}` },
+        { name: 'twitter:image', content: `${this.getBaseUrl}${this.$page.post.cover.src}` },
         { name: 'twitter:creator', content: '@therealdanvega' },
         // open-graph
         { property: 'og:updated_time', content: this.$page.post.date },
-        { property: 'og:image', content: `http://www.danvega.me/${this.$page.post.cover.src}`  },
+        { property: 'og:image', content: `${this.getBaseUrl}${this.$page.post.cover.src}`  },
         { property: 'og:image:secure_url', content: this.$page.post.cover.src  }
       ],
       script: [
@@ -81,6 +81,9 @@ export default {
     formatCreatedOn() {
       const formattedDate = moment(this.$page.post.date).format('MMMM DD, YYYY');
       return formattedDate;
+    },
+    getBaseUrl() {
+      return window.location.protocol + "//" + window.location.host;
     }
   }
 };
