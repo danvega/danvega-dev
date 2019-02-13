@@ -24,7 +24,8 @@ query Post ($path: String!) {
     cover,
     slug,
     date,
-    author
+    author,
+    excerpt
   }
 }
 </page-query>
@@ -37,6 +38,7 @@ export default {
     return {
       title: this.$page.post.title,
       meta: [
+        { name: 'description', content: this.$page.post.excerpt },
         // twitter-card: https://cards-dev.twitter.com/validator
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:description', content: this.$page.post.excerpt },
