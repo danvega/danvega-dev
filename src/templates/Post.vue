@@ -2,7 +2,7 @@
   <Layout>
     <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
-      <small class="about">📅 {{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read • 👨‍💻 {{$page.post.author}} </small>
+      <small class="about">📅 {{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
       <g-image v-if="$page.post.cover" :src="$page.post.cover" class="cover"/>
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
