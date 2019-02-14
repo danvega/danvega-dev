@@ -7,10 +7,12 @@
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
     </div>
+    <!--
     <div class="comments">
       <h2 class="title is-3">Comments</h2>
       <div id="disqus_thread"></div>         
     </div>
+    -->
   </Layout>
 </template>
 
@@ -63,6 +65,7 @@ export default {
     converkit.setAttribute('data-uid','44cc02ed05');
     document.getElementById('convertkit').appendChild(converkit);
 
+    /* 
     // diqus
     const disqus_config = function () {
       page.url = window.location.href;
@@ -73,7 +76,7 @@ export default {
     s.src = 'https://danvegame.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
-
+    */
   },
   computed: {
     formatCreatedOn() {
@@ -82,7 +85,6 @@ export default {
     },
     getBaseUrl() {
       return 'https://www.danvega.me';
-      //return window.location.protocol + "//" + window.location.host;
     }
   }
 };
