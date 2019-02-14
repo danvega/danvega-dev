@@ -3,7 +3,7 @@ slug: creating-your-first-npm-package
 title: Creating your first npm package 
 date: 2019-02-10 11:00:00
 published: true
-excerpt: How to create your first npm package
+excerpt: How to create your first npm package and publish it.
 author: Dan Vega
 tags: node, javascript
 cover: npm_cover.png
