@@ -7,6 +7,7 @@
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
     </div>
+    <bulma-tag :tags="$page.post.tags"/>
     <!--
     <div class="comments">
       <h2 class="title is-3">Comments</h2>
@@ -34,8 +35,12 @@ query Post ($path: String!) {
 
 <script>
 import moment from 'moment'
+import BulmaTag from '@/components/BulmaTag';
 
 export default {
+  components: {
+    BulmaTag
+  },
   metaInfo() {
     return {
       title: this.$page.post.title,
@@ -46,12 +51,12 @@ export default {
         { name: 'twitter:description', content: this.$page.post.excerpt },
         { name: 'twitter:title', content: this.$page.post.title },
         { name: 'twitter:site', content: '@therealdanvega' },
-        { name: 'twitter:image', content: `${this.getBaseUrl}${this.$page.post.cover.src}` },
+        { name: 'twitter:image', content: this.getCoverImage },
         { name: 'twitter:creator', content: '@therealdanvega' },
         // open-graph
         { property: 'og:updated_time', content: this.$page.post.date },
-        { property: 'og:image', content: `${this.getBaseUrl}${this.$page.post.cover.src}`  },
-        { property: 'og:image:secure_url', content: this.$page.post.cover.src  }
+        { property: 'og:image', content: this.getCoverImage },
+        { property: 'og:image:secure_url', content: this.getCoverImage  }
       ],
       script: [
         { src: 'https://platform.twitter.com/widgets.js', async: true }
@@ -82,6 +87,14 @@ export default {
     formatCreatedOn() {
       const formattedDate = moment(this.$page.post.date).format('MMMM DD, YYYY');
       return formattedDate;
+    },
+    getCoverImage() {
+      let coverImage = '';
+      const cover = this.$page.post.cover;
+      if( cover != null ) {
+        coverImage = `${this.getBaseUrl}${this.$page.post.cover.src}`
+      }
+      return coverImage;
     },
     getBaseUrl() {
       return 'https://www.danvega.me';

@@ -1,7 +1,7 @@
 ---
 title: How to add Twitter Cards Meta Tags to your Blog
 slug: twitter-cards-meta-tags
-date: 2019-02-15 08:00:00
+date: 2019-02-16 08:00:00
 published: true
 excerpt: In this tutorial you will learn what a Twitter Card is along with step by step instructions how to add them to your blog and validate that they are working.
 author: Dan Vega
@@ -28,7 +28,7 @@ When you're building out
 
 Meta tags are snippets of text that describe a page’s content; the meta tags don’t appear on the page itself, but only in the page’s code. We all know tags from blog culture, and meta tags are more or less the same thing, little content descriptors that help tell search engines what a web page is about.
 
-The only difference between tags you can see (on a blogpost, say) and tags you can’t see is location: meta tags only exist in HTML, usually at the “head” of the page, and so are only visible to search engines (and people who know where to look). The “meta” stands for “metadata,” which is the kind of data these tags provide – data about the data on your page.
+The only difference between tags you can see (on a blog post, say) and tags you can’t see is location: meta tags only exist in HTML, usually at the “head” of the page, and so are only visible to search engines (and people who know where to look). The “meta” stands for “metadata,” which is the kind of data these tags provide – data about the data on your page.
 
 ## Adding Twitter Cards to your blog
 
