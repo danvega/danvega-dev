@@ -1,7 +1,7 @@
 ---
 title: How to add Twitter Cards Meta Tags to your Blog
 slug: twitter-cards-meta-tags
-date: 2019-02-16 08:00:00
+date: 2019-02-18 09:00:00
 published: true
 excerpt: In this tutorial you will learn what a Twitter Card is along with step by step instructions how to add them to your blog and validate that they are working.
 author: Dan Vega
@@ -9,7 +9,9 @@ tags: HTML, Twitter
 cover: twitter-cards.png 
 ---
 
-There are a lot of things that I took for granted when using a proven blogging platform like WordPress. In WordPress when I create a new blog post and then share it on Twitter I get this nice display of my blog post as apposed to just a link. In this article I will talk about what a Twitter Card is and how to add Twitter cards meta tags to your blog.
+There are a lot of things that I took for granted when using a proven blogging platform like WordPress. In WordPress when I created a new blog post and then shared it on Twitter I got this nice display of my blog post as apposed to just a link. 
+
+This might not seem like a big thing to most but why write something if nobody reads it? Engagement is the name of game on social media platforms like Twitter and Twitter Cards (and images in general) are proven to increase engagement.In this article I will talk about what a Twitter Card is and how to add Twitter cards meta tags to your blog.
 
 ## What is a Twitter Card
 
