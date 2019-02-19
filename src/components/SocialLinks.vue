@@ -1,6 +1,6 @@
 <template>
   <div class="navbar-end is-hidden-mobile is-hidden-tablet-only">
-    <a v-for="social in accounts" :href="social.href" :key="social.name" class="navbar-item" target="_blank" :aria-label="social.name">
+    <a v-for="social in accounts" :href="social.href" :key="social.name" class="navbar-item" :aria-label="social.name">
       <i aria-hidden="true" :class="'fab fa-'+social.name"></i>
     </a>
   </div>
