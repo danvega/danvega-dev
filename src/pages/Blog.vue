@@ -12,7 +12,7 @@
               <p v-if="post.node.excerpt">{{post.node.excerpt}}</p>
             </div>
           </div>
-          <BulmaPagination baseUrl="/blog" :info="$page.posts.pageInfo"/>
+          <!-- <BulmaPagination baseUrl="/blog" :info="$page.posts.pageInfo"/> -->
         </div>
   </Layout>
 </template>
