@@ -10,7 +10,7 @@
           <p>In my personal life I am a husband to my best friend in the world and a father to a little princess. I enjoy reading, running and lifting weights to get me through the week.</p>
         </div>
         <div class="column right-side">
-          <g-image src="../assets/img/danvega-avatar.png" class="avatar"/>
+          <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar"/>
         </div>
       </div>
     </div>
