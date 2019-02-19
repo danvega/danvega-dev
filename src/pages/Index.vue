@@ -23,7 +23,7 @@ export default {
     title: "Welcome to my website",
     meta: [
       { name: "author", content: "Dan Vega" },
-      { name: "description", content: "This is the personal blog of Dan Vega."}
+      { name: "description", content: "This is the personal blog of Dan Vega."},
       {
         name: "google-site-verification",
         content: "QAgV9Q_4DY1l8dMEs9BrGv1qzJaJWn7_KilM5F7-nAo"
