@@ -2,12 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <g-image src="../assets/img/danvega-avatar.png" width="23" height="32"/>
-
-        <!-- <img
-          src="https://therealdanvega.com/wp-content/uploads/2014/11/about_me_circle-600x591.png"
-        > -->
-        <!-- <p class="brand">DV</p> -->
+        <g-image src="../assets/img/danvega-avatar.png" alt="Hi, I'm Dan Vega!" width="23" height="32"/>
       </a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
