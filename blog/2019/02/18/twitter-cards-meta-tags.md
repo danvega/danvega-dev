@@ -5,7 +5,7 @@ date: 2019-02-18 22:00:00
 published: true
 excerpt: In this tutorial you will learn what a Twitter Card is along with step by step instructions how to add them to your blog and validate that they are working.
 author: Dan Vega
-tags: HTML, Twitter
+tags: HTML,Twitter
 cover: twitter-cards.png 
 ---
 
@@ -29,9 +29,9 @@ In this case you can see a nicely formatted card with a summary and an image. No
 
 ## What are meta tags
 
-If you're familiar with HTML chances are you have come across meta tags before. Metadata is data (information) about data. This means that the `<meta>` tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable. This just means that it will not be displayed but it will exist in your pages source code.
+If you're familiar with HTML chances are you have come across meta tags before. Metadata is data (information) about data. This means that the meta tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable. This just means that it will not be displayed but it will exist in your pages source code.
 
-Meta tags are defined in the `<head>` of an HTML document and contain the following attributes: 
+Meta tags are defined in the head of an HTML document and contain the following attributes: 
 
 | Attribute  | Value  |  Description |
 |---|---|---|
