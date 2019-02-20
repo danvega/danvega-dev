@@ -9,7 +9,11 @@ tags: HTML, Twitter
 cover: twitter-cards.png 
 ---
 
-
+conversion script to move old blog posts over
+wordpress -> gridsome
 
 Removing Urls
 How do i download a list of blog posts and define which ones I am deleting
+410 status code? 
+
+
