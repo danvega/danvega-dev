@@ -18,12 +18,8 @@
 </template>
 
 <page-query>
-query Blog ($page: Int) {
-  posts: allPost(perPage: 5, page: $page) @paginate {
-    pageInfo {
-      totalPages
-      currentPage
-    }
+query Blog {
+  posts: allPost {
     totalCount
     edges {
       node {

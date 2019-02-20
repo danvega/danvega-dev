@@ -7,13 +7,7 @@
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
     </div>
-    <bulma-tag :tags="$page.post.tags"/>
-    <!--
-    <div class="comments">
-      <h2 class="title is-3">Comments</h2>
-      <div id="disqus_thread"></div>         
-    </div>
-    -->
+    <!-- <bulma-tag :tags="$page.post.tags"/> -->
   </Layout>
 </template>
 
@@ -69,19 +63,6 @@ export default {
     converkit.setAttribute('src', 'https://f.convertkit.com/44cc02ed05/38739557e4.js');
     converkit.setAttribute('data-uid','44cc02ed05');
     document.getElementById('convertkit').appendChild(converkit);
-
-    /* 
-    // diqus
-    const disqus_config = function () {
-      page.url = window.location.href;
-      page.identifier = this.$page.post.slug;
-    };
-
-    const d = document, s = d.createElement('script');
-    s.src = 'https://danvegame.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    */
   },
   computed: {
     formatCreatedOn() {
