@@ -12,7 +12,6 @@
               <p v-if="post.node.excerpt">{{post.node.excerpt}}</p>
             </div>
           </div>
-          <BulmaPagination baseUrl="/blog" :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
         </div>
   </Layout>
 </template>
@@ -39,11 +38,8 @@ query Blog {
 </page-query>
 
 <script>
-import BulmaPagination from '@/components/BulmaPagination'
-
 export default {
   components: {
-    BulmaPagination
   }
 }
 </script>
