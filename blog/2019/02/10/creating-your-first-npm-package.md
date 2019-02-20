@@ -6,7 +6,7 @@ published: true
 excerpt: How to create your first npm package and publish it.
 author: Dan Vega
 tags: node, javascript
-cover: npm_cover.png
+cover: ./npm_cover.png
 ---
 
 This weekend I started working on my first ever npm package. I can't believe for how long I have been writing code that I never bothered to create my own npm package but here we are. I [built the site](https://www.danvega.me/blog/hello-gridsome) you're reading this article on using Gridsome and markdown. In the markdown files I wanted an easy way to insert a twitter status nad embed the tweet. In fact here is a tweet just to prove its working. 

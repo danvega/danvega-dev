@@ -6,7 +6,7 @@ published: true
 excerpt: In this tutorial you will learn what a Twitter Card is along with step by step instructions how to add them to your blog and validate that they are working.
 author: Dan Vega
 tags: HTML,Twitter
-cover: twitter-cards.png 
+cover: ./twitter-cards.png 
 ---
 
 For those of you who haven't been reading my blog lately I am in the middle of converting my website from WordPress over to a static site generator called [Gridsome](https://gridsome.org/) that is built on VueJS. There are a lot of things that I took for granted when using a proven blogging platform like WordPress. In WordPress when I created a new blog post and then shared it on Twitter I got this nice display of my blog post as apposed to just a link. 

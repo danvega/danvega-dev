@@ -5,7 +5,7 @@ published: true
 date: 2019-01-01T08:38:10-05:00
 tags: [Random]
 excerpt: "Happy New Year! My 2019 Goals"
-cover: 2019-1024x510.png
+cover: ./2019-1024x510.png
 ---
 
 It is hard to believe that another year has come and gone. After I spent some time last week [reflecting on 2018](https://therealdanvega.com/blog/2018/12/24/my-2018-year-in-review) it's time we look ahead to the new year and set some new goals.
