@@ -31,4 +31,8 @@ export default {
 .pagination-list li {
   list-style-type: none;
 }
+.is-current {
+  background-color:#FF4E46 !important;
+  border-color: #FF4E46 !important;
+}
 </style>
