@@ -78,7 +78,7 @@ export default {
       return coverImage;
     },
     getBaseUrl() {
-      return 'https://www.danvega.me';
+      return process.env.GRIDSOME_BASE_URL;
     }
   }
 };
