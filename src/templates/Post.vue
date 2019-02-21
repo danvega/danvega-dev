@@ -107,4 +107,9 @@ export default {
 a > span.fas.fa-hashtag {
   color: rgb(100, 100, 100) !important;
 }
+.shiki-inline {
+  background: #EEEEEE !important;
+  padding:2px;
+  color:#FF4E46 !important;
+}
 </style>

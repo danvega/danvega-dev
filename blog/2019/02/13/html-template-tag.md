@@ -15,7 +15,7 @@ I was recently working some tutorials and exercises around The Fetch API and I w
 
 In a more complex example where there is a lot more markup involved it can become very cumbersome to create elements, nodes as well as dealing with attributes and classes. In this instance, a great solution is [The Content Element Template](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). I also realized that a lot of developers (beginning and vets) might not know what this is or why we would use it. 
 
-In this article, I am going to take a look at the template tag in HTML & Vanilla JavaScript. When you know why this tag exists it might make more sense why its used in Vue Single File Components. 
+In this article, I am going to take a look at the `<template/>` tag in HTML & Vanilla JavaScript. When you know why this tag exists it might make more sense why its used in Vue Single File Components. 
 
 ## The Content Element Template
 
