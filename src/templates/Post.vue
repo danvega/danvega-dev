@@ -29,7 +29,7 @@ query Post ($path: String!) {
 
 <script>
 import moment from 'moment'
-import BulmaTag from '@/components/BulmaTag';
+import BulmaTag from '@/components/BulmaTag'
 
 export default {
   components: {
@@ -103,5 +103,8 @@ export default {
 #convertkit {
   margin: 40px 0 0 0;
   width:100% !important;
+}
+a > span.fas.fa-hashtag {
+  color: rgb(100, 100, 100) !important;
 }
 </style>
