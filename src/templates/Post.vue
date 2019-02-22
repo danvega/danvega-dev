@@ -112,4 +112,15 @@ a > span.fas.fa-hashtag {
   padding:2px;
   color:#FF4E46 !important;
 }
+.twitter-tweet {
+  margin: 30px auto !important;
+}
+.g-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shiki {
+  margin: 20px 0px !important;
+}
 </style>
