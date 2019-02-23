@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: "Dan Vega",
-  siteUrl: "http://localhost:8080",
+  siteUrl: "https://www.danvega.me",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
   plugins: [
@@ -22,7 +22,6 @@ module.exports = {
           externalLinksTarget: '_blank',
           externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
           plugins: [
-            // | quietlight | Material-Theme-Default 
             [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ],
             [ 'gridsome-plugin-remark-twitter', {} ]
           ]
