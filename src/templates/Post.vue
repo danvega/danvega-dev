@@ -7,7 +7,7 @@
       <article v-html="$page.post.content" class="article"/>
       <div id="convertkit" align="center"></div>
     </div>
-    <!-- <bulma-tag :tags="$page.post.tags"/> -->
+    <bulma-tag :tags="$page.post.tags"/>
   </Layout>
 </template>
 
@@ -80,6 +80,9 @@ export default {
     getBaseUrl() {
       return process.env.GRIDSOME_BASE_URL;
     }
+  },
+  created() {
+    console.log(this.$page.post.tags)
   }
 };
 </script>
