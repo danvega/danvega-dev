@@ -2,7 +2,9 @@
   <Layout>
     <div class="content">
       <h1 class="title is-2">Recent Articles</h1>
-      <p>I like to write about anything thta I am currently working or something new that interests me. If you would like me to write about something or be a guest blogger on your blog please reach out to me on <a href="https://twitter.com/therealdanvega">Twitter</a>.</p>
+      <p>I like to write about anything thta I am currently working or something new that interests me. If you would like me to write about something or be a guest blogger on your blog please reach out to me on
+        <a href="https://twitter.com/therealdanvega">Twitter</a>.
+      </p>
       <div class="articles">
         <div v-for="post in $page.posts.edges" :key="post.node.id" class="article content">
           <h2 class="title is-4">
@@ -13,7 +15,11 @@
         </div>
       </div>
     </div>
-    <BulmaPagination baseUrl="/blog" :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
+    <BulmaPagination
+      baseUrl="/blog"
+      :info="$page.posts.pageInfo"
+      v-if="$page.posts.pageInfo.totalPages > 1"
+    />
   </Layout>
 </template>
 
@@ -27,15 +33,19 @@ query Blog ($page: Int) {
     totalCount
     edges {
       node {
-        id,
-        title,
-        slug,
-        tags,
-        excerpt,
-        cover,
-        timeToRead,
-        path,
+        id
+        title
+        slug
+        excerpt
+        cover
+        timeToRead
+        path
         date
+        tags {
+          id
+          title
+          path
+        }
       }
     }
   }
@@ -43,13 +53,13 @@ query Blog ($page: Int) {
 </page-query>
 
 <script>
-import BulmaPagination from '@/components/BulmaPagination'
+import BulmaPagination from "@/components/BulmaPagination";
 
 export default {
   components: {
     BulmaPagination
   }
-}
+};
 </script>
 
 <style>
@@ -57,9 +67,10 @@ export default {
   margin: 20px 0;
 }
 .article h2 {
-  margin-bottom:0px !important;
+  margin-bottom: 0px !important;
 }
-.article h2 a:link, .article h2 a:visited {
-  color:#FF4E46;
+.article h2 a:link,
+.article h2 a:visited {
+  color: #ff4e46;
 }
 </style>

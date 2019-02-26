@@ -9,21 +9,29 @@ module.exports = {
   siteUrl: "https://www.danvega.me",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
-  plugins: [
-    {
+  plugins: [{
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
         typeName: 'Post',
         route: '/blog/:year/:month/:day/:slug',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            route: '/tag/:slug',
+            create: true
+          }
+        },
         resolveAbsolutePaths: true,
         remark: {
           autolinkClassName: 'fas fa-hashtag',
           externalLinksTarget: '_blank',
           externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
           plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ],
-            [ 'gridsome-plugin-remark-twitter', {} ]
+            ['gridsome-plugin-remark-shiki', {
+              theme: 'nord'
+            }],
+            ['gridsome-plugin-remark-twitter', {}]
           ]
         }
       }
@@ -35,5 +43,5 @@ module.exports = {
       }
     }
   ]
-  
+
 }

@@ -1,15 +1,15 @@
 ---
 slug: creating-your-first-npm-package
-title: Creating your first npm package 
+title: Creating your first npm package
 date: 2019-02-10 11:00:00
 published: true
 excerpt: How to create your first npm package and publish it.
 author: Dan Vega
-tags: node, javascript
+tags: ["node", "javascript"]
 cover: ./npm_cover.png
 ---
 
-This weekend I started working on my first ever npm package. I can't believe for how long I have been writing code that I never bothered to create my own npm package but here we are. I [built the site](https://www.danvega.me/blog/hello-gridsome) you're reading this article on using Gridsome and markdown. In the markdown files I wanted an easy way to insert a twitter status nad embed the tweet. In fact here is a tweet just to prove its working. 
+This weekend I started working on my first ever npm package. I can't believe for how long I have been writing code that I never bothered to create my own npm package but here we are. I [built the site](https://www.danvega.me/blog/hello-gridsome) you're reading this article on using Gridsome and markdown. In the markdown files I wanted an easy way to insert a twitter status nad embed the tweet. In fact here is a tweet just to prove its working.
 
 https://twitter.com/therealdanvega/status/1094219965480292353
 
@@ -21,9 +21,9 @@ I am going to assume you at least know what node & npm is and have written JavaS
 
 There are a few things that you're going to need before we dive in and start writing some code.
 
-* [Visual Studio Code](https://code.visualstudio.com/) or your favorite editor
-* [Node & NPM](https://nodejs.org/en/)
-* [NPM Account](https://www.npmjs.com/)
+- [Visual Studio Code](https://code.visualstudio.com/) or your favorite editor
+- [Node & NPM](https://nodejs.org/en/)
+- [NPM Account](https://www.npmjs.com/)
 
 ## Creating your npm package
 
@@ -84,16 +84,16 @@ Is this OK? (yes) yes
 Next open this project up in Visual Studio Code and create index.js. The reason you're creating this file is because in your package.json you said that this was your entry point. In your index.js add the following code:
 
 ```javascript
-module.exports = (str) => {
-    return `💩${str}💩`;
-}
+module.exports = str => {
+  return `💩${str}💩`;
+};
 ```
 
-The module.exports object allows us to organize some related code and then expose it as a module. This means that when we are done we could import this module into another application. In this case we are assigning an arrow function which means we are exposing a single function that takes an argument called str and returns that string wrapped with the poo emoji. That is all you need to do with this project. It is a pretty simple package but it will help walk through a few things. 
+The module.exports object allows us to organize some related code and then expose it as a module. This means that when we are done we could import this module into another application. In this case we are assigning an arrow function which means we are exposing a single function that takes an argument called str and returns that string wrapped with the poo emoji. That is all you need to do with this project. It is a pretty simple package but it will help walk through a few things.
 
 ## npm local development
 
-Now that you have our package ready to go you need to test it in another project. In the real world you should be writing some unit tests against it but I want to save that for another article & screencast. 
+Now that you have our package ready to go you need to test it in another project. In the real world you should be writing some unit tests against it but I want to save that for another article & screencast.
 
 Next create a new directory (outside of your package) called wrap-with-poo-testing. You will again need to run npm init but this time you can add the -y argument to skip all of the questions, they are less important this time.
 
@@ -160,9 +160,9 @@ npm link is a process that allows you to create a symbolic link between your pro
 npm link
 ```
 
-This will take your package and create a symbolic link in the npm global folder to it. 
+This will take your package and create a symbolic link in the npm global folder to it.
 
-__/Users/vega/.nvm/versions/node/v10.15.0/lib/node_modules/wrap-with-poo -> /Users/vega/dev/npm/wrap-with-poo__
+**/Users/vega/.nvm/versions/node/v10.15.0/lib/node_modules/wrap-with-poo -> /Users/vega/dev/npm/wrap-with-poo**
 
 This means that your project can be used in any project with one more simple step. The next thing you need to do is to move into the project wrap-with-poo-testing and run the following command.
 
@@ -170,14 +170,14 @@ This means that your project can be used in any project with one more simple ste
 npm link wrap-with-poo
 ```
 
-This will output the following: __/Users/vega/dev/npm/wrap-with-poo-testing/node_modules/wrap-with-poo -> /Users/vega/.nvm/versions/node/v10.15.0/lib/node_modules/wra
-p-with-poo -> /Users/vega/dev/npm/wrap-with-poo__
+This will output the following: **/Users/vega/dev/npm/wrap-with-poo-testing/node_modules/wrap-with-poo -> /Users/vega/.nvm/versions/node/v10.15.0/lib/node_modules/wra
+p-with-poo -> /Users/vega/dev/npm/wrap-with-poo**
 
 That is all there is to it, no need to install the dependency. You are ready to begin writing some code to play with you new plugin. Open up the app.js and add the following code.
 
-``` javascript
-const poo = require('wrap-with-poo');
-const boring = 'This is a boring string';
+```javascript
+const poo = require("wrap-with-poo");
+const boring = "This is a boring string";
 const fun = poo(boring);
 
 console.log(fun);
@@ -231,13 +231,13 @@ Now that it is on Github go back and add an entry to your package.json so everyo
 
 ## Publishing NPM Package
 
-It is now time to publish our project to npm so that anyone can use it. If this is your first time publishing a package open up a terminal in the wrap-with-poo directory and type the following command. 
+It is now time to publish our project to npm so that anyone can use it. If this is your first time publishing a package open up a terminal in the wrap-with-poo directory and type the following command.
 
 ```bash
 npm adduser
 ```
 
-This will ask you for your npm account information such as username, password and email. 
+This will ask you for your npm account information such as username, password and email.
 
 ```bash
 vega wrap-with-poo (master) $ npm adduser
@@ -247,9 +247,9 @@ Email: (this IS public) danvega@gmail.com
 Logged in as therealdanvega on https://registry.npmjs.org/.
 ```
 
-Now you're ready to publish but there are a couple of things you need to remember. First every npm package must have a unique name. I would head over to [npm](https://www.npmjs.com/) and do a quick search for your package. I have already published the package wrap-with-poo so yours will need a new unique name. 
+Now you're ready to publish but there are a couple of things you need to remember. First every npm package must have a unique name. I would head over to [npm](https://www.npmjs.com/) and do a quick search for your package. I have already published the package wrap-with-poo so yours will need a new unique name.
 
-The next thing you need to know is that your version number matters. I start with 0.0.1 and work my way up from there. Once you publish a specific version you can't publish the same version again. It is a good idea to build a number of features into a version and then publish that. If you run 
+The next thing you need to know is that your version number matters. I start with 0.0.1 and work my way up from there. Once you publish a specific version you can't publish the same version again. It is a good idea to build a number of features into a version and then publish that. If you run
 
 ```bash
 npm version
@@ -298,10 +298,10 @@ And use it just like we did in our testing example above.
 
 I know some people say that you should create documentation from the beginning but I am not always sure what my code is going to end up looking like so I usually wait on this. Create a README.md in the root of your project and add some information about your project.
 
-* What does your npm package do?
-* Why did you create it.
-* How do you install it?
-* Are there any configuration options? 
+- What does your npm package do?
+- Why did you create it.
+- How do you install it?
+- Are there any configuration options?
 
 ## Conclusion
 
