@@ -1,10 +1,10 @@
 ---
 slug: hello-gridsome
-title: Hello, Gridsome! 
+title: Hello, Gridsome!
 date: 2019-01-31 10:00:00
 published: true
 excerpt: A quick write up on why I started a new blog and what I plan to do with it.
-tags: vue
+tags: ["vue"]
 cover: ./gridsome.png
 ---
 
@@ -14,7 +14,7 @@ _TLDR; I want to move my [blog](https://www.therealdanvega.com) from WordPress t
 
 ## Blogging
 
-While writing this article I did a bit of digging through my archives and found out that my [first blog post](https://therealdanvega.com/blog/2005/10/07/why-you-should-now-about-sifr) was written October 7, 2005. That means I will be celebrating 14 years of blogging later this year which on one hand is pretty amazing and on the other makes me feel really old. 
+While writing this article I did a bit of digging through my archives and found out that my [first blog post](https://therealdanvega.com/blog/2005/10/07/why-you-should-now-about-sifr) was written October 7, 2005. That means I will be celebrating 14 years of blogging later this year which on one hand is pretty amazing and on the other makes me feel really old.
 
 ### Why I started blogging
 
@@ -26,11 +26,11 @@ Finally, I thought this was a great chance for me to help others. In the early d
 
 ### Moving to WordPress
 
-In 2014 I decided to [move my blog](https://therealdanvega.com/blog/2014/11/25/welcome-new-home) over to WordPress. It had been a while since I was using ColdFusion and I just didn't want to maintain it any longer. I also thought that this was a good chance to give the blog a fresh look. The migration to WordPress went pretty smooth thanks in part to open source. There were some migration scripts floating around that really helped me through that process. 
+In 2014 I decided to [move my blog](https://therealdanvega.com/blog/2014/11/25/welcome-new-home) over to WordPress. It had been a while since I was using ColdFusion and I just didn't want to maintain it any longer. I also thought that this was a good chance to give the blog a fresh look. The migration to WordPress went pretty smooth thanks in part to open source. There were some migration scripts floating around that really helped me through that process.
 
-While the WordPress platform has served me well over the years I have had my problems with it. First I originally was running this site on a Digital Ocean droplet for $5 a month which was great because at the time it wasn't really generating any revenue. 
+While the WordPress platform has served me well over the years I have had my problems with it. First I originally was running this site on a Digital Ocean droplet for \$5 a month which was great because at the time it wasn't really generating any revenue.
 
-I quickly found out that WordPress doesn't perform well on that plan because it was a huge resource hog. It would go down often and require me to login and restart the server. After upgrading to the $20/month plan a lot of those problems went away. 
+I quickly found out that WordPress doesn't perform well on that plan because it was a huge resource hog. It would go down often and require me to login and restart the server. After upgrading to the \$20/month plan a lot of those problems went away.
 
 There was still the problem of me having to manage a server. I am not a server admin and really didn't enjoy everything that went along with that. I ended up getting really lucky and finding someone on Upwork to manage the server. His name is Justin and he was able to fix my server when it when down as well as make sure the server was up to date with security patches. He runs a hosting company called [Big Scoots](https://bigscoots.com/) which is now where my website is hosted. I can't recommend him or his company enough if you're looking for a WordPress host. I have had 0 problems since moving to them.
 
@@ -40,13 +40,13 @@ While I have had some issues I do think WordPress is an amazing product. It's ju
 
 ### New Solution Requirements
 
-Now that you know my story and where I have been we can talk about what I am looking for. I have become a huge fan of the **JAMStack** which stands for **J**avaScript + **A**PI + **M**arkup. The idea behind this is pretty simple, serve up a static site for everything that you can and then reach out to an API for any data or functionality that your site needs. This is a big shift from the traditional server-side monolithic applications of the past and one I am very excited about. 
+Now that you know my story and where I have been we can talk about what I am looking for. I have become a huge fan of the **JAMStack** which stands for **J**avaScript + **A**PI + **M**arkup. The idea behind this is pretty simple, serve up a static site for everything that you can and then reach out to an API for any data or functionality that your site needs. This is a big shift from the traditional server-side monolithic applications of the past and one I am very excited about.
 
-Static Site Generators (SSGs) like [Gatsby](https://www.gatsbyjs.org/) have become really popular and they have their advantages. First, we get to serve a static site to our users which means it is going to be extremely fast. My visitors are coming to my site to check out content, not some loading bar. The other big advantage is the options we have when it comes to hosting our static sites. If you want to host it on something like [Amazon Web Services (AWS)](https://aws.amazon.com/free/free-tier/) it can be very inexpensive. There is also one of my favorite services around [Netlify](https://www.netlify.com/), which is **FREE** for personal projects. 
+Static Site Generators (SSGs) like [Gatsby](https://www.gatsbyjs.org/) have become really popular and they have their advantages. First, we get to serve a static site to our users which means it is going to be extremely fast. My visitors are coming to my site to check out content, not some loading bar. The other big advantage is the options we have when it comes to hosting our static sites. If you want to host it on something like [Amazon Web Services (AWS)](https://aws.amazon.com/free/free-tier/) it can be very inexpensive. There is also one of my favorite services around [Netlify](https://www.netlify.com/), which is **FREE** for personal projects.
 
-Another advantage of this approach is that I am not tied to some server-side language. I get to build my layouts and views in good old HTML/CSS/JavaScript. Another feature I am looking for is the ability to write all of my blog posts in Markdown. I write a ton of documentation for work and in my personal projects so I have become very comfortable writing in this format. 
+Another advantage of this approach is that I am not tied to some server-side language. I get to build my layouts and views in good old HTML/CSS/JavaScript. Another feature I am looking for is the ability to write all of my blog posts in Markdown. I write a ton of documentation for work and in my personal projects so I have become very comfortable writing in this format.
 
-I had a bunch of options when building out this new site. I can't wait to tell you about what I found but for now, I am going to just talk about the one ended up using. 
+I had a bunch of options when building out this new site. I can't wait to tell you about what I found but for now, I am going to just talk about the one ended up using.
 
 ## Gridsome
 
@@ -66,51 +66,48 @@ If you were just going to have a plain static site you wouldn't really need some
 
 As I mentioned one of those data sources is Markdown which made me very happy because I can start writing in a familiar environment. I am going to go over this in detail in another post but the quick version is that this was really easy to set up. You start with some configuration to use the plugin `@gridsome/source-filesystem`
 
-``` javascript
+```javascript
 module.exports = {
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
-        route: '/blog/:slug',
+        path: "blog/**/*.md",
+        typeName: "Post",
+        route: "/blog/:slug",
         resolveAbsolutePaths: true,
         remark: {
-          autolinkClassName: 'fas fa-hashtag',
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-          plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord' } ]
-          ]
+          autolinkClassName: "fas fa-hashtag",
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+          plugins: [["gridsome-plugin-remark-shiki", { theme: "nord" }]]
         }
       }
     }
   ]
-  
-}
+};
 ```
 
-In that plugin, you configure some options like what the path will be and the component that will handle the type. I'm also using the [Gridsome Transformer Remark](https://www.npmjs.com/package/@gridsome/transformer-remark) plugin which is the Markdown transformer for Gridsome. [Remark](https://github.com/remarkjs/remark) can include a number of options and plugins itself one of which is a syntax highlighter called [shiki](https://github.com/EldoranDev/gridsome-plugin-remark-shiki) which is what formatted the code that is right above this. 
+In that plugin, you configure some options like what the path will be and the component that will handle the type. I'm also using the [Gridsome Transformer Remark](https://www.npmjs.com/package/@gridsome/transformer-remark) plugin which is the Markdown transformer for Gridsome. [Remark](https://github.com/remarkjs/remark) can include a number of options and plugins itself one of which is a syntax highlighter called [shiki](https://github.com/EldoranDev/gridsome-plugin-remark-shiki) which is what formatted the code that is right above this.
 
 ### Gridsome is awesome
 
 This was just the start of what Gridsome can do. I have so many things to share so I hope you will sign up for my newsletter or [follow me on Twitter](http://twitter.com/therealdanvega) and learn about all the cool things you can do in Gridsome and in Vue.
 
-## Should I move my existing website?  
+## Should I move my existing website?
 
 Now the real question and much harder than a simple yes or no. Should I move my existing website to Gridsome? I am really happy with this website and the workflow I have for adding new content to it.
 
 Moving my close to 1000 blog posts is easier said than done. 1 question that comes into play is should I just get rid of all the posts that I don't think hold much weight anymore? This could slim down the migration process substantially. These are some of the concerns I have to look into before making my decision.
 
-* Existing URLs must keep the same format /month/day/year/slug
-* I have lots of images and should probably move those to something like S3
-* I have photo galleries on posts, what to do with that.
-* I need to make sure existing code blocks work with this new syntax highlighter.
-* Should I use [Disqus](https://disqus.com/) comments (free vs paid) or roll my own with Firebase?
-* I want to display tweets in a post.
-* When I share a post on social media there are some meta tags to customize the display.
-* SSL: I need to make sure the entire site runs on https.
+- Existing URLs must keep the same format /month/day/year/slug
+- I have lots of images and should probably move those to something like S3
+- I have photo galleries on posts, what to do with that.
+- I need to make sure existing code blocks work with this new syntax highlighter.
+- Should I use [Disqus](https://disqus.com/) comments (free vs paid) or roll my own with Firebase?
+- I want to display tweets in a post.
+- When I share a post on social media there are some meta tags to customize the display.
+- SSL: I need to make sure the entire site runs on https.
 
 ## Conclusion
 
