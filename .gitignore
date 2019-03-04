@@ -6,3 +6,5 @@ node_modules
 dist
 
 *.psd
+
+blog/410.txt
