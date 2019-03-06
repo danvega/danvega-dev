@@ -67,7 +67,7 @@ The `v-on` directive is followed by a colon and then the DOM event that you want
 </template>
 ```
 
-> There is a shorthand for the v-on: directive which is to just use the colon followed by the name of the event. In this case the directive `:click=""` does the exact same thing as the longer format. For the rest of this demo I will be using the long version.
+> There is a shorthand for the v-on: directive which is to just use the @ symbol followed by the name of the event. In this case `@click=""` does the exact same thing as the longer format. For the rest of this demo I will be using the long version.
 
 The code that you place inside of the parenthesis is the code that you will run when that event is fired.
 
