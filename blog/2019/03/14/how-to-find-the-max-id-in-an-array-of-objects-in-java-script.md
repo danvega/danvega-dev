@@ -1,5 +1,5 @@
 ---
-slug: "how-to-find-the-max-id-in-an-array-of-objects-in-java-script"
+slug: "find-max-array-objects-javascript"
 title: "How to find the max id in an array of objects in JavaScript"
 date: "2019-03-14T10:59:53.416Z"
 published: false
