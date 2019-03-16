@@ -68,7 +68,6 @@ module.exports = {
 
 function getPostURL(date, slug) {
   const createdOn = new Date(date);
-  console.log(createdOn);
   const year = createdOn.getFullYear()
   const month = `${createdOn.getMonth() + 1 < 10 ? "0" : ""}${createdOn.getMonth() + 1}`
   const day = `${createdOn.getDate() < 10 ? "0" : ""}${createdOn.getDate()}`
