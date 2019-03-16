@@ -5,7 +5,7 @@
       <small class="about">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
       <g-image v-if="$page.post.cover" :src="$page.post.cover" class="cover"/>
       <article v-html="$page.post.content" class="article"/>
-      <div id="convertkit" align="center"></div>
+      <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
     </div>
     <bulma-tag :tags="$page.post.tags"/>
   </Layout>
@@ -33,10 +33,12 @@ query Post ($path: String!) {
 <script>
 import moment from "moment";
 import BulmaTag from "@/components/BulmaTag";
+import ConvertKit from "@/components/ConvertKit";
 
 export default {
   components: {
-    BulmaTag
+    BulmaTag,
+    ConvertKit
   },
   metaInfo() {
     return {
@@ -57,16 +59,6 @@ export default {
       ],
       script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
     };
-  },
-  mounted() {
-    // converkit
-    let converkit = document.createElement("script");
-    converkit.setAttribute(
-      "src",
-      "https://f.convertkit.com/44cc02ed05/38739557e4.js"
-    );
-    converkit.setAttribute("data-uid", "44cc02ed05");
-    document.getElementById("convertkit").appendChild(converkit);
   },
   computed: {
     formatCreatedOn() {
@@ -105,10 +97,6 @@ export default {
 }
 .icon.icon-link {
   display: none;
-}
-#convertkit {
-  margin: 40px 0 0 0;
-  width: 100% !important;
 }
 a > span.fas.fa-hashtag {
   color: rgb(100, 100, 100) !important;
