@@ -54,7 +54,7 @@ module.exports = {
         }),
         output: {
           dir: './static',
-          name: 'feed'
+          name: 'rss.xml'
         }
       }
     },
