@@ -49,11 +49,12 @@ module.exports = {
           title: node.title,
           description: node.excerpt,
           url: getPostURL(node.fields.date, node.slug),
-          author: node.fields.author
+          author: node.fields.author,
+          date: node.fields.date
         }),
         output: {
           dir: './static',
-          name: 'rss.xml'
+          name: 'feed'
         }
       }
     },
