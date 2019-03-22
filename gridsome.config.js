@@ -51,11 +51,9 @@ module.exports = {
           url: getPostURL(node.fields.date, node.slug),
           author: node.fields.author,
           date: node.fields.date,
-          custom_elements: [
-            {
-              published: node.fields.date.toString(),
-            }
-          ]
+          custom_elements: [{
+            published: node.fields.date.toString(),
+          }, ]
         }),
         output: {
           dir: './static',
