@@ -52,7 +52,7 @@ module.exports = {
           author: node.fields.author,
           date: node.fields.date,
           custom_elements: [{
-            published: node.date,
+            published: node.fields.date,
           }, ]
         }),
         output: {
