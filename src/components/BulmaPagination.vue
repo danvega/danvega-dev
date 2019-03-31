@@ -8,7 +8,7 @@
     <ul class="pagination-list">
       <li v-for="page in pages" :key="page.name">
         <a
-          :href="baseUrl + '/' + page.name"
+          :href="page.link"
           class="pagination-link"
           :class="{'is-current': page.name == currentPage}"
           :aria-label="page.name"
@@ -67,7 +67,8 @@ export default {
       ) {
         range.push({
           name: i,
-          isDisabled: i === this.currentPage
+          isDisabled: i === this.currentPage,
+          link: i === 1 ? `${this.baseUrl}/` : `${this.baseUrl}/${i}`
         });
       }
 
