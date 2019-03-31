@@ -41,7 +41,9 @@ export default {
       return `${this.baseUrl}/${currentPage + 1}`;
     },
     previousPage(currentPage, totalPages) {
-      return `${this.baseUrl}/${currentPage - 1}`;
+      return currentPage === 2
+        ? `${this.baseUrl}/`
+        : `${this.baseUrl}/${currentPage - 1}`;
     }
   },
   computed: {
