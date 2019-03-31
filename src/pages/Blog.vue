@@ -24,7 +24,7 @@
       :totalPages="$page.posts.pageInfo.totalPages"
       :maxVisibleButtons="5"
       v-if="$page.posts.pageInfo.totalPages > 1"
-    />/>
+    />
   </Layout>
 </template>
 
