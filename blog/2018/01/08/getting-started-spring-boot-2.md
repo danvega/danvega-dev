@@ -38,7 +38,9 @@ The only requirement for this presentation is that you have an intermediate unde
 
 ### Live in person 
 
-If you live in or are near the Cleveland area you can see this presentation in person on February 21st. I am giving this presentation to the [Cleveland Java Meetup Group](https://www.meetup.com/cleveland-java/events/246524545/) at [Tech Elevator](https://www.techelevator.com/cleveland/). This is actually going to go a little more in-depth than the online presentations so don't be afraid to check out both.  [![Tech Elevator Cleveland](./be-1.jpg)](./be-1.jpg)
+If you live in or are near the Cleveland area you can see this presentation in person on February 21st. I am giving this presentation to the [Cleveland Java Meetup Group](https://www.meetup.com/cleveland-java/events/246524545/) at [Tech Elevator](https://www.techelevator.com/cleveland/). This is actually going to go a little more in-depth than the online presentations so don't be afraid to check out both.  
+
+[![Tech Elevator Cleveland](./be-1.jpg)](./be-1.jpg)
 
 ### Online Presentation
 
