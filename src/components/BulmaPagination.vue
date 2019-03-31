@@ -8,15 +8,7 @@
     <ul class="pagination-list">
       <li v-for="page in pages" :key="page.name">
         <a
-<<<<<<< HEAD
-<<<<<<< HEAD
           :href="page.link"
-=======
-          :href="baseUrl + '/' + page.name"
->>>>>>> Fixing pagination to support a lot more pages
-=======
-          :href="baseUrl + '/' + page.name"
->>>>>>> 3d32c22a8b8afca47ea7a2c8f388d3573d68c979
           class="pagination-link"
           :class="{'is-current': page.name == currentPage}"
           :aria-label="page.name"
@@ -49,13 +41,9 @@ export default {
       return `${this.baseUrl}/${currentPage + 1}`;
     },
     previousPage(currentPage, totalPages) {
-<<<<<<< HEAD
       return currentPage === 2
         ? `${this.baseUrl}/`
         : `${this.baseUrl}/${currentPage - 1}`;
-=======
-      return `${this.baseUrl}/${currentPage - 1}`;
->>>>>>> 3d32c22a8b8afca47ea7a2c8f388d3573d68c979
     }
   },
   computed: {
