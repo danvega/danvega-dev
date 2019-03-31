@@ -8,7 +8,11 @@
     <ul class="pagination-list">
       <li v-for="page in pages" :key="page.name">
         <a
+<<<<<<< HEAD
           :href="page.link"
+=======
+          :href="baseUrl + '/' + page.name"
+>>>>>>> Fixing pagination to support a lot more pages
           class="pagination-link"
           :class="{'is-current': page.name == currentPage}"
           :aria-label="page.name"
