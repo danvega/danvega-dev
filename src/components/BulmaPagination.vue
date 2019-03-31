@@ -1,38 +1,91 @@
 <template>
-<nav class="pagination" role="navigation" aria-label="pagination">
-  <a :href="previousPage(info.currentPage,info.totalPages)" class="pagination-previous" :disabled="info.currentPage == 1">Previous</a>
-  <ul class="pagination-list">
-    <li v-for="page in info.totalPages" :key="page">
-      <a :href="baseUrl + '/' + page" class="pagination-link" :class="{'is-current': page == info.currentPage}" aria-label="Page 1" aria-current="page">{{page}}</a>
-    </li>
-  </ul>
-  <a :href="nextPage(info.currentPage,info.totalPages)" class="pagination-next" :disabled="info.currentPage == info.totalPages">Next page</a>
-</nav>
+  <nav class="pagination" role="navigation" aria-label="pagination">
+    <a
+      :href="previousPage(currentPage,totalPages)"
+      class="pagination-previous"
+      :disabled="currentPage == 1"
+    >Previous</a>
+    <ul class="pagination-list">
+      <li v-for="page in pages" :key="page.name">
+        <a
+          :href="baseUrl + '/' + page.name"
+          class="pagination-link"
+          :class="{'is-current': page.name == currentPage}"
+          :aria-label="page.name"
+          :aria-current="page"
+        >{{page.name}}</a>
+      </li>
+    </ul>
+    <a
+      :href="nextPage(currentPage,totalPages)"
+      class="pagination-next"
+      :disabled="currentPage == totalPages"
+    >Next page</a>
+  </nav>
 </template>
 
 <script>
 export default {
-    props: ['baseUrl','info'],
-    methods: {
-      nextPage(currentPage,totalPages) {
-        return `${this.baseUrl}/${currentPage + 1}`;
-      },
-      previousPage(currentPage,totalPages) {
-        return `${this.baseUrl}/${currentPage - 1}`;
-      }
+  props: {
+    baseUrl: String,
+    currentPage: Number,
+    totalPages: Number,
+    maxVisibleButtons: {
+      type: Number,
+      required: false,
+      default: 3
     }
-}
+  },
+  methods: {
+    nextPage(currentPage, totalPages) {
+      return `${this.baseUrl}/${currentPage + 1}`;
+    },
+    previousPage(currentPage, totalPages) {
+      return `${this.baseUrl}/${currentPage - 1}`;
+    }
+  },
+  computed: {
+    startPage() {
+      if (this.currentPage === 1) {
+        return 1;
+      }
+
+      if (this.currentPage === this.totalPages) {
+        return this.currentPage - 1;
+      }
+
+      return this.currentPage - 1;
+    },
+    pages() {
+      const range = [];
+
+      for (
+        let i = this.startPage;
+        i <=
+        Math.min(this.startPage + this.maxVisibleButtons - 1, this.totalPages);
+        i += 1
+      ) {
+        range.push({
+          name: i,
+          isDisabled: i === this.currentPage
+        });
+      }
+
+      return range;
+    }
+  }
+};
 </script>
 
 <style>
 .pagination-list {
-  margin-left:0px !important;
+  margin-left: 0px !important;
 }
 .pagination-list li {
   list-style-type: none;
 }
 .is-current {
-  background-color:#FF4E46 !important;
-  border-color: #FF4E46 !important;
+  background-color: #ff4e46 !important;
+  border-color: #ff4e46 !important;
 }
 </style>
