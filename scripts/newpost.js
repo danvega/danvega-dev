@@ -42,7 +42,9 @@ const success = chalk.bold.green.inverse;
     const listify = a => a && a.trim().length ? a.split(',').map(s => s.trim()).filter(Boolean) : null
 
     if (!fs.existsSync(blogPostFolder)) {
-      fs.mkdirSync(blogPostFolder);
+      fs.mkdirSync(blogPostFolder, {
+        recursive: true
+      });
     }
 
     const yaml = jsToYaml.stringify({
