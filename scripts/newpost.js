@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const slugify = require('@sindresorhus/slugify')
+const slugify = require('slugify')
 const jsToYaml = require('json-to-pretty-yaml')
 const prettier = require('prettier')
 const chalk = require('chalk');
@@ -11,7 +11,6 @@ const success = chalk.bold.green.inverse;
 
 (async () => {
   const args = process.argv;
-  let metaData = null;
   if (args.length < 3) {
     const {
       title,
@@ -39,7 +38,7 @@ const success = chalk.bold.green.inverse;
     const month = `${createdOn.getMonth() + 1 < 10 ? "0" : ""}${createdOn.getMonth() + 1}`
     const day = `${createdOn.getDate() < 10 ? "0" : ""}${createdOn.getDate()}`
     const blogPostFolder = `./blog/${year}/${month}/${day}`;
-    const listify = a => a && a.trim().length ? a.split(',').map(s => s.trim()).filter(Boolean) : null
+    const tagsList = tags.split(',').map(t => t.trim());
 
     if (!fs.existsSync(blogPostFolder)) {
       fs.mkdirSync(blogPostFolder, {
@@ -54,15 +53,20 @@ const success = chalk.bold.green.inverse;
       published: false,
       excerpt: excerpt,
       author: 'Dan Vega',
-      tags: listify(tags),
+      tags: tagsList,
       cover: ''
-    })
+    });
 
     const markdown = prettier.format(`---\n${yaml}\n---\n`, {
       parser: 'markdown',
-    })
-    fs.writeFileSync(`${blogPostFolder}/${slug}.md`, markdown)
+      singleQuote: true
+    });
 
-    success(`Post ${title} was created successfully`)
+    fs.writeFileSync(`${blogPostFolder}/${slug}.md`, markdown);
+
+    log(success(`Post ${title} was created successfully`));
+
+  } else {
+    log(error('Please don\'t provide any arguments to the new post generator'));
   }
 })()
