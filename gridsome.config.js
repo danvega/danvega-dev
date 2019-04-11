@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: "Dan Vega",
-  siteUrl: "https://www.danvega.me",
+  siteUrl: "https://www.danvega.dev",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
   plugins: [{
@@ -58,6 +58,18 @@ module.exports = {
         output: {
           dir: './static',
           name: 'rss.xml'
+        }
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+        config: {
+          '/blog/*': {
+            changefreq: 'daily',
+            priority: 0.5
+          }
         }
       }
     },
