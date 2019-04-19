@@ -73,9 +73,9 @@ methods: {
 
 ## Accessing the DOM using \$refs
 
-What if you absolutely need access to the DOM? There are instances where you might need a reference to an element to perform some type of manipulation. I have seen this come up while working with 3rd party components and when working with parent / child components.
+What if you absolutely need access to the DOM? There are instances where you might need a reference to an element to perform some type of manipulation. I have seen this come up while working with 3rd party components and when working with parent/child components.
 
-I am going to start with a very simple example but this is case where you shouldn't use \$refs. Say you had a button in your component and you wanted to get access to it so you could change the text. You can assign a ref attribute to the button and later get access to it using the `$refs` object.
+I am going to start with a very simple example but this case where you shouldn't use \$refs. Say you had a button in your component and you wanted to get access to it so you could change the text. You can assign a ref attribute to the button and later get access to it using the `$refs` object.
 
 ```html
 <button ref="myButton">My Button</button>
@@ -92,9 +92,9 @@ methods: {
 
 ## Practical example using \$refs in Vue
 
-Again, this isn't the most practical example because we are just doing the same thing we did in our earlier example. As I said earlier you might come across this issue when you're working with parent / child components. For this example let's say that you have a checkout form and in that component you have a child component called `CustomerForm.vue`.
+Again, this isn't the most practical example because we are just doing the same thing we did in our earlier example. As I said earlier you might come across this issue when you're working with parent/child components. For this example let's say that you have a checkout form and in that component, you have a child component called `CustomerForm.vue`.
 
-In our checkout form component we want to programmatically set the focus of an input in our customer form component. The way we can do this is to assign a ref to our customer form within our checkout form.
+In our checkout form component, we want to programmatically set the focus of an input in our customer form component. The way we can do this is to assign a ref to our customer form within our checkout form.
 
 ```html
 <template>
@@ -104,7 +104,7 @@ In our checkout form component we want to programmatically set the focus of an i
 </template>
 ```
 
-In the customer form we will then assign a ref to the first name input box.
+In the customer form, we will then assign a ref to the first name input box.
 
 ```html
 <template>
@@ -115,7 +115,7 @@ In the customer form we will then assign a ref to the first name input box.
 </template>
 ```
 
-Now in the checkout form in our mounted method we can focus on the customer form first name input.
+Now in the checkout form in our mounted method, we can focus on the customer form first name input.
 
 ```vue
 <template>
@@ -139,7 +139,7 @@ export default {
 </script>
 ```
 
-Just a little not from the [Vue Documentation](https://vuejs.org/v2/guide/components-edge-cases.html#Accessing-Child-Component-Instances-amp-Child-Elements) that you need to be aware of.
+Just a little note from the [Vue Documentation](https://vuejs.org/v2/guide/components-edge-cases.html#Accessing-Child-Component-Instances-amp-Child-Elements) that you need to be aware of.
 
 > $refs are only populated after the component has been rendered, and they are not reactive. It is only meant as an escape hatch for direct child manipulation - you should avoid accessing $refs from within templates or computed properties.
 
