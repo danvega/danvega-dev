@@ -5,7 +5,7 @@ date: "2019-04-19T16:51:56.537Z"
 published: false
 excerpt: "In this article I will talk about a problem I ran into recently and a couple of the solutions I found."
 author: "Dan Vega"
-tags: ["npm", "nodejs", "javascript"]
+tags: ["npm", "node", "javascript"]
 cover: ./npm-parallel-cover.png
 ---
 
