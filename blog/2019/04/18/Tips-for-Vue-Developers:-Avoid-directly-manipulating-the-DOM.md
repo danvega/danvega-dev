@@ -59,16 +59,16 @@ Now that we have some default state for the checkbox we can use this in our comp
 Now in our toggle status method we can just use the components data in our if expression. We can also flip the status of the checkbox by setting it to the opposite of whatever it is currently.
 
 ```javascript
-    methods: {
-    	toggleStatus() {
-    		if(this.isChecked) {
-    			// do sommething
-    		} else {
-    			// do something else
-    		}
-    		this.isChecked = !this.isChecked;
-    	}
+methods: {
+  toggleStatus() {
+    if(this.isChecked) {
+      // do sommething
+    } else {
+      // do something else
     }
+    this.isChecked = !this.isChecked;
+  }
+}
 ```
 
 ## Accessing the DOM using \$refs
@@ -82,12 +82,12 @@ I am going to start with a very simple example but this is case where you should
 ```
 
 ```javascript
-    methods: {
-    	onButtonClick() {
-    		const btn = this.$refs.myButton;
-        btn.innerText = 'New Button Text'
-    	}
-    }
+methods: {
+  onButtonClick() {
+    const btn = this.$refs.myButton;
+    btn.innerText = 'New Button Text'
+  }
+}
 ```
 
 ## Practical example using \$refs in Vue
