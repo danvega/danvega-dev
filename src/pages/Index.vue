@@ -13,13 +13,13 @@
       </div>
     </div>
     <h2 class="title is-3">Recent Blog Posts</h2>
-
     <div id="recent-posts" class="columns is-multiline is-centered" >
         <div class="column is-half" v-for="post in $page.recentPosts.edges" :key="post.node.id">
-          <g-link :to="post.node.path"><g-image :src="post.node.cover.src" class="cover"/></g-link>
+          <g-link :to="post.node.path" :aria-label="post.node.title">
+            <g-image :src="post.node.cover.src" class="cover" :alt="post.node.title"/>
+          </g-link>
         </div>
     </div>
-
   </Layout>
 </template>
 
