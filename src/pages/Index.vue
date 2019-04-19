@@ -12,8 +12,31 @@
         </div>
       </div>
     </div>
+    <h2 class="title is-3">Recent Blog Posts</h2>
+
+    <div id="recent-posts" class="columns is-multiline is-centered" >
+        <div class="column is-half" v-for="post in $page.recentPosts.edges" :key="post.node.id">
+          <g-link :to="post.node.path"><g-image :src="post.node.cover.src" class="cover"/></g-link>
+        </div>
+    </div>
+
   </Layout>
 </template>
+
+<page-query>
+query Posts {
+  recentPosts: allPost(perPage: 6) {
+    edges {
+      node {
+        id
+        title
+        cover(width:400)
+        path
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
@@ -47,5 +70,15 @@ export default {
 }
 .right-side {
   text-align: center;
+}
+#recent-posts .column {
+  text-align:center !important;
+}
+#recent-posts h2 a:link,
+#recent-posts h2 a:visited {
+  color: #2e2e2e;
+}
+img.cover {
+  border-radius: 4px;
 }
 </style>
