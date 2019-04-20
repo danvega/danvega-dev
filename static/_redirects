@@ -4,3 +4,6 @@
 
 # pretty urls
 /feed /rss.xml 301
+
+# courses
+/courses/getting-started-with-java https://therealdanvega.teachable.com/p/getting-started-with-java 301

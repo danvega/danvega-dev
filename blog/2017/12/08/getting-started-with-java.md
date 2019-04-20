@@ -5,14 +5,24 @@ published: true
 date: 2017-12-08T09:00:23-05:00
 tags: [Java]
 excerpt: "Getting Started with Java course"
-cover: 
+cover: ./apple-computer-desk-18105.jpg
 ---
 
-A few months ago I picked up a brand new 15" MacBook Pro. I thought to myself this is a perfect time to show others how I set up my local development environment for Java. With a fresh machine, this would be a lot easier to take students from step 1 to writing Java applications.  \[featured-image single\_newwindow="false" alt="Java Local Development Environment"\] The reason I am telling you this is because [I recently launched a new course around this](https://therealdanvega.com/getting-started-with-java). In this article, I am going to give you my tips for getting started with Java as well as some details about this course.
+A few months ago I picked up a brand new 15" MacBook Pro. I thought to myself this is a perfect time to show others how I set up my local development environment for Java. With a fresh machine, this would be a lot easier to take students from step 1 to writing Java applications.
+
+The reason I am telling you this is because [I recently launched a new course around this](https://www.danvega.dev/courses/getting-started-with-java). In this article, I am going to give you my tips for getting started with Java as well as some details about this course.
 
 ## Getting Started with Java
 
-When I first started out programming it was a little overwhelming to learn a new language. Part of that is because I am really really really old and we didn't have all the resources you have at your exposure today. The other part of that is that it was really confusing to know what the easiest way was to set up a local development environment. If you were going to back a pie and didn't have a list of ingredients would you start baking? The answer is no, you need to have the required ingredients to bake and you need to have a solid development environment to write code.  With this in mind, I set out to help people in 2 phases. First, I want you to quickly stand up a development environment. There are traditional ways of installing software packages and there better ways that make this step really easy to do. Once this is complete you can write your very first Java program. The other phase is introducing you to concepts like build tools, other languages that run on the JVM and some tools and frameworks that you will come across in your journey to learning Java. [![Getting Started with Java](./pexels-photo-2-1024x682.jpg)](https://therealdanvega.com/wp-content/uploads/2017/12/pexels-photo-2.jpg)
+When I first started out programming it was a little overwhelming to learn a new language. Part of that is because I am really really really old and we didn't have all the resources you have at your exposure today. 
+
+The other part of that is that it was really confusing to know what the easiest way was to set up a local development environment. If you were going to back a pie and didn't have a list of ingredients would you start baking? The answer is no, you need to have the required ingredients to bake and you need to have a solid development environment to write code.  
+
+With this in mind, I set out to help people in 2 phases. First, I want you to quickly stand up a development environment. There are traditional ways of installing software packages and there better ways that make this step really easy to do. Once this is complete you can write your very first Java program. 
+
+The other phase is introducing you to concepts like build tools, other languages that run on the JVM and some tools and frameworks that you will come across in your journey to learning Java. 
+
+![Getting Started with Java](./pexels-photo-2-1024x682.jpg)
 
 ### Key Terms
 
@@ -28,7 +38,11 @@ When I was "Getting Started with Java", one thing that tripped me up was all of 
 
 ## Getting Started with Java Course
 
-Now that I have given you a little information about getting started with Java, I would like to give you some details about my course. I set out to record some content that would help beginners get Java installed on their machine and set up a local development environment. What I ended up with was so much more. We also walk through things like advanced tooling, build tools and other languages that run on the JVM. I didn't set out to make you an expert in all of these but to get you familiar with them. This way when they come up in a conversation you will know what your friends or coworkers are talking about. I have been working on the JVM for most of 18-year career and I have learned more than a few tips and tricks along the way.  This course is fairly short at 3-4 hours in total length and this is what we are going to cover.  [![Getting Started with Java](./pexels-photo-256541-1024x682.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/12/pexels-photo-256541.jpeg)
+Now that I have given you a little information about getting started with Java, I would like to give you some details about my course. I set out to record some content that would help beginners get Java installed on their machine and set up a local development environment. What I ended up with was so much more. We also walk through things like advanced tooling, build tools and other languages that run on the JVM. 
+
+I didn't set out to make you an expert in all of these but to get you familiar with them. This way when they come up in a conversation you will know what your friends or coworkers are talking about. I have been working on the JVM for most of 18-year career and I have learned more than a few tips and tricks along the way.  This course is fairly short at 3-4 hours in total length and this is what we are going to cover.  
+
+![Getting Started with Java](./pexels-photo-256541-1024x682.jpeg)
 
 ### Getting Started with Java Course Curriculum 
 
@@ -95,4 +109,6 @@ Now that I have given you a little information about getting started with Java, 
 
 ## Conclusion
 
-I had a lot of fun putting this course together and I am pretty excited to share it with all of you. I hope you enjoy this course and if you have any questions about it please leave them below.  _**Question**: What was the toughest part of learning Java for you? _ [Enroll in my Getting Started with Java Course](https://therealdanvega.com/getting-started-with-java)
+I had a lot of fun putting this course together and I am pretty excited to share it with all of you. I hope you enjoy this course and if you have any questions about it please leave them below.  _**Question**: What was the toughest part of learning Java for you? _ 
+
+[Enroll in my Getting Started with Java Course](https://www.danvega.dev/courses/getting-started-with-java)
