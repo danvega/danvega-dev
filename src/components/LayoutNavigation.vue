@@ -2,9 +2,15 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <g-image src="../assets/img/danvega-avatar.png" alt="Dan Vega" width="23" height="28"/>
+        <g-image src="../assets/img/danvega-avatar-navigation.png" alt="Dan Vega"/>
       </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -23,7 +29,7 @@
 </template>
 
 <script>
-import SocialLinks from '@/components/SocialLinks';
+import SocialLinks from "@/components/SocialLinks";
 
 export default {
   name: "LayoutNavigation",
@@ -31,12 +37,11 @@ export default {
     SocialLinks
   },
   data() {
-    return {
-    };
+    return {};
   },
   methods: {},
   mounted() {
-    const navbarBurgers = document.querySelectorAll('.navbar-burger');
+    const navbarBurgers = document.querySelectorAll(".navbar-burger");
     navbarBurgers.forEach(menu => {
       menu.addEventListener("click", () => {
         const target = document.getElementById(menu.dataset.target);
