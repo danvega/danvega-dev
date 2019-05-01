@@ -31,7 +31,8 @@ module.exports = {
             ['gridsome-plugin-remark-shiki', {
               theme: 'nord'
             }],
-            ['gridsome-plugin-remark-twitter', {}]
+            ['gridsome-plugin-remark-twitter', {}],
+            ['gridsome-plugin-remark-codesandbox', {}]
           ]
         }
       }
