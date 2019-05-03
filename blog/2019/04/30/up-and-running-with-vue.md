@@ -69,7 +69,7 @@ There are also great resources and documentation around tooling and core librari
 
 I feel like I have been a part of some amazing communities in my development career and the Vue community is no different. Everyone is very welcoming, friendly and beyond helpful. An easy way to see what others in the community are building or excited about is to follow some of them on Twitter. Here are 10 people I think you should start following today. 
 
-- [Even You](https://twitter.com/youyuxi)
+- [Evan You](https://twitter.com/youyuxi)
 - [Chris Fritz](https://twitter.com/chrisvfritz)
 - [Sarah Drasner](https://twitter.com/sarah_edo)
 - [Damian Sulisz](https://twitter.com/DamianDulisz)
