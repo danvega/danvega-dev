@@ -5,7 +5,8 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "newpost": "node ./scripts/newpost.js"
+    "newpost": "node ./scripts/newpost.js",
+    "algolia": "node ./scripts/algolia.js"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
@@ -20,13 +21,16 @@
     "gridsome-plugin-rss": "^1.1.0",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {
     "chalk": "^2.4.2",
     "inquirer": "^6.2.2",
     "json-to-pretty-yaml": "^1.2.2",
     "prettier": "^1.16.4",
+    "readdirp": "^3.0.1",
+    "replace-in-file": "^4.0.0",
     "slugify": "^1.3.4"
   }
 }
