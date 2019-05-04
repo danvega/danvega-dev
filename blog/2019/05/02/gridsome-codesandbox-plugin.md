@@ -1,4 +1,5 @@
 ---
+objectId: 'cc508fd9-bee1-4067-abe5-cddef4028b43'
 slug: "gridsome-codesandbox-plugin"
 title: "How I created a CodeSandbox plugin for Gridsome"
 date: "2019-05-02T15:30:43.839Z"
