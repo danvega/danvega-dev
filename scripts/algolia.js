@@ -14,7 +14,7 @@ readdirp('./blog', {
     fileFilter: '*.md'
   })
   .on('data', (entry) => {
-    posts.push(entry.fullPath);
+    posts.push('./blog' + '/' + entry.path);
   })
   .on('end', () => {
     updateFrontMatter();
@@ -22,30 +22,32 @@ readdirp('./blog', {
 
 function updateFrontMatter() {
 
-  fs.readFile(post, {}, (err, data) => {
-    const fm = yamlFront.loadFront(data);
-    fm['objectID'] = '123456789';
-    fm['modifiedOn'] = fm.date;
-    delete fm.__content;
+  posts.forEach(post => {
+    fs.readFile(post, {}, (err, data) => {
+      const fm = yamlFront.loadFront(data);
+      console.log(fm);
+      fm['objectID'] = '123456789';
+      fm['modifiedOn'] = fm['date'];
+      delete fm.__content;
 
-    const frontMatter = YAML.stringify(fm);
-    const regex = new RegExp('---[^)]+---', 'i');
-    const updatedFrontMatter = '---\n' + frontMatter + '---\n'
+      const frontMatter = YAML.stringify(fm);
+      const regex = new RegExp('---[^)]+---', 'i');
+      const updatedFrontMatter = '---\n' + frontMatter + '---\n'
 
-    const options = {
-      files: posts,
-      from: regex,
-      to: updatedFrontMatter
-    };
-    try {
-      const results = replace.sync(options);
-      log(success('Replacement results:', results))
-    } catch (error) {
-      log(error('Error occurred:', error));
-    }
+      const options = {
+        files: post,
+        from: regex,
+        to: updatedFrontMatter
+      };
+      try {
+        const results = replace.sync(options);
+        log(success('Replacement results:', results))
+      } catch (error) {
+        log(error('Error occurred:', error));
+      }
 
+    })
   })
-
 
 
 }
