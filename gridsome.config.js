@@ -4,6 +4,25 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const collections = [{
+  contentTypeName: 'Post',
+  indexName: 'blog_posts', // Algolia index name
+  itemFormatter: (item) => {
+    return {
+      objectID: item.slug,
+      title: item.title,
+      slug: item.slug,
+      date: String(item.date),
+      tags: item.tags,
+      modified: item.modified ? item.modified : item.date,
+    }
+  },
+}, ];
+
 module.exports = {
   siteName: "Dan Vega",
   siteUrl: "https://www.danvega.dev",
@@ -79,7 +98,17 @@ module.exports = {
       options: {
         id: 'UA-133826656-1'
       }
-    }
+    },
+    {
+      use: `gridsome-plugin-algolia`,
+      options: {
+        appId: 'OGKDQRX9N1',
+        apiKey: '75f3c1985856c65ce72608a5e6bbdcb7',
+        collections,
+        chunkSize: 10000, // default: 1000
+        enablePartialUpdates: true, // default: false
+      },
+    },
   ]
 }
 

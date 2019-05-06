@@ -3,12 +3,19 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import Bulma from 'bulma'
+import InstantSearch from 'vue-instantsearch'
 
-
-
-export default function (Vue, {router, head, isClient}) {
+export default function (Vue, {
+  router,
+  head,
+  isClient
+}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  Vue.use(InstantSearch);
+
+
 
   head.link.push({
     rel: 'stylesheet',
@@ -19,5 +26,5 @@ export default function (Vue, {router, head, isClient}) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Oswald'
   })
-  
+
 }

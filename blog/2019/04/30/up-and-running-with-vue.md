@@ -1,9 +1,7 @@
 ---
-objectId: '9b4985c3-13e8-4cf1-a6cf-2ea4a895ae29'
 slug: 'up-and-running-with-vue'
 title: 'Everything you need to get up and running with VueJS'
 date: '2019-04-30T19:38:42.927Z'
-modified: '2019-04-30T19:38:42.927Z'
 published: true
 excerpt: 'In this article, I am going to tell you why I love Vue and give you 4 different ways you can write your first application.'
 author: 'Dan Vega'

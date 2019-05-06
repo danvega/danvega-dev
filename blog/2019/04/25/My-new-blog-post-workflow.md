@@ -1,9 +1,7 @@
 ---
-objectId: '9a7cf67c-465f-4416-9d18-a307fb7b62c8'
 slug: 'My-new-blog-post-workflow'
 title: 'My new blog post workflow'
 date: '2019-04-25T13:53:35.054Z'
-modified: '2019-04-25T13:53:35.054Z'
 published: false
 excerpt: 'In this article I will outline for you the tools and process I use to create a new blog post'
 author: 'Dan Vega'
