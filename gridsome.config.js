@@ -4,13 +4,11 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+const nodeExternals = require('webpack-node-externals')
 
 const collections = [{
   contentTypeName: 'Post',
-  indexName: 'blog_posts', // Algolia index name
+  indexName: 'blog_posts',
   itemFormatter: (item) => {
     return {
       objectID: item.slug,
@@ -18,9 +16,10 @@ const collections = [{
       slug: item.slug,
       date: String(item.date),
       tags: item.tags,
-      modified: item.modified ? item.modified : item.date,
+      modified: item.modified ? String(item.modified) : String(item.date),
     }
   },
+  matchFields: ['slug', 'modified']
 }, ];
 
 module.exports = {
@@ -28,6 +27,24 @@ module.exports = {
   siteUrl: "https://www.danvega.dev",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
+
+  chainWebpack(config, {
+    isServer
+  }) {
+
+    if (isServer) {
+      config.externals(nodeExternals({
+        whitelist: [
+          /\.css$/,
+          /\.sass$/,
+          /\?vue&type=style/,
+          /vue-instantsearch/,
+          /instantsearch.js/
+        ]
+      }))
+    }
+  },
+
   plugins: [{
       use: '@gridsome/source-filesystem',
       options: {
@@ -106,7 +123,7 @@ module.exports = {
         apiKey: '75f3c1985856c65ce72608a5e6bbdcb7',
         collections,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true, // default: false
+        enablePartialUpdates: false, // default: false
       },
     },
   ]

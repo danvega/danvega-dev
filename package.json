@@ -5,8 +5,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "newpost": "node ./scripts/newpost.js",
-    "algolia": "node ./scripts/algolia.js"
+    "newpost": "node ./scripts/newpost.js"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
@@ -26,6 +25,7 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-instantsearch": "^2.1.0",
+    "webpack-node-externals": "^1.7.2",
     "yaml-front-matter": "^4.0.0"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@
 src/.temp
 node_modules
 dist
-
+.algolia
 *.psd
 
 blog/410.txt
