@@ -1,74 +1,74 @@
 <template>
-  <ais-instant-search :search-client="searchClient" index-name="blog_posts">
-    <ais-search-box placeholder="Search Blog Posts"/>
+  <AisInstantSearchSsr class="sidebar posts__sidebar">
+    <div class="posts__search">
+      <div class="posts__search-box">
+        <ais-autocomplete :indices="[]">
+          <template slot-scope="{ currentRefinement, indices, refine }">
+            <input
+              type="search"
+              class="input"
+              :value="currentRefinement"
+              placeholder="Search Blog Posts"
+              @input="refine($event.currentTarget.value)">
+            <ul v-for="index in indices" :key="index.label">
+              <li v-if="currentRefinement">
+                <ul class="search-results">
+                  <li v-for="hit in index.hits" :key="hit.objectID">
+                    <a :href="getBlogPostURL(hit.date,hit.slug)">
+                      <ais-highlight attribute="title" :hit="hit"/>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </template>
+        </ais-autocomplete>
+      </div>
+    </div>
 
-    <ais-autocomplete/>
-
-    <ais-results>
-      <template slot-scope="{ result }">
-        <div>
-          <ais-highlight :result="result" attribute-name="title"></ais-highlight>
-        </div>
+    <!-- <AisHits class="posts__list">
+      <template v-slot:item="{ item }">
+        <li class="post">
+          <AisHighlight class="post__title" :hit="item" attribute="title"/>
+          <AisHighlight class="post__description" :hit="item" attribute="excerpt"/>
+          <g-link class="post__link" :to="getBlogPostURL(item.date,item.slug)">Read more</g-link>
+        </li>
       </template>
-    </ais-results>
-  </ais-instant-search>
+    </AisHits>-->
+  </AisInstantSearchSsr>
 </template>
 
 <script>
+import algoliasearch from "algoliasearch/lite";
 import {
-  createFromAlgoliaCredentials,
-  createFromSerialized,
-  FACET_OR
+  createInstantSearch,
+  AisInstantSearchSsr,
+  AisAutocomplete,
+  AisHits,
+  AisHighlight,
 } from "vue-instantsearch";
 
-let store;
+const searchClient = algoliasearch(
+  "OGKDQRX9N1",
+  "a08fee23596f5fba368c7b04e36ee24b"
+);
+const { instantsearch, rootMixin } = createInstantSearch({
+  indexName: "blog_posts",
+  searchClient
+});
 
 export default {
   name: "blog-post-search",
-  asyncData({ context, route }) {
-    store = createFromAlgoliaCredentials(
-      "OGKDQRX9N1",
-      "a08fee23596f5fba368c7b04e36ee24b"
-    );
-    store.indexName = "blog_posts";
-    store.query = route.params.query ? route.params.query : "";
-    store.addFacet("colors", FACET_OR);
-    store.highlightPreTag = "<mark>";
-    store.highlightPostTag = "</mark>";
-    store.start();
-    store.refresh();
-    return store.waitUntilInSync().then(() => {
-      // eslint-disable-next-line no-param-reassign
-      context.state = {
-        searchStore: store.serialize()
-      };
-    });
+  components: {
+    AisHighlight,
+    AisInstantSearchSsr,
+    AisAutocomplete
   },
-  beforeMount() {
-    if (!window.__INITIAL_STATE__) {
-      throw new Error("Not state was found.");
-    }
-    this.searchStore = createFromSerialized(
-      window.__INITIAL_STATE__.searchStore
-    );
-  },
-  watch: {
-    $route() {
-      this.searchStore.query = this.$route.params.query
-        ? this.$route.params.query
-        : "";
-    },
-    "searchStore.query"(to) {
-      if (to.length === 0) {
-        this.$router.push({ name: "home" });
-      } else {
-        this.$router.push({ name: "search", params: { query: to } });
-      }
-    }
-  },
+  mixins: [rootMixin],
   data() {
     return {
-      searchStore: store
+      hit: null,
+      hitsPerPage: 20
     };
   },
   methods: {
@@ -89,22 +89,7 @@ export default {
 </script>
 
 <style scoped>
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-.search-results {
-  background-color: rgb(233, 233, 233);
-  list-style-type: none;
-}
-.search-results li {
+.post {
   padding: 10px;
-}
-.search-results li:hover {
-  background-color: rgb(206, 206, 206);
-}
-.search-results li a {
-  color: #ff4e46;
 }
 </style>

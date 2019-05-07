@@ -17,9 +17,10 @@ const collections = [{
       date: String(item.date),
       tags: item.tags,
       modified: item.modified ? String(item.modified) : String(item.date),
+      excerpt: item.excerpt,
     }
   },
-  matchFields: ['slug', 'modified']
+  // matchFields: ['slug', 'modified']
 }, ];
 
 module.exports = {
