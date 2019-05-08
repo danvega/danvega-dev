@@ -2,13 +2,17 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-import Bulma from 'bulma'
+import Bulma from 'bulma/css/bulma.min.css'
+import InstantSearch from 'vue-instantsearch'
 
-
-
-export default function (Vue, {router, head, isClient}) {
+export default function (Vue, {
+  router,
+  head,
+  isClient
+}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  Vue.use(InstantSearch);
 
   head.link.push({
     rel: 'stylesheet',
@@ -19,5 +23,5 @@ export default function (Vue, {router, head, isClient}) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Oswald'
   })
-  
+
 }

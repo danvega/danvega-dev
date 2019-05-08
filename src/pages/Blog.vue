@@ -8,6 +8,7 @@
           href="https://twitter.com/therealdanvega"
         >Twitter</a>.
       </p>
+      <blog-post-search/>
       <div class="articles">
         <div v-for="post in $page.posts.edges" :key="post.node.id" class="article content">
           <h2 class="title is-4">
@@ -59,10 +60,12 @@ query Blog ($page: Int) {
 
 <script>
 import BulmaPagination from "@/components/BulmaPagination";
+import BlogPostSearch from "@/components/BlogPostSearch";
 
 export default {
   components: {
-    BulmaPagination
+    BulmaPagination,
+    BlogPostSearch
   }
 };
 </script>
