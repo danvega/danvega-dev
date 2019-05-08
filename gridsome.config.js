@@ -20,7 +20,7 @@ const collections = [{
       excerpt: item.excerpt,
     }
   },
-  // matchFields: ['slug', 'modified']
+  matchFields: ['slug', 'modified']
 }, ];
 
 module.exports = {
@@ -120,11 +120,11 @@ module.exports = {
     {
       use: `gridsome-plugin-algolia`,
       options: {
-        appId: 'OGKDQRX9N1',
-        apiKey: '75f3c1985856c65ce72608a5e6bbdcb7',
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
         collections,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: false, // default: false
+        enablePartialUpdates: true, // default: false
       },
     },
   ]

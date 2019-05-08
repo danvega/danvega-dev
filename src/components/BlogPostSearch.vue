@@ -9,14 +9,16 @@
               class="input"
               :value="currentRefinement"
               placeholder="Search Blog Posts"
-              @input="refine($event.currentTarget.value)">
+              @input="refine($event.currentTarget.value)"
+            >
             <ul v-for="index in indices" :key="index.label">
               <li v-if="currentRefinement">
                 <ul class="search-results">
-                  <li v-for="hit in index.hits" :key="hit.objectID">
-                    <a :href="getBlogPostURL(hit.date,hit.slug)">
-                      <ais-highlight attribute="title" :hit="hit"/>
-                    </a>
+                  <li v-for="post in index.hits" :key="post.objectID">
+                    <g-link class="post__link" :to="getBlogPostURL(post.date,post.slug)">
+                      <ais-highlight attribute="title" :hit="post"/>
+                    </g-link>
+                    <span class="description">{{ post.excerpt }}</span>
                   </li>
                 </ul>
               </li>
@@ -25,16 +27,6 @@
         </ais-autocomplete>
       </div>
     </div>
-
-    <!-- <AisHits class="posts__list">
-      <template v-slot:item="{ item }">
-        <li class="post">
-          <AisHighlight class="post__title" :hit="item" attribute="title"/>
-          <AisHighlight class="post__description" :hit="item" attribute="excerpt"/>
-          <g-link class="post__link" :to="getBlogPostURL(item.date,item.slug)">Read more</g-link>
-        </li>
-      </template>
-    </AisHits>-->
   </AisInstantSearchSsr>
 </template>
 
@@ -45,7 +37,7 @@ import {
   AisInstantSearchSsr,
   AisAutocomplete,
   AisHits,
-  AisHighlight,
+  AisHighlight
 } from "vue-instantsearch";
 
 const searchClient = algoliasearch(
@@ -91,5 +83,26 @@ export default {
 <style scoped>
 .post {
   padding: 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.search-results {
+  background-color: rgb(240, 240, 240);
+  list-style-type: none;
+}
+.search-results li {
+  padding: 10px;
+}
+.search-results li:hover {
+  /* background-color: rgb(206, 206, 206); */
+}
+.search-results li a {
+  color: #ff4e46;
+}
+.description {
+  display: block;
 }
 </style>
