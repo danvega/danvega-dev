@@ -2,6 +2,7 @@
 slug: "What-you-can-learn-from-live-coders"
 title: "What you can learn from live coders"
 date: "2019-05-10T18:42:50.066Z"
+modified: "2019-05-10T19:40:00.066Z"
 published: false
 excerpt: "2019 seems to be the year of the live coder. In this article I am going to tell you what you can learn from live coders. "
 author: "Dan Vega"
@@ -16,7 +17,6 @@ I remember the first Nintendo I got for Christmas and I thought it was the coole
 |                                                                                |                                                       |
 | ------------------------------------------------------------------------------ | ----------------------------------------------------- |
 | ![](ea16e9bb12986a0b89f8bd5eefeb2d0f-14c63fb2-1532-44e2-a377-551c0ddc5222.jpg) | ![](SMguide-ae13d10d-69b3-412a-951c-b6487d447a59.jpg) |
-
 
 ## Live Streaming Gamers
 
@@ -78,24 +78,24 @@ Now that you know why I love watching developers live code I want to leave you w
 
 This is a list of developers that I have either watched at one point or watch on a regular basis. This list is in no particular order and I think everyone below is really amazing and I appreciate all of their efforts. These developers take time out of their day to help others so if you have a chance reach out to them and thank them for everything that they do.
 
-| Name             | Twitter                             | Twitch                               | YouTube                                                  |
-| ---------------- | ----------------------------------- | ------------------------------------ | -------------------------------------------------------- |
-| Chris Sevilleja  | https://twitter.com/chrisoncode     | https://www.twitch.tv/chrisoncode    |                                                          |
-| Brian Clark      | https://twitter.com/_clarkio        | https://www.twitch.tv/clarkio        |                                                          |
-| Fun Fun Function | https://twitter.com/mpjme           | https://www.twitch.tv/funfunfunction | https://www.youtube.com/funfunfunction                   |
-| Suz Hinton       | https://twitter.com/noopkat         | https://www.twitch.tv/noopkat        |                                                          |
-| Aaron Frost      | https://twitter.com/aaronfrost      | https://www.twitch.tv/frostydev      |                                                          |
-| Daniel Shiffman  | https://twitter.com/shiffman        |                                      | https://www.youtube.com/user/shiffman                    |
-| Jeff Fritz       | https://twitter.com/csharpfritz     | https://www.twitch.tv/csharpfritz    |                                                          |
-| Steve Smith      | https://twitter.com/ardalis         | https://www.twitch.tv/ardalis        |                                                          |
-| Brendan Enrick   | https://twitter.com/brendoneus      | https://www.twitch.tv/DevChatter     |                                                          |
-| Ted Young        | https://twitter.com/jitterted       | https://www.twitch.tv/jitterted      |                                                          |
-| Kent C Dodds     | https://twitter.com/kentcdodds      |                                      | https://www.youtube.com/channel/UCz-BYvuntVRt_VpfR6FKXJw |
-| Scott Tolinkski  | https://twitter.com/stolinski       |                                      | https://www.youtube.com/c/leveluptuts                    |
-| Ed Charbeneau    | https://twitter.com/EdCharbeneau    | https://www.twitch.tv/edcharbeneau   |                                                          |
-| Alec Dilanchian  | https://twitter.com/alec_dilanchian | https://www.twitch.tv/pixelogicdev   |                                                          |
-| Nick Larsen      | https://twitter.com/fody            | https://www.twitch.tv/nick_larsen    |                                                          |
-
+| Name               | Twitter                             | Twitch                               | YouTube                                                  |
+| ------------------ | ----------------------------------- | ------------------------------------ | -------------------------------------------------------- |
+| Chris Sevilleja    | https://twitter.com/chrisoncode     | https://www.twitch.tv/chrisoncode    |                                                          |
+| Brian Clark        | https://twitter.com/_clarkio        | https://www.twitch.tv/clarkio        |                                                          |
+| Fun Fun Function   | https://twitter.com/mpjme           | https://www.twitch.tv/funfunfunction | https://www.youtube.com/funfunfunction                   |
+| Suz Hinton         | https://twitter.com/noopkat         | https://www.twitch.tv/noopkat        |                                                          |
+| Aaron Frost        | https://twitter.com/aaronfrost      | https://www.twitch.tv/frostydev      |                                                          |
+| Daniel Shiffman    | https://twitter.com/shiffman        |                                      | https://www.youtube.com/user/shiffman                    |
+| Jeff Fritz         | https://twitter.com/csharpfritz     | https://www.twitch.tv/csharpfritz    |                                                          |
+| Steve Smith        | https://twitter.com/ardalis         | https://www.twitch.tv/ardalis        |                                                          |
+| Brendan Enrick     | https://twitter.com/brendoneus      | https://www.twitch.tv/DevChatter     |                                                          |
+| Ted Young          | https://twitter.com/jitterted       | https://www.twitch.tv/jitterted      |                                                          |
+| Kent C Dodds       | https://twitter.com/kentcdodds      |                                      | https://www.youtube.com/channel/UCz-BYvuntVRt_VpfR6FKXJw |
+| Scott Tolinkski    | https://twitter.com/stolinski       |                                      | https://www.youtube.com/c/leveluptuts                    |
+| Ed Charbeneau      | https://twitter.com/EdCharbeneau    | https://www.twitch.tv/edcharbeneau   |                                                          |
+| Alec Dilanchian    | https://twitter.com/alec_dilanchian | https://www.twitch.tv/pixelogicdev   |                                                          |
+| Nick Larsen        | https://twitter.com/fody            | https://www.twitch.tv/nick_larsen    |                                                          |
+| Coding Garden (CJ) | https://twitter.com/coding_garden   |                                      | https://www.youtube.com/c/CodingGardenWithCJ             |
 
 This is **NOT** a full list so if you think I have left someone off who should be recognized please reach out and I will get this updated. I would also like to mention the [Live Coders Twitch Group](https://www.twitch.tv/team/livecoders) which has a really nice collection of developers who are live streaming so check them out.
 
