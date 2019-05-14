@@ -3,7 +3,7 @@ slug: upgrade-new-angular-command-line-interface-cli-1-3-release
 title: "How to upgrade to the new Angular Command Line Interface (CLI) 1.3 release"
 published: true
 date: 2017-09-06T09:07:30-04:00
-tags: [Angular]
+tags: ['Angular']
 excerpt: "How to upgrade to the new Angular Command Line Interface (CLI) 1.3 release"
 cover: ./pexels-photo-247791-1024x562.png
 ---
@@ -12,7 +12,7 @@ Angular CLI recently released its next major version, 1.3 (Hopper). There are so
 
 ## Upgrading Angular CLI
 
-The first thing we need to talk about is installing or upgrading the Angular CLI. For those of you who have never actually installed it yet please [check out this article I wrote](https://therealdanvega.com/blog/2017/06/05/getting-started-angular-cli). If you are already running the Angular CLI you can check what version you are using by running the `ng -v` command.
+The first thing we need to talk about is installing or upgrading the Angular CLI. For those of you who have never actually installed it yet please [check out this article I wrote](https://www.danvega.dev/blog/2017/06/05/getting-started-angular-cli). If you are already running the Angular CLI you can check what version you are using by running the `ng -v` command.
 
 ![Angular CLI version check](./2017-09-06_08-00-18.png)
 

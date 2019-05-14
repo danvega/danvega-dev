@@ -3,12 +3,12 @@ slug: monolithic-vs-microservices
 title: "When to use Microservices over Monolithic Architecture"
 published: true
 date: 2017-09-11T08:30:19-04:00
-tags: [Software Development, Spring]
+tags: ['Software Development', 'Spring']
 excerpt: "When to use Microservices over Monolithic Architecture"
 cover: ./pexels-photo-325229-760x266.jpeg
 ---
 
-I am currently working on wrapping up a new section on MicroServices for [my new course on JHipster](https://therealdanvega.com/jhipster). We could easily create a whole course around MicroServices alone so I am trying to keep this to more of an introduction. I think one of the questions I hear most is "When should I use a MicroServices architecture in place of a Monolithic application?". In this article, we will review what both of these are as well as give some recommendations on when to use Monolithic and when to use MicrosServices. 
+I am currently working on wrapping up a new section on MicroServices for [my new course on JHipster](https://www.danvega.dev/jhipster). We could easily create a whole course around MicroServices alone so I am trying to keep this to more of an introduction. I think one of the questions I hear most is "When should I use a MicroServices architecture in place of a Monolithic application?". In this article, we will review what both of these are as well as give some recommendations on when to use Monolithic and when to use MicrosServices. 
 
 ## Monolithic Architecture
 

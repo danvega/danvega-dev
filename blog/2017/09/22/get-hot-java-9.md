@@ -3,7 +3,7 @@ slug: get-hot-java-9
 title: "Get it while it's hot. Java 9 is out!"
 published: true
 date: 2017-09-22T08:21:00-04:00
-tags: [Java]
+tags: ['Java']
 excerpt: "Get it while it's hot. Java 9 is out!"
 cover: ./2017-09-22_07-39-27-760x504.png
 ---
