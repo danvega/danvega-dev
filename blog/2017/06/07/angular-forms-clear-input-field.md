@@ -3,12 +3,12 @@ slug: angular-forms-clear-input-field
 title: "Angular Forms: How to clear an input field"
 published: true
 date: 2017-06-07T09:50:47-04:00
-tags: [Angular]
+tags: ['Angular']
 excerpt: "Angular Forms: How to clear an input field"
-cover: 
+cover: './2017-06-07_08-39-40.jpeg'
 ---
 
-I have been working on a few different [Angular applications](https://angular.io/) lately. It has been a ton of fun because I have learned so much and I have come across some real world problems that I can't wait to share with you.  \[featured-image single\_newwindow="false" alt="Angular Forms"\] In today's post, we are talking all about Angular Forms. I was working on a tasks applications that allowed you to add new tasks. When a new task was added I wanted to clear the form out so you could quickly add another one. I ran into a problem doing so and I wanted to share that problem and my solution with you today.
+I have been working on a few different [Angular applications](https://angular.io/) lately. It has been a ton of fun because I have learned so much and I have come across some real world problems that I can't wait to share with you. In today's post, we are talking all about Angular Forms. I was working on a tasks applications that allowed you to add new tasks. When a new task was added I wanted to clear the form out so you could quickly add another one. I ran into a problem doing so and I wanted to share that problem and my solution with you today.
 
 ## My Tasks Project
 
@@ -18,21 +18,26 @@ The application I am working on is a simple tasks application. It is broken dow
 2.  Add Task - A way for you to add a new task
 3.  Task List - A way to display all of the components. 
 
-[![](./2017-06-07_08-39-40.png)](./2017-06-07_08-39-40.png) If you want to check out the project you can grab it on [Github](https://github.com/cfaddict/spring-angular2-tasks).
+![Tasks Project](./2017-06-07_08-39-40.png)
+
+If you want to check out the project you can grab it on [Github](https://github.com/cfaddict/spring-angular2-tasks).
 
 ## Angular Forms
 
 The first thing we have is the template for the add task form and it looks something like this. You will notice that we have an event handler for when the user hits the enter key. When that happens we will call a method onTaskAdd and pass in the event. 
 
+```html 
 <div class="form-group">
     <input type="text"
            class="form-control"
            placeholder="Add New Task"
            (keyup.enter)="onTaskAdd($event)">
 </div>
+```
 
 In this simple demo, we are creating a new task with the value from the input and calling a service to save the task. 
 
+```javascript
 onTaskAdd(event) {
     let task: Task = new Task(event.target.value,false, this.getTodayAsString());
     this.taskService.addTask(task)
@@ -42,13 +47,17 @@ onTaskAdd(event) {
           }
       );
 }
+```
 
 This was working great but after the task was saved I need a way to clear the input so the user could type another task and save it. This seemed like a great opportunity for property binding to work its magic. In the add task component, I would set up a value for the input field and initialize it to an empty string. 
 
+```javascript
 addTaskValue: string = "";
+```
 
 Then in the template, I would set the value to that property. 
 
+```html
 <div class="form-group">
     <input type="text"
            class="form-control"
@@ -56,9 +65,11 @@ Then in the template, I would set the value to that property. 
            (keyup.enter)="onTaskAdd($event)"
            \[value\]="addTaskValue">
 </div>
+```
 
 Finally, when we add a new task I thought I could simply set that value back to an empty string. 
 
+```javascript
 onTaskAdd(event) {
     let task: Task = new Task(event.target.value,false, this.getTodayAsString());
     this.taskService.addTask(task)
@@ -69,6 +80,7 @@ onTaskAdd(event) {
           }
       );
 }
+```
 
 This didn't work and it left me scratching my head. 
 
@@ -76,8 +88,10 @@ This didn't work and it left me scratching my head. 
 
 While the solution above didn't work I knew I was headed in the right direction. The next thing I tried was to set the string to a null value or an empty string with a space in it. 
 
+```javascript
 this.addTaskValue = ' ';
 this.addTaskValue = null;
+```
 
 This actually works the very first time that you try it but it will not work on subsequent tries. 
 
@@ -89,6 +103,7 @@ If you have done any work with forms in Angular you have probably come across th
 
 The problem with the approach we did above is that it is only property binding and not event binding. Angular doesn't run change detection because no event is fired. If you we use ngModel to bind our value to our form control we can get the answer we were looking for. Now we are using 2-way data binding with  `[()]` syntax (also known as 'banana-box syntax'), the value in the UI will always be synced back to the domain model in your class as well.
 
+```html
 <div class="form-group">
     <input type="text"
            class="form-control"
@@ -96,9 +111,11 @@ The problem with the approach we did above is that it is only property binding a
            (keyup.enter)="onTaskAdd($event)"
            \[(ngModel)\]="addTaskValue">
 </div>
+```
 
 Now when we add a new task we can set our value to an empty string and Angular updates the input for us.
 
+```javascript
 onTaskAdd(event) {
     let task: Task = new Task(event.target.value,false, this.getTodayAsString());
     this.taskService.addTask(task)
@@ -109,7 +126,10 @@ onTaskAdd(event) {
           }
       );
 }
+```
 
 ## Conclusion
 
-Angular gives us some really awesome ways to handle forms but there are some gotchas when you're trying to move from a submitting to a server to a single page application approach.  _**Question:** What do you like or don't like about working with forms in Angular? What are your toughest challenges? _
+Angular gives us some really awesome ways to handle forms but there are some gotchas when you're trying to move from a submitting to a server to a single page application approach.  
+
+_**Question:** What do you like or don't like about working with forms in Angular? What are your toughest challenges? _
