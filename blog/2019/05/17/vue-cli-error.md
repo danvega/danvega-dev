@@ -14,7 +14,7 @@ This morning I ran into an issue creating a new Vue project using the Vue CLI. T
 
 ## Creating & Running a new VueJS Project
 
-I started out my morning with creating a new project using the [Vue CLI](https://cli.vuejs.org/). After I created the project I changed into that directory and typed the command `npm run serve` which calls `vue-cli-service serve`. A few seconds after trying to startup I received the following error in the terminal.
+I started out my morning by creating a new project using the [Vue CLI](https://cli.vuejs.org/). After I created the project I changed into that directory and typed the command `npm run serve` which calls `vue-cli-service serve`. A few seconds after trying to startup I received the following error in the terminal.
 
 ``` bash
  INFO  Starting development server...
@@ -59,7 +59,7 @@ I next wondered if this was affecting all of my projects or just new ones. I wen
 
 ## Vue CLI Issues on Github
 
-At this point I was pretty confused so my next step was to head over to [Github](https://github.com/vuejs/vue-cli/issues) and see if anyone else was seeing similar issues. Sure enough the first 2 posts looked very similar to what I was experiencing.
+At this point, I was pretty confused so my next step was to head over to [Github](https://github.com/vuejs/vue-cli/issues) and see if anyone else was seeing similar issues. Sure enough, the first 2 posts looked very similar to what I was experiencing.
 
 Shout out to [dland512](https://github.com/vuejs/vue-cli/issues/4017#issuecomment-493481614) for providing some clarity as to what was happening. It appears that the problem is with the generated webpack configuration `node_modules/@vue/cli-service/lib/commands/serve.js` which has the following:
 
@@ -78,7 +78,7 @@ options.clientLogLevel should be {String} and equal to one of the allowed values
  [ 'info', 'warn', 'error', 'debug', 'trace', 'silent' ]
 ```
 
-Still not sure what has caused this but it could be the `vue-cli-service` itself. There workaround is to create a new file in the root of your project `vue.config.js` that contains the following:
+Still not sure what has caused this but it could be the `vue-cli-service` itself. The workaround is to create a new file in the root of your project `vue.config.js` that contains the following:
 
 ```javascript
 module.exports = {
@@ -92,7 +92,7 @@ After adding this configuration I was able to run the project with no errors. If
 
 ## Conclusion
 
-I am guessing by the time this article gets indexed it will no longer be an issue but I thought it was important to write up. This is one of those errors that would have completely derailed a day or even a week for me 15 years ago. With experience and a lot of patience I have learned how to deal with issues like this that will ultimately come up. I hope this article either fixed this issue for you or just gave you some insight into my thought process of working through a frustrating issue. As always ...
+I am guessing by the time this article gets indexed it will no longer be an issue but I thought it was important to write up. This is one of those errors that would have completely derailed a day or even a week for me 15 years ago. With experience and a lot of patience, I have learned how to deal with issues like this that will ultimately come up. I hope this article either fixed this issue for you or just gave you some insight into my thought process of working through a frustrating issue. As always ...
 
 Happy Coding<br/>
 Dan
