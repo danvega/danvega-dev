@@ -138,6 +138,7 @@ body {
 .about a,
 .about a:visited {
   color: white;
+  text-decoration: underline;
 }
 .signup {
   justify-content: center;
