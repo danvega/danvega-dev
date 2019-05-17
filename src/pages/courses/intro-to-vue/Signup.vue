@@ -1,36 +1,43 @@
 <template>
-  <div class="container">
-    <header>
-      <div class="background-overlay"></div>
-      <div class="logo">
-        <g-image src="../../../assets/img/danvega-avatar.png" width="80"/>
-      </div>
-    </header>
-    <div class="content">
-      <div class="about">
-        <h1>FREE Introduction to VueJS Course</h1>
-        <h2>Do you want to learn how to get up and running with VueJS in just 1 hour?</h2>
-        <p>
-          If you're interested in getting started with VueJS I have a free course that is really going to help you. With over 75,000 students worldwide
-          and lots of metrics to back it up I have found that developers take courses to learn a specific topic.
-        </p>
-        <p>
-          In this course I will explain to you what VueJS is and why it's a great choice for beginners. After that you will get your development
-          enviornment setup and write your first application. The best part about this course is that you only need an hour to get up and running.
-        </p>
-        <p>
-          If you're interested in learning more you can check out
-          <a
-            href="https://www.danvega.dev/blog/2019/04/30/up-and-running-with-vue"
-          >this article</a> I wrote on how to get started with Vue.
-          If you have any questions please feel free to reach out to me on
-          <a
-            href="https://twitter.com/therealdanvega"
-          >Twitter</a>.
-        </p>
-      </div>
-      <div class="signup">
-        <div id="convertkit"></div>
+  <div id="intro-to-vue">
+    <div class="background-overlay"></div>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <g-image src="../../../assets/img/danvega-avatar.png" width="80"/>
+        </div>
+      </header>
+      <div class="content">
+        <div class="about">
+          <h1>FREE Introduction to VueJS Course</h1>
+          <h2>Do you want to learn how to get up and running with VueJS in just 1 hour?</h2>
+          <p>
+            If you're interested in getting started with VueJS I have a free course that is really going to help you. With over 75,000 students worldwide
+            and lots of metrics to back it up I have found that developers take courses to learn a specific topic.
+          </p>
+          <p>
+            In this course I will explain to you what VueJS is and why it's a great choice for beginners. After that you will get your development
+            enviornment setup and write your first application. The best part about this course is that you only need an hour to get up and running.
+          </p>
+          <p>
+            If you're interested in learning more you can check out
+            <a
+              href="https://www.danvega.dev/blog/2019/04/30/up-and-running-with-vue"
+            >this article</a> I wrote on how to get started with Vue.
+            If you have any questions please feel free to reach out to me on
+            <a
+              href="https://twitter.com/therealdanvega"
+            >Twitter</a>.
+          </p>
+          <p>
+            Thank You
+            <br>
+            <g-image src="../../../assets/img/signature.png"/>
+          </p>
+        </div>
+        <div class="signup">
+          <div id="convertkit"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -66,18 +73,6 @@ export default {
   padding: 0;
 }
 
-/*
-body {
-  background-color: #33506e;
-  background-image: linear-gradient(rgba(79, 79, 79, .2), transparent);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  font-family: "IBM Plex Sans", sans-serif;
-  min-height: calc(100vh - 140px);
-  padding: 60px 0 170px;
-} */
-
 body {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); */
@@ -107,8 +102,7 @@ body {
 }
 
 .logo {
-  display: flex;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .content {
