@@ -73,9 +73,8 @@ html {
   padding: 0;
 }
 
-body {
+#app {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
