@@ -68,11 +68,6 @@ export default {
 </script>
 
 <style scoped>
-html {
-  margin: 0;
-  padding: 0;
-}
-
 #app {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   box-sizing: border-box;
@@ -148,11 +143,6 @@ html {
 
 /* MOBILE LAYOUT */
 @media (max-width: 415px) {
-  html,
-  body {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
   .container {
     width: 100%;
     height: 100%;
