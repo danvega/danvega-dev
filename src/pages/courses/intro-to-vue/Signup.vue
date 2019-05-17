@@ -100,7 +100,9 @@ body {
   height: 100vh;
   margin: auto;
 }
-
+.container .g-image {
+  display: inline;
+}
 .logo {
   margin-top: 60px;
 }
