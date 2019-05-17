@@ -3,7 +3,7 @@ slug: 'vue-cli-validation-error'
 title: 'Vue CLI ValidationError: webpack Dev Server Invalid Options'
 date: '2019-05-17T15:25:36.871Z'
 published: false
-excerpt: 'UPDATE_DESCRIPTION'
+excerpt: 'In this article, I will tell you about an error I received while trying to run and new VueJS project this morning and how I was able to fix it.'
 author: 'Dan Vega'
 tags: ['vue','npm','nodejs','javascript']
 cover: ./vue-cli-validation-error.png
