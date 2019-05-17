@@ -110,7 +110,7 @@ body {
 .content {
   margin-top: 80px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
