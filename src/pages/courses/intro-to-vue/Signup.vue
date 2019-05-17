@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style>
-* {
+html {
   margin: 0;
   padding: 0;
 }
@@ -110,7 +110,7 @@ body {
 .content {
   margin-top: 80px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -133,7 +133,6 @@ body {
 
 .about p {
   box-sizing: border-box;
-  font-family: "IBM Plex Sans", sans-serif;
   line-height: 2.1;
   margin-bottom: 30px;
 }
@@ -146,5 +145,45 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 415px) {
+  html,
+  body {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .container .logo .g-image {
+    display: block !important;
+    margin: auto;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .about {
+    width: 100%;
+  }
+  .about h1 {
+    box-sizing: border-box;
+    color: white !important;
+    border: none;
+    font-size: 24px;
+  }
+  .about h2 {
+    box-sizing: border-box;
+    color: white !important;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
 }
 </style>
