@@ -7,7 +7,6 @@ excerpt: 'In this article, I will tell you about an error I received while tryin
 author: 'Dan Vega'
 tags: ['vue','npm','nodejs','javascript']
 cover: ./vue-cli-validation-error.png
-time: '1 hour'
 ---
 
 This morning I ran into an issue creating a new Vue project using the Vue CLI. The strange thing about this is that I just created a new project yesterday and it ran fine. I did some digging around and this seems to be affecting a lot of users so I figured I would throw together a quick post about.

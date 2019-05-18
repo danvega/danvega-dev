@@ -29,14 +29,19 @@ query {
 }
 </static-query>
 
-<style lang="scss">
+<style>
+:root {
+  --var-bg: #ffffff;
+  --var-txt-color: #2c3e50;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  color: #2c3e50;
+  color: var(--var-text-color);
+  background-color: var(--var-bg);
 }
 @media screen and (max-width: 768px) {
   .default-layout {

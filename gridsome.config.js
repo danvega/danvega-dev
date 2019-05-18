@@ -1,4 +1,4 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here requires a server restart.
@@ -11,9 +11,9 @@ const collections = [{
   indexName: 'blog_posts',
   itemFormatter: (item) => {
     return {
-      objectID: item.slug,
-      title: item.title,
+      objectID: item.id,
       slug: item.slug,
+      title: item.title,
       date: String(item.date),
       tags: item.tags,
       modified: item.modified ? String(item.modified) : String(item.date),
@@ -124,7 +124,7 @@ module.exports = {
         apiKey: process.env.ALGOLIA_API_KEY,
         collections,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true, // default: false
+        enablePartialUpdates: false, // default: false
       },
     },
   ]
