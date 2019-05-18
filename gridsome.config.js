@@ -17,11 +17,11 @@ const collections = [{
       date: String(item.date),
       tags: item.tags,
       modified: item.modified ? String(item.modified) : String(item.date),
-      excerpt: item.excerpt,
+      excerpt: item.excerpt
     }
   },
   matchFields: ['slug', 'modified']
-}, ];
+}];
 
 module.exports = {
   siteName: "Dan Vega",
@@ -32,7 +32,6 @@ module.exports = {
   chainWebpack(config, {
     isServer
   }) {
-
     if (isServer) {
       config.externals(nodeExternals({
         whitelist: [
@@ -124,7 +123,7 @@ module.exports = {
         apiKey: process.env.ALGOLIA_API_KEY,
         collections,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: false, // default: false
+        enablePartialUpdates: true, // default: false
       },
     },
   ]
