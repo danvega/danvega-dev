@@ -3,12 +3,12 @@ slug: make-weakness-strength
 title: "How to Make your weakness your strength"
 published: true
 date: 2017-05-05T08:00:15-04:00
-tags: [Software Development]
+tags: ['Software Development']
 excerpt: "How to Make your weakness your strength"
-cover: 
+cover: './lucas-rosas-98304-760x507.jpg'
 ---
 
-I have been writing software for a fairly long time now. I have worked on applications that range from open source projects to a suite of applications that run a $5B dollar company. If you want to stay relevant in this industry though you have always got to be learning and improving your craft. One of the best things you can do is identify an area of weakness and work on improving it. \[featured-image single\_newwindow="false" alt="Computer Science Problem Sets"\] A friend of mine is preparing for an interview next week and asked for some help. I haven't been on an actual coding interview in probably 10 years so I might not be the best person to ask but, what are friends for. In this article, we are going to look at some exercises he was trying to tackle. These questions led me to realize that I have a weakness that I would like to improve on. 
+I have been writing software for a fairly long time now. I have worked on applications that range from open source projects to a suite of applications that run a $5B dollar company. If you want to stay relevant in this industry though you have always got to be learning and improving your craft. One of the best things you can do is identify an area of weakness and work on improving it. A friend of mine is preparing for an interview next week and asked for some help. I haven't been on an actual coding interview in probably 10 years so I might not be the best person to ask but, what are friends for. In this article, we are going to look at some exercises he was trying to tackle. These questions led me to realize that I have a weakness that I would like to improve on. 
 
 ## The Interview
 
@@ -42,9 +42,11 @@ When I sent him a bunch of examples like this he was a little thrown off and rig
 
 #### Intersection of Two Arrays
 
+```bash
 Given two arrays, write a function to compute their intersection. **Example:**
 
-Given nums1 = \[1, 2, 2, 1\], nums2 = \[2, 2\], return \[2\].
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
+```
 
 **Note:**
 
@@ -55,10 +57,12 @@ Given nums1 = \[1, 2, 2, 1\], nums2 = \[2, 2\], return \[2\].
 
 Given an array of integers, return **indices** of the two numbers such that they add up to a specific target. You may assume that each input would have **_exactly_** one solution, and you may not use the _same_ element twice. **Example:**
 
-Given nums = \[2, 7, 11, 15\], target = 9,
+```bash
+Given nums = [2, 7, 11, 15], target = 9,
 
-Because nums\[**0**\] + nums\[**1**\] = 2 + 7 = 9,
-return \[**0**, **1**\].
+Because nums[**0**] + nums[**1**] = 2 + 7 = 9,
+return [**0**, **1**].
+```
 
 #### Palindrome Number
 
@@ -79,7 +83,9 @@ Now that I realized this is something I wanted to improve on I need get to work.
 
 #### Algorithms (Fourth Edition)
 
-I decided to pick up Algorithms (Fourth Edition) by Robert Sedgewick. This book not only had a ton of great reviews but all of the examples in the book are in Java. With that said I am going to try and focus on solving the problem and not the language because that is the point of this.  [![](./2017-05-04_08-36-00.png)](http://amzn.to/2pBWwbf)
+I decided to pick up Algorithms (Fourth Edition) by Robert Sedgewick. This book not only had a ton of great reviews but all of the examples in the book are in Java. With that said I am going to try and focus on solving the problem and not the language because that is the point of this.  
+
+![Alogrithms](./2017-05-04_08-36-00.png)
 
 [http://amzn.to/2pBWwbf](http://amzn.to/2pBWwbf)
 
@@ -87,7 +93,7 @@ I decided to pick up Algorithms (Fourth Edition) by Robert Sedgewick. This book
 
 Another great resource that we mentioned earlier was [LeetCode](https://leetcode.com). This website gives you some awesome problem sets to solve. You can solve the problem yourself and then look at other solutions and discussions around these problems. 
 
-[![](./2017-05-04_09-00-39-291x300.png)](https://leetcode.com)
+![LeetCode](./2017-05-04_09-00-39-291x300.png)
 
 #### Courses
 
@@ -95,4 +101,6 @@ Another great resource that we mentioned earlier was [LeetCode](https://leetcode
 
 ## Conclusion
 
-There is nothing wrong with having weaknesses. We all have them and anyone who tells you they don't is probably lying. If you want to be better you need to identify your weakness and instead of hanging your head, make it your strength. I hope to have more posts and videos to follow on this so stay tuned!  _**Question:** What are your weaknesses and what are you doing to improve them?_
+There is nothing wrong with having weaknesses. We all have them and anyone who tells you they don't is probably lying. If you want to be better you need to identify your weakness and instead of hanging your head, make it your strength. I hope to have more posts and videos to follow on this so stay tuned!  
+
+_**Question:** What are your weaknesses and what are you doing to improve them?_

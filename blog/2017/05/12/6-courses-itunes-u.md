@@ -3,12 +3,12 @@ slug: 6-courses-itunes-u
 title: "6 Courses on iTunes U that can upgrade your Software Development Career"
 published: true
 date: 2017-05-12T08:00:52-04:00
-tags: [Software Development]
+tags: ['Software Development']
 excerpt: "6 Courses on iTunes U that can upgrade your Software Development Career"
-cover: 
+cover: './2017-05-11_16-07-03-760x399.png'
 ---
 
-When I hear people talk about taking online courses I hear the usual marketplaces mentioned. While these are great places to learn I find it a little odd that iTunes U is usually a place that people forget about.  \[featured-image single\_newwindow="false" alt="iTunes U"\] If you weren't aware iTunes U is the world's largest catalog of free education content. 
+When I hear people talk about taking online courses I hear the usual marketplaces mentioned. While these are great places to learn I find it a little odd that iTunes U is usually a place that people forget about. If you weren't aware iTunes U is the world's largest catalog of free education content. 
 
 *   Choose from more than 1 million free lectures, videos, books, and other resources on thousands of subjects from leading educational and cultural institutions around the world.
 *   Share your favorite courses with friends using Twitter, Facebook, Mail, and Messages.
@@ -18,7 +18,7 @@ In this article, I am going to give you 6 courses that can help you grow as a S
 
 ## [Developer iOS 10 Apps with Swift](https://itunes.apple.com/us/course/developing-ios-10-apps-with-swift/id1198467120)
 
-<span style="font"><span style="colour"><span style="size">Tools and APIs required to build applications for the iPhone and iPad platforms using the iOS SDK. User interface design for mobile devices and unique user interactions using multi-touch technologies. Object-oriented design using model-view-controller paradigm, memory management, Swift programming language. Other topics include object-oriented database API, animation, mobile device power management, multi-threading, networking and performance considerations.</span></span></span>
+Tools and APIs required to build applications for the iPhone and iPad platforms using the iOS SDK. User interface design for mobile devices and unique user interactions using multi-touch technologies. Object-oriented design using model-view-controller paradigm, memory management, Swift programming language. Other topics include object-oriented database API, animation, mobile device power management, multi-threading, networking and performance considerations.
 
 ## [Machine Learning](https://itunes.apple.com/us/itunes-u/machine-learning/id384233048?mt=10)
 

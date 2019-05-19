@@ -3,16 +3,15 @@ slug: so-you-want-to-create-an-online-course
 title: "So you want to create an online course?"
 published: true
 date: 2017-05-26T12:34:08-04:00
-tags: [Random]
+tags: ['Random']
 excerpt: "So you want to create an online course?"
-cover: 
+cover: './carl-heyerdahl-181868-1-760x507.jpg'
 ---
 
 I recently wrote this article on [Medium](https://medium.com/@therealdanvega/so-you-want-to-create-an-online-course-8c2519da1863) and thought I would share it here with this audience today. I know there are a lot of Software Developers out there that want to get into creating courses and if that's you I think you're really going to enjoy this article. 
 
 I get really fired up about teaching online because I enjoy doing something that is improving the life of someone else. It might be on a very small scale but I still like to think I am making a difference. I also enjoy that, on occasion, I get someone else fired up about teaching online.
 
-\[featured-image single\_newwindow="false" alt="Creating Online Courses"\]
 
 Lately, I have been receiving messages from friends and family about how they want to create their own courses. This week I got a message from a friend that I would like to share with you.
 
@@ -22,7 +21,7 @@ I was not only excited that my friend was going to create his first course but t
 
 > “You will get all you want in life if you help enough other people get what they want.” — Zig Ziglar
 
-[![](./pexels-photo-322045-683x1024.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-322045.jpeg)
+![Lady Video Shooting](./pexels-photo-322045-683x1024.jpeg)
 
 Now that you have a little idea of why I sat down and took some to write this article, here's what we are going to cover in it.
 
@@ -38,7 +37,7 @@ I am going to give you a little information about each of these topics. This is 
 
 The first thing we need to figure out is what your course is going to be about. You probably have some ideas already and are just wondering if these ideas will translate into courses. In this section, we are going to talk about how finding your passion and validating your subject.
 
-[![Creating Online Courses - What are you going to teach?](./startup-photos-1024x683.jpg)](https://therealdanvega.com/wp-content/uploads/2017/05/startup-photos.jpg)
+![Creating Online Courses - What are you going to teach?](./startup-photos-1024x683.jpg)
 
 ### Find your Passion
 
@@ -54,13 +53,13 @@ A big mistake new instructors often make is the belief that just because there a
 
 Existing courses in the marketplace simply tell us that someone else has already done the hard work for us and validated that there is a demand for our course. Now if there 75 courses on the exact same thing then we need to go a layer deeper. In fact no matter how many courses there are I always suggest going at least 2 levels and maybe event 3 levels deep.
 
-[![Creating Online Courses - Finding your niche](./pexels-photo-256541-1024x682.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-256541.jpeg)
+![Creating Online Courses - Finding your niche](./pexels-photo-256541-1024x682.jpeg)
 
 This sounds great Dan, but what do you mean to go a layer deeper? Going back to our example of health and fitness let's say that I wanted to create a course on yoga. It’s safe to assume that yoga has a very wide range of topics and not only will you run into competition there but if you were going to teach a course on everything you knew about yoga that would be a huge course.
 
 So we start thinking about topics inside of yoga and realize that we are very good at standing our head. This is often tough for people new to yoga so we are going to teach them all about getting upside down. We just took a subject we are passionate about, yoga, and found a specific subject inside of that niche and created our Headstand Workshop class. This is what I mean by going to the 2nd or even 3rd level.
 
-[![Creating Online Courses - Finding your niche](./pexels-photo-169762-1024x684.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-169762.jpeg)
+![Creating Online Courses - Finding your niche](./pexels-photo-169762-1024x684.jpeg)
 
 Sticking with our example, what if we wanted to create a course called “How to do a headstand for 20 min straight”. I am just making this up at this point but you get the idea. This is a very specific topic and if there are no other courses on the market we should probably validate this further before we run off and create a course on this subject.
 
@@ -70,7 +69,7 @@ We already looked at how to select your niche if there is a market for your cour
 
 The first place you can always start is with friends and family. Going back to our yoga example it's probably safe to assume that if you’re passionate about yoga that you might do it with friends, take a class or even teach classes. In that case, it's pretty simple, ask those people what they think of your idea. If you come up with a good plan for the workshop you might even be able to teach it to them one day and get their opinion.
 
-[![Creating Online Courses - Validating your ideas](./pexels-photo-26135-1024x681.jpg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-26135.jpg)
+![Creating Online Courses - Validating your ideas](./pexels-photo-26135-1024x681.jpg)
 
 After running it by friends and family you can start to ask any social networks you’re involved in. Throw something on Facebook on your wall or in a specific group and see what they say.
 
@@ -84,7 +83,7 @@ Another question I hear a lot is how long does my course need to be. Your course
 
 The key here is making sure your course has a solid title and description. Your students should be very clear on what they are going to get out of this course before they take it. At that point, your course should be as long as it needs to be to deliver on what you promised them they would learn.
 
-[![Creating Online Courses - Course Length](./pexels-photo-66134-1024x683.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-66134.jpeg)
+![Creating Online Courses - Course Length](./pexels-photo-66134-1024x683.jpeg)
 
 ## Creating your Course
 
@@ -109,7 +108,7 @@ I like to start with an outline of what each module or section will look like. I
 *   Marketing your course
 *   Goodbye
 
-[![Creating Online Courses - Create your curriculum](./pexels-photo-139496-1024x769.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-139496.jpeg)
+![Creating Online Courses - Create your curriculum](./pexels-photo-139496-1024x769.jpeg)
 
 This would be my initial outline but just looking at this I can already tell that the creating your course section would get very long. I would probably break curriculum, video, audio & lighting into their own sections. Here are a few tips that I have seen in other courses and try to stick to in any of my new courses.
 
@@ -188,7 +187,7 @@ Now that we have created our course the question is where do we publish it. Ther
 
 If you have an existing audience that comes with a large email list and social media following you are going to be self-hosting your course. If you don’t have an existing following we are going to start with marketplaces. The beauty of starting here is we can build our audience and then begin to move to a self-hosted platform.
 
-[![Creating Online Course - Where to publish your course?](./1-Ouwik01c13p99QCkzRT7AA-1024x682.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/1-Ouwik01c13p99QCkzRT7AA.jpeg)
+[![Creating Online Course - Where to publish your course?](./1-Ouwik01c13p99QCkzRT7AA-1024x682.jpeg)](https://danvega.dev/wp-content/uploads/2017/05/1-Ouwik01c13p99QCkzRT7AA.jpeg)
 
 #### Marketplace
 
@@ -246,7 +245,7 @@ The best thing you can do for yourself after you launch your course is to stay i
 
 When you can establish trust and build an audience everyone wins. Your students win because they get out of your course exactly what you promised. You win in both monetary value and knowing that you helped to improve someone's life.
 
-[![Creating Online Course - Building an audience?](./pexels-photo-66463-1024x683.jpeg)](https://therealdanvega.com/wp-content/uploads/2017/05/pexels-photo-66463.jpeg)
+[![Creating Online Course - Building an audience?](./pexels-photo-66463-1024x683.jpeg)](https://danvega.dev/wp-content/uploads/2017/05/pexels-photo-66463.jpeg)
 
 ### Course Feedback
 
@@ -258,7 +257,7 @@ If your course is in a marketplace this is also a good time to start getting rev
 
 No matter where you publish your course you want to be out there promoting your course.
 
-[![Creating Online Course - Promoting your course](./marketing-man-person-communication-1024x683.jpg)](https://therealdanvega.com/wp-content/uploads/2017/05/marketing-man-person-communication.jpg)
+![Creating Online Course - Promoting your course](./marketing-man-person-communication-1024x683.jpg)
 
 **Blog, Social Media & Email List** If you have a blog this is obviously the best place to start. I would write up a summary of what your course is about and what potential students can get out of it. Most of the time you will already have this copy in the course description.
 
@@ -295,4 +294,4 @@ While I do believe that investing in yourself and continuing to learn is the gre
 
 If you enjoyed this article you are really going to enjoy my next project. Subscribe to my mailing list and I will keep you in the loop on my next big thing. If you signup today I will give you a free eBook that will give you my top 10 side hustles to build a passive income.
 
-[https://therealdanvega.com/sidehustle](https://therealdanvega.com/sidehustle)
+[https://danvega.dev/sidehustle](https://danvega.dev/sidehustle)
