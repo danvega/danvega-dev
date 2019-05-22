@@ -3,7 +3,7 @@ slug: spring-boot-entity-scan
 title: "Spring Boot Entity Scan"
 published: true
 date: 2017-03-22T08:00:44-04:00
-tags: ["spring"]
+tags: ['spring']
 excerpt: "Spring Boot Entity Scan"
 cover: ./entity-scan.jpg
 ---
@@ -22,11 +22,11 @@ I had to dive into the student's code to figure out what was going on but usuall
 
 To demonstrate the issue at hand we are going to create a brand new Spring Boot project. This will give us a chance to see what the problem is in a simplified version. Create a new project using the Spring Initializr and select the Web, JPA, and H2 dependencies.  
 
-[![](./entity-demo-starter-1024x649.png)](https://therealdanvega.com/wp-content/uploads/2017/03/entity-demo-starter.png)   
+![Spring Boot](./entity-demo-starter-1024x649.png)
 
 When you are creating the project you will be asked to give your main package a name. I named mine com.therealdanvega and as you can see from the image below it created the main application class under that package.  
 
-[![](./entity-scan-project.png)](./entity-scan-project.png)              
+![Entry Scan Spring Boot](./entity-scan-project.png)              
 
 ### Create an Entity
 
@@ -101,8 +101,10 @@ public class EntityDemoApplication {
 
 Now if you start up the application and go to your H2 console you should see that the tweet table was created for you.  
 
-[![](./tweet_class.png)](./tweet_class.png)   
+![Tweet Class](./tweet_class.png)  
 
 ## Conclusion 
 
-As you can see this is a pretty easy mistake to make. If you would like to check out this project you can find the [source code for it on Github](https://github.com/cfaddict/entity-scan-demo). I hope you found this tutorial helpful and with that, I will leave you with a question.  **Question:** _What is a common mistake you made in your first few Spring Boot projects? _
+As you can see this is a pretty easy mistake to make. If you would like to check out this project you can find the [source code for it on Github](https://github.com/cfaddict/entity-scan-demo). I hope you found this tutorial helpful and with that, I will leave you with a question.  
+
+**Question:** _What is a common mistake you made in your first few Spring Boot projects? _

@@ -52,7 +52,7 @@ I said at the start of this article that I was going to give you 1 thing you mus
 
 ![Building your audience](./luca-bravo-207676-1024x683.jpg)
 
-There are many tools that can help you with building your list but my absolute favorite is [Convertkit](https://therealdanvega.com/convertkit). 
+There are many tools that can help you with building your list but my absolute favorite is [Convertkit](https://danvega.dev/convertkit). 
 
 ## Conclusion
 

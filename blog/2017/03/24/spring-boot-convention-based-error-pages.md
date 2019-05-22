@@ -16,7 +16,7 @@ What we need to understand is that it is ok for both the users and us to make mi
 
 I have [created a very simple project](https://github.com/cfaddict/custom-errors/tree/master/src/main/java/com/therealdanvega/controller) that has a single home controller with no methods defined. If we launch that application and visit [http://localhost:8080](http://localhost:8080) we will get this default white label error page. This is of course because we have no mapping defined for "/".
 
-[![](./whitelabel_error_page.png)](./whitelabel_error_page.png)
+![White Label Error](./whitelabel_error_page.png)
 
 ## HTML Templates
 
@@ -44,7 +44,7 @@ Now we can just create the templates and by convention place them in a folder. I
 </html>
 ```
 
-[![](./custom_error-.png)](./custom_error-.png)
+![Custom Error](./custom_error-.png)
 
 ## Dynamic Templates
 
@@ -80,7 +80,7 @@ If you are using a templating engine in your application we can also take advan
 </html>
 ```
 
-[![](./custom_error_template.png)](./custom_error_template.png)
+![Error Template](./custom_error_template.png)
 
 ## Conclusion
 

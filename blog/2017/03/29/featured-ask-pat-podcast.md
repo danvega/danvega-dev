@@ -3,16 +3,20 @@ slug: featured-ask-pat-podcast
 title: "I Was Featured on the Ask Pat Podcast"
 published: true
 date: 2017-03-29T08:00:21-04:00
-tags: [Random]
+tags: ['Random']
 excerpt: "I Was Featured on the Ask Pat Podcast"
-cover: 
+cover: './ask_pat_billboard-760x346.png'
 ---
 
-I recently had my question featured on the Ask Pat Podcast. For those of you who don't know Pat Flynn, he's a very successful entrepreneur who runs the website [Smart Passive Income](https://www.smartpassiveincome.com). Smart Passive Income is a resource to teach you proven strategies for running an online business and optimizing it for passive income. The Ask Pat podcast is your business questions answered in a bite-sized podcast five days a week, Monday through Friday. \[featured-image single\_newwindow="false"\] I can hear the questions coming in now. Dan, I thought you were going to stop blogging about business related topics. That is still my focus but in this case, I can assure you this article has some real value for my audience.  
+I recently had my question featured on the Ask Pat Podcast. For those of you who don't know Pat Flynn, he's a very successful entrepreneur who runs the website [Smart Passive Income](https://www.smartpassiveincome.com). Smart Passive Income is a resource to teach you proven strategies for running an online business and optimizing it for passive income. The Ask Pat podcast is your business questions answered in a bite-sized podcast five days a week, Monday through Friday. I can hear the questions coming in now. Dan, I thought you were going to stop blogging about business related topics. That is still my focus but in this case, I can assure you this article has some real value for my audience.  
 
 ## My Ask Pat Question
 
-Before we get going I would suggest [heading over to the podcast](https://www.smartpassiveincome.com/ask-pat/) and listen to episode #830. The whole podcast is only 6 minutes and 45 seconds so it will be a quick listen. If you're new to the podcast I would suggest subscribing, it is an awesome resource.  \[caption id="attachment\_5152" align="aligncenter" width="1003"\][![Ask Pat](./ask_pat_podcast.png)](./ask_pat_podcast.png) Ask Pat: Your Online Business, Blogging, Marketing and Lifestyle Design Questions Answered Daily!\[/caption\]   If you didn't get a chance to listen to the episode, here is a quick summary of my question. 
+Before we get going I would suggest [heading over to the podcast](https://www.smartpassiveincome.com/ask-pat/) and listen to episode #830. The whole podcast is only 6 minutes and 45 seconds so it will be a quick listen. If you're new to the podcast I would suggest subscribing, it is an awesome resource.  
+
+![Ask Pat](./ask_pat_podcast.png)
+ 
+*Ask Pat: Your Online Business, Blogging, Marketing and Lifestyle Design Questions Answered Daily!   If you didn't get a chance to listen to the episode, here is a quick summary of my question.*
 
 > When I come up with a new idea for a tutorial where should I start and can I use that tutorial on various platforms. When I have an idea for new content should I start by posting that on YouTube and then maybe a week later post that on the blog.
 
@@ -24,4 +28,6 @@ Pat suggest that I start with a video on the YouTube channel and make sure that 
 
 ## Conclusion
 
-I ended my question to Pat with this but I just want to say it again. Thank you, Pat, for all the valuable content you provide and thank you so much for answering my question. These are some great actionable items I have to move forward with and I am looking forward to implementing them.  _**Question:** Do you face similar issues in cross-promoting content? What have you found to be successful for you? _
+I ended my question to Pat with this but I just want to say it again. Thank you, Pat, for all the valuable content you provide and thank you so much for answering my question. These are some great actionable items I have to move forward with and I am looking forward to implementing them.  
+
+_**Question:** Do you face similar issues in cross-promoting content? What have you found to be successful for you? _

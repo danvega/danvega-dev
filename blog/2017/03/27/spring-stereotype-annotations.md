@@ -5,7 +5,7 @@ published: true
 date: 2017-03-27T08:00:15-04:00
 tags: ["spring"]
 excerpt: "Spring Stereotype Annotations"
-cover: ./stereotype_annotations.png
+cover: './stereotype_annotations.png'
 ---
 
 When software developers get introduced to the Spring Framework there are some concepts that can be a little confusing. The good news is once we wrap our head around them they can become second nature. Spring has some specialized annotations called Stereotype Annotations. If that concept is new to you don’t worry, we are going to break everything down for you in this article.
@@ -43,11 +43,15 @@ There is a reason that `@Component` was at the top of this list. `@Component` is
 
 Now that we know what classes are available to us I want to [create a project](https://github.com/cfaddict/stereotype-annotation-tutorial) that shows this off. In this project, we are going to select the AOP, Web & Actuator dependencies.
 
-[![](./new_project_1-300x189.png)](https://therealdanvega.com/wp-content/uploads/2017/03/new_project_1.png) [![](./new_project_2-300x189.png)](https://therealdanvega.com/wp-content/uploads/2017/03/new_project_2.png)
+![Spring Stereotype](./new_project_1-300x189.png)
+
+
+![Spring Stereotype](./new_project_2-300x189.png)
+
 
 I am going to keep this demo intentionally simple so we can focus on the issue at hand. No matter how small or large the project is going to be I like to break my classes up into packages. In this case, I am going to create a controller, service and aop package.   I am going to create both a Stereotype Controller and Service in their respective packages but I am not going to annotate these classes just yet.
 
-[![](./stereotype_step1-300x203.png)](https://therealdanvega.com/wp-content/uploads/2017/03/stereotype_step1.png)
+![Spring Stereotype](./stereotype_step1-300x203.png)
 
 If you try and run the project at this point it will run but it won't do much. If you hit the /beans actuator endpoint you won't see the controller or service registered in the application context. If we were to annotate these 2 classes with the component annotation they would now be registered beans. We could do that but this goes back to us defining (stereotyping) what these classes are going to be used for. I am going to update these classes with the @Controller & @Service annotation respectively.
 
@@ -75,7 +79,7 @@ public class StereotypeService {
 
 If I run this project now and pull up the /beans actuator endpoint I will see these classes registered in the application context.
 
-[![](./stereotype_beans-1024x356.png)](https://therealdanvega.com/wp-content/uploads/2017/03/stereotype_beans.png)
+![Spring Stereotype](./stereotype_beans-1024x356.png)
 
 This means that these classes are now available for dependency injection. If we go into our controller we can auto wire the service into our controller using constructor injection. This is new to Spring 4.3 and we no longer need to annotate this with `@Autowired` if there is only a single constructor.
 
