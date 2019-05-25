@@ -122,7 +122,8 @@ public class DataLoader implements CommandLineRunner {
 }
 ```
 
-If we fire up the application and look at the H2 console we will see our new database rows.  [![Command Line Runner Data Loader](./unsplash_console.png)](./unsplash_console.png)
+If we fire up the application and look at the H2 console we will see our new database rows. 
+
 
 ### Advanced Command Line Runner Examples
 
@@ -198,7 +199,7 @@ public class DataLoader implements CommandLineRunner {
 }
 ```
 
-If we look in the console we can see that Another Database Loader ran first. 
+If we look in the console we can see that Another Database Loader ran first.
 
 ![Command Line Runner @Order Annotation](./2017-04-06_22-33-15-1024x240.png)
 
@@ -231,6 +232,6 @@ public class UnsplashApplication {
 
 ## Conclusion
 
-I hope this helped clear up some confusion on what a Command Line Runner is and how to use it. If you're already using a Command Line Runner in your applications I would like to leave you with this question to kick start a discussion.  
+I hope this helped clear up some confusion on what a Command Line Runner is and how to use it. If you're already using a Command Line Runner in your applications I would like to leave you with this question to kick start a discussion. 
 
 _**Question:** What are some other uses for a Command Line Runner?_
