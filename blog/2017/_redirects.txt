@@ -1,0 +1,13 @@
+# update redirects on therealdanvega.com with the following
+
+https://therealdanvega.com/blog/2017/12/08/getting-started-with-java
+https://www.danvega.dev/blog/2017/12/08/getting-started-with-java
+
+https://therealdanvega.com/blog/2017/12/29/my-2017-year-in-review
+https://www.danvega.dev/blog/2017/12/29/my-2017-year-in-review
+
+https://therealdanvega.com/blog/2017/11/08/angular-4-java-developers-course-now-live
+https://www.danvega.dev/blog/2017/11/08/angular-4-java-developers-course-now-live
+
+https://therealdanvega.com/blog/2017/10/04/compile-groovy-java-gradle-build
+https://www.danvega.dev/blog/2017/10/04/compile-groovy-java-gradle-build
