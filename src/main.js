@@ -4,6 +4,8 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Bulma from 'bulma/css/bulma.min.css'
 import InstantSearch from 'vue-instantsearch'
+import * as Sentry from '@sentry/browser';
+import * as Integrations from '@sentry/integrations';
 
 export default function (Vue, {
   router,
@@ -13,6 +15,11 @@ export default function (Vue, {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(InstantSearch);
+
+  Sentry.init({
+    dsn: 'https://506350377fb44e1fbc756457c784e23f@sentry.io/1476538',
+    integrations: [new Integrations.Vue({Vue, attachProps: true})],
+  });
 
   head.link.push({
     rel: 'stylesheet',
