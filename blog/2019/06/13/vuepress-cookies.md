@@ -107,7 +107,7 @@ export default ({
 
 [https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements](https://vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements)
 
-This sounds exactly like what I needed so I quickly setup `.vuepress/enhance.App.js` and added the following code. This allows me to call `Vue.use()` to install the plugin and set a default cookie if one doesn't exist.
+This sounds exactly like what I needed so I quickly setup `.vuepress/enhanceApp.js` and added the following code. This allows me to call `Vue.use()` to install the plugin and set a default cookie if one doesn't exist.
 
 ```js
 import VueCookies from 'vue-cookies'
