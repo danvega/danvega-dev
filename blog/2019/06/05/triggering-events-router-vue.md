@@ -7,6 +7,7 @@ excerpt: 'In this article I will show you how to trigger events from views using
 author: 'Dan Vega'
 tags: ['vue']
 cover: ./triggering-events-router-vue-cover.png
+video: https://youtu.be/JwccQYpsE2Q
 ---
 
 
