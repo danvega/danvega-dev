@@ -3,19 +3,17 @@
     <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
       <small class="about">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
-      <g-image v-if="$page.post.cover" :src="$page.post.cover" class="cover" />
-      <article class="video message" v-if="$page.post.video">
-        <div class="message-body">
-          <i class="fab fa-youtube fa-2x"></i>
-          <span>
-            Watch the video tutorial of this blog post:
-            <a
-              :href="$page.post.video"
-              aria-label="Blog Post Video"
-            >{{$page.post.video}}</a>.
-          </span>
-        </div>
-      </article>
+      <iframe
+        width="1000"
+        height="563"
+        class="video"
+        src="https://www.youtube.com/embed/JwccQYpsE2Q"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        v-if="$page.post.video"
+      ></iframe>
+      <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
       <article v-html="$page.post.content" class="article" />
       <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
     </div>
@@ -130,19 +128,11 @@ a > span.fas.fa-hashtag {
 .shiki {
   margin: 20px 0px !important;
 }
-.video {
-  margin-top: 10px;
-}
-
-.message-body {
-  display: flex;
-  flex-direction: row;
-}
-.message-body span {
-  padding-top: 4px;
-}
-.fa-youtube {
+.article .fa-youtube {
   color: red;
   margin: 0 5px 0 0;
+}
+.article iframe {
+  height: 563px !important;
 }
 </style>
