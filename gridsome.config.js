@@ -23,15 +23,14 @@ const collections = [{
   matchFields: ['slug', 'modified']
 }];
 
+
 module.exports = {
   siteName: "Dan Vega",
   siteUrl: "https://www.danvega.dev",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
 
-  chainWebpack(config, {
-    isServer
-  }) {
+  chainWebpack(config, {isServer}) {
     if (isServer) {
       config.externals(nodeExternals({
         whitelist: [

@@ -22,7 +22,6 @@ export default {
 };
 </script>
 
-
 <static-query>
 query {
   metaData {
@@ -30,6 +29,7 @@ query {
   }
 }
 </static-query>
+
 
 <style>
 :root {

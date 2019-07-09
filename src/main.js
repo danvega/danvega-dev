@@ -1,8 +1,10 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
+// Import main css
+import '~/assets/style/index.scss';
+
 import DefaultLayout from '~/layouts/Default.vue'
-import Bulma from 'bulma/css/bulma.min.css'
 import InstantSearch from 'vue-instantsearch'
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
