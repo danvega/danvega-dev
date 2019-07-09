@@ -1,0 +1,18 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 2rem 1.5rem;
+}
+
+::selection {
+  color: white;
+  background: #3273dc;
+}

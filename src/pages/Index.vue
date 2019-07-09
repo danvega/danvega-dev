@@ -90,6 +90,7 @@ export default {
   grid-gap: 10px;
   margin-bottom: 30px;
 }
+
 .post {
   position: relative;
   overflow: hidden;

@@ -46,27 +46,7 @@ body {
   background-color: var(--var-bg);
   border-top: 7px solid #3273dc;
 }
-@media screen and (max-width: 768px) {
-  .default-layout {
-    margin: 0 20px !important;
-  }
-}
-::selection {
-  color: white;
-  background: #3273dc;
-}
-h1 {
-  margin-top: 20px !important;
-  /* font-size: 1.95rem !important; */
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-}
+
+
 </style>
 
