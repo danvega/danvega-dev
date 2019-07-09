@@ -53,7 +53,7 @@ body {
 }
 ::selection {
   color: white;
-  background: #ff4e46;
+  background: #3273dc;
 }
 h1 {
   margin-top: 20px !important;

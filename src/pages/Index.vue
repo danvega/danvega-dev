@@ -4,8 +4,11 @@
       <div class="columns is-centered">
         <div class="column is-two-thirds">
           <h1 class="title is-2">Hi, I’m Dan Vega.</h1>
-          <p>I'm a Software Developer, Curriculum Developer and life long learner from Cleveland Ohio.</p>
-          <p>I created this site so that I could document the things that I learn or enjoy working with and help you avoid the mistakes that I make. If you enjoy my content please share it with your friends.</p>
+          <p
+            class="intro"
+          >I’m a Husband, Father, Curriculum Developer and maker of things from Cleveland Ohio. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.</p>
+          <!-- <p>I'm a Software Developer, Curriculum Developer and life long learner from Cleveland Ohio.</p> -->
+          <!-- <p>I created this site so that I could document the things that I learn or enjoy working with and help you avoid the mistakes that I make. If you enjoy my content please share it with your friends.</p> -->
         </div>
         <div class="column right-side">
           <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar" />
@@ -70,6 +73,9 @@ export default {
 </script>
 
 <style>
+.intro {
+  line-height: 2.3rem;
+}
 .avatar {
   max-width: 200px;
   text-align: center;
@@ -78,21 +84,11 @@ export default {
 .right-side {
   text-align: center;
 }
-/* #recent-posts .column {
-  text-align: center !important;
-}
-#recent-posts h2 a:link,
-#recent-posts h2 a:visited {
-  color: #2e2e2e;
-}
-img.cover {
-  border-radius: 4px;
-} */
-
 .posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  margin-bottom: 30px;
 }
 .post {
   position: relative;

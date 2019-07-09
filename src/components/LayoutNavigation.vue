@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <g-image src="../assets/img/danvega-avatar-navigation.png" alt="Dan Vega"/>
+        <g-image src="../assets/img/danvega-avatar-navigation.png" alt="Dan Vega" />
       </a>
       <a
         role="button"
@@ -20,11 +20,12 @@
       <div class="navbar-start">
         <g-link class="navbar-item is-uppercase" :to="{ name: 'home' }">Home</g-link>
         <g-link class="navbar-item is-uppercase" :to="{ name: 'blog' }">Blog</g-link>
+        <g-link class="navbar-item is-uppercase" :to="{ name: 'courses' }">Courses</g-link>
         <g-link class="navbar-item is-uppercase" :to="{ name: 'speaking' }">Speaking</g-link>
         <g-link class="navbar-item is-uppercase" :to="{ name: 'about' }">About</g-link>
       </div>
     </div>
-    <social-links/>
+    <social-links />
   </nav>
 </template>
 
