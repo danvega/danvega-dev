@@ -1,11 +1,11 @@
 <template>
-  <div class="layout">
-    <div class="default-layout columns is-centered">
-      <div class="column is-half">
-        <layout-navigation></layout-navigation>
+  <div class="default-layout">
+    <layout-navigation></layout-navigation>
+    <section class="section">
+      <div class="container">
         <slot />
       </div>
-    </div>
+    </section>
     <layout-footer />
   </div>
 </template>

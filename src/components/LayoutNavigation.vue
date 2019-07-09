@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
         <g-image src="../assets/img/danvega-avatar-navigation.png" alt="Dan Vega" />
@@ -37,10 +37,6 @@ export default {
   components: {
     SocialLinks
   },
-  data() {
-    return {};
-  },
-  methods: {},
   mounted() {
     const navbarBurgers = document.querySelectorAll(".navbar-burger");
     navbarBurgers.forEach(menu => {
