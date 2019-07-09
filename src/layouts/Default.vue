@@ -46,7 +46,5 @@ body {
   background-color: var(--var-bg);
   border-top: 7px solid #3273dc;
 }
-
-
 </style>
 
