@@ -2,8 +2,8 @@
   <div class="default-layout columns is-centered">
     <div class="column is-half">
       <layout-navigation></layout-navigation>
-      <slot/>
-      <layout-footer/>
+      <slot />
+      <layout-footer />
     </div>
   </div>
 </template>
@@ -42,6 +42,7 @@ body {
   font-size: 16px;
   color: var(--var-text-color);
   background-color: var(--var-bg);
+  border-top: 7px solid #3273dc;
 }
 @media screen and (max-width: 768px) {
   .default-layout {
