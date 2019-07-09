@@ -25,11 +25,17 @@ export default {
         { name: "linkedin", href: "https://www.linkedin.com/in/danvega/" }
       ]
     };
-  },
-  computed: {
-    shuffle() {
-      return this.accounts.sort(() => 0.5 - Math.random());
-    }
   }
 };
 </script>
+
+<style scoped>
+.navbar-item {
+  color: white;
+}
+.navbar-item:hover {
+  color: rgb(235, 235, 235);
+  background-color: #3273dc;
+}
+</style>
+
