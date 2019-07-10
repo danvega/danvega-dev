@@ -25,17 +25,17 @@
         <g-link class="navbar-item is-uppercase" :to="{ name: 'about' }">About</g-link>
       </div>
     </div>
-    <social-links />
+    <search-component/>
   </nav>
 </template>
 
 <script>
-import SocialLinks from "@/components/SocialLinks";
+import SearchComponent from "@/components/SearchComponent";
 
 export default {
   name: "LayoutNavigation",
   components: {
-    SocialLinks
+    SearchComponent
   },
   mounted() {
     const navbarBurgers = document.querySelectorAll(".navbar-burger");
