@@ -41,7 +41,7 @@
             :class="{ 'bg-blue-100': index === highlightedIndex }"
           >
             {{ post.item.title }}
-            <span class="block font-normal text-sm my-1">{{ post.item.description }}</span>
+            <span class="description">{{ post.item.excerpt }}</span>
           </a>
 
           <!-- <div v-if="searchResults.length === 0" class="font-normal w-full border-b cursor-pointer p-4">
@@ -77,12 +77,12 @@ export default {
         distance: 500,
         maxPatternLength: 32,
         minMatchCharLength: 1,
-        keys: ['title', 'summary']
+        keys: ['title', 'excerpt']
       }
     }
   },
   created() {
-    axios.get('/posts.json')
+    axios.get('/search.json')
       .then(response => {
         this.posts = response.data
       })
@@ -133,8 +133,9 @@ export default {
 
 <style scoped>
 .search {
-  margin-top: 10px;
-  width: 350px;
+  margin:0px;
+  padding:0px;
+  width: 350px; /* could expand to 100% or something larger */
   position: relative;
 }
 .close {
@@ -154,10 +155,11 @@ export default {
   right: 0;
   width: 350px;
   overflow: hidden;
+  overflow-y: auto;
   z-index: 10;
   background: white;
-  border: 1px solid gray;
-  margin: 10px 0px 5px 0;
+  margin:0px;
+  padding:0px;
 }
 .results {
   display:flex;
@@ -169,6 +171,11 @@ export default {
   cursor: pointer;
   padding: 8px;
 
+}
+.description {
+  /* block font-normal text-sm my-1 */
+  display: block;
+  margin: 3px;
 }
 .fade-enter-active, .fade-leave-active {
   transition: opacity .2s;
