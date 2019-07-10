@@ -8,7 +8,6 @@
           href="https://twitter.com/therealdanvega"
         >Twitter</a>.
       </p>
-      <blog-post-search/>
       <div class="articles">
         <div v-for="post in $page.posts.edges" :key="post.node.id" class="article content">
           <h2 class="title is-4">

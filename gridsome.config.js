@@ -4,46 +4,11 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const nodeExternals = require('webpack-node-externals')
-
-const collections = [{
-  contentTypeName: 'Post',
-  indexName: 'blog_posts',
-  itemFormatter: (item) => {
-    return {
-      objectID: item.id,
-      slug: item.slug,
-      title: item.title,
-      date: String(item.date),
-      tags: item.tags,
-      modified: item.modified ? String(item.modified) : String(item.date),
-      excerpt: item.excerpt
-    }
-  },
-  matchFields: ['slug', 'modified']
-}];
-
-
 module.exports = {
   siteName: "Dan Vega",
   siteUrl: "https://www.danvega.dev",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
-
-  chainWebpack(config, {isServer}) {
-    if (isServer) {
-      config.externals(nodeExternals({
-        whitelist: [
-          /\.css$/,
-          /\.sass$/,
-          /\?vue&type=style/,
-          /vue-instantsearch/,
-          /instantsearch.js/
-        ]
-      }))
-    }
-  },
-
   plugins: [{
       use: '@gridsome/source-filesystem',
       options: {
@@ -114,17 +79,7 @@ module.exports = {
       options: {
         id: 'UA-133826656-1'
       }
-    },
-    {
-      use: `gridsome-plugin-algolia`,
-      options: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_API_KEY,
-        collections,
-        chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true, // default: false
-      },
-    },
+    }
   ]
 }
 

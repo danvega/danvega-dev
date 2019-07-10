@@ -5,7 +5,6 @@
 import '~/assets/style/index.scss';
 
 import DefaultLayout from '~/layouts/Default.vue'
-import InstantSearch from 'vue-instantsearch'
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
 import VueFuse from 'vue-fuse'
@@ -18,7 +17,6 @@ export default function (Vue, {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(VueFuse)
-  Vue.use(InstantSearch);
 
   Sentry.init({
     dsn: 'https://506350377fb44e1fbc756457c784e23f@sentry.io/1476538',
