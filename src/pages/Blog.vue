@@ -59,12 +59,10 @@ query Blog ($page: Int) {
 
 <script>
 import BulmaPagination from "@/components/BulmaPagination";
-import BlogPostSearch from "@/components/BlogPostSearch";
 
 export default {
   components: {
     BulmaPagination,
-    BlogPostSearch
   }
 };
 </script>
