@@ -2,7 +2,7 @@
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <g-image src="../assets/img/danvega-avatar-navigation.png" alt="Dan Vega" />
+        <img src="../assets/img/danvega_dev_logo.png" alt="Dan Vega's Logo" />
       </a>
       <a
         role="button"
@@ -51,11 +51,15 @@ export default {
 </script>
 
 <style>
-.brand {
+/* .brand {
   margin-left: 5px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+} */
+
+.navbar-brand a.navbar-item {
+  margin-left: 0px !important;
 }
 
 .navbar-item {
