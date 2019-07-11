@@ -206,21 +206,24 @@ export default {
 #convertkit {
   margin: 0px;
 }
-.formkit-field {
-  webkit-flex: 1 0 40%;
-  flex: 1 0 40%;
-}
-.formkit-submit {
-  margin-left: -10px !important;
-}
-.formkit-form[data-uid="e6035d0111"] .formkit-field {
-  -webkit-flex: 1 0 40% !important;
-  -ms-flex: 1 0 40% !important;
-  flex: 1 0 40% !important;
-}
-.formkit-form[data-uid="e6035d0111"] .formkit-submit {
-  -webkit-flex: 1 0 20% !important;
-  -ms-flex: 1 0 20% !important;
-  flex: 1 0 20% !important;
+
+@media screen and (min-width: 767px) {
+  .formkit-field {
+    webkit-flex: 1 0 40%;
+    flex: 1 0 40%;
+  }
+  .formkit-submit {
+    margin-left: -10px !important;
+  }
+  .formkit-form[data-uid="e6035d0111"] .formkit-field {
+    -webkit-flex: 1 0 40% !important;
+    -ms-flex: 1 0 40% !important;
+    flex: 1 0 40% !important;
+  }
+  .formkit-form[data-uid="e6035d0111"] .formkit-submit {
+    -webkit-flex: 1 0 20% !important;
+    -ms-flex: 1 0 20% !important;
+    flex: 1 0 20% !important;
+  }
 }
 </style>
