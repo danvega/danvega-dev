@@ -25,7 +25,7 @@
         <g-link class="navbar-item is-uppercase" :to="{ name: 'about' }">About</g-link>
       </div>
     </div>
-    <search-component/>
+    <search-component />
   </nav>
 </template>
 
@@ -60,5 +60,10 @@ export default {
 
 .navbar-item {
   font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+a.navbar-item:hover {
+  background-color: white;
+  color: #3273dc;
 }
 </style>
