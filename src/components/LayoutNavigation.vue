@@ -20,7 +20,7 @@
       <div class="navbar-start">
         <g-link class="navbar-item is-uppercase" :to="{ name: 'home' }">Home</g-link>
         <g-link class="navbar-item is-uppercase" :to="{ name: 'blog' }">Blog</g-link>
-        <g-link class="navbar-item is-uppercase" :to="{ name: 'courses' }">Courses</g-link>
+        <!-- <g-link class="navbar-item is-uppercase" :to="{ name: 'courses' }">Courses</g-link> -->
         <g-link class="navbar-item is-uppercase" :to="{ name: 'speaking' }">Speaking</g-link>
         <g-link class="navbar-item is-uppercase" :to="{ name: 'about' }">About</g-link>
       </div>
