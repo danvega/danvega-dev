@@ -199,6 +199,7 @@ export default {
     display: none;
   }
 }
+
 /* HOME PAGE SUBSCRIBE */
 .subscribe {
   font-family: "Permanent Marker", cursive;
@@ -206,24 +207,24 @@ export default {
 #convertkit {
   margin: 0px;
 }
-
 @media screen and (min-width: 767px) {
+  .formkit-form[data-uid="e6035d0111"] .formkit-fields {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: nowrap !important;
+      margin: 0 auto;
+  }
+
+  .formkit-form[data-uid="e6035d0111"] .formkit-field, .formkit-form[data-uid="e6035d0111"] .formkit-submit {
+      margin: 0 0 15px 0;
+      -webkit-flex: none !important;
+      -ms-flex: none !important;
+      flex: none !important;
+  }
   .formkit-field {
-    webkit-flex: 1 0 40%;
-    flex: 1 0 40%;
-  }
-  .formkit-submit {
-    margin-left: -10px !important;
-  }
-  .formkit-form[data-uid="e6035d0111"] .formkit-field {
-    -webkit-flex: 1 0 40% !important;
-    -ms-flex: 1 0 40% !important;
-    flex: 1 0 40% !important;
-  }
-  .formkit-form[data-uid="e6035d0111"] .formkit-submit {
-    -webkit-flex: 1 0 20% !important;
-    -ms-flex: 1 0 20% !important;
-    flex: 1 0 20% !important;
+    width: 40% !important;
   }
 }
 </style>
