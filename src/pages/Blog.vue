@@ -62,7 +62,7 @@ import BulmaPagination from "@/components/BulmaPagination";
 
 export default {
   components: {
-    BulmaPagination,
+    BulmaPagination
   }
 };
 </script>
@@ -76,6 +76,6 @@ export default {
 }
 .article h2 a:link,
 .article h2 a:visited {
-  color: #ff4e46;
+  color: #3273dc;
 }
 </style>
