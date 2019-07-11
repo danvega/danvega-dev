@@ -88,7 +88,7 @@ export default {
   list-style-type: none;
 }
 .is-current {
-  background-color: #ff4e46 !important;
-  border-color: #ff4e46 !important;
+  background-color: #3273dc !important;
+  border-color: #3273dc !important;
 }
 </style>
