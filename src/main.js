@@ -20,7 +20,10 @@ export default function (Vue, {
 
   Sentry.init({
     dsn: 'https://506350377fb44e1fbc756457c784e23f@sentry.io/1476538',
-    integrations: [new Integrations.Vue({Vue, attachProps: true})],
+    integrations: [new Integrations.Vue({
+      Vue,
+      attachProps: true
+    })],
   });
 
   head.link.push({
@@ -30,7 +33,12 @@ export default function (Vue, {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Oswald'
+    href: 'https://fonts.googleapis.com/css?family=Oswald&display=swap'
+  })
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap'
   })
 
 }

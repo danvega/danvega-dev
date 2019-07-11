@@ -9,6 +9,9 @@
           >I’m a Husband, Father, Curriculum Developer and maker of things from Cleveland Ohio. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.</p>
           <!-- <p>I'm a Software Developer, Curriculum Developer and life long learner from Cleveland Ohio.</p> -->
           <!-- <p>I created this site so that I could document the things that I learn or enjoy working with and help you avoid the mistakes that I make. If you enjoy my content please share it with your friends.</p> -->
+
+          <p class="subscribe">Subscribe to get my weekly newsletter and latest articles.</p>
+          <convertkit uid="e6035d0111" script="https://f.convertkit.com/e6035d0111/99c16f05bd.js" />
         </div>
         <div class="column right-side">
           <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar" />
@@ -49,7 +52,12 @@ query Posts {
 </page-query>
 
 <script>
+import convertkit from "@/components/ConvertKit";
+
 export default {
+  components: {
+    convertkit
+  },
   metaInfo: {
     title: "Welcome to my website",
     meta: [
@@ -85,10 +93,8 @@ export default {
   text-align: center;
 }
 
-
 /* We only want our complex grid layout when we are on larger screens */
-@media screen and (min-width: 769px){
-
+@media screen and (min-width: 769px) {
   .posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -183,7 +189,6 @@ export default {
   .fadeIn-bottom {
     top: 80%;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -194,5 +199,28 @@ export default {
     display: none;
   }
 }
-
+/* HOME PAGE SUBSCRIBE */
+.subscribe {
+  font-family: "Permanent Marker", cursive;
+}
+#convertkit {
+  margin: 0px;
+}
+.formkit-field {
+  webkit-flex: 1 0 40%;
+  flex: 1 0 40%;
+}
+.formkit-submit {
+  margin-left: -10px !important;
+}
+.formkit-form[data-uid="e6035d0111"] .formkit-field {
+  -webkit-flex: 1 0 40% !important;
+  -ms-flex: 1 0 40% !important;
+  flex: 1 0 40% !important;
+}
+.formkit-form[data-uid="e6035d0111"] .formkit-submit {
+  -webkit-flex: 1 0 20% !important;
+  -ms-flex: 1 0 20% !important;
+  flex: 1 0 20% !important;
+}
 </style>
