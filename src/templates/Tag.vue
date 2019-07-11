@@ -53,10 +53,10 @@ query Tag($id: String!) {
 }
 .article h2 a:link,
 .article h2 a:visited {
-  color: #ff4e46;
+  color: #3273dc;
 }
 .tag-title {
-  color: #ff4e46;
+  color: #3273dc;
   display: inline;
 }
 </style>
