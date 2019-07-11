@@ -49,11 +49,11 @@ module.exports = {
         feedItemOptions: node => ({
           title: node.title,
           description: node.excerpt,
-          url: getPostURL(node.fields.date, node.slug),
-          author: node.fields.author,
-          date: node.fields.date,
+          url: getPostURL(node.date, node.slug),
+          author: node.author,
+          date: node.date,
           custom_elements: [{
-            published: node.fields.date.toString(),
+            published: node.date.toString(),
           }, ]
         }),
         output: {
