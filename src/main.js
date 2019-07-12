@@ -24,7 +24,7 @@ export default function (Vue, {
       Vue,
       attachProps: true
     })],
-  });
+  })
 
   head.link.push({
     rel: 'stylesheet',
@@ -33,12 +33,7 @@ export default function (Vue, {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Oswald&display=swap'
-  })
-
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap'
+    href: 'https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker&display=swap'
   })
 
 }
