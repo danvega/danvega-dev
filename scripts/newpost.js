@@ -14,25 +14,33 @@ const success = chalk.bold.green.inverse;
   if (args.length < 3) {
     const {
       title,
+      manualSlug,
       excerpt,
       tags
-    } = await inquirer.prompt([{
+    } = await inquirer.prompt([
+      {
         type: 'input',
         name: 'title',
         message: 'Post Title:',
       },
       {
         type: 'input',
+        name: 'manualSlug',
+        message: 'Slug (Leave blank to generate)'
+      },
+      {
+        type: 'input',
         name: 'excerpt',
         message: 'Post Excerpt:'
-      }, {
+      },
+      {
         type: 'input',
         name: 'tags',
         message: 'Tags (comma separated):'
       }
     ])
 
-    const slug = slugify(title)
+    const slug = manualSlug === '' ? slugify(title).toLowerCase() : manualSlug.toLowerCase()
     const createdOn = new Date()
     const year = createdOn.getFullYear()
     const month = `${createdOn.getMonth() + 1 < 10 ? "0" : ""}${createdOn.getMonth() + 1}`
