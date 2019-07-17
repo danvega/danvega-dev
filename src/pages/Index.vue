@@ -223,7 +223,7 @@ export default {
       -ms-flex: none !important;
       flex: none !important;
   }
-  .formkit-field {
+  .formkit-form[data-uid="e6035d0111"] .formkit-field {
     width: 40% !important;
   }
 }
