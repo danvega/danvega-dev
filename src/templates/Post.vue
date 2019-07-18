@@ -15,9 +15,9 @@
       ></iframe>
       <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
       <article v-html="$page.post.content" class="article" />
+      <bulma-tag :tags="$page.post.tags" />
       <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
     </div>
-    <bulma-tag :tags="$page.post.tags" />
   </Layout>
 </template>
 
@@ -65,12 +65,18 @@ export default {
         { name: "twitter:site", content: "@therealdanvega" },
         { name: "twitter:image", content: this.getCoverImage },
         { name: "twitter:creator", content: "@therealdanvega" },
-        
+
         { property: "og:type", content: "article" },
         { property: "og:title", content: this.$page.post.title },
         { property: "og:description", content: this.$page.post.excerpt },
-        { property: "og:url", content: `${this.getBaseUrl}${this.$page.post.path}` },
-        { property: "article:published_time", content: moment(this.$page.post.date).format('MM-DD-YYYY') },
+        {
+          property: "og:url",
+          content: `${this.getBaseUrl}${this.$page.post.path}`
+        },
+        {
+          property: "article:published_time",
+          content: moment(this.$page.post.date).format("MM-DD-YYYY")
+        },
         { property: "og:updated_time", content: this.$page.post.date },
         { property: "og:image", content: this.getCoverImage },
         { property: "og:image:secure_url", content: this.getCoverImage }

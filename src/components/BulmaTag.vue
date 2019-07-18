@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style>
+.tags {
+  margin-top: 20px;
+}
 .tags a {
   margin-left: 5px;
 }
