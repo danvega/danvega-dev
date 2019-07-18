@@ -3,7 +3,7 @@ slug: spring-boot-defining-requestmapping-handler-methods
 title: "Spring Boot Defining @RequestMapping handler methods"
 published: true
 date: 2017-06-14T08:36:35-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Boot Defining @RequestMapping handler methods"
 cover: './pexels-photo-374074-760x506.jpeg'
 ---
@@ -98,6 +98,6 @@ If you want to see all of the available [@RequestMapping handler methods check o
 
 ## Conclusion
 
-Spring does a lot of things behind the scenes for us and I completely understand how this can be confusing at times. You can usually find the answers in the documentation but at the same time, we don't always know what to look for. I can assure you I don't remember all of the method arguments and that is why I have that link above bookmarked.  
+Spring does a lot of things behind the scenes for us and I completely understand how this can be confusing at times. You can usually find the answers in the documentation but at the same time, we don't always know what to look for. I can assure you I don't remember all of the method arguments and that is why I have that link above bookmarked. 
 
 _**Question:** Is there anything that happens behind the scenes in Spring you don't quite understand?_

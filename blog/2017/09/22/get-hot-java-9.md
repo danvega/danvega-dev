@@ -3,7 +3,7 @@ slug: get-hot-java-9
 title: "Get it while it's hot. Java 9 is out!"
 published: true
 date: 2017-09-22T08:21:00-04:00
-tags: ['Java']
+tags: ['java']
 excerpt: "Get it while it's hot. Java 9 is out!"
 cover: ./2017-09-22_07-39-27-760x504.png
 ---
@@ -14,7 +14,7 @@ After a few delays, [Java 9 has finally been released](http://www.oracle.com/tec
 
 ### Jigsaw (Java Modularity) 
 
-Remember when I said that there were a few delays in shipping Java 9? Well, this was mainly the feature that caused it. There was a lot of criticism about this new feature and I still don't think everyone is on the same page.  Project Jigsaw aims to design and implement a standard module system for the Java SE Platform and to apply that system to the Platform itself, and to the JDK. Its primary goals are to make implementations of the Platform more easily scalable down to small devices, improve security and maintainability, enable improved application performance, and provide developers with better tools for programming in the large. 
+Remember when I said that there were a few delays in shipping Java 9? Well, this was mainly the feature that caused it. There was a lot of criticism about this new feature and I still don't think everyone is on the same page.  Project Jigsaw aims to design and implement a standard module system for the Java SE Platform and to apply that system to the Platform itself, and to the JDK. Its primary goals are to make implementations of the Platform more easily scalable down to small devices, improve security and maintainability, enable improved application performance, and provide developers with better tools for programming in the large.
 
 ![Java 9: Project Jigsaw](./pexels-photo-218443-1-1024x682.jpeg)
 
@@ -57,12 +57,12 @@ These were just some of the highlights of what was released in Java 9. If you're
 
 ## Download Java 9
 
-There are so many new features and I will do my best to highlight them here on the blog. Java 9 is now publicly available and can be [downloaded from here](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html).  
+There are so many new features and I will do my best to highlight them here on the blog. Java 9 is now publicly available and can be [downloaded from here](http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html). 
 
 ![Download Java 9](./luis-llerena-14779-1024x683.jpg)
 
 ## Conclusion
 
-Java 9 is a really exciting release and I am excited to see what others think of it.  
+Java 9 is a really exciting release and I am excited to see what others think of it. 
 
 _**Question:** What is your favorite new feature in Java 9?_

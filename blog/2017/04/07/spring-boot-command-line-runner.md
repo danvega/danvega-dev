@@ -3,7 +3,7 @@ slug: spring-boot-command-line-runner
 title: "Spring Boot Command Line Runner"
 published: true
 date: 2017-04-07T08:00:43-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Boot Command Line Runner"
 cover: './CommandLineRunner-760x428.png'
 ---

@@ -3,7 +3,7 @@ slug: using-jhipster-development-mode
 title: "Using JHipster in Development mode"
 published: true
 date: 2017-08-28T09:30:30-04:00
-tags: ['Angular', 'Spring']
+tags: ['Angular', 'spring']
 excerpt: "Using JHipster in Development mode"
 cover: './wallpaper-001-2560x1440-760x428.png'
 ---
@@ -12,17 +12,17 @@ I have been working really hard lately to wrap up [my latest course on JHipster]
 
 ## JHipster in Development
 
-I was working on this course and I quickly realized that unless you were familiar with this stack it might be a little confusing to know what to do in development. It is important to remember that we are really working with 2 different applications, Angular & Spring Boot, that work together. When you first start working with JHipster your first thought is to simply run the Spring boot app. 
+I was working on this course and I quickly realized that unless you were familiar with this stack it might be a little confusing to know what to do in development. It is important to remember that we are really working with 2 different applications, Angular & Spring Boot, that work together. When you first start working with JHipster your first thought is to simply run the Spring boot app.
 
 ![JHipster in Development](./2017-08-28_08-49-35-1024x776.png)
 
 ### Angular Development
 
-At this point, you might try to go into your webapp (Angular) directory, locate the home component and begin making changes to the application.  
+At this point, you might try to go into your webapp (Angular) directory, locate the home component and begin making changes to the application. 
 
 ![JHipster in Development](./2017-08-28_08-53-38.png)
 
-The problem with this is that any changes you make won't be seen in the browser, even if you reload the page. JHipster gives us a way to work efficiently in development mode.  If you have worked on Angular applications before you might have spun up a server using "npm start" that will watch for any changes and automatically refresh the browser window. JHipster gives us something similar by running the "yarn start" command and you can run it right in your IDE.  
+The problem with this is that any changes you make won't be seen in the browser, even if you reload the page. JHipster gives us a way to work efficiently in development mode.  If you have worked on Angular applications before you might have spun up a server using "npm start" that will watch for any changes and automatically refresh the browser window. JHipster gives us something similar by running the "yarn start" command and you can run it right in your IDE. 
 
 ![JHipster in Development](./2017-08-28_08-57-46-1024x280.png)
 
@@ -44,6 +44,6 @@ https://www.youtube.com/watch?v=SVUB3Yhv3sQ&t=114s  
 
 ## Conclusion
 
-I hope this short tutorial shed some light on how to work with JHipster in development.  
+I hope this short tutorial shed some light on how to work with JHipster in development. 
 
 _**Question:** What problems are you facing in your JHipster projects? _

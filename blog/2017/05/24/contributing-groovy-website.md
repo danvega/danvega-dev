@@ -3,7 +3,7 @@ slug: contributing-groovy-website
 title: "How you can contribute to the Groovy Website"
 published: true
 date: 2017-05-24T08:12:01-04:00
-tags: ['Groovy']
+tags: ['groovy']
 excerpt: "How you can contribute to the Groovy Website"
 cover: './2017-05-23_19-50-54-760x462.png'
 ---
@@ -16,7 +16,7 @@ The website is [open source and on Github](https://github.com/groovy/groovy-webs
 
 ## Fork & Pull Request
 
-I am not an official committer to the project so the first thing we need to do is to fork the repo. To do this we are going to head over the repo for the [Groovy Website](https://github.com/groovy/groovy-website) and fork it. This means that we are going to make changes on our GitHub account and then send them a pull request. You can see my commits below along with the project lead [Guillaume Laforge](http://glaforge.appspot.com/) merging them into the master branch.  
+I am not an official committer to the project so the first thing we need to do is to fork the repo. To do this we are going to head over the repo for the [Groovy Website](https://github.com/groovy/groovy-website) and fork it. This means that we are going to make changes on our GitHub account and then send them a pull request. You can see my commits below along with the project lead [Guillaume Laforge](http://glaforge.appspot.com/) merging them into the master branch. 
 
 ![Groovy](./2017-05-23_21-47-34.png)
 
@@ -158,7 +158,7 @@ https://www.youtube.com/watch?v=BXw-YKxr94w
 
 ## The Complete Apache Groovy Developer Course
 
-Are you looking to learn a new language? Learning a new language helps expand your skill set as a developer and make you more marketable. If you aren't learning a new language because it's not the one you use at work I think you're missing out on the benefits. I often found that seeing how other languages solve problems makes me a better developer with the languages I use on a day to day basis. I am here to tell you all about an awesome dynamic language called [Apache Groovy](http://www.groovy-lang.org). 
+Are you looking to learn a new language? Learning a new language helps expand your skill set as a developer and make you more marketable. If you aren't learning a new language because it's not the one you use at work I think you're missing out on the benefits. I often found that seeing how other languages solve problems makes me a better developer with the languages I use on a day to day basis. I am here to tell you all about an awesome dynamic language called [Apache Groovy](http://www.groovy-lang.org).
 
 ![The Complete Apache Groovy Developer Course](./756634_ad7b_3.jpg)
 
@@ -167,6 +167,6 @@ Are you looking to learn a new language? Learning a new language helps expand yo
 
 ## Conclusion
 
-I said this earlier in the article and I would like to repeat it again. You don't always have to contribute code to the core of a project to help an open source project out. I have contributed documentation, static websites, plugins and even just offering up suggestions on the mailing lists. There are tons of ways to get involved so If you really enjoy using an open source project contact them and see how you can get involved. 
+I said this earlier in the article and I would like to repeat it again. You don't always have to contribute code to the core of a project to help an open source project out. I have contributed documentation, static websites, plugins and even just offering up suggestions on the mailing lists. There are tons of ways to get involved so If you really enjoy using an open source project contact them and see how you can get involved.
 
 _**Question:** What are ways that you like to contribute to a project?_

@@ -3,7 +3,7 @@ slug: spring-boot-moving-tomcat-jetty
 title: "Moving from Tomcat to Jetty in your Spring Boot Application"
 published: true
 date: 2017-05-10T09:00:06-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Moving from Tomcat to Jetty in your Spring Boot Application"
 cover: './emile-perron-190221-760x428.jpg'
 ---
@@ -16,7 +16,7 @@ I love getting questions from students because it gives me a great idea of the r
 
 ## Replacing Tomcat with Jetty
 
-If we create a new Spring Boot project and select web as a dependency the default servlet container is going to be Tomcat.  
+If we create a new Spring Boot project and select web as a dependency the default servlet container is going to be Tomcat. 
 
 ![Tomcat with Jetty](./2017-05-10_08-32-05-1024x645.png)
 
@@ -83,6 +83,6 @@ If you go ahead and run the application you will see in the console that we are 
 
 ## Conclusion
 
-I hope this really helps drive home a point about Spring Boot. There are conventions and defaults that help us quickly and easily stand up a new Spring Application. Just because this is the default though doesn't mean that we can change something to fit our needs.  
+I hope this really helps drive home a point about Spring Boot. There are conventions and defaults that help us quickly and easily stand up a new Spring Application. Just because this is the default though doesn't mean that we can change something to fit our needs. 
 
 _**Question:** What problems are you facing in your Spring Applications? _

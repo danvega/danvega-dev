@@ -3,7 +3,7 @@ slug: spring-boot-2-0-roadmap
 title: "Spring Boot 2.0 Roadmap"
 published: true
 date: 2017-04-24T08:00:05-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Boot 2.0 Roadmap"
 cover: './annie-spratt-161511-760x1140.jpg'
 ---
@@ -12,11 +12,11 @@ I am a huge fan of open source projects but I love a well-maintained project ev
 
 ## Spring Boot 2.0 Milestones
 
-The current date is April 24, 2017, just so you understand my perspective looking at this roadmap. Obviously, if you look at it months from now it might look a little different so please keep that in mind. If you head over to the [Github project page](https://github.com/spring-projects/spring-boot/) you will have access to all of the source code as well as the readme to get you started.  If you click on the issues tab though and then [click on milestones](https://github.com/spring-projects/spring-boot/milestones) you will be looking at something that looks like this.  
+The current date is April 24, 2017, just so you understand my perspective looking at this roadmap. Obviously, if you look at it months from now it might look a little different so please keep that in mind. If you head over to the [Github project page](https://github.com/spring-projects/spring-boot/) you will have access to all of the source code as well as the readme to get you started.  If you click on the issues tab though and then [click on milestones](https://github.com/spring-projects/spring-boot/milestones) you will be looking at something that looks like this. 
 
 ![Spring Boot](./2017-04-21_17-00-48-300x276.png)
 
-What you are looking at here is a list of milestone releases. Clicking on the release, in this case, 2.0.0.M1 you will be shown a list of all that tasks that belong to that milestone.  
+What you are looking at here is a list of milestone releases. Clicking on the release, in this case, 2.0.0.M1 you will be shown a list of all that tasks that belong to that milestone. 
 
 ![Spring Boot Milestones](./2017-04-21_17-03-39-300x269.png)
 
@@ -42,7 +42,7 @@ Spring Boot 2.0 is going to require that you run Java 8. This means that Java 6 
 
 ### New Gradle Plugin
 
-Spring Boot’s Gradle plugin no longer automatically applies the dependency management plugin. Instead, Spring Boot’s plugin now reacts to the dependency management plugin being applied by importing the correct version of the spring-boot-dependencies bom. This gives you more control over how and when dependency management is configured. 
+Spring Boot’s Gradle plugin no longer automatically applies the dependency management plugin. Instead, Spring Boot’s plugin now reacts to the dependency management plugin being applied by importing the correct version of the spring-boot-dependencies bom. This gives you more control over how and when dependency management is configured.
 
 [https://spring.io/blog/2017/04/05/spring-boot-s-new-gradle-plugin](https://spring.io/blog/2017/04/05/spring-boot-s-new-gradle-plugin)
 
@@ -80,14 +80,14 @@ There is plenty more to come and I will try and keep this article up to date as 
 
 ## Spring 2.0 Course
 
-If you haven't already had a chance to check out my [Spring Boot Introduction course](http://courses.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. My announcement today is that a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne.  
+If you haven't already had a chance to check out my [Spring Boot Introduction course](http://courses.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. My announcement today is that a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne. 
 
-![Spring 2.0 Course](./627032_1fbe_7.jpg) 
+![Spring 2.0 Course](./627032_1fbe_7.jpg)
 
 This is not just going to be a repeat of the previous course with a few new features. First off, I am going to create 2 free courses for setting up your development environment on both Windows 10 and Mac OS. Next, I will incorporate the feedback I have received from my current students. My current course is the best selling course on one platform and I know there is tons of room for improvement.  These courses will allow me to extract that portion of the course that some find necessary and others find boring. These courses will be bundled for free into the Spring Boot 2.0 course. I am working on the curriculum now but if you would like to receive updates check out my [Spring Boot 2.0 Course Page](https://danvega.dev/spring-boot-2-0) and signup for updates. Anyone on this list will be the first to find out when it's released and will receive a discount. 
 
 ## Conclusion
 
-A lot of exciting things happening around Spring Boot 2.0. You have the release itself, The Spring One Conference and now a course to along with it. Invest in yourself and some pretty amazing things can happen. Take care friends!  
+A lot of exciting things happening around Spring Boot 2.0. You have the release itself, The Spring One Conference and now a course to along with it. Invest in yourself and some pretty amazing things can happen. Take care friends! 
 
 _**Question:** What are you looking forward to in Spring Framework 5.0 & Spring Boot 2.0?_

@@ -3,7 +3,7 @@ slug: 3-youtube-channels-java-developers
 title: "3 YouTube Channels for Java Developers"
 published: true
 date: 2017-08-04T13:14:00-04:00
-tags: ['Java', 'Spring']
+tags: ['java', 'spring']
 excerpt: "3 YouTube Channels for Java Developers"
 cover: './pexels-photo-760x506.jpg'
 ---
@@ -14,25 +14,25 @@ I think if I was given the choice to only keep a single website around I would h
 
 ### Java
 
-I don't think I could start this list off without including Java. This is a great channel run by Oracle and in the past few days, the released nearly 20 videos.  
+I don't think I could start this list off without including Java. This is a great channel run by Oracle and in the past few days, the released nearly 20 videos. 
 
-[https://www.youtube.com/user/java](https://www.youtube.com/user/java) 
+[https://www.youtube.com/user/java](https://www.youtube.com/user/java)
 
 ![Java YouTube Channel](./2017-08-04_13-14-20-1024x169.png)
 
 ### Spring I/O
 
 The Spring/IO channel is a collection of presentations from Spring I/O conferences. They recently added a bunch of presentations from their conference in Barcelona. 
- 
-[https://www.youtube.com/channel/UCLMPXsvSrhNPN3i9h-u8PYg](https://www.youtube.com/channel/UCLMPXsvSrhNPN3i9h-u8PYg)  
+
+[https://www.youtube.com/channel/UCLMPXsvSrhNPN3i9h-u8PYg](https://www.youtube.com/channel/UCLMPXsvSrhNPN3i9h-u8PYg) 
 
 ![Spring I/O YouTube Channel](./2017-08-04_13-17-14-1024x170.png)
 
 ### Devoxx
 
-The Devoxx YouTube channel is a collection of presentations from their conferences. They recently added a bunch of presentations from their conference in Poland.  
+The Devoxx YouTube channel is a collection of presentations from their conferences. They recently added a bunch of presentations from their conference in Poland. 
 
-[https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV\_3vurg](https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV_3vurg) 
+[https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV\_3vurg](https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV_3vurg)
 
 ![Devoxx YouTube Channel](./2017-08-04_13-17-37-1024x170.png)
 

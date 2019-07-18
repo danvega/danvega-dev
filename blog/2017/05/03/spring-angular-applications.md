@@ -3,7 +3,7 @@ slug: spring-angular-applications
 title: "How to start writing Angular & Spring Applications"
 published: true
 date: 2017-05-03T09:00:37-04:00
-tags: ['Angular', 'Spring']
+tags: ['Angular', 'spring']
 excerpt: "How to start writing Angular & Spring Applications"
 cover: './carl-heyerdahl-181868-760x507.jpg'
 ---
@@ -120,6 +120,6 @@ https://www.youtube.com/watch?v=v7X\_ZHdcNvc&t=25s
 
 ## Upcoming Course
 
-I am currently working on a course that teaches you all about Spring Boot & Angular 4 development. We will show you how to get started and what it takes to build these projects from scratch. Then we will walk through an even better way to rapidly develop these applications so you can focus on writing business logic and not boilerplate code.  If you're interested in learning more please head over to the [course page](https://danvega.dev/jhipster) and signup for free.  
+I am currently working on a course that teaches you all about Spring Boot & Angular 4 development. We will show you how to get started and what it takes to build these projects from scratch. Then we will walk through an even better way to rapidly develop these applications so you can focus on writing business logic and not boilerplate code.  If you're interested in learning more please head over to the [course page](https://danvega.dev/jhipster) and signup for free. 
 
 _**Question:** What are your biggest challenges in developing Spring Boot & Angular applications? _

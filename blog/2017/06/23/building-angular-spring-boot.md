@@ -3,7 +3,7 @@ slug: building-angular-spring-boot
 title: "Building your Angular Application for Spring Boot"
 published: true
 date: 2017-06-23T08:00:27-04:00
-tags: ['Angular', 'Spring']
+tags: ['Angular', 'spring']
 excerpt: "Building your Angular Application for Spring Boot"
 cover: './imac-apple-mockup-app-38544-760x505.jpeg'
 ---
@@ -14,7 +14,7 @@ I have been working on a ton of different Angular projects lately and some of th
 
 If you haven't already checked out the tutorial below please check it out. In this tutorial, I walk you through a quick application that uses Angular and Spring Boot in the same project. 
 
-https://www.youtube.com/watch?v=v7X\_ZHdcNvc&t=5s 
+https://www.youtube.com/watch?v=v7X\_ZHdcNvc&t=5s
 
 I had someone that watched this video and reached out to me asking how the build process works. So this is a good time to talk through how the build works if you're working on both applications at once.
 
@@ -45,7 +45,7 @@ What we want to do is build upon that (pun intended) and to do so we are going t
 "postbuild": "npm run deploy"
 ```
 
-With that in place, we need to create a deploy script and have it do something. What we want to do is copy all of the files from the result of the Angular (ng) build process to our /resources/static directory. To do so we need some functionality to copy those files. We could write that ourselves or we could use a package that already exists on npm called [copyfiles](https://www.npmjs.com/package/copyfiles).  
+With that in place, we need to create a deploy script and have it do something. What we want to do is copy all of the files from the result of the Angular (ng) build process to our /resources/static directory. To do so we need some functionality to copy those files. We could write that ourselves or we could use a package that already exists on npm called [copyfiles](https://www.npmjs.com/package/copyfiles). 
 
 ![npm copy files](./2017-06-22_15-50-54.png)
 
@@ -90,7 +90,7 @@ This will perform the following steps
 *   Creates /src/main/resources/static directory 
 *   Copy all the files in the dist/ folder (result of ng build) to the /src/main/resources/static directory
 
-All the files need will now be in the /static folder allowing you to run the Spring Boot Application. 
+All the files need will now be in the /static folder allowing you to run the Spring Boot Application.
 
 ![Adding Angular Dist](./2017-06-22_16-02-14.png)
 
@@ -98,6 +98,6 @@ When you visit http://localhost:8080 the index.html file of the static folder is
 
 ## Conclusion
 
-I just want to give a huge shoutout to [Yakov Fain, the author of Angular 2 Development with TypeScript](http://amzn.to/2tTMa5D). I picked up this little tip from him and can't recommend his book enough. I own that book and LOVE it.  
+I just want to give a huge shoutout to [Yakov Fain, the author of Angular 2 Development with TypeScript](http://amzn.to/2tTMa5D). I picked up this little tip from him and can't recommend his book enough. I own that book and LOVE it. 
 
 _**Question:** Are you facing any issues developing Angular & Spring Boot applications? _

@@ -3,28 +3,28 @@ slug: compile-groovy-java-gradle-build
 title: "How to compile Groovy before Java in a Gradle Build"
 published: true
 date: 2017-10-04T08:32:40-04:00
-tags: ['Groovy']
+tags: ['groovy']
 excerpt: "How to compile Groovy before Java in a Gradle Build"
 cover: ./614px-Groovy-logo.svg_-e1459476180685.png
 ---
 
-I had an interesting problem come up at work last week and I would like to share it with you today. A coworker was having an issue with a Gradle build. Whenever he tried to compile the project it threw an error saying it couldn't find the Groovy class he was trying to call from Java. 
+I had an interesting problem come up at work last week and I would like to share it with you today. A coworker was having an issue with a Gradle build. Whenever he tried to compile the project it threw an error saying it couldn't find the Groovy class he was trying to call from Java.
 
 In this article, we are going to walk through setting up a project that will illustrate this problem. We will then examine what normal behavior is in a Gradle build and how we can make a change to fix this problem that we were facing. 
 
 ## Create a new Gradle Project
 
-The first thing we are going to do is create a new project using Gradle. This is going to give us a standard Gradle & Java project layout.  
+The first thing we are going to do is create a new project using Gradle. This is going to give us a standard Gradle & Java project layout. 
 
-![New Gradle Project](./2017-10-04_07-37-26-300x197.png) 
+![New Gradle Project](./2017-10-04_07-37-26-300x197.png)
 
 ![Gradle Wrapper](./2017-10-04_07-38-08-300x197.png)
 
-The next thing we need to do is add support to our IDE for Groovy. 
+The next thing we need to do is add support to our IDE for Groovy.
 
-![Adding Groovy Support](./2017-10-04_07-43-08-300x263.png) 
+![Adding Groovy Support](./2017-10-04_07-43-08-300x263.png)
 
-With that in place, we are going to add a new groovy folder to our main directory.  
+With that in place, we are going to add a new groovy folder to our main directory. 
 
 ![](./2017-10-04_07-44-38.png)
 
@@ -76,7 +76,7 @@ dependencies {
 }
 ```
 
-We should now be able to run the compileGroovy task from Gradle.  
+We should now be able to run the compileGroovy task from Gradle. 
 
 ![Compile Groovy before Java](./2017-10-04_08-13-49.png)
 

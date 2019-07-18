@@ -3,7 +3,7 @@ slug: deploying-war-application-server-spring-boot
 title: "Deploying a WAR to an application server in Spring Boot"
 published: true
 date: 2017-06-28T09:14:15-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Deploying a WAR to an application server in Spring Boot"
 cover: './pexels-photo-292627-760x506.jpeg'
 ---
@@ -20,7 +20,7 @@ The first thing we need to discuss is what is the difference between a WAR and a
 
 ## Selecting your Package Type
 
-When you create a new project using the Spring Initializr you have the option to select how you want to package your application.  
+When you create a new project using the Spring Initializr you have the option to select how you want to package your application. 
 
 ![Spring Boot Package Type](./2017-06-28_08-26-58-1024x645.png)
 
@@ -118,7 +118,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 }
 ```
 
-In my example, I am using my main application class (WarnotjarApplication.class) as an argument to the sources method. You should end up with the main application class and a class called ServletInitializer.  
+In my example, I am using my main application class (WarnotjarApplication.class) as an argument to the sources method. You should end up with the main application class and a class called ServletInitializer. 
 
 ![WAR not JAR](./2017-06-28_08-53-25.png)
 
@@ -161,6 +161,6 @@ https://youtu.be/92ceKwUZoA0
 
 ## Conclusion
 
-Spring Boot makes it easy for us to package our applications to fit our needs. I hope this tutorial showed how easy it was to convert an existing JAR application over to a WAR.  
+Spring Boot makes it easy for us to package our applications to fit our needs. I hope this tutorial showed how easy it was to convert an existing JAR application over to a WAR. 
 
 _**Question:** What Spring Boot Deployment issues are you facing?_

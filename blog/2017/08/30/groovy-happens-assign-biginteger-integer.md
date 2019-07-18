@@ -3,12 +3,12 @@ slug: groovy-happens-assign-biginteger-integer
 title: "Groovy: What happens when you assign a BigInteger to an Integer"
 published: true
 date: 2017-08-30T07:39:40-04:00
-tags: ['Groovy', 'Java']
+tags: ['groovy', 'java']
 excerpt: "Groovy: What happens when you assign a BigInteger to an Integer"
 cover: './codes-coding.jpg'
 ---
 
-This question came in from a student in my [Apache Groovy Development Course](https://www.danvega.dev/groovy). It was actually quite interesting because it tripped me up at first before I understand what was going on behind the scenes.  
+This question came in from a student in my [Apache Groovy Development Course](https://www.danvega.dev/groovy). It was actually quite interesting because it tripped me up at first before I understand what was going on behind the scenes. 
 
 ![The Complete Apache Groovy Developer Course](./pexels-photo-169573-1024x683.jpeg)
 

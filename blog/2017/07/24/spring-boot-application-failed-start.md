@@ -3,7 +3,7 @@ slug: spring-boot-application-failed-start
 title: "Spring Boot Application Failed To Start"
 published: true
 date: 2017-07-24T09:55:33-04:00
-tags: ['Java', 'Spring']
+tags: ['java', 'spring']
 excerpt: "Spring Boot Application Failed To Start"
 cover: './pexels-photo-205316-760x506.png'
 ---
@@ -46,7 +46,7 @@ Now if you that error message enough times you can quickly recognize it but if y
 
 ## Spring Boot 1.4 Improvement
 
-Spring Boot will now perform analysis of common start-up failures and provide useful diagnostic information rather than simply logging an exception and its stack trace. This is what the same error message looks like in 1.4+.  
+Spring Boot will now perform analysis of common start-up failures and provide useful diagnostic information rather than simply logging an exception and its stack trace. This is what the same error message looks like in 1.4+. 
 
 ![Application Failed to Start](./2017-07-24_09-48-54-1024x345.png)
 
@@ -54,6 +54,6 @@ With this error message, you can clearly see why our application is not starting
 
 ## Conclusion
 
-The Spring Boot team is always listening to feedback to improve the developer experience. If you have issues like this one [please consider submitting an issue request](https://github.com/spring-projects/spring-boot).  
+The Spring Boot team is always listening to feedback to improve the developer experience. If you have issues like this one [please consider submitting an issue request](https://github.com/spring-projects/spring-boot). 
 
 _**Question:** What problems are you facing debugging errors in Spring Boot applications?_

@@ -3,7 +3,7 @@ slug: java-equals
 title: "Java: What is the difference between equals and =="
 published: true
 date: 2017-04-05T08:00:50-04:00
-tags: ['Java']
+tags: ['java']
 excerpt: "Java: What is the difference between equals and =="
 cover: './java_equals-760x428.png'
 ---
@@ -45,7 +45,7 @@ public class Main {
 }
 ```
 
-If you run this code and enter "C" as your answer, the program will print out "You are incorrect".  
+If you run this code and enter "C" as your answer, the program will print out "You are incorrect". 
 
 ![Java Equals Example](./java_equals-1.png)
 
@@ -121,6 +121,6 @@ Now instead of comparing objects, we are simply comparing values. That is why yo
 
 ## Conclusion
 
-Remember when I told you that I made this same mistake at work? There is actually a good reason for this. I was working in a Java program and this gives me some problems from time to time because of my love for the [Groovy Programming language](http://bit.ly/2n5SBn6). I would say I am writing Groovy 90% of the time and because of that, I become used to the syntax. In Groovy we actually overload the "==" operator so that comparison would actually work.  
+Remember when I told you that I made this same mistake at work? There is actually a good reason for this. I was working in a Java program and this gives me some problems from time to time because of my love for the [Groovy Programming language](http://bit.ly/2n5SBn6). I would say I am writing Groovy 90% of the time and because of that, I become used to the syntax. In Groovy we actually overload the "==" operator so that comparison would actually work. 
 
 _**Question:** What are some of the fundamental programming concepts that still trip you up once in awhile?_

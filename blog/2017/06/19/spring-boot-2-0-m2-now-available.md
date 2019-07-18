@@ -3,7 +3,7 @@ slug: spring-boot-2-0-m2-now-available
 title: "Spring Boot 2.0 M2 Now Available"
 published: true
 date: 2017-06-19T08:30:53-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Boot 2.0 M2 Now Available"
 cover: './pexels-photo-92904-760x507.jpeg'
 ---
@@ -12,7 +12,7 @@ A few weeks ago we got our first look at the next major version of Spring Boot. 
 
 ## Spring Boot 2.0 M2
 
-If you want to read the full release notes you can do so [here](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0.0-M2-Release-Notes). This release covers over [90 issues and](https://github.com/spring-projects/spring-boot/milestone/54?closed=1) pull requests. If you want to test out any of the new features you can start a new project using [http://start.spring.io](http://start.spring.io) or by firing up my favorite IDE, IntelliJ.  
+If you want to read the full release notes you can do so [here](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0.0-M2-Release-Notes). This release covers over [90 issues and](https://github.com/spring-projects/spring-boot/milestone/54?closed=1) pull requests. If you want to test out any of the new features you can start a new project using [http://start.spring.io](http://start.spring.io) or by firing up my favorite IDE, IntelliJ. 
 
 ![Spring Boot 2.0 M2](./2017-06-16_21-27-09-1024x645.png)
 
@@ -44,9 +44,9 @@ Spring Boot detects the jOOQ dialect automatically based on the DataSource (simi
 
 ## SPRING 2.0 COURSE
 
-If you haven’t already had a chance to check out my [Spring Boot Introduction course](http://courses.www.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. I am already planning a curriculum for a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne.  
+If you haven’t already had a chance to check out my [Spring Boot Introduction course](http://courses.www.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. I am already planning a curriculum for a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne. 
 
-![Spring Course](627032_1fbe_7.jpg) 
+![Spring Course](627032_1fbe_7.jpg)
 
 This is not just going to be a repeat of the previous course with a few new features. First off, I am going to create 2 free courses for setting up your development environment on both Windows 10 and Mac OS. Next, I will incorporate the feedback I have received from my current students. My current course is the best selling course on one platform and I know there is tons of room for improvement.  These courses will allow me to extract that portion of the course that some find necessary and others find boring. These courses will be bundled for free into the Spring Boot 2.0 course. I am working on the curriculum now but if you would like to receive updates check out my [Spring Boot 2.0 Course Page](https://www.danvega.dev/spring-boot-2-0) and signup for updates. Anyone on this list will be the first to find out when it’s released and will receive a discount. 
 

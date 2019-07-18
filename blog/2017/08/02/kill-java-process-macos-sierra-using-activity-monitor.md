@@ -3,7 +3,7 @@ slug: kill-java-process-macos-sierra-using-activity-monitor
 title: "How to kill Java process on mac OS Sierra using Activity Monitor"
 published: true
 date: 2017-08-02T08:13:38-04:00
-tags: ['Java', 'Spring']
+tags: ['java', 'spring']
 excerpt: "How to kill Java process on mac OS Sierra using Activity Monitor"
 cover: './java.jpg'
 ---
@@ -20,13 +20,13 @@ This problem usually comes up because another process wasn't properly terminated
 
 ![Spring Boot Maven Plugin](./2017-08-02_08-11-41-1024x532.png)
 
-Now if we head into IntelliJ and try to run our application we are going to see an error that looks something like this.  
+Now if we head into IntelliJ and try to run our application we are going to see an error that looks something like this. 
 
 ![Port 8080 is already in use](./2017-08-02_08-17-08-1024x450.png)
 
 ## Activity Monitor FTW
 
-So we know that another process is running but it isn't always as simple as forgetting a terminal window is open and running another app. This can happen when an IDE is closed and the process is correctly terminated.  macOS gives us a nice tool for monitoring process by name and port called Activity Monitor. If you open up Activity Monitor (I just use Spotlight) you could manually look for the processes or use the search bar in the upper right-hand corner. Now you can kill the existing processes and your unwanted process will be gone. 
+So we know that another process is running but it isn't always as simple as forgetting a terminal window is open and running another app. This can happen when an IDE is closed and the process is correctly terminated.  macOS gives us a nice tool for monitoring process by name and port called Activity Monitor. If you open up Activity Monitor (I just use Spotlight) you could manually look for the processes or use the search bar in the upper right-hand corner. Now you can kill the existing processes and your unwanted process will be gone.
 
 ![Activity Monitor](./2017-08-02_08-18-11.png)
 

@@ -3,7 +3,7 @@ slug: multiple-request-mappings-spring-boot
 title: "Multiple Request Mappings in Spring Boot"
 published: true
 date: 2017-07-03T08:30:50-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Multiple Request Mappings in Spring Boot"
 cover: './pexels-photo-450035-760x506.jpeg'
 ---
@@ -87,6 +87,6 @@ https://www.youtube.com/watch?v=qmALVM38oec&t=1s
 
 ## Conclusion
 
-There are some things that might not be apparent but as we saw in this tutorial we can quickly drill into the code and find a solution. This is one of the many reasons open source is so great. 
+There are some things that might not be apparent but as we saw in this tutorial we can quickly drill into the code and find a solution. This is one of the many reasons open source is so great.
 
 _**Question:** Do you face any problems setting up request mappings? _

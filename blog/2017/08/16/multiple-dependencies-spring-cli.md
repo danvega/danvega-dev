@@ -3,7 +3,7 @@ slug: multiple-dependencies-spring-cli
 title: "How to add multiple dependencies with the Spring CLI"
 published: true
 date: 2017-08-16T08:30:40-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "How to add multiple dependencies with the Spring CLI"
 cover: './pexels-photo-205421-760x506.jpeg'
 ---
@@ -11,7 +11,7 @@ cover: './pexels-photo-205421-760x506.jpeg'
 In this tutorial, we are taking a look at a student's question from my [Spring Boot Introduction Course](https://www.danvega.dev/spring-boot). This question has to do with the Spring CLI which is a great tool that allows you to quickly prototype with Spring. 
 
 > Hi Dan,
-> 
+>
 > I have created the spring boot application through spring CLI in the same way you showed in the video but my question is, How can we add multiple dependencies in our application through spring CLI? You have shown it for only one dependency i.e "web" using -d option but what if we want to add more dependencies through CLI?
 
 In this article, I am going to talk through what the Spring CLI, how to install it and use it and of course answer the question above. 
@@ -27,7 +27,7 @@ There are a couple of ways to install the Spring CLI and we will go through the
 *   [spring-boot-cli-1.5.6.RELEASE-bin.zip](http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.5.6.RELEASE/spring-boot-cli-1.5.6.RELEASE-bin.zip)
 *   [spring-boot-cli-1.5.6.RELEASE-bin.tar.gz](http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.5.6.RELEASE/spring-boot-cli-1.5.6.RELEASE-bin.tar.gz)
 
-Another way to install the Spring CLI is by using SDKMan. If you have been following me at all you know that I am a huge fan of [SDKMan](http://sdkman.io/).  
+Another way to install the Spring CLI is by using SDKMan. If you have been following me at all you know that I am a huge fan of [SDKMan](http://sdkman.io/). 
 
 ![SDKMan](./2017-08-15_20-11-24.png)
 
@@ -41,7 +41,7 @@ Spring Boot v1.5.6.RELEASE
 
 ## Using the Spring CLI
 
-Now that we have the Spring CLI installed its time to use it. If you aren't sure what options are available you can run the help command to get more information.  
+Now that we have the Spring CLI installed its time to use it. If you aren't sure what options are available you can run the help command to get more information. 
 
 ![Spring CLI Help](./2017-08-16_08-08-04.png)
 
@@ -49,7 +49,7 @@ In this first example, we will create and run a simple example. First, create a 
 
 ```java
 @RestController
-class AppController { 
+class AppController {
 
     @RequestMapping("/")
     public String home() {
@@ -64,7 +64,7 @@ Now you can run this application from the command line using the following comma
 spring run app.groovy
 ```
 
-![Spring CLI run app](./2017-08-16_08-13-27-1024x547.png) 
+![Spring CLI run app](./2017-08-16_08-13-27-1024x547.png)
 
 You can also use the Spring CLI to initialize a new project using [http://start.spring.io](http://start.spring.io/). This is similar to creating a new project in IntelliJ using the fancy wizard. So to answer our initial question which was how can we initialize a new project from the Spring CLI and add multiple dependencies: 
 

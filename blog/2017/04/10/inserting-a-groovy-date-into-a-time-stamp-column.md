@@ -3,7 +3,7 @@ slug: inserting-a-groovy-date-into-a-time-stamp-column
 title: "Inserting a Groovy Date into a Time Stamp Column"
 published: true
 date: 2017-04-10T08:00:06-04:00
-tags: ['Groovy']
+tags: ['groovy']
 excerpt: "Inserting a Groovy Date into a Timestamp Column"
 cover: './GroovyDate-760x428.png'
 ---

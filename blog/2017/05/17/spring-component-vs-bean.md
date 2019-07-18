@@ -3,7 +3,7 @@ slug: spring-component-vs-bean
 title: "Spring Beans @Component vs @Bean"
 published: true
 date: 2017-05-17T09:00:06-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Beans @Component vs @Bean"
 cover: './pexels-photo-89898-760x507.jpeg'
 ---
@@ -18,7 +18,7 @@ This is actually something that a lot of people are confused by. In this article
 
 Before we get into the differences between @Bean and @Component I think it's important that we understand what @Component is. I could break this down for you here but luckily for me, I already wrote up a nice long post on what Spring Stereotype Annotations are and how to use them. Please read this article first and then come back and we will break this down. 
 
-https://danvega.dev/blog/2017/03/27/spring-stereotype-annotations 
+https://danvega.dev/blog/2017/03/27/spring-stereotype-annotations
 
 I hope you enjoyed that article and I hope you have a better understanding of the different annotations. 
 
@@ -83,7 +83,7 @@ public class ApplicationConfig {
 }
 ```
 
-The name of the method is actually going to be the name of our bean. If we pull up the /beans endpoint in the actuator we can see the bean defined.  
+The name of the method is actually going to be the name of our bean. If we pull up the /beans endpoint in the actuator we can see the bean defined. 
 
 ![Results](./2017-05-17_08-30-18.png)
 

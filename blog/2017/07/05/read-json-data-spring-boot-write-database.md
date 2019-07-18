@@ -3,7 +3,7 @@ slug: read-json-data-spring-boot-write-database
 title: "How to read JSON data in Spring Boot and write to a database"
 published: true
 date: 2017-07-05T12:00:27-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "How to read JSON data in Spring Boot and write to a database"
 cover: './pexels-photo-374899-760x506.jpeg'
 ---
@@ -16,7 +16,7 @@ If you have ever had to read and write JSON data you know that this can be trick
 
 ## Spring Boot Application
 
-The first thing we need to do is to create a new Spring Boot application using the following dependencies.  
+The first thing we need to do is to create a new Spring Boot application using the following dependencies. 
 
 ![Spring Boot JSON](./2017-07-05_11-40-42-1024x645.png)
 
@@ -238,7 +238,7 @@ public class JsondbApplication {
 }
 ```
 
-If we run our application and look at the H2 Database console we can see the 10 records have been inserted.  
+If we run our application and look at the H2 Database console we can see the 10 records have been inserted. 
 
 ![JSON Data](./2017-07-05_11-58-32-1024x309.png)
 

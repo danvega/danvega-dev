@@ -3,7 +3,7 @@ slug: using-project-lombok-spring-boot
 title: "Using Project Lombok in your Spring Boot Project"
 published: true
 date: 2017-03-31T08:00:38-04:00
-tags: ['Java', 'Spring']
+tags: ['java', 'spring']
 excerpt: "Using Project Lombok in your Spring Boot Project"
 cover: './2350-760x507.jpg'
 ---
@@ -14,7 +14,7 @@ In this article, we get to take a look at an awesome little project called [Pro
 
 As I said in the introduction to this article, one of the biggest complaints against Java is how much noise can be found in a single class. Project Lombok saw this as a problem and aims to reduce the noise of some of the worst offenders by replacing them with a simple set of annotations.  One of the worst offenders in Java are classes that have a ton of fields in them and consist of a getter & setter for each property. I will refer to these "types" of classes as data classes going forward. IDEs have a come a long way and help us generate this code but every single time you make a change to that data class you will need to go back and regenerate that code or even worse, write it yourself. In this example below, straight from the documentation, all of the getters, setters and a to string method were created for us just by adding the @Data annotation to our Data class.
 
-![Project Lombok in Action](./lombok.png) *Project Lombok in Action* 
+![Project Lombok in Action](./lombok.png) *Project Lombok in Action*
 
 Pretty awesome right? Project Lombok consists of more than just this single annotation. If you want to learn about them please [read through the documentation](http://jnb.ociweb.com/jnb/jnbJan2010.html#intro). For now, we are just going to run through a basic demo. 
 
@@ -22,7 +22,7 @@ Pretty awesome right? Project Lombok consists of more than just this single anno
 
 ### Before Project Lombok
 
-We are going to create a new Spring Boot application. If you want to grab the [project source code you can do so here](https://github.com/cfaddict/lombok). You can select Lombok right from the core section of the Spring Initilizr.  
+We are going to create a new Spring Boot application. If you want to grab the [project source code you can do so here](https://github.com/cfaddict/lombok). You can select Lombok right from the core section of the Spring Initilizr. 
 
 ![Project Lombok](./lombok_demo_1-300x189.png)
 
@@ -45,14 +45,14 @@ public class User {
     private String foo;
     private String bar;
     private String a,b,c;
-    
+
 }
 ```
 
-That looks like a pretty clean class, but we aren't done yet. Now we need to create a getter & setter for each of those properties. We also would probably want to add a toString, equals and hashCode method to our class. If you didn't know this already, you can generate these using cmd + n on the mac (cntrl+n on a PC). 
+That looks like a pretty clean class, but we aren't done yet. Now we need to create a getter & setter for each of those properties. We also would probably want to add a toString, equals and hashCode method to our class. If you didn't know this already, you can generate these using cmd + n on the mac (cntrl+n on a PC).
 
 ![Project lombok](./lombok_demo_3-193x300.png)
- 
+
 Now our class is correct but that is a whole bunch of unwanted code. Not to mention what a maintenance nightmare this is. Every single time this class changes we need to update the getters, setters, and methods by generating them over or even worse, actually writing code. 
 
 ```java
@@ -221,12 +221,12 @@ public class User {
 }
 ```
 
-The great thing about Lombok is that it integrates well with the IDE. I am using IntelliJ but this will work in Eclipse as well. If you look over at your project structure you can see that all of these methods now exist without us having to write them. We also don't have to guess as to whether it worked or not, we can clearly see that it did. Not to mention, look how clean our class looks!  
+The great thing about Lombok is that it integrates well with the IDE. I am using IntelliJ but this will work in Eclipse as well. If you look over at your project structure you can see that all of these methods now exist without us having to write them. We also don't have to guess as to whether it worked or not, we can clearly see that it did. Not to mention, look how clean our class looks! 
 
 ![Lombok Demo](./lombok_demo_4-293x300.png)
 
 ## Conclusion
 
-There is absolutely no reason you shouldn't be using Project Lombok today. If it's not a brand new project you can simply drop in the dependency and go. I hope you found this tutorial useful and I want to leave you with a question to hopefully kick start a discussion.  
+There is absolutely no reason you shouldn't be using Project Lombok today. If it's not a brand new project you can simply drop in the dependency and go. I hope you found this tutorial useful and I want to leave you with a question to hopefully kick start a discussion. 
 
 _**Question**: What are some of your favorite tools & libraries to help in the creation of better, cleaner code? _

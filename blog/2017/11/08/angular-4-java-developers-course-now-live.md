@@ -3,7 +3,7 @@ slug: angular-4-java-developers-course-now-live
 title: "Angular 4 Java Developers Course is now Live!"
 published: true
 date: 2017-11-08T16:15:32-05:00
-tags: ['Java', 'Spring']
+tags: ['java', 'spring']
 excerpt: "Angular 4 Java Developers Course is now Live!"
 cover: ./greetings_java_hipsters-760x525.png
 ---
@@ -14,7 +14,7 @@ In this introduction to the course, I am going to give you all of the details, a
 
 ## About Angular 4 Java Developers
 
-First off, I just want to say congrats to my partner in crime on this course, [John Thompson](https://springframework.guru). We have put a lot of thought and hard work into this course and I think it's really going to show. We had a clear vision when we started this course and I think we ended up delivering. What we started out building is very different than what it looks like today, but you need to put yourself in your student's shoes and ask yourself "Am I getting what I need out of this course?"  
+First off, I just want to say congrats to my partner in crime on this course, [John Thompson](https://springframework.guru). We have put a lot of thought and hard work into this course and I think it's really going to show. We had a clear vision when we started this course and I think we ended up delivering. What we started out building is very different than what it looks like today, but you need to put yourself in your student's shoes and ask yourself "Am I getting what I need out of this course?" 
 
 ![Angular 4 Java Developers](./UdemyJohnDan02-1024x576.png)
 
@@ -32,7 +32,7 @@ First off, I just want to say congrats to my partner in crime on this course, [J
 
 ## Running for Brews
 
-I think the best part of this course is that we built a real-world application from conception to completion. We sat down with the [Running for Brews](http://runningforbrews.com/) organization and talked through the requirements with them. Running for Brews is a national running club that is all about bringing people together. In this course, we helped them build a loyalty program that is going to reward runners for consistently showing up. I had so much fun on this project that as soon as the weather gets warm again, I am going to organize my own RFB location!  
+I think the best part of this course is that we built a real-world application from conception to completion. We sat down with the [Running for Brews](http://runningforbrews.com/) organization and talked through the requirements with them. Running for Brews is a national running club that is all about bringing people together. In this course, we helped them build a loyalty program that is going to reward runners for consistently showing up. I had so much fun on this project that as soon as the weather gets warm again, I am going to organize my own RFB location! 
 
 ![Running for Brews](./2017-11-08_07-37-19-1024x647.png)
 

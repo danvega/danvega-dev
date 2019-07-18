@@ -3,7 +3,7 @@ slug: spring-boot-2-first-release
 title: "The first release of Spring Boot 2.0 is now available!"
 published: true
 date: 2017-05-19T10:15:39-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "The first release of Spring Boot 2.0 is now available!"
 cover: './pexels-photo-92904-760x507.jpeg'
 ---
@@ -23,7 +23,7 @@ The first thing you need to do to get started with Spring 2.0 is to update the v
 </parent>
 ```
 
-If you're creating a new project in IntelliJ just change the version number on the dependencies screen to 2.0.0.M1.  
+If you're creating a new project in IntelliJ just change the version number on the dependencies screen to 2.0.0.M1. 
 
 ![Spring Boot](./2017-05-19_08-02-11-1024x645.png)
 
@@ -33,7 +33,7 @@ If you are upgrading from 1.5 there are a few things that you should know. 
 
 Spring Boot 2.0 requires Java 8 or later. Java 6 and 7 are no longer supported.
 
-###  `@ConditionalOnBean` 
+###  `@ConditionalOnBean`
 
  `@ConditionalOnBean`  now uses a logical AND rather than a logical OR when determining whether or not the condition has been met.
 
@@ -101,7 +101,7 @@ Spring Boot now uses CGLIB proxying by default, including for the AOP support. I
 
 Testing support has been removed from Spring Boot’s CLI in favour of moving to building the application with Maven or Gradle and using their rich testing support.
 
-### [`@ConfigurationProperties`](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Release-Notes#configurationproperties)  
+### [`@ConfigurationProperties`](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Release-Notes#configurationproperties)
 
 The  `ignoreNestedProperties`  attribute has been removed.
 
@@ -137,7 +137,7 @@ Spring Boot 2.0 provides auto-configuration for the following data store with re
 
 Reactive controllers can be tested using  `@WebFluxTest`  that provides a similar support than  `@WebMvcTest`  for Spring MVC. In particular a  `WebTestClient`  is auto-configured.
 
-### [`WebTestClient`  auto-configuration with  `@SpringBootTest`](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Release-Notes#webtestclient-auto-configuration-with-springboottest) 
+### [`WebTestClient`  auto-configuration with  `@SpringBootTest`](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Release-Notes#webtestclient-auto-configuration-with-springboottest)
 
 When using  `@SpringBootTest`  with an actual server (that is, either  `DEFINED_PORT`  or  `RANDOM_PORT` ), a  `WebTestClient`  is available the same way  `TestRestTemplate`  is.
 
@@ -159,7 +159,7 @@ Please note that the dependency management plugin remains a transitive dependenc
 
 ## SPRING 2.0 COURSE
 
-If you haven’t already had a chance to check out my [Spring Boot Introduction course](http://courses.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. My announcement today is that a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne.  
+If you haven’t already had a chance to check out my [Spring Boot Introduction course](http://courses.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. My announcement today is that a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne. 
 
 ![Spirngboot](627032_1fbe_7.jpg)
 
@@ -167,6 +167,6 @@ If you haven’t already had a chance to check out my [Spring Boot Introduction 
 
 ## Conclusion
 
-This is just the start of Spring 2.0 and we should have more exciting announcements to follow. 
+This is just the start of Spring 2.0 and we should have more exciting announcements to follow.
 
 _**Question:** What are you most looking forward to in Spring Boot 2.0?_

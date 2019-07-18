@@ -3,7 +3,7 @@ slug: how-do-you-define-success
 title: "How do you Define Success as a Software Developer"
 published: true
 date: 2017-04-21T10:00:07-04:00
-tags: ['Programming']
+tags: ['programming']
 excerpt: "How do you Define Success as a Software Developer"
 cover: './william-stitt-224301-760x1140.jpg'
 ---
@@ -12,7 +12,7 @@ I had a personal situation that transpired yesterday and while I won't get into 
 
 ## My Background
 
-I want to give you a little background on me so you can understand where my perspective comes from. I am going to date myself a little but I am currently 38 years old. When I graduated high school way back in 1996 I got my first computer.  I quickly fell in love with this machine and when It would break I would buy parts for it and learned how to fix it myself. I knew within a year of owning that thing that I was destined for a career in computers, but I had no idea what that looked like or how I was going to get there.  
+I want to give you a little background on me so you can understand where my perspective comes from. I am going to date myself a little but I am currently 38 years old. When I graduated high school way back in 1996 I got my first computer.  I quickly fell in love with this machine and when It would break I would buy parts for it and learned how to fix it myself. I knew within a year of owning that thing that I was destined for a career in computers, but I had no idea what that looked like or how I was going to get there. 
 
 ![Dell Old Days](./Dell_XPS_T600R-223x300.jpg)
 
@@ -32,7 +32,7 @@ So what can you do as an aspiring developer? You are going to need some combinat
 
 ## Success 
 
-So now we come full circle back to the question of "How do we define success as a Software Developer?". When you look back on your career are you going to consider it a success because of the amount of money you made? Will you define success because of what your friends and family think you have accomplished?  For me, success is always going to be defined as "Are you happy?". I can tell you that from a career perspective (It's not over yet) that I am very happy. I'm happy because I have busted my ass and I am continually learning to improve my craft. Happiness to me is remembering people, even myself, telling me that I couldn't become a Software Developer.   I am happy because once I started believing in myself I accomplished something that I set out to do. I get that being a programmer is glamorous but ever since I started playing with that first computer I knew this is where I wanted to be.   
+So now we come full circle back to the question of "How do we define success as a Software Developer?". When you look back on your career are you going to consider it a success because of the amount of money you made? Will you define success because of what your friends and family think you have accomplished?  For me, success is always going to be defined as "Are you happy?". I can tell you that from a career perspective (It's not over yet) that I am very happy. I'm happy because I have busted my ass and I am continually learning to improve my craft. Happiness to me is remembering people, even myself, telling me that I couldn't become a Software Developer.   I am happy because once I started believing in myself I accomplished something that I set out to do. I get that being a programmer is glamorous but ever since I started playing with that first computer I knew this is where I wanted to be.  
 
 ![Success](./william-stitt-111353-1024x683.jpg)
 
@@ -40,6 +40,6 @@ If you're parents, friends or family don't think of you as a success because you
 
 ## Conclusion
 
-At the end of the day that leaders advice was just what my friend needed to hear. It reminded them of all the opportunities they do have and not of the ones they don't. It reminded them of how happy they are on a day to day basis and how important those things are in life.  If you are passionate about what you do and you continue to learn there will always be a place for you. Software Developers are in demand which means you get to write your future however you see fit. Work your tail off, continue to educate yourself and enjoy what you do.  If you do these things, you can wake up every morning with a smile on your face... _**And life is too short not to smile to my friends**_.  
+At the end of the day that leaders advice was just what my friend needed to hear. It reminded them of all the opportunities they do have and not of the ones they don't. It reminded them of how happy they are on a day to day basis and how important those things are in life.  If you are passionate about what you do and you continue to learn there will always be a place for you. Software Developers are in demand which means you get to write your future however you see fit. Work your tail off, continue to educate yourself and enjoy what you do.  If you do these things, you can wake up every morning with a smile on your face... _**And life is too short not to smile to my friends**_. 
 
 _**Question:** What advice would you have for aspiring Software Developers? _

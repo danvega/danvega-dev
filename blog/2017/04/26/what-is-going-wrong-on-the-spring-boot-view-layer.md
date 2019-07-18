@@ -3,7 +3,7 @@ slug: what-is-going-wrong-on-the-spring-boot-view-layer
 title: "What is going wrong on the Spring Boot View Layer?"
 published: true
 date: 2017-04-26T09:02:28-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "What is going wrong on the Spring Boot View Layer?"
 cover: './view_layer-760x760.png'
 ---
@@ -14,7 +14,7 @@ Today we are going to dive into a question from a student of mine. It may seem o
 
 ## Spring Boot Resources
 
-When you create a brand new Spring Boot Project you will see a resources folder. In that folder, you will have 2 folders (static and templates) that are the subject of this discussion. The static folder is used for static content such as HTML, JavaScript, CSS, Images, etc... The templates folder will be used for template engines to serve dynamic content. 
+When you create a brand new Spring Boot Project you will see a resources folder. In that folder, you will have 2 folders (static and templates) that are the subject of this discussion. The static folder is used for static content such as HTML, JavaScript, CSS, Images, etc... The templates folder will be used for template engines to serve dynamic content.
 
 ![Spring Boot Resources](./2017-04-26_07-44-17.png)
 
@@ -34,7 +34,7 @@ By default, Spring Boot will serve static content from a directory called  `/sta
 </html>
 ```
 
-We don't have to do anything else at all to our application. If we go ahead and run this demo and visit [http://localhost:8080](http://localhost:8080) we should see the following page.  
+We don't have to do anything else at all to our application. If we go ahead and run this demo and visit [http://localhost:8080](http://localhost:8080) we should see the following page. 
 
 ![Basic Welcome Page](./2017-04-26_07-59-29.png) If you look in the console you will also see the following log statement. 
 
@@ -103,7 +103,7 @@ As you can see from the return statement we are returning index. You don't need 
 </html>
 ```
 
-Running the application should produce the following.  
+Running the application should produce the following. 
 
 ![Spring Boot Application](./2017-04-26_08-52-04.png)
 
@@ -111,6 +111,6 @@ _** Make sure you remove the static HTML file or that will overwrite everything 
 
 ## Conclusion
 
-This can be pretty confusing, especially to new Spring Boot developers. We can have an index.html file in both the static and templates folders. We just need to think about what type of content we are trying to serve and that might clear things up for everyone.  
+This can be pretty confusing, especially to new Spring Boot developers. We can have an index.html file in both the static and templates folders. We just need to think about what type of content we are trying to serve and that might clear things up for everyone. 
 
 _**Question:** What is your favorite view layer technology? _

@@ -3,7 +3,7 @@ slug: use-hikaricp-next-spring-boot-project
 title: "How to use HikariCP in your next Spring Boot project"
 published: true
 date: 2017-07-26T08:16:50-04:00
-tags: ['Java', 'Spring']
+tags: ['java', 'spring']
 excerpt: "How to use HikariCP in your next Spring Boot project"
 cover: './pexels-photo-169976-760x506.jpeg'
 ---

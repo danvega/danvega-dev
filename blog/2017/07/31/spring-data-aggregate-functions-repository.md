@@ -3,7 +3,7 @@ slug: spring-data-aggregate-functions-repository
 title: "Spring Data Aggregate Functions in a repository"
 published: true
 date: 2017-07-31T08:48:35-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Data Aggregate Functions in a repository"
 cover: './pexels-photo-374074-760x506.jpeg'
 ---
@@ -16,11 +16,11 @@ This is actually pretty easy to do using the @Query annotation. In this tutorial
 
 ## Creating the application
 
-The first thing we need to do is to create a very basic Spring Boot application with the following dependencies. If you want you can grab the source code for this [demo here](https://github.com/cfaddict/queryagg).  
+The first thing we need to do is to create a very basic Spring Boot application with the following dependencies. If you want you can grab the source code for this [demo here](https://github.com/cfaddict/queryagg). 
 
 ![Aggregate Functions Dependencies ](./2017-07-26_15-05-12-1024x645.png)
 
-I won't walk you through every single step of this application because I don't want to focus on the application itself. We are building a simple application that exposes some endpoints that call a service and a repository.   
+I won't walk you through every single step of this application because I don't want to focus on the application itself. We are building a simple application that exposes some endpoints that call a service and a repository.  
 
 ![Aggregate Functions Project Structure](./2017-07-31_08-38-06.png)
 
@@ -110,6 +110,6 @@ https://www.youtube.com/watch?v=zLRavueFJy0
 
 ## Conclusion
 
-I think the one that confuses people is not understanding that the default query syntax for @Query annotation is [JPQL and that it does support aggregate functions](http://docs.oracle.com/html/E13946_04/ejb3_langref.html#ejb3_langref_agg_examples). If you are interested in the full source code for this [demo you can grab it here](https://github.com/cfaddict/queryagg).  
+I think the one that confuses people is not understanding that the default query syntax for @Query annotation is [JPQL and that it does support aggregate functions](http://docs.oracle.com/html/E13946_04/ejb3_langref.html#ejb3_langref_agg_examples). If you are interested in the full source code for this [demo you can grab it here](https://github.com/cfaddict/queryagg). 
 
 _**Question:** Are you facing any issues with your Spring Data Repositories? _

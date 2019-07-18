@@ -3,7 +3,7 @@ slug: spring-boot-configuration-using-yaml
 title: "Spring Boot Configuration using YAML"
 published: true
 date: 2017-06-26T09:00:06-04:00
-tags: ['Spring']
+tags: ['spring']
 excerpt: "Spring Boot Configuration using YAML"
 cover: './emile-perron-190221-760x428.jpg'
 ---
@@ -64,7 +64,7 @@ environments:
 
 ### Profile Specific Configuration
 
-The first thing I will say about this is that I usually break out different environment configurations into separate configuration files. You can do this with both .properties or .yml configuration using a -environment name on the file. If we had a development, test and production environment we would have 3 files in src/main/resources that looked like this.  
+The first thing I will say about this is that I usually break out different environment configurations into separate configuration files. You can do this with both .properties or .yml configuration using a -environment name on the file. If we had a development, test and production environment we would have 3 files in src/main/resources that looked like this. 
 
 ![Profile Specific Configuration](./2017-06-27_12-38-38.png)
 
@@ -126,6 +126,6 @@ https://youtu.be/Utwu-17Ct9Y
 
 ## Conclusion
 
-Thanks for the question and I hope this helped others clear up some questions on using YAML configuration. This can be a little confusing when you have some many ways to inject properties but after some practice it all makes sense.  
+Thanks for the question and I hope this helped others clear up some questions on using YAML configuration. This can be a little confusing when you have some many ways to inject properties but after some practice it all makes sense. 
 
 _**Question:** What problems are you facing with YAML Configuration? _

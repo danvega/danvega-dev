@@ -3,7 +3,7 @@ slug: checking-upgrading-jhipster-version
 title: "How to check your version and upgrade JHipster"
 published: true
 date: 2017-05-22T09:00:26-04:00
-tags: ['Angular', 'Spring']
+tags: ['Angular', 'spring']
 excerpt: "How to check your version and upgrade JHipster"
 cover: './wallpaper-001-2560x1440-760x428.png'
 ---
@@ -18,9 +18,9 @@ To tell what version of JHipster you are running simply open up command prompt a
 yo jhipster
 ```
 
-You will see that the current version of JHipster is 4.0.2 and there is an update available for 4.5.1. The helpful command prompt also shows you how to update by giving you the command to run. 
+You will see that the current version of JHipster is 4.0.2 and there is an update available for 4.5.1. The helpful command prompt also shows you how to update by giving you the command to run.
 
-![JHipster version](./2017-05-22_08-44-19-1024x623.png) 
+![JHipster version](./2017-05-22_08-44-19-1024x623.png)
 
 To update run
 
@@ -32,7 +32,7 @@ npm install -g generator-jhipster
 
 ## UPCOMING COURSE
 
-I want all of you reading this to that I love this project so much that I have decided to launch a course on it. If you want to find out more about this please click on the link below.  
+I want all of you reading this to that I love this project so much that I have decided to launch a course on it. If you want to find out more about this please click on the link below. 
 
 ![Spring Boot & Angular 2 Course](./jhipster_course.png)
 
