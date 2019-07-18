@@ -11,7 +11,7 @@
           <h2 class="title is-4">
             <g-link :to="node.path">{{node.title}}</g-link>
           </h2>
-          <small>{{ new Date(node.date).toLocaleDateString() }} • ☕️ {{node.timeToRead}} min read</small>
+          <small>{{ node.date }} • ☕️ {{node.timeToRead}} min read</small>
           <p v-if="node.excerpt">{{node.excerpt}}</p>
         </div>
       </div>
@@ -33,7 +33,7 @@ query Tag($id: String!) {
           ...on Post {
             id
             title
-            date (format: "DD/MM/YYYY")
+            date (format: "MM/DD/YYYY")
             excerpt
             path
           }
