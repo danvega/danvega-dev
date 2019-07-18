@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container">
-      <div class="is-flex">
+      <div class="is-flex footer-content">
         <p>Made with ❤️ in Cleveland, OH.</p>
         <social-links />
       </div>
@@ -27,5 +27,13 @@ footer {
 }
 footer p {
   color: white;
+}
+.footer-content {
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  footer p {
+    padding-left: 10px;
+  }
 }
 </style>

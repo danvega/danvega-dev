@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar-end is-hidden-mobile is-hidden-tablet-only">
+  <div class="navbar-end">
     <a
       v-for="social in accounts"
       :href="social.href"
@@ -30,6 +30,9 @@ export default {
 </script>
 
 <style scoped>
+.navbar-end {
+  display: flex;
+}
 .navbar-item {
   color: white;
 }

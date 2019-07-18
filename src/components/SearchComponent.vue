@@ -136,7 +136,7 @@ export default {
 .search {
   margin: 8px 0 0 0;
   padding: 0px;
-  width: 300px;
+  min-width: 300px;
   position: relative;
 }
 .close {
