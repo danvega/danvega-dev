@@ -45,6 +45,7 @@ query Post ($path: String!) {
 import moment from "moment";
 import BulmaTag from "@/components/BulmaTag";
 import ConvertKit from "@/components/ConvertKit";
+import mediumZoom from "medium-zoom";
 
 export default {
   components: {
@@ -89,6 +90,11 @@ export default {
     getBaseUrl() {
       return process.env.GRIDSOME_BASE_URL;
     }
+  },
+  mounted() {
+    import("medium-zoom").then(mediumZoom => {
+      this.zoom = mediumZoom.default(".article img");
+    });
   }
 };
 </script>
