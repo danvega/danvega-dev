@@ -3,7 +3,7 @@ slug: java-development-2018
 title: "What you should learn as a Java Developer in 2018"
 published: true
 date: 2018-04-25T06:39:22-04:00
-tags: ["Java"]
+tags: ['java']
 excerpt: "What you should learn as a Java Developer in 2018"
 cover: ./java_development_in_2018-760x428
 video: https://www.youtube.com/embed/MLXj0hd3usk
