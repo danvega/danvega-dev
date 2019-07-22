@@ -7,7 +7,7 @@
         width="1000"
         height="563"
         class="video"
-        src="https://www.youtube.com/embed/JwccQYpsE2Q"
+        :src="$page.post.video"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
