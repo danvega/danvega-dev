@@ -3,16 +3,17 @@
     <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
       <small class="about">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
-      <iframe
-        width="1000"
-        height="563"
-        class="video"
-        :src="$page.post.video"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        v-if="$page.post.video"
-      ></iframe>
+      <div class="embed-container" v-if="$page.post.video">
+        <iframe
+          width="1000"
+          height="563"
+          :src="$page.post.video"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          v-if="$page.post.video"
+        ></iframe>
+      </div>
       <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
       <article v-html="$page.post.content" class="article" />
       <bulma-tag :tags="$page.post.tags" />
@@ -154,5 +155,21 @@ a > span.fas.fa-hashtag {
 }
 .article iframe {
   height: 563px !important;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
