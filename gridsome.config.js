@@ -38,6 +38,18 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'newsletter/**/*.md',
+        typeName: 'Newsletter',
+        route: '/newsletter/:year/:month/:day/:slug',
+        resolveAbsolutePaths: true,
+        remark: {
+          autolinkHeadings: false
+        }
+      }
+    },
+    {
       use: 'gridsome-plugin-rss',
       options: {
         contentTypeName: 'Post',
