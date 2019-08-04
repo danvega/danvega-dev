@@ -4,9 +4,6 @@ slug: 'coffee-and-code-02'
 date: '2019-08-04T08:00:00.000Z'
 ---
 
-
-[Read this on danvega.dev](https://www.danvega.dev/newsletter/2019/08/04/coffee-and-code-02)
-
 Welcome to Coffee and Code with me, [Dan Vega](https://www.danvega.dev/). This newsletter is a little insight into what I was up to this week, things I found interesting and anything on my radar for the upcoming week. If you don't already have a cup of coffee grab one now and let's get to it.
 
 ## Previous Week
@@ -17,7 +14,7 @@ I was really busy this week but I was able to sneak in a live coding session yes
 
 I was able to sneak a live stream in yesterday and it was a lot of fun. I was going to try streaming on [Twitch](https://www.twitch.tv/danvega) but I had some problems so I ended up just going live on YouTube. I am still learning the platforms and figuring out how to use them so I apologize for any issues.
 
-In this coding session, I wanted to start building out a newsletter archive. I want you to have the ability to read a newsletter item online and share it with friends. If you are reading this in an email client you can look towards the top where there is a `Read this on [danvega.dev](http://danvega.dev)` link.
+In this coding session, I wanted to start building out a newsletter archive. I want you to have the ability to read a newsletter item online and share it with friends. If you are reading this in an email client you can look towards the top where there is a `Read this on danvega.dev` link.
 
 We spent some time talking about how to add a new file system source and a new content type. If you're interested in watching the replay it has been posted on [YouTube](https://youtu.be/5lXmyp4DJxg).
 
@@ -27,7 +24,7 @@ I don't have anything new this week but I will share with you an article that I 
 
 ### YouTube
 
-[How to Remove Elements from an `ArrayList` in Java.](https://www.youtube.com/watch?v=K2_3rrcZVgg&feature=youtu.be)
+[How to Remove Elements from an ArrayList in Java.](https://www.youtube.com/watch?v=K2_3rrcZVgg&feature=youtu.be)
 
 In this tutorial, we are going to learn how to safely remove elements from an ArrayList in Java while using a for loop to loop over that same list.
 
@@ -67,8 +64,7 @@ These are things I found cool around the web this week.
 
 Thanks for sitting down and sharing a cup of coffee with me my friend. I hope you enjoyed this first installment of Coffee & Code and I will see you next Sunday morning. If you have any links you would like me to include please contact me and I might add them to a future newsletter. I hope you have a great week and as always friends...
 
-Happy Coding
-Dan Vega
-danvega@gmail.com
-
+Happy Coding<br/>
+Dan Vega<br/>
+danvega@gmail.com<br/>
 [https://www.danvega.dev](https://www.danvega.dev/)
