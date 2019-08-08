@@ -8,3 +8,4 @@ dist
 *.psd
 .env
 blog/410.txt
+.vscode/
