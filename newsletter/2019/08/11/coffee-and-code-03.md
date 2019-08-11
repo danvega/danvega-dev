@@ -42,8 +42,6 @@ Listen, I realize that I have a problem and I'm ok with it. 🤷‍♂️ I love
 
 This might sound a little strange given the fact that they are not the same tech stacks but It felt a lot like using Spring Boot. I was able to get something done quickly and I feel like NestJS enables me to be a more productive developer. If you're interested in learning more about NestJS or have your opinions about it please reach out to me.
 
-## Upcoming Week
-
 ## Around the Web
 
 These are things I found cool around the web this week.
