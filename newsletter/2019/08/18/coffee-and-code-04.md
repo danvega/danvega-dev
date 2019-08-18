@@ -10,9 +10,9 @@ Welcome to Coffee and Code with me, Dan Vega. This newsletter is a little insigh
 
 ## Previous Week
 
-This week I had a lot of fun writing a blog post on a free tool called The CSS Grid Generator and I am excited. Speaking of writing blog posts I have some very cool projects in the works that should help get my writing in front of more people which should lead to helping out a lot more people.
+This week I started a discussion on dev.to called "[What is your conference walk up song](https://dev.to/therealdanvega/what-is-your-conference-talk-walkup-song-36kb)". I thought it was an interesting idea and if you have a chance I would love to hear what yours would be. Other than that I don't have any new articles to share with you but I do have some pretty exciting news. I have some very cool projects in the works that should help get my writing in front of more people which should lead to helping out a lot more people.
 
-I told you that I got accepted to freeCodeCamp last week. This week I also had a really good meeting with a great person in the Vue community. I am going to be working on some content with him and I sent out this cryptic tweet to let everyone know what I was working on. 😉
+I told you that I got accepted to freeCodeCamp last week. This week I also had a really good meeting with someone who I instantly clicked with in the Vue community. I am going to be working on some content with him and I sent out this cryptic tweet to let everyone know what I was working on. 😉
 
 https://twitter.com/therealdanvega/status/1161620722445410304
 
@@ -21,20 +21,6 @@ https://twitter.com/therealdanvega/status/1161620722445410304
 No live stream this week but I did send this tweet out that I would love your thoughts on.
 
 https://twitter.com/therealdanvega/status/1162351000440725506
-
-### **Blog**
-
-[Learn how to use CSS Grid with a free tool called CSS Grid Generator](https://www.danvega.dev/blog/2019/08/08/css-grid-generator)
-
-As someone who has been developing web applications for almost 20 years now, I have seen it all. I started in FrontPage, moved to Dreamweaver, nested tables inside of tables and learned how to float and clear fix everything.
-
-While you won't see any awards for my designs on my bookshelf I am able to create some very nice simple and clean layouts. That said I have never really enjoyed it because it has always been a huge pain in the a\$\$. I have always felt like I was just hacking away until my layout looked almost like what I had in mind.
-
-This is why when tools like [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) & [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) came along I was beyond excited about the possibilities of creating clean layouts. I think if you combine these 2 technologies along with just how far JavaScript has come it is what has really got me excited about front end development these days.
-
-While I have a pretty good understanding of CSS Grid at this point I know it can be a little bit confusing to get started. That is why I am really excited to share with you a new tool that I came across that I really think can help you out if you're trying to understand CSS Grid.
-
-[Continue Reading on danvega.dev](https://www.danvega.dev/blog/2019/08/08/css-grid-generator)
 
 ## Upcoming Week
 
@@ -68,6 +54,8 @@ These are things I found cool around the web this week.
 ### Follow This Person
 
 This is someone I really enjoy following on Twitter and I think you should check them out.
+
+[Raymond Camden](https://twitter.com/raymondcamden)
 
 ## Until Next Week
 
