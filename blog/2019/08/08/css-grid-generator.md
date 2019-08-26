@@ -1,19 +1,19 @@
 ---
-slug: 'css-grid-generator'
-title: 'Learn how to use CSS Grid with a FREE tool CSS Grid Generator'
-date: '2019-08-08T18:13:57.456Z'
+slug: "css-grid-generator"
+title: "Learn how to use CSS Grid with a FREE tool CSS Grid Generator"
+date: "2019-08-08T18:13:57.456Z"
 published: false
-excerpt: 'Learn how to create a CSS Grid Layout with a free tool called CSS Grid Generator" '
-author: 'Dan Vega'
+excerpt: "Learn how to create a CSS Grid Layout with a free tool called CSS Grid Generator"
+author: "Dan Vega"
 tags:
-  - 'css'
-  - 'vue'
-cover: './css-grid-generator-cover.png'
+  - "css"
+  - "vue"
+cover: "./css-grid-generator-cover.png"
 ---
 
 As someone who has been developing web applications for almost 20 years now, I have seen it all. I started in FrontPage, moved to Dreamweaver, nested tables inside of tables and learned how to float and clear fix everything.
 
-While you won't see any awards for my designs on my bookshelf I am able to create some very nice simple and clean layouts. That said I have never really enjoyed it because it has always been a huge pain in the a$$. I have always felt like I was just hacking away until my layout looked almost like what I had in mind.
+While you won't see any awards for my designs on my bookshelf I am able to create some very nice simple and clean layouts. That said I have never really enjoyed it because it has always been a huge pain in the a\$\$. I have always felt like I was just hacking away until my layout looked almost like what I had in mind.
 
 This is why when tools like [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) & [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) came along I was beyond excited about the possibilities of creating clean layouts. I think if you combine these 2 technologies along with just how far JavaScript has come it is what has really got me excited about front end development these days.
 
@@ -25,7 +25,7 @@ While I have a pretty good understanding of CSS Grid at this point I know it can
 
 ## CSS Grid Generator by Sarah Drasner
 
-[CSS Grid Generator](https://www.notion.so/danvega/Learn-how-to-use-CSS-Grid-with-a-FREE-tool-CSS-Grid-Generator-f6e245c221264fba807d1b23d7bda7ef#524e8f64e61f47fdb2528f7b6a1e2d0e) is a free tool created by the super talented [Sarah Drasner](https://twitter.com/sarah_edo). It is a visual design tool that allows you to create a basic grid layout and then copy the code that was used to create it. When you first open the tool you will be presented with a default layout but from here you can easily customize the layout to your needs.
+[CSS Grid Generator](https://cssgrid-generator.netlify.com/) is a free tool created by the super talented [Sarah Drasner](https://twitter.com/sarah_edo). It is a visual design tool that allows you to create a basic grid layout and then copy the code that was used to create it. When you first open the tool you will be presented with a default layout but from here you can easily customize the layout to your needs.
 
 ![](css-grid-generator-default-layout.png)
 
@@ -75,11 +75,21 @@ If you look under the columns and row inputs on the right hand side you will see
   grid-template-rows: 100px 1fr 50px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  .div1 { grid-area: 1 / 1 / 2 / 5; }
-  .div2 { grid-area: 2 / 1 / 3 / 2; }
-  .div3 { grid-area: 2 / 2 / 3 / 4; }
-  .div4 { grid-area: 2 / 4 / 3 / 5; }
-  .div5 { grid-area: 3 / 1 / 4 / 5; }
+  .div1 {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  .div2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .div3 {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  .div4 {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .div5 {
+    grid-area: 3 / 1 / 4 / 5;
+  }
 }
 ```
 
@@ -88,21 +98,19 @@ Create a new document `simple-layout.htm` and add the following code which will 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simple Layout</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Layout</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -111,49 +119,47 @@ Next add in the CSS (the copied code was in SASS but you can pull the divs out)
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simple Layout</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .parent {
-      display: grid;
-      grid-template-columns: 200px 1fr 1fr 200px;
-      grid-template-rows: 100px 1fr 50px;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-      height: 100vh;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Layout</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr 200px;
+        grid-template-rows: 100px 1fr 50px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        height: 100vh;
+      }
 
-    .div1 {
-      grid-area: 1 / 1 / 2 / 5;
-    }
+      .div1 {
+        grid-area: 1 / 1 / 2 / 5;
+      }
 
-    .div2 {
-      grid-area: 2 / 1 / 3 / 2;
-    }
+      .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
 
-    .div3 {
-      grid-area: 2 / 2 / 3 / 4;
-    }
+      .div3 {
+        grid-area: 2 / 2 / 3 / 4;
+      }
 
-    .div4 {
-      grid-area: 2 / 4 / 3 / 5;
-    }
+      .div4 {
+        grid-area: 2 / 4 / 3 / 5;
+      }
 
-    .div5 {
-      grid-area: 3 / 1 / 4 / 5;
-    }
-  </style>
-</head>
-<body>
-
-</body>
+      .div5 {
+        grid-area: 3 / 1 / 4 / 5;
+      }
+    </style>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -178,7 +184,6 @@ What the tool gave you was the css needed to create this layout. You will need t
       Footer
     </div>
   </div>
-
 </body>
 ```
 
