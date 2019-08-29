@@ -5,28 +5,36 @@ published: true
 date: 2017-06-07T09:50:47-04:00
 tags: ['Angular']
 excerpt: "Angular Forms: How to clear an input field"
-cover: './2017-06-07_08-39-40.jpeg'
+cover: ./angular-forms.png
 ---
 
-I have been working on a few different [Angular applications](https://angular.io/) lately. It has been a ton of fun because I have learned so much and I have come across some real world problems that I can't wait to share with you. In today's post, we are talking all about Angular Forms. I was working on a tasks applications that allowed you to add new tasks. When a new task was added I wanted to clear the form out so you could quickly add another one. I ran into a problem doing so and I wanted to share that problem and my solution with you today.
+Recently I was working on an [Angular](https://angular.io/) Forms application and I needed the ability to clear an input field.
 
-## My Tasks Project
+## How to clear an input field in Angular Forms.
+
+In a normal HTML form you would use find the input on the page and just clear it's text value. In Angular you want to bind the value of a property to the input box and reset the properties value.
+
+## Angular Forms Project
+
+I have been learning a lot lately when it comes to building Angular applications. In this post we are going to talk about a tasks application that I was working on for my latest course. In the tasks application you can list out all of your tasks but I also allow you to add new ones. When a new task was added I wanted to clear the form out so you could quickly add another one. I ran into a problem doing so and I wanted to share that problem and my solution with you today.
+
+### My Tasks Project
 
 The application I am working on is a simple tasks application. It is broken down into 3 components
 
-1.  Tasks - Main tasks component that has 2 subcomponents.
+1.  Tasks - Main tasks component that has 2 sub components.
 2.  Add Task - A way for you to add a new task
 3.  Task List - A way to display all of the components. 
 
 ![Tasks Project](./2017-06-07_08-39-40.png)
 
-If you want to check out the project you can grab it on [Github](https://github.com/cfaddict/spring-angular2-tasks).
+If you want to check out the project you can grab it on [Github](https://github.com/danvega/spring-angular2-tasks).
 
-## Angular Forms
+### Angular Forms
 
 The first thing we have is the template for the add task form and it looks something like this. You will notice that we have an event handler for when the user hits the enter key. When that happens we will call a method onTaskAdd and pass in the event. 
 
-```html 
+```html
 <div class="form-group">
     <input type="text"
            class="form-control"
@@ -130,6 +138,6 @@ onTaskAdd(event) {
 
 ## Conclusion
 
-Angular gives us some really awesome ways to handle forms but there are some gotchas when you're trying to move from a submitting to a server to a single page application approach.  
+Angular gives us some really awesome ways to handle forms but there are some gotchas when you're trying to move from a submitting to a server to a single page application approach. 
 
 _**Question:** What do you like or don't like about working with forms in Angular? What are your toughest challenges? _
