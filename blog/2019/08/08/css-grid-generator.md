@@ -9,6 +9,7 @@ tags:
   - "css"
   - "vue"
 cover: "./css-grid-generator-cover.png"
+video: https://www.youtube.com/embed/ZopBBEs9TPg
 ---
 
 As someone who has been developing web applications for almost 20 years now, I have seen it all. I started in FrontPage, moved to Dreamweaver, nested tables inside of tables and learned how to float and clear fix everything.
