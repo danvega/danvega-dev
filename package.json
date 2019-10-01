@@ -12,6 +12,7 @@
     "@gridsome/plugin-sitemap": "^0.1.1",
     "@gridsome/source-filesystem": "^0.3.0",
     "@gridsome/transformer-remark": "^0.2.1",
+    "@gridsome/vue-remark": "^0.1.5",
     "@sentry/browser": "^5.4.0",
     "@sentry/integrations": "^5.4.1",
     "axios": "^0.19.0",
