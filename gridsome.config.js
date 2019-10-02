@@ -9,44 +9,63 @@ module.exports = {
   siteUrl: "https://www.danvega.dev",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
+  templates: {
+    //Tag: "/tag/:title",
+    Newsletter: "/newsletter/:year/:month/:day/:slug"
+  },
   plugins: [
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/vue-remark',
       options: {
-        path: "blog/**/*.md",
-        typeName: "Post",
-        route: "/blog/:year/:month/:day/:slug",
-        refs: {
-          tags: {
-            typeName: "Tag",
-            route: "/tag/:slug",
-            create: true
-          }
-        },
-        resolveAbsolutePaths: true,
-        remark: {
-          autolinkClassName: "fas fa-hashtag",
-          externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-          plugins: [
-            [
-              "gridsome-plugin-remark-shiki",
-              {
-                theme: "nord"
-              }
-            ],
-            ["gridsome-plugin-remark-twitter", {}],
-            ["gridsome-plugin-remark-codesandbox", {}]
-          ]
-        }
+        typeName: 'Documentation',
+        baseDir: './docs',
+        pathPrefix: '/docs',
+        template: './src/templates/Documentation.vue'
       }
     },
+    {
+      use: "@gridsome/vue-remark",
+      options: {
+          typeName: "Post",
+          baseDir: './blog',
+          route: '/blog/:title',
+          template: './src/templates/Post.vue'
+        }
+    },
+    // {
+    //   use: "@gridsome/source-filesystem",
+    //   options: {
+    //     path: "blog/**/*.md",
+    //     typeName: "Post",
+    //     refs: {
+    //       tags: {
+    //         typeName: "Tag",
+    //         create: true
+    //       }
+    //     },
+    //     resolveAbsolutePaths: true,
+    //     remark: {
+    //       autolinkClassName: "fas fa-hashtag",
+    //       externalLinksTarget: "_blank",
+    //       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+    //       plugins: [
+    //         [
+    //           "gridsome-plugin-remark-shiki",
+    //           {
+    //             theme: "nord"
+    //           }
+    //         ],
+    //         ["gridsome-plugin-remark-twitter", {}],
+    //         ["gridsome-plugin-remark-codesandbox", {}]
+    //       ]
+    //     }
+    //   }
+    // },
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "newsletter/**/*.md",
         typeName: "Newsletter",
-        route: "/newsletter/:year/:month/:day/:slug",
         resolveAbsolutePaths: true,
         remark: {
           autolinkHeadings: false,

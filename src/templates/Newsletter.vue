@@ -16,6 +16,7 @@ query Newsletter($path:String!){
     content
     timeToRead
     path
+    slug
   }
 }
 </page-query>

@@ -3,7 +3,7 @@ slug: spring-boot-1-question-students-asking-right-now
 title: "Spring Boot: The #1 question my students are asking right now"
 published: true
 date: 2017-05-31T08:48:35-04:00
-tags: ['SQL']
+tags: ["sql"]
 excerpt: "Spring Boot: The #1 question my students are asking right now"
 cover: './pexels-photo-92028-760x599.jpeg'
 ---
@@ -12,7 +12,7 @@ Today's Question & Answer came in from a student in my [Spring Boot Introductio
 
 ## Spring Boot Application
 
-The first thing we are going to do is to create our Spring Boot Application using the Spring Initializer. In this demo, we are going to select the Web, JPA & H2 dependencies.  
+The first thing we are going to do is to create our Spring Boot Application using the Spring Initializer. In this demo, we are going to select the Web, JPA & H2 dependencies. 
 
 ![Sping Boot Application](./2017-05-31_08-15-43-1024x645.png)
 
@@ -137,11 +137,11 @@ public class H2demoApplication {
 
 ## Running your Spring Boot Application
 
-With all of that in place, this is where people usually run into this issue. If you were to start your application up and visit the H2 console using [http://localhost:8080/h2-console](http://localhost:8080/h2-console) you would see the following screen. What I would expect is when I login to the console to see my Subscriber table with a new row inserted.  
+With all of that in place, this is where people usually run into this issue. If you were to start your application up and visit the H2 console using [http://localhost:8080/h2-console](http://localhost:8080/h2-console) you would see the following screen. What I would expect is when I login to the console to see my Subscriber table with a new row inserted. 
 
 ![H2 Database Console](./2017-05-31_08-29-29.png)
 
-The issue here is usually with the JDBC URL that students use to connect to their database. If you put anything in the place of subscribers it would let you connect, but you wouldn't see anything. The URL is usually the last visited URL on your machine but I am not sure what comes up by default.  The problem is not understanding what the default datasource name is. In a Spring Boot application, the default datasource is named **_testdb_**_._ If you were to use the URL "jdbc:h2:mem:testdb" and connect to the database you would see your table created.  
+The issue here is usually with the JDBC URL that students use to connect to their database. If you put anything in the place of subscribers it would let you connect, but you wouldn't see anything. The URL is usually the last visited URL on your machine but I am not sure what comes up by default.  The problem is not understanding what the default datasource name is. In a Spring Boot application, the default datasource is named **_testdb_**_._ If you were to use the URL "jdbc:h2:mem:testdb" and connect to the database you would see your table created. 
 
 ![H2 Database Console](./2017-05-31_08-46-40.png)
 
@@ -155,6 +155,6 @@ spring.datasource.name=subscribers
 
 ## Conclusion
 
-As we saw in this demo it usually isn't the Spring Boot application not working correctly but more often than not my students were connecting to the wrong database. I hope this helped clear up this issue for someone out there and I would like to leave you with a question. 
+As we saw in this demo it usually isn't the Spring Boot application not working correctly but more often than not my students were connecting to the wrong database. I hope this helped clear up this issue for someone out there and I would like to leave you with a question.
 
 _**Question:** What are some common mistakes you run into in your Spring Boot Applications?_

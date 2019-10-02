@@ -18,6 +18,7 @@
       <article v-html="$page.post.content" class="article" />
       <bulma-tag :tags="$page.post.tags" />
       <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
+      <VueRemarkContent/>
     </div>
   </Layout>
 </template>

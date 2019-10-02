@@ -3,7 +3,7 @@ slug: add-validation-spring-entities
 title: "How to add validation to your Spring Entities"
 published: true
 date: 2017-05-01T16:37:13-04:00
-tags: ['Random']
+tags: ['spring']
 excerpt: "How to add validation to your Spring Entities"
 cover: './luis-llerena-14779-760x507.jpg'
 ---
@@ -252,6 +252,6 @@ List of constraint violations:[
 
 ## Conclusion 
 
-As you can see its pretty easy to sprinkle in some validation in your Spring Boot applications.  
+As you can see its pretty easy to sprinkle in some validation in your Spring Boot applications. 
 
 _**Question:** What are the challenges you face in validating data?_
