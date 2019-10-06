@@ -18,7 +18,7 @@ I created two new videos this week for YouTube and I had a lot of fun putting th
 
 Probably the best news of the week was when Even You dropped the bomb at Vue London dropped Vue 3 alpha. If you haven't had a chance you can download Vue 3 and start hacking away right now!
 
-![](evan-you.png)
+![](./evan-you-tweet.png)
 
 ## Upcoming Week
 
