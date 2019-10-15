@@ -10,7 +10,8 @@ module.exports = {
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
   templates: {
-    //Tag: "/tag/:title",
+    Tag: "/tag/:title",
+    Post: "/blog/:year/:month/:day/:slug",
     Newsletter: "/newsletter/:year/:month/:day/:slug"
   },
   plugins: [
@@ -23,44 +24,44 @@ module.exports = {
         template: './src/templates/Documentation.vue'
       }
     },
-    {
-      use: "@gridsome/vue-remark",
-      options: {
-          typeName: "Post",
-          baseDir: './blog',
-          route: '/blog/:title',
-          template: './src/templates/Post.vue'
-        }
-    },
     // {
-    //   use: "@gridsome/source-filesystem",
+    //   use: "@gridsome/vue-remark",
     //   options: {
-    //     path: "blog/**/*.md",
-    //     typeName: "Post",
-    //     refs: {
-    //       tags: {
-    //         typeName: "Tag",
-    //         create: true
-    //       }
-    //     },
-    //     resolveAbsolutePaths: true,
-    //     remark: {
-    //       autolinkClassName: "fas fa-hashtag",
-    //       externalLinksTarget: "_blank",
-    //       externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-    //       plugins: [
-    //         [
-    //           "gridsome-plugin-remark-shiki",
-    //           {
-    //             theme: "nord"
-    //           }
-    //         ],
-    //         ["gridsome-plugin-remark-twitter", {}],
-    //         ["gridsome-plugin-remark-codesandbox", {}]
-    //       ]
+    //       typeName: "Post",
+    //       baseDir: './blog',
+    //       route: '/blog/:title',
+    //       template: './src/templates/Post.vue'
     //     }
-    //   }
     // },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "blog/**/*.md",
+        typeName: "Post",
+        refs: {
+          tags: {
+            typeName: "Tag",
+            create: true
+          }
+        },
+        resolveAbsolutePaths: true,
+        remark: {
+          autolinkClassName: "fas fa-hashtag",
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+          plugins: [
+            [
+              "gridsome-plugin-remark-shiki",
+              {
+                theme: "nord"
+              }
+            ],
+            ["gridsome-plugin-remark-twitter", {}],
+            ["gridsome-plugin-remark-codesandbox", {}]
+          ]
+        }
+      }
+    },
     {
       use: "@gridsome/source-filesystem",
       options: {

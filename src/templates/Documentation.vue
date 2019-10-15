@@ -2,7 +2,7 @@
   <Layout>
     <div class="article content">
       <h1 class="title is-2 article-title">Documentation</h1>
-      <VueRemarkContent/>
+      <VueRemarkContent />
     </div>
   </Layout>
 </template>
