@@ -3,7 +3,7 @@ slug: every-developer-start-blog-right-now
 title: "Why every developer should start a blog right now!"
 published: true
 date: 2017-04-28T09:15:56-04:00
-tags: ['Random']
+tags: ['blogging']
 excerpt: "Why every developer should start a blog right now!"
 cover: './ken-tomita-239357-760x507.jpg'
 ---
@@ -16,7 +16,7 @@ I know that a lot of people start blogging because they want to have their voice
 
 ### BlogCFC
 
-When I started I did it because I honestly wanted to learn how to build stuff. I looked up to a bunch of developers in the ColdFusion community and all of them all had blogs. One of those bloggers was [Ray Camden](https://www.raymondcamden.com/) and he had this cool open source blogging software called [BlogCFC](http://www.blogcfc.com/index.cfm).   Below is a screenshot of the website that I would one day help Ray create. It might not look like much but I was really excited to be a part of an open source project. If you look closely you can see a screenshot of my old blog.  
+When I started I did it because I honestly wanted to learn how to build stuff. I looked up to a bunch of developers in the ColdFusion community and all of them all had blogs. One of those bloggers was [Ray Camden](https://www.raymondcamden.com/) and he had this cool open source blogging software called [BlogCFC](http://www.blogcfc.com/index.cfm).   Below is a screenshot of the website that I would one day help Ray create. It might not look like much but I was really excited to be a part of an open source project. If you look closely you can see a screenshot of my old blog. 
 
 ![BlogCFC](./2017-04-28_07-21-20.png)
 
@@ -28,7 +28,7 @@ As I said at the beginning of this article I completely understand that everyone
 
 ### Improve your writing skills
 
-I don't think there is anyone that is reading this that couldn't benefit from improving your writing skills. This is a skill that will follow you around in life and it doesn't hurt to constantly work on it. Whether you're writing a resume or an email to a friend, good writing and more importantly, terrible writing is easy to spot.   
+I don't think there is anyone that is reading this that couldn't benefit from improving your writing skills. This is a skill that will follow you around in life and it doesn't hurt to constantly work on it. Whether you're writing a resume or an email to a friend, good writing and more importantly, terrible writing is easy to spot.  
 
 ![Start a blog to improve your writing skills.](./alejandro-escamilla-4-1024x683.jpg)
 
@@ -48,7 +48,7 @@ As I was writing this I realized that I have a top 10 list of reasons every deve
 
 ## The 1 Thing you must do when starting your blog
 
-I said at the start of this article that I was going to give you 1 thing you must do today. You absolutely need to start an email list. If I could go back in time to 2005 when I started this blog the one thing I would do is start collecting email addresses.  This is an audience your building and you need to stay engaged with them. If it's just letting them know about a new post or telling them about a new product your working on. These readers subscribe because of the value that you bring to them and they want to stay up to date with what you are doing.  
+I said at the start of this article that I was going to give you 1 thing you must do today. You absolutely need to start an email list. If I could go back in time to 2005 when I started this blog the one thing I would do is start collecting email addresses.  This is an audience your building and you need to stay engaged with them. If it's just letting them know about a new post or telling them about a new product your working on. These readers subscribe because of the value that you bring to them and they want to stay up to date with what you are doing. 
 
 ![Building your audience](./luca-bravo-207676-1024x683.jpg)
 
@@ -56,6 +56,6 @@ There are many tools that can help you with building your list but my absolute f
 
 ## Conclusion
 
-I am tired of hearing people scream from the rooftops that blogging is dead. Is video on the rise, of course, it is. This doesn't mean that there is real value in starting your own blog. I hope this pushes anyone thinking about starting a blog into action. It was one of the best decisions I have ever made and I hope you will give it a shot. Please let me know if you have any questions on getting started, finding content or anything related to blogging. Happy Friday friends! 
+I am tired of hearing people scream from the rooftops that blogging is dead. Is video on the rise, of course, it is. This doesn't mean that there is real value in starting your own blog. I hope this pushes anyone thinking about starting a blog into action. It was one of the best decisions I have ever made and I hope you will give it a shot. Please let me know if you have any questions on getting started, finding content or anything related to blogging. Happy Friday friends!
 
 _**Question:** What is stopping you from starting a blog right now?_

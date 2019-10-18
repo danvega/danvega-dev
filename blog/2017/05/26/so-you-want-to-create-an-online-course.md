@@ -3,7 +3,7 @@ slug: so-you-want-to-create-an-online-course
 title: "So you want to create an online course?"
 published: true
 date: 2017-05-26T12:34:08-04:00
-tags: ['Random']
+tags: ['course']
 excerpt: "So you want to create an online course?"
 cover: './carl-heyerdahl-181868-1-760x507.jpg'
 ---

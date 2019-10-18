@@ -3,7 +3,7 @@ slug: migrating-grails-2-x-applications-grails-3-x
 title: "Migrating Grails 2.x Applications to Grails 3.x"
 published: true
 date: 2017-06-16T08:53:25-04:00
-tags: ['Grails']
+tags: ['grails']
 excerpt: "Migrating Grails 2.x Applications to Grails 3.x"
 cover: './pexels-photo-436784-760x507.jpeg'
 ---
@@ -12,7 +12,7 @@ At we work we have a number of huge applications running on Grails 2. When we fi
 
 ## Grails Plugins
 
-When I first go into Grails It was the plugin architecture of the framework that really drew me to it. I remember writing the same applications over and over again and having to spend days on boilerplate project code dealing with things like rest, security and data access.  At work, we ended up moving a lot of our projects from ColdFusion over to Groovy & Grails. As I mentioned before about a year ago we decided that we wanted to move all of these applications over to Grails 3.x and ran into some problems. 
+When I first go into Grails It was the plugin architecture of the framework that really drew me to it. I remember writing the same applications over and over again and having to spend days on boilerplate project code dealing with things like rest, security and data access.  At work, we ended up moving a lot of our projects from ColdFusion over to Groovy & Grails. As I mentioned before about a year ago we decided that we wanted to move all of these applications over to Grails 3.x and ran into some problems.
 
 ![Grails 3 Upgrade Problems](./pexels-photo-52608-1024x685.jpeg)
 
@@ -20,7 +20,7 @@ Each Grails application is made up a bunch of plugins, some of which are public 
 
 ### Grails 3 Plugins
 
-If you look today there are 218 plugins in Grails 3 which isn't anything near the Grails 2 plugins but it is enough to get you going. All of the major plugins have been updated and I would say 98% of all the plugins that we use have been updated.  
+If you look today there are 218 plugins in Grails 3 which isn't anything near the Grails 2 plugins but it is enough to get you going. All of the major plugins have been updated and I would say 98% of all the plugins that we use have been updated. 
 
 ![Grails 3 Plugins](./2017-06-16_07-37-18-1024x822.png)
 
@@ -28,7 +28,7 @@ The other thing you have to remember is that Grails 3 now uses Gradle. This mean
 
 ## Migrate from Grails 2.x to 3.x
 
-I am not going to go through every single step of how to migrate an application. The reason I am not going to is there is a great [step by step migration guide on the Grails website](http://docs.grails.org/3.0.x/guide/upgrading.html) that you can and should check out. Before you go jumping in the deep end and into a migration I thought I would just share a little bit of what I have learned throughout this process with you.  
+I am not going to go through every single step of how to migrate an application. The reason I am not going to is there is a great [step by step migration guide on the Grails website](http://docs.grails.org/3.0.x/guide/upgrading.html) that you can and should check out. Before you go jumping in the deep end and into a migration I thought I would just share a little bit of what I have learned throughout this process with you. 
 
 ![Grails 3 Migration](./pexels-photo-207919-1024x683.jpeg)
 
@@ -109,14 +109,14 @@ _\* Again I want to point out that if you are using source control this is a ste
 
 ## Resources
 
-The Official Grails Migration Guide that I have mentioned at least 10x in this article is the best resource you have. Outside of that I found 2 really great presentations from GR8Conf Europe 2016 
+The Official Grails Migration Guide that I have mentioned at least 10x in this article is the best resource you have. Outside of that I found 2 really great presentations from GR8Conf Europe 2016
 
-https://www.youtube.com/watch?v=IhehO9aM5bk 
+https://www.youtube.com/watch?v=IhehO9aM5bk
 
 https://www.youtube.com/watch?v=Qfrp1cbXdVA&t=814s  
 
 ## Conclusion
 
-If you looked at migrating in the past but felt you couldn't because of the plugin landscape I think it is about time you gave it another look.  
+If you looked at migrating in the past but felt you couldn't because of the plugin landscape I think it is about time you gave it another look. 
 
 _**Question:** If you have already migrated what issues did you come across? If you haven't, what are you waiting for? _
