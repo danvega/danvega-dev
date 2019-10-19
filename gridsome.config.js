@@ -44,9 +44,9 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "newsletter/**/*.md",
+        path: "newsletter/coffee-and-code/**/*.md",
         typeName: "Newsletter",
-        route: "/newsletter/:year/:month/:day/:slug",
+        route: "/newsletter/coffee-and-code/:slug",
         resolveAbsolutePaths: true,
         remark: {
           autolinkHeadings: false,
