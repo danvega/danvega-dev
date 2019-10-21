@@ -1,6 +1,6 @@
 ---
 title: "Coffee & Code Newsletter: #8"
-slug: "08"
+issue: 8
 date: "2019-09-15T07:00:00.000Z"
 ---
 
@@ -18,7 +18,7 @@ I did some testing in my office this week with video sets, green screens and I e
 
 Next week we welcome over 200 students across 5 locations in 3 states as new cohorts begin. I just want to wish all of our students good luck. It is not easy but if you work hard you will get through it. Now, on to some really exciting news!
 
-![](philadelphia.png)
+![](./philadelphia.png)
 
 This was a huge week at [Tech Elevator](https://www.techelevator.com/) where we announced our 6th location would be opening up in Philadelphia. If you want to read more about why we are so excited about this opportunity I would encourage you to [read this article](https://www.linkedin.com/pulse/liberating-potential-birthplace-america-anthony-hughes/) by our CEO, Anthony Hughes. As exciting as expansion is, growth without a mission isn't sustainable.
 

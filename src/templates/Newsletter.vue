@@ -12,7 +12,7 @@
 query Newsletter($path:String!) {
   newsletter: newsletter(path:$path) {
     title
-    slug
+    issue
     date(format:"MM/DD/YYYY")
     content
     timeToRead

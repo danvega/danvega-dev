@@ -1,6 +1,6 @@
 ---
 title: "Coffee & Code Newsletter: #10"
-slug: "10"
+issue: 10
 date: "2019-09-29T07:00:00.000Z"
 ---
 
@@ -14,7 +14,7 @@ This has been an amazing week for me and I have a lot of great news to share wit
 
 I have been dropping some hints to you guys that I was working on a big article and I am happy to announce that it has been released. The first article in a 3 part series has been released on Vue Mastery titled ["A beginner's guide: Unit Testing in Vue"](https://www.vuemastery.com/blog/unit-testing-vue-1). I really want to thank Adam Jhar and the team over at Vue Mastery for this opportunity to get my writing in front of such a great audience.
 
-![Vue Mastery Unit Testing for beginners](vue-mastery-cover.jpeg)
+![Vue Mastery Unit Testing for beginners](./vue-mastery-cover.jpeg)
 
 If this wasn't exciting enough I got mentioned in a tweet by Vue Mastery and VueJS!
 
@@ -26,7 +26,7 @@ https://twitter.com/vuejs/status/1177701970305527809
 
 I am excited to announce that I have been accepted to speak at [CodeMash 2020](http://www.codemash.org/). This conference takes place on January 7-10 2020 about an hour away from me in Sandusky OH. I will be talking about all of the awesome new features in Vue 3. If you're going to be there please let me know and let's hang out!
 
-![Code Mash](codemash.png)
+![Code Mash](./codemash.png)
 
 ### YouTube Videos
 
@@ -36,7 +36,7 @@ In the last newsletter, I told you I was working hard on producing higher qualit
 
 This week I [released a tutorial](https://www.youtube.com/watch?v=ZopBBEs9TPg) on how to create CSS Grid Layouts using an awesome tool called the CSS Grid Generator.
 
-![CSS Grid Generator](css-grid-generator.png)
+![CSS Grid Generator](./css-grid-generator.png)
 
 **Learn to code: One language at a time**
 

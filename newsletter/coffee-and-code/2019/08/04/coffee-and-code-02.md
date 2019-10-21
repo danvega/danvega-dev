@@ -1,6 +1,6 @@
 ---
 title: 'Coffee & Code Newsletter: #2'
-slug: '02'
+issue: 2
 date: '2019-08-04T08:00:00.000Z'
 ---
 

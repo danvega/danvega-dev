@@ -12,7 +12,7 @@ module.exports = {
   templates: {
     Post: '/blog/:year/:month/:day/:slug',
     Tag: '/tag/:title',
-    Newsletter: '/newsletter/coffee-and-code/:slug'
+    Newsletter: '/newsletter/coffee-and-code/:issue'
   },
   plugins: [
     {

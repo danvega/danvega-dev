@@ -1,6 +1,6 @@
 ---
 title: "Coffee & Code Newsletter: #6"
-slug: "06"
+issue: 6
 date: "2019-09-01T07:00:00.000Z"
 ---
 
@@ -15,7 +15,7 @@ This week was a busy week for me. I published a new blog article, a tutorial on 
 
 This week I did something that I have been thinking about doing for a while now, start a Discord community. I [published an article](https://www.danvega.dev/blog/2019/08/27/join-my-discord-community) this week that gives you a quick introduction to Discord, why I chose it as a platform and some details on how to [join my community](https://discord.gg/gx4Z8XY).
 
-![Join my Discord Community](join-my-discord.png)
+![Join my Discord Community](./join-my-discord.png)
 
 ### YouTube
 
@@ -27,7 +27,7 @@ I installed the extension for the first time and walked through bootstrapping a 
 
 I'm a life-long learner and it is something I really enjoy doing. Since you're a student here on Udemy I am guessing most of you are the same. I mean we pretty much have to be in the field that we are in right?
 
-![Back to School Sale on my Udemy Courses](back-to-school.jpg)
+![Back to School Sale on my Udemy Courses](./back-to-school.jpg)
 
 When students of all ages start going back to school it reminds me of getting those fresh school supplies and heading to school eager to learn something new. If you want to learn something new over the holiday weekend I am offering up all of my courses for $9.99. If you're interested you can use the links below but grab these coupons fast, the back to school sale ends September 2nd.
 

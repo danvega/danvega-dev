@@ -1,6 +1,6 @@
 ---
 title: "Coffee & Code Newsletter: #3"
-slug: "03"
+issue: 3
 date: "2019-08-11T08:00:00.000Z"
 ---
 
@@ -10,7 +10,7 @@ Welcome to Coffee and Code with me, [Dan Vega](https://www.danvega.dev/). This n
 
 A couple of months ago I applied to become an author for [freeCodeCamp](https://www.freecodecamp.org/news/) and this weekend I received the following email that I am so excited to share with you.
 
-![](freecodecamp-email.jpeg)
+![](./freecodecamp-email.jpeg)
 
 I have been a huge admirer of what freeCodeCamp does for our community and I can't wait to start contributing. A huge thanks to Quincy Larson for approving my application. Now the real question is what should my first article be about? If you have any thoughts please [tweet at me](https://twitter.com/therealdanvega).
 
@@ -18,7 +18,7 @@ I have been a huge admirer of what freeCodeCamp does for our community and I can
 
 [Learn how to use CSS Grid with a FREE tool CSS Grid Generator](https://www.danvega.dev/blog/2019/08/08/css-grid-generator)
 
-![](css-grid-generator-cover.png)
+![](./css-grid-generator-cover.png)
 
 As someone who has been developing web applications for almost 20 years now, I have seen it all. I started in FrontPage, moved to Dreamweaver, nested tables inside of tables and learned how to float and clear fix everything.
 
