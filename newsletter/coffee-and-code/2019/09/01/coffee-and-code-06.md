@@ -4,7 +4,6 @@ issue: 6
 date: "2019-09-01T07:00:00.000Z"
 ---
 
-
 Welcome to Coffee and Code with me, Dan Vega. This newsletter is a little insight into what I was up to this week, things I found interesting and anything on my radar for the upcoming week. If you don't already have a cup of coffee grab one now and let's get to it.
 
 ## Previous Week
