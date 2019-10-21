@@ -18,11 +18,11 @@
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <g-link class="navbar-item is-uppercase" :to="{ name: 'home' }">Home</g-link>
-        <g-link class="navbar-item is-uppercase" :to="{ name: 'blog' }">Blog</g-link>
+        <g-link class="navbar-item is-uppercase" to="/">Home</g-link>
+        <g-link class="navbar-item is-uppercase" to="/blog">Blog</g-link>
         <!-- <g-link class="navbar-item is-uppercase" :to="{ name: 'courses' }">Courses</g-link> -->
-        <g-link class="navbar-item is-uppercase" :to="{ name: 'speaking' }">Speaking</g-link>
-        <g-link class="navbar-item is-uppercase" :to="{ name: 'about' }">About</g-link>
+        <g-link class="navbar-item is-uppercase" to="/speaking">Speaking</g-link>
+        <g-link class="navbar-item is-uppercase" to="/about">About</g-link>
       </div>
     </div>
     <search-component />
