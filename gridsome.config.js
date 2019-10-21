@@ -9,17 +9,20 @@ module.exports = {
   siteUrl: "https://www.danvega.dev",
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
+  templates: {
+    Post: '/blog/:year/:month/:day/:slug',
+    Tag: '/tag/:title',
+    Newsletter: '/newsletter/coffee-and-code/:slug'
+  },
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",
         typeName: "Post",
-        route: "/blog/:year/:month/:day/:slug",
         refs: {
           tags: {
             typeName: "Tag",
-            route: "/tag/:slug",
             create: true
           }
         },
@@ -46,7 +49,6 @@ module.exports = {
       options: {
         path: "newsletter/coffee-and-code/**/*.md",
         typeName: "Newsletter",
-        route: "/newsletter/coffee-and-code/:slug",
         resolveAbsolutePaths: true,
         remark: {
           autolinkHeadings: false,

@@ -9,9 +9,10 @@
 </template>
 
 <page-query>
-query Newsletter($path:String!){
-  newsletter:newsletter(path:$path){
+query Newsletter($path:String!) {
+  newsletter: newsletter(path:$path) {
     title
+    slug
     date(format:"MM/DD/YYYY")
     content
     timeToRead
