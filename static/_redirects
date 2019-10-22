@@ -1,8 +1,8 @@
 # 301 Redirects
 /blog/creating-your-first-npm-package    /blog/2019/02/10/creating-your-first-npm-package   301
 /blog/hello-gridsome /blog/2019/01/31/hello-gridsome 301
-
 /signup /newsletter
+/subscriber-thank-you /newsletter/thank-you
 
 # pretty urls
 /feed /rss.xml 301
