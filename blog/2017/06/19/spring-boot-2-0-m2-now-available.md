@@ -46,7 +46,7 @@ Spring Boot detects the jOOQ dialect automatically based on the DataSource (simi
 
 If you haven’t already had a chance to check out my [Spring Boot Introduction course](http://courses.www.danvega.dev/p/spring-boot-intro) please do. This course is based on Spring Boot 1.3 and was very much an introduction. I am already planning a curriculum for a Spring 2.0 course is coming and I will be releasing it sometime around SpringOne. 
 
-![Spring Course](627032_1fbe_7.jpg)
+![Spring Course](./627032_1fbe_7.jpg)
 
 This is not just going to be a repeat of the previous course with a few new features. First off, I am going to create 2 free courses for setting up your development environment on both Windows 10 and Mac OS. Next, I will incorporate the feedback I have received from my current students. My current course is the best selling course on one platform and I know there is tons of room for improvement.  These courses will allow me to extract that portion of the course that some find necessary and others find boring. These courses will be bundled for free into the Spring Boot 2.0 course. I am working on the curriculum now but if you would like to receive updates check out my [Spring Boot 2.0 Course Page](https://www.danvega.dev/spring-boot-2-0) and signup for updates. Anyone on this list will be the first to find out when it’s released and will receive a discount. 
 

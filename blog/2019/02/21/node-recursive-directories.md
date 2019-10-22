@@ -25,7 +25,7 @@ I needed to stick to the url format that my existing posts were in which was **/
 - Month: 2 digits
 - Day: 2 digits
 
-![Calendar](undraw_calendar_dutt.png)
+![Calendar](./undraw_calendar_dutt.png)
 
 Before I could even begin to worry about creating a new directory (or directories) I needed to get the 3 parts I needed from the date for that blog post in the format I needed them. The first thing I did was to create a new date called createdOn from the post date.
 

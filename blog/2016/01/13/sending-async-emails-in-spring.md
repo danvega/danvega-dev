@@ -14,9 +14,9 @@ I have a student taking my course that sent me the following question
 
 I do agree with him in that there is no reason for us block program execution for something like sending an email. I am going to take this chance to walk you through sending email asynchronously using Spring Boot. Start off by creating a basic new Spring Boot project using the Spring Initializr from the web or your favorite IDE. We are going to select Web & Mail as dependencies.
 
-![](email_async_1.png)
+![](./email_async_1.png)
 
-![](email_async_2.png)              
+![](./email_async_2.png)              
 
 By selecting web and mail as dependencies we should have these two starter dependencies included included in our build file.
 

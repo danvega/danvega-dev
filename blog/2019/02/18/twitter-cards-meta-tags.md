@@ -118,7 +118,7 @@ If you want to learn more about the different types of cards you can create and 
 
 If you ever have problems with your Twitter Cards not displaying correctly there is a way to test them. You can use the Twitter Card Validator, plug in the url you want to test and see what the outcome is along with some debugging information. Here I have entered another blog post and I get a preview of what my twitter card is going to look like.
 
-![Twitter Card Validator](twitter-card-validator.png)
+![Twitter Card Validator](./twitter-card-validator.png)
 
 ## Conclusion
 

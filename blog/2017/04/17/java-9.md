@@ -14,7 +14,7 @@ I don't know about you but I love to play around with pre-releases of software. 
 
 The first thing we need to do if we want to use Java 9 is to install it. You will head over to [https://jdk9.java.net](https://jdk9.java.net) and bookmark this site as it contains a bunch of great information and links about Java 9. From there you are going to click on **_Downloads_** in the upper left-hand menu.  The build may be a different one if you're reading this at a later date but that is OK. Accept the user agreement and then download the correct version of the _**JDK**_ for your platform. The Installation is pretty straight forward so just follow the instructions. 
 
-![Java 9 Downloads](./2017-04-17_09-02-12-1024x448.png) If you follow me at all you might know what a huge fan of [SDKMan](http://sdkman.io/) I am. What you might not know is that you can use SDKMan to manage your Java installs as well now. It is now easier than ever to install and switch between versions of Java. If we run the command "sdk java list" we can see that there is a new version for me to install. 
+![Java 9 Downloads](./2017-04-17_09-02-12-1024x448.png) If you follow me at all you might know what a huge fan of [SDKMan](./http://sdkman.io/) I am. What you might not know is that you can use SDKMan to manage your Java installs as well now. It is now easier than ever to install and switch between versions of Java. If we run the command "sdk java list" we can see that there is a new version for me to install. 
 
 ![SDK Install Java 9](./2017-04-17_09-10-58-1024x498.png) Now I can run the install command and SDK will pull down that version, make it my default and add the appropriate environment variables. 
 

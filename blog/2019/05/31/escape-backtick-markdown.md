@@ -36,7 +36,7 @@ echo '# Hello VuePress' > docs/README.md
 
 When that is rendered to the page it looks like this:
 
-![](output-1a5ea040-ca04-47a1-aff6-a5e4467bfb1a.png)
+![](./output-1a5ea040-ca04-47a1-aff6-a5e4467bfb1a.png)
 
 Anything in between the triple backtick ``` is processed by the Markdown processor (in this case Markdown-it) and turned into the nice looking code block you see above complete with syntax highlighting. So knowing that the markdown process will take that code and turn it into a nice looking code block how can I display the actual code to you on this blog post or in a Github comment?
 

@@ -23,9 +23,9 @@ To understand what it is and why you would want to use it I think it's one of th
 
 If you click on create sandbox you will be given a dialog that looks something like this. From here you can choose from a variety of templates. If you select Vue as your template it will spin up a new application using the Vue CLI.
 
-![](2019-05-02_06-28-26-61e4a736-935d-42c1-973a-b0622a99a834.png)
+![](./2019-05-02_06-28-26-61e4a736-935d-42c1-973a-b0622a99a834.png)
 
-![](2019-05-02_06-32-24-f590aff3-0d4d-4c51-b494-5541e6f20e45.png)
+![](./2019-05-02_06-32-24-f590aff3-0d4d-4c51-b494-5541e6f20e45.png)
 
 If you were to just exit out of here and go back to your dashboard nothing would have been saved for you. You can tell from the browser window preview URL that it's currently [https://vue.codesandbox.io/](https://vue.codesandbox.io/) and not a unique address.
 
@@ -35,7 +35,7 @@ If you're used to using Visual Studio Code than this should look pretty familiar
 
 If you need to install a dependency for your project simply click on the Add Dependency button in your project files and search for the npm package you want to install.
 
-![](2019-05-02_06-39-54-3e52b93e-a9be-4593-9ece-d2039affd22d.png)
+![](./2019-05-02_06-39-54-3e52b93e-a9be-4593-9ece-d2039affd22d.png)
 
 It's just that simple to create a new project and now you have something that you can share with anyone. If you look in the upper right hand corner you will see a share button with a variety of ways to share your CodeSandbox. Here is a tutorial I followed along with on YouTube to learn about a using a draggable component.
 
@@ -91,7 +91,7 @@ If you have never written a Gridsome Plugin I would check out [their documentati
 
 One important note here is that you need to add the keyword `gridsome-plugin` if you want it to get picked up on the Gridsome Plugins Search at [https://gridsome.org/plugins](https://gridsome.org/plugins).
 
-![](2019-05-02_09-58-34-6c0295ad-4e1e-46d3-9e9d-368d24373694.png)
+![](./2019-05-02_09-58-34-6c0295ad-4e1e-46d3-9e9d-368d24373694.png)
 
 At this point I would create a new Github (or your favorite Git Host) Repository to store your plugin code in. After you create the Github Repository you can follow the instructions to make the initial commit and add your remote origin.
 

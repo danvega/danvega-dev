@@ -33,7 +33,7 @@ I'm not able to use the exact project that triggered this article but I was able
 
 In our sample application we have a footer component that is constant throughout our application and it contains a status message.
 
-![](2019-06-05_12-13-15-1bacd64d-69d7-48c7-a7ac-b90cc67baea5.png)
+![](./2019-06-05_12-13-15-1bacd64d-69d7-48c7-a7ac-b90cc67baea5.png)
 
 In `App.vue` there is a `<router-view>` component that will display each of our views and below that you will include a component `TheFooter.vue`.
 
@@ -71,7 +71,7 @@ export default {
 
 What we want is the ability to change that status message from a component. The catch here is that the component (`StatusUpdate.vue`) is being used in another view called admin.
 
-![](2019-06-05_12-15-38-7d19d6b2-654c-4187-8d61-fa1a6b4f88aa.png)
+![](./2019-06-05_12-15-38-7d19d6b2-654c-4187-8d61-fa1a6b4f88aa.png)
 
 So to make this work you will need to trigger the event from the admin page up to the main App component and then pass that into the footer as a prop.
 

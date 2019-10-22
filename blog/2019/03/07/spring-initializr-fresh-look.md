@@ -11,7 +11,7 @@ cover: ./spring-init-cover.png
 
 The Spring Team [just announced](https://spring.io/blog/2019/03/05/spring-initializr-new-ui) that the Spring Initializr has been updated with a brand new UI and it is now available at http://start.spring.io. You can see a screen shot of it below but I have say my first impressions were all positive.
 
-![Spring Initializr New Look](spring-init-new-look.png)
+![Spring Initializr New Look](./spring-init-new-look.png)
 
 ## What is the Spring Initializr
 
@@ -21,7 +21,7 @@ When I am describing this to students I often make the analogy of going to the g
 
 When you're building a new application you have a similar story. You know what you're building, even if you don't know all the details. If you find out later on you need to add new features you can certainly do so, the same way you inevitably will need to run out on Thanksgiving for those cranberries.
 
-![Shopping List](shopping-list.png)
+![Shopping List](./shopping-list.png)
 
 ### Spring Initializr Features
 
@@ -50,7 +50,7 @@ https://twitter.com/oodamien/status/1102875897290473472
 
 The problem is that in the previous version of the Spring Initializr you could switch to a full version and see all of the available starters.
 
-![Spring Initializr Full Version](spring-init-full-version.jpg)
+![Spring Initializr Full Version](./spring-init-full-version.jpg)
 
 This was very useful for beginners and but I don't think it was just geared towards them. There are a ton of available dependencies and it's really hard to remember what is available. The team addressed this in their announcement post and I am hoping this is something they address in the future.
 

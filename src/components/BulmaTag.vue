@@ -1,7 +1,7 @@
 <template>
   <div class="tags">
     <a v-for="tag in tags" :key="tag.id" :href="'/tag/' + tag.title">
-      <span class="tag is-primary is-large">
+      <span class="tag is-link">
         <i class="fas fa-tags"></i>
         &nbsp;{{tag.title}}
       </span>

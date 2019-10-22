@@ -16,7 +16,7 @@ I have decided to create a [Discord](https://discordapp.com) community. I have b
 
 If you're not familiar with Discord it is an all-in-one voice and text chat for gamers that's free, secure and works on both your desktop and phone. For a long time Discord was primarily geared towards gamers, and it still is. With that said it has been building some pretty great features on that has been attracting communities to it.
 
-![Discord Home](discord-home.png)
+![Discord Home](./discord-home.png)
 
 I have been a part of 5 or so communities this year on Discord and have really fallen in love with how easy it to use. I also love in the communities I am in everyone has been very helpful and nice.
 
@@ -32,7 +32,7 @@ If you're new here I teach courses online and currently have over 85,000 student
 
 I think by moving these students to Discord I can get a better handle on the questions being asked. Once I can get a better handle on what questions are being asked I can try and correct these problems in my courses and cut down on the number of questions I have to respond to. I also think this might turn into something where students can help other students with their questions. The reality is with a full-time job and a family I need to make the most of what little free time I have.
 
-![Library](library.jpeg)
+![Library](./library.jpeg)
 
 ### Not just for students
 
@@ -46,7 +46,7 @@ This sounds exactly like what Slack is made for right? I use Slack for work and 
 
 I could go on and on about the problems with using Slack building a community but I won't. Instead, you should check out this amazing article by Zach Shallbetter titled ***[Slack is destroying Communities](https://medium.com/@zachshallbetter/slack-is-destroying-communities-1ce49dad96ca)***.
 
-![Slack is Destroying Communities](slack-destroying-communities.png)
+![Slack is Destroying Communities](./slack-destroying-communities.png)
 
 ### Why not Facebook Groups?
 
@@ -60,7 +60,7 @@ Now that you know what Discord is and why I ultimately decided I needed a commun
 
 Below is a link to my Discord Community and look what my current chat room layout looks like. This will probably change by the time you get there but this is iteration #1.
 
-![My Discord Channels](discord-channels.png)
+![My Discord Channels](./discord-channels.png)
 
 Join my Discord Community: [https://discord.gg/gx4Z8XY](https://discord.gg/gx4Z8XY)
 

@@ -31,7 +31,7 @@ That sounds pretty straight forward but if it doesn't make total sense yet don't
 
 I put together that shows off how to use the template tag in Vanilla JavaScript. If you want to check out the source code for this demo you can find it on [Github](https://github.com/cfaddict/html-template-article). We are going to build a page that loads a list of user cards based on some JSON data and it will end up looking like this.
 
-![Demo](html-content-demo.png)
+![Demo](./html-content-demo.png)
 
 ### Markup
 

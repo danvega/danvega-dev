@@ -10,7 +10,7 @@ cover: ./highres_454339592.jpeg
 
 Last night I was lucky enough to be asked to [speak on a panel at Tech Elevator](http://www.meetup.com/Cleveland-learntocode/events/233766635/). The panel was made up of Senior Developers from the area and it was to a group of Jr. developers. The presentation was Lessons I've Learned in my programming career. It was great to talk to developers that are in the same spot I was in 15+ years ago and I really hope my advice was good for them to hear.
 
-![](14316849_10153742055740493_5473490718914398535_n.jpg)     
+![](./14316849_10153742055740493_5473490718914398535_n.jpg)     
 
 We had a list of questions that the moderator was going to ask us as well as questions from the audience. These are the questions and I thought some of them were really good. I am actually going to try and create some you YouTube videos with my answers to these and get them posted. Thanks again to everyone who came out.
 

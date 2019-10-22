@@ -14,7 +14,7 @@ I really do like Spring Data in the limited time that I have had to play around 
 
 If you don't know what GORM is it stands for Grails Object Relational Mapper. **GORM** is the data access toolkit used by [Grails](http://grails.org/) and provides a rich set of APIs for accessing relational and non-relational data including implementations for Hibernate (SQL), MongoDB, Neo4j, Cassandra, Redis and an in-memory ConcurrentHashMap for testing. They just released a new website to go along with
 
-![gorm5](gorm5.png)       
+![gorm5](./gorm5.png)       
 
 ### GORM in Spring Boot Demo
 
@@ -68,7 +68,7 @@ spring.h2.console.path=/console
 
 This allows us to hit the H2 web console and see our brand new table created. Run the application and visit [http://localhost:8080/console ](http://localhost:8080/console)to see the POST table created.
 
-![post_table](post_table.png)        
+![post_table](./post_table.png)        
 
 ### Accessing the data
 

@@ -60,7 +60,7 @@ Gridsome is a static site generator similar to Gatsby (though still new so not a
 
 If you were just going to have a plain static site you wouldn't really need something like Gridsome. Where Gridsome really shines is its ability to use multiple data source and combine them into a single GraphQL data layer. This means that you can work with local files like Markdown as well headless CMS's like WordPress, Contentful and so on. If you're new to GraphQL don't worry I was too and it's pretty easy to pickup.
 
-![How Gridsome Works](how-gridsome-works.png)
+![How Gridsome Works](./how-gridsome-works.png)
 
 ### Markdown
 

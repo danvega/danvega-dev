@@ -9,9 +9,9 @@ tags: ["vue", "gridsome"]
 cover: ./twittter-cards-gridsome-cover-936ee6d4-220e-4800-873c-9d700fa44469.png
 ---
 
-In a [previous article](https://www.danvega.dev/blog), I showed you how you could add Twitter Cards to your blog. If you haven't gone through that post yet I would suggest doing so before reading this one. 
+In a [previous article](https://www.danvega.dev/blog), I showed you how you could add Twitter Cards to your blog. If you haven't gone through that post yet I would suggest doing so before reading this one.
 
-In this article, I am going to show you how to add Twitter Cards to your Gridsome Blog. This is not only for Twitter cards but more of a general example on adding meta tags to your blog posts. 
+In this article, I am going to show you how to add Twitter Cards to your Gridsome Blog. This is not only for Twitter cards but more of a general example on adding meta tags to your blog posts.
 
 ## Blog Posts in Gridsome
 
@@ -43,7 +43,7 @@ If we look at the Post template the first thing you will see is the markup for e
 </Layout>
 ```
 
-This is all of the content for this blog post, so where is that coming from? If you look below the markup there is a GraphQL page query that pulls the information for this post based on the path. 
+This is all of the content for this blog post, so where is that coming from? If you look below the markup there is a GraphQL page query that pulls the information for this post based on the path.
 
 ```javascript
 <page-query>
@@ -83,7 +83,7 @@ If you [read my previous article](https://www.danvega.dev/blog/2019/02/18/twitte
 </head>
 ```
 
-The challenge here is that you want each blog post to generate tags specific to that article. Fortunately for us Gridsome gives us a really easy way to populate metadata in our components. All you need to do is add the `metaInfo` object to your components script section. 
+The challenge here is that you want each blog post to generate tags specific to that article. Fortunately for us Gridsome gives us a really easy way to populate metadata in our components. All you need to do is add the `metaInfo` object to your components script section.
 
 ```javascript
 <script>
@@ -131,7 +131,7 @@ metaInfo: {
 },
 ```
 
-With that you have everything you need to create your meta tags. In the following snippet I am creating a description meta tag and each of the tags that I need for my Twitter card. For each of the tags I am populating the content with data from the post that we are on. The script property that I am adding is the Twitter API that we need to include for the cards to work. 
+With that you have everything you need to create your meta tags. In the following snippet I am creating a description meta tag and each of the tags that I need for my Twitter card. For each of the tags I am populating the content with data from the post that we are on. The script property that I am adding is the Twitter API that we need to include for the cards to work.
 
 ```javascript
 metaInfo() {
@@ -173,9 +173,9 @@ For more information on what each of these meta tags do you can check out the [T
   </head>
 ```
 
-And this is an example of what a card might look like 
+And this is an example of what a card might look like
 
-![](2019-04-09_14-22-55-7de0bfb4-6ad0-4bd0-bf31-d2e9092d37ca.png)
+![](./2019-04-09_14-22-55-7de0bfb4-6ad0-4bd0-bf31-d2e9092d37ca.png)
 
 ## Conclusion
 

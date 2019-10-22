@@ -28,7 +28,7 @@ I really don't want to give away too much so I will leave it at this. The book i
 
 When I finished the book I was just surfing the web and trying to find more info about the book when [I came across the official website](http://readyplayerone.com/). There were some really great fan submitted art that helped visualize certain aspects of the book. This is one of my favorite images and I don't want to give much away but if you have read the book you should recognize it.
 
-![](ready_player_one-300x244.jpg)             
+![](./ready_player_one-300x244.jpg)             
 
 There was also a mention on the website that the book had plans to be turned into movie. This was exactly what I wanted to hear. This magical adventure is going to be turned into something I can see with my eyes I thought? My next thought was I really hope they find someone great to direct it. [I found the story on Deadline](http://deadline.com/2015/03/ready-player-one-movie-steven-spielberg-ernest-cline-warner-bros-1201398299/) and to my amazement Steven Spielberg had signed on to direct it. This was not only great news but actually pretty funny as a ton of his movies are referenced throughout the book. Here is a quick breakdown of the news by [Nerdist](http://nerdist.com/).  
 

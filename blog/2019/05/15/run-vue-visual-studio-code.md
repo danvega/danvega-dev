@@ -12,7 +12,7 @@ cover: ./run-vue-visual-studio-code-cover.png
 
 In this tutorial, I am going to show you 3 ways to run your VueJS applications from Visual Studio Code. This will also work for any NPM project that has a `package.json` but I am going to focus on Vue for this article. I have found that developers who are new to both NPM & Vue have some difficulty getting started so hopefully this will help.
 
-![](2019-05-15_07-33-46-8ad84b96-bc16-4d6e-902b-aa83d9fac58e.png)
+![](./2019-05-15_07-33-46-8ad84b96-bc16-4d6e-902b-aa83d9fac58e.png)
 
 ## Node, NPM & package.json
 
@@ -110,19 +110,19 @@ There is a chance that if you're working on an existing project there could be a
 
 So that's how we run scripts from the command line but not everyone loves typing out commands every time they want to run a project. With your project open the command palette by using the menu item `View > Command Palette` or by using the keyboard shortcut `Shift + CMD + P` or `Shift + CTRL + P` on Windows. From there type `Tasks` and click on the Run Task command.
 
-![](2019-05-15_09-41-08-caa0581d-abfc-4bf2-9693-907857c6bb79.png)
+![](./2019-05-15_09-41-08-caa0581d-abfc-4bf2-9693-907857c6bb79.png)
 
 This will examine your project and give you a list of the available scripts to run.
 
-![](2019-05-15_09-44-31-d411391e-3095-46a9-bdbc-4842f3950d12.png)
+![](./2019-05-15_09-44-31-d411391e-3095-46a9-bdbc-4842f3950d12.png)
 
 You can click on `npm:serve` or you can start typing the word serve and hit enter when it's selected to run it without using your mouse. If you see the following options you can go [here to learn more about scanning the task output](https://code.visualstudio.com/docs/editor/tasks#vscode).
 
-![](2019-05-15_09-46-03-ff4e4351-a423-4916-80e6-b2d561204651.png)
+![](./2019-05-15_09-46-03-ff4e4351-a423-4916-80e6-b2d561204651.png)
 
 If you hit continue without scanning the task output Visual Studio Code will run your task. This opens up a terminal for you and runs the script.
 
-![](2019-05-15_09-49-10-c43e1838-3da5-4b05-9dc8-0b11cf078a4f.png)
+![](./2019-05-15_09-49-10-c43e1838-3da5-4b05-9dc8-0b11cf078a4f.png)
 
 *The next time you run the task you won't be asked about scanning the output and this process becomes very quick*.
 
@@ -140,7 +140,7 @@ To enable this go into your Visual Studio Code settings and add the following se
 
 With your project open you will now have a NPM Scripts Explorer in the sidebar. If you click on the play icon next to the script name it will run the script for you, how awesome is that!
 
-![](2019-05-15_09-57-14-84d9686f-8bf7-4263-b31a-ed5d7af74d62.png)
+![](./2019-05-15_09-57-14-84d9686f-8bf7-4263-b31a-ed5d7af74d62.png)
 
 ## Conclusion
 

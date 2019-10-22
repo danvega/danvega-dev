@@ -20,11 +20,11 @@ In case you are reading this in a galaxy far far away and this site has complete
 
 ### Before (January 2019)
 
-![Website Look & Feel Before](before.png)
+![Website Look & Feel Before](./before.png)
 
 ### After (July 2019)
 
-![Website Look & Feel After](after.png)
+![Website Look & Feel After](./after.png)
 
 I know it's not a huge difference but it feels much cleaner to me and I added some features that are going really going to help improve my visitor's experience. Design is one of those things that I have just never been really good at.
 
@@ -36,7 +36,7 @@ I have the entire Adobe Creative Suite so I have been looking for a reason to ju
 
 What I really appreciate about this tool is just how non-designer friendly it was. I got up to speed in just a couple hours and I was able to to put together some ideas on what I wanted the home page to look like. I also love that I can quickly duplicate artboards and try something new. Now that I could actually see all of these options in front of me I knew what I wanted the new look and feel to look like. With that, I could now open a code editor and get straight to work knowing what I was going to build.
 
-![Adobe XD Home Page Layouts](adobe-xd-layouts.png)
+![Adobe XD Home Page Layouts](./adobe-xd-layouts.png)
 
 ## Bulma CSS
 
@@ -171,11 +171,11 @@ The toughest part was with the grid being so dynamic how would I be able to get 
 
 Which gives us this really nice grid layout.
 
-![CSS Grid Layout](grid-layout.png)
+![CSS Grid Layout](./grid-layout.png)
 
 The other thing to think about is what is this going to look like for mobile users. In this case, I decided to use a media query to just stack them when we hit a certain breakpoint.
 
-![CSS Grid Layout on Mobile](grid-layout-mobile.png)
+![CSS Grid Layout on Mobile](./grid-layout-mobile.png)
 
 ## Search
 
@@ -228,7 +228,7 @@ module.exports = function (api, options) {
 }
 ```
 
-![Search Results](search-results.png)
+![Search Results](./search-results.png)
 
 The styles don't look great on this right now but that is something I can come back and fix up later.
 
@@ -242,7 +242,7 @@ There are a few blog posts that I have screencasts of and in those cases, I want
 
 I went back to Adobe XD and tried to come up with a solution to this problem. My first and only idea was to just put a link below the cover image if there was a video. This functionality would work but didn't look all that great and didn't feature the video the way I wanted it to.
 
-![Video Cover Mockup](video-cover-mockup.png)
+![Video Cover Mockup](./video-cover-mockup.png)
 
 I asked for some advice on Twitter and Ryan Edgar replied with an awesome suggestion.
 
@@ -283,7 +283,7 @@ Now in my post template I could check to see if the post had a video and if did 
 
 Now when you go to a [post that has a video](https://www.danvega.dev/blog/2019/06/05/triggering-events-router-vue) it will display the YouTube embed instead of the cover image.
 
-![Blog Post Video Cover](video-cover.png)
+![Blog Post Video Cover](./video-cover.png)
 
 If you're going to do something similar it's important to remember that you still need a cover image even if you aren't displaying one. This is because you will still use that image for social media sharing and you don't want to lose that.
 

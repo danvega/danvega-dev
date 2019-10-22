@@ -20,7 +20,7 @@ This is why when tools like [CSS Grid](https://css-tricks.com/snippets/css/compl
 
 While I have a pretty good understanding of CSS Grid at this point I know it can be a little bit confusing to get started. That is why I am really excited to share with you a new tool that I came across that I really think can help you out if you're trying to understand CSS Grid.
 
-![](undraw_web_developer_p3e5-bc5394ac-2ec5-4a11-894c-10168231520e.png)
+![](./undraw_web_developer_p3e5-bc5394ac-2ec5-4a11-894c-10168231520e.png)
 
 [https://undraw.co/](https://undraw.co/)
 
@@ -28,13 +28,13 @@ While I have a pretty good understanding of CSS Grid at this point I know it can
 
 [CSS Grid Generator](https://cssgrid-generator.netlify.com/) is a free tool created by the super talented [Sarah Drasner](https://twitter.com/sarah_edo). It is a visual design tool that allows you to create a basic grid layout and then copy the code that was used to create it. When you first open the tool you will be presented with a default layout but from here you can easily customize the layout to your needs.
 
-![](css-grid-generator-default-layout.png)
+![](./css-grid-generator-default-layout.png)
 
 ### CSS Grid Layout Example
 
 When I am learning something I find the best way to learn is by building something practical with my shiny new toy. In this article, you are going to take a very simple layout and then use the CSS Grid Generator to create the code needed to use in a real project. This is the finished layout with a little bit of styling just so each section is apparent.
 
-![](simple-layout.png)
+![](./simple-layout.png)
 
 Now that you know what we are aiming for we can start building it out the layout. Start by updating the right hand side to the following.
 
@@ -45,11 +45,11 @@ Now that you know what we are aiming for we can start building it out the layout
 
 The gaps allow us to have some margin between our content. I could have just used column gap but I wanted some margin after the header and before the footer so that is what the row gap is doing.
 
-![](css-grid-generator-rows-columns.png)
+![](./css-grid-generator-rows-columns.png)
 
 Next you will want to define the different areas of your application. In the CSS Grid Generator you can click and drag to create an area. You will want the header to span the entire grid, the sidebars to take up one cell, the main content area to span 2 columns and the footer to span 4 columns. If you do everything correctly you should end up with something that looks like this.
 
-![](css-grid-generator-areas.png)
+![](./css-grid-generator-areas.png)
 
 This is starting to look more like our layout but you still need to define some sizes of different things. You will notice an input box next to each row and column that you can use to set a specific size.
 
@@ -57,7 +57,7 @@ This is starting to look more like our layout but you still need to define some 
 - Sidebars: 200px width
 - Footer: 50px height
 
-![](css-grid-generator-sizes.png)
+![](./css-grid-generator-sizes.png)
 
 This is starting to look more like the layout we were going for but you might be asking what that `1fr` unit is.
 
@@ -199,7 +199,7 @@ div:not(.parent) {
 
 If you were to run this you would end up with the following.
 
-![](simple-layout-no-height.png)
+![](./simple-layout-no-height.png)
 
 This looks pretty good but you want this to take up the entire browser window. An easy way to fix this is to add `height: 100vh` to the `.parent` class
 
@@ -216,7 +216,7 @@ This looks pretty good but you want this to take up the entire browser window. A
 
 With that, you have the layout you were looking for!
 
-![](simple-layout.png)
+![](./simple-layout.png)
 
 This tool is meant to help you create a basic layout in CSS Grid really fast. From here it will be up to you to go out and learn more about CSS Grid so that you can start customizing and creating advanced layouts.
 

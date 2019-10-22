@@ -58,7 +58,7 @@ When you ran the build you would pass in the language as an argument and build t
 
 ## MMMMMMMMMM Cookies
 
-![](AdobeStock_113771716-12be091c-ec88-49e5-b21f-6fe1a147485c.jpeg)
+![](./AdobeStock_113771716-12be091c-ec88-49e5-b21f-6fe1a147485c.jpeg)
 
 I don't know about you but when I started thinking about this problem I immediately thought about cookies. This was in part because I was hungry at the time but I also knew this to be a good solution to my problem.
 
