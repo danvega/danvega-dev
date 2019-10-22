@@ -119,7 +119,7 @@ export default {
 }
 .article {
   margin-top: 20px;
-  /* max-width: 1000px; */
+  margin-bottom: 60px;
 }
 .article h2 {
   margin: 20px 0 10px 0 !important;
