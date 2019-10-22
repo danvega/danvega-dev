@@ -1,16 +1,17 @@
 <template>
   <newsletter-layout>
-    <section id="archives">
-      <div class="container">
-        <h1>Newsletter Archives</h1>
-        <ul v-for="issue in $page.issues.edges" :key="issue.node.id">
-          <li>
-            <small>{{ issue.node.date }}</small> -
-            <g-link :to="issue.node.path">{{issue.node.title}}</g-link>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="container">
+      <h4>Newsletter Archives</h4>
+      <p>This is a list of archives for my newsletter, Coffee and Code. If you're interested in signing up and getting this delivered to your inbox every
+        single Sunday morning <g-link to="/newsletter/">click here</g-link>.
+      </p>
+      <ul>
+        <li v-for="issue in $page.issues.edges" :key="issue.node.id">
+          <small>{{ issue.node.date }}</small> -
+          <g-link :to="issue.node.path">{{issue.node.title}}</g-link>
+        </li>
+      </ul>
+    </div>
   </newsletter-layout>
 </template>
 
@@ -42,5 +43,13 @@ export default {
 </script>
 
 <style scoped>
-
+p {
+  line-height: 1.8;
+}
+h4 {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+ul { margin: 20px 0; }
 </style>

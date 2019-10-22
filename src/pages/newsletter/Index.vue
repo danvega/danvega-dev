@@ -27,16 +27,11 @@ export default {
 </script>
 
 <style>
-#signup {
-  background-color: #F9FAFB;
-}
 #signup .container {
   padding: 20px 0;
   margin: auto;
 }
-
 .formkit-form[data-uid="2245659c84"] {
   margin: auto;
-
 }
 </style>
