@@ -10,9 +10,10 @@ module.exports = {
   siteDescription: "Person blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
   templates: {
-    Post: '/blog/:year/:month/:day/:slug',
-    Tag: '/tag/:title',
-    Newsletter: '/newsletter/coffee-and-code/:issue'
+    Post: "/blog/:year/:month/:day/:slug",
+    Tag: "/tag/:title",
+    Newsletter: "/newsletter/coffee-and-code/:issue",
+    Broadcast: "/newsletter/:slug"
   },
   plugins: [
     {
@@ -49,6 +50,18 @@ module.exports = {
       options: {
         path: "newsletter/coffee-and-code/**/*.md",
         typeName: "Newsletter",
+        resolveAbsolutePaths: true,
+        remark: {
+          autolinkHeadings: false,
+          plugins: [["gridsome-plugin-remark-twitter", {}]]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "newsletter/broadcast/**/*.md",
+        typeName: "Broadcast",
         resolveAbsolutePaths: true,
         remark: {
           autolinkHeadings: false,
