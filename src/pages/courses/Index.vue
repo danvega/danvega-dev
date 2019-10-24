@@ -46,6 +46,28 @@
       </header>
     </div>
 
+    <section class="features">
+      <div class="container">
+        <div class="columns">
+          <div class="coluumn">
+            <i class="fas fa-money-check-alt fa-5x"></i>
+            <h4>30 Day Guarantee</h4>
+            <p>All courses come with a 30 day money back guarantee. If you're not finding value in the course just ask for a refund and you will get one no questions asked.</p>
+          </div>
+          <div class="coluumn">
+            <i class="fab fa-discord fa-5x"></i>
+            <h4>Private Discord Channel</h4>
+            <p>All courses come with an invitation to a private discord channel where you will get support from me and other students.</p>
+          </div>
+          <div class="coluumn">
+            <i class="fas fa-download fa-5x"></i>
+            <h4>Offline Viewing</h4>
+            <p>All courses purchased on my platform can be downloaded for offline viewing. This is something I can't offer if you purchase my courses on another platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="courses">
       <div class="container">
         <h3>Courses</h3>
@@ -454,6 +476,24 @@ h3 {
 }
 .fa-check-circle {
   color: rgb(59, 172, 59);
+}
+
+.features {
+  background-color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+.features h4 {
+  font-size: 20px;
+}
+.features .fas,
+.features .fab {
+  color: #38d39f;
+}
+.features p {
+  font-size: 13px;
+  padding: 12px;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 575px) {
