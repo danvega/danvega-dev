@@ -4,7 +4,7 @@
     <div class="container">
       <header>
         <div class="logo">
-          <g-image src="../../../assets/img/danvega-avatar.png" width="80"/>
+          <g-image src="../../assets/img/danvega-avatar.png" width="80" />
         </div>
       </header>
       <div class="content">
@@ -31,8 +31,8 @@
           </p>
           <p>
             Thank You
-            <br>
-            <g-image src="../../../assets/img/signature.png"/>
+            <br />
+            <g-image src="../../assets/img/signature.png" />
           </p>
         </div>
         <div class="signup">

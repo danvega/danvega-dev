@@ -21,8 +21,15 @@ export default {
   },
   metaInfo: {
     link: [
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.0/css/all.css' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker&display=swap' },
+      {
+        rel: "stylesheet",
+        href: "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker&display=swap"
+      }
     ]
   }
 };
@@ -38,12 +45,11 @@ query {
 
 <style lang="scss" src="~/assets/style/index.scss"></style>
 <style>
-
 :root {
   --var-bg: #ffffff;
   --var-txt-color: #2c3e50;
 }
-body {
+.default-layout {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
