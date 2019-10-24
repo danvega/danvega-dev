@@ -163,7 +163,7 @@
                 <div class="content">
                   <h4>Getting Started with VueJS</h4>
                   <p>Learn how to get started using the Vue Framework in existing and brand new applications.</p>
-                  <a href="/courses/intro-to-vue" class="button is-info">Learn More</a>
+                  <a href="https://danvega.ck.page/823d5f3bee" class="button is-info" target="_blank">Learn More</a>
                 </div>
               </div>
             </div>
