@@ -94,7 +94,7 @@
                   <p>Everything you need to know to get started with the Groovy Programming Language</p>
                   <!-- <span class="button is-info">Learn More</span> -->
                   <a
-                    href="https://therealdanvega.teachable.com/p/the-complete-apache-groovy-developer-course"
+                    href="https://courses.danvega.dev/p/the-complete-apache-groovy-developer-course"
                     class="button is-info"
                   >Learn More</a>
                 </div>
@@ -118,7 +118,7 @@
                   <h4>Getting Started with Spring Boot 2</h4>
                   <p>Learn how to build a real application using Spring Framework 5 & Spring Boot 2</p>
                   <a
-                    href="https://therealdanvega.teachable.com/p/spring-boot-2"
+                    href="https://courses.danvega.dev/p/spring-boot-2"
                     class="button is-info"
                   >Learn More</a>
                 </div>
@@ -142,7 +142,7 @@
                   <h4>Learn Spring Boot - Rapid Application Development</h4>
                   <p>Spring Boot gives you all the power of the Spring Framework without all of the complexity.</p>
                   <a
-                    href="https://therealdanvega.teachable.com/p/spring-boot-intro"
+                    href="https://courses.danvega.dev/p/spring-boot-intro"
                     class="button is-info"
                   >Learn More</a>
                 </div>
@@ -167,10 +167,7 @@
                 <div class="content">
                   <h4>Angular 4 Java Developers</h4>
                   <p>Learn how to build Spring Boot & Angular apps by building a real world application with JHipster.</p>
-                  <a
-                    href="https://therealdanvega.teachable.com/p/jhipster"
-                    class="button is-info"
-                  >Learn More</a>
+                  <a href="https://courses.danvega.dev/p/jhipster" class="button is-info">Learn More</a>
                 </div>
               </div>
             </div>
@@ -180,7 +177,7 @@
               <div class="card-image">
                 <figure class="image">
                   <img
-                    src="@/assets/img/courses/spring-boot-2-udemy.jpg"
+                    src="@/assets/img/courses/intro-to-vue.png"
                     alt="Placeholder image"
                     class="modal-button"
                   />
@@ -189,7 +186,7 @@
               <div class="card-content">
                 <div class="content">
                   <h4>Getting Started with VueJS</h4>
-                  <p>Learn how to build Spring Boot & Angular apps by building a real world application with JHipster.</p>
+                  <p>Learn how to get started using the Vue Framework in existing and brand new applications.</p>
                   <a href="/courses/intro-to-vue" class="button is-info">Learn More</a>
                 </div>
               </div>
@@ -211,7 +208,7 @@
                   <h4>Getting Started with Java</h4>
                   <p>Everything you need to know about setting up your local development environment.</p>
                   <a
-                    href="https://therealdanvega.teachable.com/p/getting-started-with-java"
+                    href="https://courses.danvega.dev/p/getting-started-with-java"
                     class="button is-info"
                   >Learn More</a>
                 </div>
