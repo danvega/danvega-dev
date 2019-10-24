@@ -4,7 +4,13 @@
       <h1 class="title is-2">Contact Me</h1>
       <p>Please feel free to use the form below to contact me about anything you want. You can also reach me on Twitter with any feedback you have or if you just want to say 👋</p>
       <br />
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="website-feedback"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="website-feedback" />
         <div class="field">
           <input type="text" name="name" class="input" placeholder="Your Name" />
         </div>
