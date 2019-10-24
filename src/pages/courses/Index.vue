@@ -372,6 +372,7 @@ export default {
   width: 100vw;
   background: url("../../assets/img/courses-background.png");
   background-size: cover;
+      font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 nav {
   margin: 0 0 30px 0;
