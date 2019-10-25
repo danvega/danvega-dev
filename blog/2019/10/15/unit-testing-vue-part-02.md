@@ -1,6 +1,6 @@
 ---
 slug: 'unit-testing-vue-part-02'
-title: "A BEGINNER'S GUIDE TO UNIT TESTING IN VUE: PART 1"
+title: "A Beginner's Guide to Unit Testing in Vue: Part 2"
 date: '2019-10-15T12:33:53.592Z'
 published: true
 excerpt: 'In the 2nd part of this 3 part series we will look at writing and running your first unit test in Vue'
