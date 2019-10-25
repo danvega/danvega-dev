@@ -5,7 +5,8 @@
         useColorLogo="false"
         useTransparentBackground="true"
         navbarLocation="end"
-        hideSearch="true"/>
+        hideSearch="true"
+      />
       <header>
         <div class="columns">
           <div class="column">
@@ -163,7 +164,11 @@
                 <div class="content">
                   <h4>Getting Started with VueJS</h4>
                   <p>Learn how to get started using the Vue Framework in existing and brand new applications.</p>
-                  <a href="https://danvega.ck.page/823d5f3bee" class="button is-info" target="_blank">Learn More</a>
+                  <a
+                    href="https://danvega.ck.page/823d5f3bee"
+                    class="button is-info"
+                    target="_blank"
+                  >Learn More</a>
                 </div>
               </div>
             </div>
@@ -337,7 +342,7 @@
 </template>
 
 <script>
-import LayoutNavigation from '@/components/LayoutNavigation';
+import LayoutNavigation from "@/components/LayoutNavigation";
 
 export default {
   components: {
@@ -372,7 +377,9 @@ export default {
   width: 100vw;
   background: url("../../assets/img/courses-background.png");
   background-size: cover;
-      font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
 }
 nav {
   margin: 0 0 30px 0;
@@ -453,6 +460,12 @@ h3 {
   font-size: 13px;
   padding: 12px;
   line-height: 1.5;
+}
+
+.formkit-form[data-uid="2245659c84"] p {
+  font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
 }
 
 @media only screen and (max-width: 575px) {
