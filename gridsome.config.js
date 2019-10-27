@@ -13,7 +13,6 @@ module.exports = {
     Post: "/blog/:year/:month/:day/:slug",
     Tag: "/tag/:title",
     Newsletter: "/newsletter/coffee-and-code/:issue"
-    // Broadcast: "/newsletter/:slug"
   },
   plugins: [
     {
@@ -57,18 +56,6 @@ module.exports = {
         }
       }
     },
-    // {
-    //   use: "@gridsome/source-filesystem",
-    //   options: {
-    //     path: "newsletter/broadcast/**/*.md",
-    //     typeName: "Broadcast",
-    //     resolveAbsolutePaths: true,
-    //     remark: {
-    //       autolinkHeadings: false,
-    //       plugins: [["gridsome-plugin-remark-twitter", {}]]
-    //     }
-    //   }
-    // },
     {
       use: "gridsome-plugin-rss",
       options: {
