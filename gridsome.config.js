@@ -7,7 +7,7 @@
 module.exports = {
   siteName: "Dan Vega",
   siteUrl: "https://www.danvega.dev",
-  siteDescription: "Person blog of Dan Vega",
+  siteDescription: "Personal blog of Dan Vega",
   icon: "src/img/danvega-favicon.png",
   templates: {
     Post: "/blog/:year/:month/:day/:slug",
