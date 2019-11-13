@@ -8,7 +8,6 @@
     "newpost": "node ./scripts/newpost.js"
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.1.1",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.3.4",
