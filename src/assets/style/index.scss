@@ -6,3 +6,8 @@
 
 /** Import overrides */
 @import "overrides";
+
+pre code,
+.shiki-inline {
+  font-size: 0.9rem;
+}

@@ -28,7 +28,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker&display=swap"
+          "https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker|Roboto+Slab&display=swap"
       }
     ]
   }
@@ -47,17 +47,22 @@ query {
 <style>
 :root {
   --var-bg: #ffffff;
-  --var-txt-color: #2c3e50;
+  --var-txt-color: #3d455c;
 }
 .default-layout {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: Roboto Slab -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  font-weight: 300;
   color: var(--var-text-color);
   background-color: var(--var-bg);
   border-top: 7px solid #3273dc;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 </style>
 

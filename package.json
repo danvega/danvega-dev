@@ -26,6 +26,7 @@
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
+    "vue-disqus": "^3.0.5",
     "vue-fuse": "^2.1.0",
     "yaml-front-matter": "^4.0.0"
   },

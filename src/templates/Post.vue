@@ -17,7 +17,23 @@
       <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
       <article v-html="$page.post.content" class="article" />
       <bulma-tag :tags="$page.post.tags" />
-      <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
+      <div class="followme">
+        Follow me on
+        <a href="http://twitter.com/therealdanvega">Twitter</a>,
+        <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up for my
+        <a href="/newsletter">newsletter</a>.
+        <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
+      </div>
+      <div class="author">
+        <div class="avatar">
+          <g-image src="../assets/img/about_me_circle-300x295.png" />
+        </div>
+        <div class="bio">
+          <h3>Dan Vega</h3>
+          <p>I’m a Husband, Father, Curriculum Developer and maker of things from Cleveland Ohio. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.</p>
+        </div>
+      </div>
+      <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
     </div>
   </Layout>
 </template>
@@ -119,7 +135,7 @@ export default {
 }
 .article {
   margin-top: 20px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .article h2 {
   margin: 20px 0 10px 0 !important;
@@ -148,6 +164,7 @@ a > span.fas.fa-hashtag {
 }
 .shiki {
   margin: 20px 0px !important;
+  font-size: 11px !important;
 }
 .article .fa-youtube {
   color: red;
@@ -171,5 +188,44 @@ a > span.fas.fa-hashtag {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.followme {
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
+}
+.author {
+  display: flex;
+  margin: 40px 0;
+}
+.author p {
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  font-weight: 300;
+  color: #3d455c;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+.author h3 {
+  font-size: 27px;
+  border-bottom: 1px solid #f2f3f3;
+  padding-bottom: 5px;
+}
+.bio {
+  padding: 0 30px;
+}
+.avatar {
+  width: 90%;
+}
+.avatar img {
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid #eeeeee;
+}
+#convertkit {
+  margin: 15px;
 }
 </style>
