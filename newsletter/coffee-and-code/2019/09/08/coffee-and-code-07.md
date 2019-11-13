@@ -59,6 +59,4 @@ Anthony Gore is the creator of VueJS Developers which is an online community the
 Thanks for sitting down and sharing a cup of coffee with me my friend. I hope you enjoyed this first installment of Coffee & Code and I will see you next Sunday morning. If you have any links you would like me to include please contact me and I might add them to a future newsletter. I hope you have a great week and as always friends...
 
 Happy Coding<br/>
-Dan Vega<br/>
-danvega@gmail.com<br/>
-[https://www.danvega.dev](https://www.danvega.dev/)
+Dan Vega

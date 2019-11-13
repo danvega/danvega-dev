@@ -1,14 +1,13 @@
 ---
-slug: 'run-vue-visual-studio-code'
-title: '3 ways to run VueJS applications from Visual Studio Code'
-date: '2019-05-15T14:19:36.459Z'
+slug: "run-vue-visual-studio-code"
+title: "3 ways to run VueJS applications from Visual Studio Code"
+date: "2019-05-15T14:19:36.459Z"
 published: false
-excerpt: 'In this tutorial, I am going to show you 3 ways to run your VueJS applications from Visual Studio Code. '
-author: 'Dan Vega'
-tags: ['vue','npm','vscode','javascript']
+excerpt: "In this tutorial, I am going to show you 3 ways to run your VueJS applications from Visual Studio Code. "
+author: "Dan Vega"
+tags: ["vue", "npm", "vscode", "javascript"]
 cover: ./run-vue-visual-studio-code-cover.png
 ---
-
 
 In this tutorial, I am going to show you 3 ways to run your VueJS applications from Visual Studio Code. This will also work for any NPM project that has a `package.json` but I am going to focus on Vue for this article. I have found that developers who are new to both NPM & Vue have some difficulty getting started so hopefully this will help.
 
@@ -124,7 +123,7 @@ If you hit continue without scanning the task output Visual Studio Code will run
 
 ![](./2019-05-15_09-49-10-c43e1838-3da5-4b05-9dc8-0b11cf078a4f.png)
 
-*The next time you run the task you won't be asked about scanning the output and this process becomes very quick*.
+_The next time you run the task you won't be asked about scanning the output and this process becomes very quick_.
 
 ### NPM Scripts Explorer
 
@@ -146,5 +145,5 @@ With your project open you will now have a NPM Scripts Explorer in the sidebar. 
 
 I hope this article was helpful in identifying and running your VueJS applications from Visual Studio Code. There is usually more than one way to accomplish a task and not all of us have the same preferences. As always friends...
 
-Happy Coding
+Happy Coding<br/>
 Dan

@@ -1,11 +1,11 @@
 ---
-slug: 'codesandbox-custom-theme'
-title: 'How to customize the VSCode Theme in CodeSandbox'
-date: '2019-05-08T01:56:43.680Z'
+slug: "codesandbox-custom-theme"
+title: "How to customize the VSCode Theme in CodeSandbox"
+date: "2019-05-08T01:56:43.680Z"
 published: true
-excerpt: 'In this article, I am going to give you a quick tip on how to customize the VSCode Theme in CodeSandbox.'
-author: 'Dan Vega'
-tags: ['codesandbox']
+excerpt: "In this article, I am going to give you a quick tip on how to customize the VSCode Theme in CodeSandbox."
+author: "Dan Vega"
+tags: ["codesandbox"]
 cover: ./codesandbox-custom-theme-cover.png
 ---
 
@@ -58,5 +58,5 @@ With that my new favorite theme is in CodeSandbox and I can get back to being a 
 
 If you can't tell already I am really loving everything about CodeSandbox right now. I am using it more and more personally and I have introduced it as a tool that we can take advantage of at work and the whole team is on board. Are you using CodeSandbox and if so for what? Also please let me know what some of your favorite themes are. As always...
 
-Happy Coding
+Happy Coding<br/>
 Dan

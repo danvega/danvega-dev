@@ -28,9 +28,9 @@ I'm a life-long learner and it is something I really enjoy doing. Since you're a
 
 ![Back to School Sale on my Udemy Courses](./back-to-school.jpg)
 
-When students of all ages start going back to school it reminds me of getting those fresh school supplies and heading to school eager to learn something new. If you want to learn something new over the holiday weekend I am offering up all of my courses for $9.99. If you're interested you can use the links below but grab these coupons fast, the back to school sale ends September 2nd.
+When students of all ages start going back to school it reminds me of getting those fresh school supplies and heading to school eager to learn something new. If you want to learn something new over the holiday weekend I am offering up all of my courses for \$9.99. If you're interested you can use the links below but grab these coupons fast, the back to school sale ends September 2nd.
 
-Coupon: ***BACKTOSCHOOL***
+Coupon: **_BACKTOSCHOOL_**
 
 [Learn Spring Boot](https://www.udemy.com/spring-boot-intro/?couponCode=BACKTOSCHOOL)
 
@@ -78,6 +78,4 @@ I got a chance to watch [@lizcodes](https://twitter.com/lizcodes) coding on her 
 Thanks for sitting down and sharing a cup of coffee with me my friend. I hope you enjoyed this first installment of Coffee & Code and I will see you next Sunday morning. If you have any links you would like me to include please contact me and I might add them to a future newsletter. I hope you have a great week and as always friends...
 
 Happy Coding<br/>
-Dan Vega<br/>
-danvega@gmail.com<br/>
-[https://www.danvega.dev](https://www.danvega.dev/)
+Dan Vega

@@ -1,11 +1,11 @@
 ---
-slug: 'My-new-blog-post-workflow'
-title: 'My new blog post workflow'
-date: '2019-04-25T13:53:35.054Z'
+slug: "My-new-blog-post-workflow"
+title: "My new blog post workflow"
+date: "2019-04-25T13:53:35.054Z"
 published: false
-excerpt: 'In this article I will outline for you the tools and process I use to create a new blog post'
-author: 'Dan Vega'
-tags: ['blogging']
+excerpt: "In this article I will outline for you the tools and process I use to create a new blog post"
+author: "Dan Vega"
+tags: ["blogging"]
 cover: ./new-blog-post-workflow-cover.png
 ---
 
@@ -71,7 +71,7 @@ I have set up a kanban board for blog posts and this is where I have a view into
 
 I did something like this in Asana but over there I had to create a new content calendar to see what would be posted and when.
 
- In Notion, you can set up some properties for each new post, which essentially is just a new page.  This allows me to define a publish date for the post for when I expect this article to go live.
+In Notion, you can set up some properties for each new post, which essentially is just a new page. This allows me to define a publish date for the post for when I expect this article to go live.
 
 ![](./2019-04-25_08-28-37-4a42f7e2-b6de-4dd3-bfa1-ecbc46a972d5.png)
 
@@ -160,5 +160,5 @@ Because you can add custom properties to each post I have even added a DEV publi
 
 So that is my blogging process which I am sure will change again at some point but for now, I am really happy. I would love to hear from you on what your process is and any tips and tricks you are willing to share. Are you using Notion for anything, what are your thoughts on it as a tool and or a blogging platform? Until next time...
 
-Happy Coding
+Happy Coding<br/>
 Dan

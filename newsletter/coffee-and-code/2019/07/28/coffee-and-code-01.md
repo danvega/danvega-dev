@@ -1,7 +1,7 @@
 ---
-title: 'Coffee & Code Newsletter: #1'
+title: "Coffee & Code Newsletter: #1"
 issue: 1
-date: '2019-07-28T08:00:00.000Z'
+date: "2019-07-28T08:00:00.000Z"
 ---
 
 Welcome to the first installment of Coffee and Code with me, [Dan Vega](https://www.danvega.dev/). It's a little insight into what I was up to this week, things I found interesting and anything on my radar for the upcoming week. I will try and keep these pretty short and digestible. So if you don't have a cup of coffee go and grab one and if you do, let's get to it.
@@ -20,7 +20,7 @@ If you weren't able to make the live stream the [recording is posted on YouTube]
 
 ### **Blog**
 
-This week I also  [wrote an article](https://www.danvega.dev/blog/2019/07/23/website-new-features-improvements) on new features and improvements to my website. These were a series of new features that I have been working on and I was excited to get these out there.
+This week I also [wrote an article](https://www.danvega.dev/blog/2019/07/23/website-new-features-improvements) on new features and improvements to my website. These were a series of new features that I have been working on and I was excited to get these out there.
 
 ## Upcoming Week
 
@@ -77,8 +77,5 @@ This is someone I really enjoy following on Twitter and I think you should check
 
 Thanks for sitting down and sharing a cup of coffee with me my friend. I hope you enjoyed this first installment of Coffee & Code and I will see you next Sunday morning. If you have any links you would like me to include please contact me and I might add them to a future newsletter. I hope you have a great week and as always friends...
 
-Happy Coding
+Happy Coding<br/>
 Dan Vega
-danvega@gmail.com
-
-[https://www.danvega.dev](https://www.danvega.dev/)

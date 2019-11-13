@@ -1,11 +1,11 @@
 ---
-slug: 'up-and-running-with-vue'
-title: 'Everything you need to get up and running with VueJS'
-date: '2019-04-30T19:38:42.927Z'
+slug: "up-and-running-with-vue"
+title: "Everything you need to get up and running with VueJS"
+date: "2019-04-30T19:38:42.927Z"
 published: true
-excerpt: 'In this article, I am going to tell you why I love Vue and give you 4 different ways you can write your first application.'
-author: 'Dan Vega'
-tags: ['vue','javascript']
+excerpt: "In this article, I am going to tell you why I love Vue and give you 4 different ways you can write your first application."
+author: "Dan Vega"
+tags: ["vue", "javascript"]
 cover: ./up-and-running-with-vue-cover.png
 ---
 
@@ -107,15 +107,13 @@ In this application you are going to display the text "Hello, Vue!" and the curr
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello, Vue.js</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello, Vue.js</title>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -124,9 +122,7 @@ Now that you have the basic part of your page setup it's time to add the Vue.js 
 ```html
 <!-- development version includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script>
-
-</script>
+<script></script>
 ```
 
 I left the comment in there because it's important to note this is the development version of the script. If you were going to put this in production you would want to use the production script. You can read more about this is the [Vue.js Guide Documentation](https://vuejs.org/v2/guide/).
@@ -134,9 +130,7 @@ I left the comment in there because it's important to note this is the developme
 The first thing you need to is add a root element to mount your Vue instance to.
 
 ```html
-<div id="app">
-
-</div>
+<div id="app"></div>
 ```
 
 And then create a new Vue instance and tell Vue what your root element is.
@@ -144,8 +138,8 @@ And then create a new Vue instance and tell Vue what your root element is.
 ```html
 <script>
   const app = new Vue({
-    el: '#app'
-  })
+    el: "#app"
+  });
 </script>
 ```
 
@@ -154,12 +148,12 @@ What you want to do now is to create a couple of variables that hold values that
 ```html
 <script>
   const app = new Vue({
-    el: '#app',
+    el: "#app",
     data: {
-      message: 'Hello Vue!',
+      message: "Hello Vue!",
       now: new Date()
     }
-  })
+  });
 </script>
 ```
 
@@ -185,9 +179,9 @@ The following code will update the variable now every second. When Vue is mounte
 ```html
 <script>
   const app = new Vue({
-    el: '#app',
+    el: "#app",
     data: {
-      message: 'Hello Vue!',
+      message: "Hello Vue!",
       now: new Date()
     },
     methods: {
@@ -200,7 +194,7 @@ The following code will update the variable now every second. When Vue is mounte
         this.updateDate();
       }, 100);
     }
-  })
+  });
 </script>
 ```
 
@@ -394,6 +388,5 @@ Don't feel to build large applications at this point. Focus on building componen
 
 If you follow me on Twitter (if you're not, stop what you're doing and [follow me now](https://twitter.com/therealdanvega)) you know that I am a huge fan of Vue. I love writing component-based applications and I think Vue makes it not only easy but it really makes writing code fun. If you have any questions on your journey into Vue.js please don't hesitate to reach out. As always friends...
 
-Happy Coding
-
+Happy Coding<br/>
 Dan

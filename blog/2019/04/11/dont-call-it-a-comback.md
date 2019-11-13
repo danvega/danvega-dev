@@ -1,11 +1,11 @@
 ---
 slug: "dont-call-it-a-comeback"
 title: "Personal Blogs: Don't Call it a comeback!"
-date: '2019-04-11T11:38:39.435Z'
+date: "2019-04-11T11:38:39.435Z"
 published: false
 excerpt: "I'm not sure if you have noticed or not but the personal blog is making a comeback"
-author: 'Dan Vega'
-tags: ['blogging']
+author: "Dan Vega"
+tags: ["blogging"]
 cover: ./personal-blog-4b0867c8-0c1b-421c-afaf-7fc7e7986a77.png
 ---
 
@@ -49,7 +49,7 @@ WordPress is an amazing CMS + Blogging platform that is used by something like 3
 
 I have been using it for awhile now and have really enjoyed it for the most part. The 3 main issues I have had with it are:
 
-- Hosting: WordPress is a resource hog and hosting runs me $30 month
+- Hosting: WordPress is a resource hog and hosting runs me \$30 month
 - Plugins: Installing lots of plugins can cause performance issue
 - PHP: I am not a PHP developer nor do I want to be.
 
@@ -63,7 +63,7 @@ In 2012 Medium launched and it offered a platform for writers to start writing w
 
 Fast forward to today and I see a lot of developers that did move to Medium, moving off of it. Medium took a bunch of funding so you had to know at some point that they needed to start making money. If you're reading a post on Medium these days you might be all of a sudden hit with a paywall. I also don't think its a great writing experience for developers.
 
-*If you're looking for a solution like Medium but for developers, I would suggest taking a look at [http://www.dev.to](http://www.dev.to).*
+_If you're looking for a solution like Medium but for developers, I would suggest taking a look at [http://www.dev.to](http://www.dev.to)._
 
 ## Don't call it a comeback
 
@@ -83,7 +83,7 @@ I write a lot of documentation, tutorials, and exercises in Markdown so starting
 
 I have mentioned Gridsome a few times in this article and it's the one that I selected because it uses Vue. There are plenty of great options out there including a very popular one called [Gatsby](https://www.gatsbyjs.org/). I would suggest looking at your options, trying out a couple that fit your stack and go from there.
 
-*P.S If you're interested in hearing more on JAMStack tweet at me and tell me to write that article! I love everything about it and have a lot to say on the subject.*
+_P.S If you're interested in hearing more on JAMStack tweet at me and tell me to write that article! I love everything about it and have a lot to say on the subject._
 
 ### Evolution of JavaScript Frameworks
 
@@ -111,6 +111,5 @@ I had so much fun building my new personal website using [Gridsome](https://grid
 
 If you moved your blog or created a new on top of a new framework or static site generator please let me know. I would love to check it out and I will retweet some of my favorites.
 
-**Happy Coding**
-
+Happy Coding<br/>
 Dan

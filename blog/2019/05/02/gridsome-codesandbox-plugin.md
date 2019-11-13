@@ -307,5 +307,5 @@ plugins: [{
 
 If you follow this blog at all you probably already know this but I love Gridsome and adding CodeSandbox shares to my Markdown really makes me happy. Are there any plugins that you would love to see added to Gridsome? What are you using CodeSandbox for? As always friends...
 
-Happy Coding
+Happy Coding<br/>
 Dan
