@@ -14,9 +14,9 @@ cover: ./live-coders-cover.png
 
 I remember the first Nintendo I got for Christmas and I thought it was the coolest thing ever. Every day after school my friend Mike and I use to play whatever game we were trying to conquer at the time. When we got stuck we couldn't turn to Google for the answers (Yes, I am that old). We had to wait for Nintendo Power, or a guide dedicated to that game or as a last result we would just ask our friends the next day at school.
 
-|                                                                                |                                                       |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------- |
-| ![](ea16e9bb12986a0b89f8bd5eefeb2d0f-14c63fb2-1532-44e2-a377-551c0ddc5222.jpg) | ![](SMguide-ae13d10d-69b3-412a-951c-b6487d447a59.jpg) |
+|                                                                                  |                                                         |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| ![](./ea16e9bb12986a0b89f8bd5eefeb2d0f-14c63fb2-1532-44e2-a377-551c0ddc5222.jpg) | ![](./SMguide-ae13d10d-69b3-412a-951c-b6487d447a59.jpg) |
 
 ## Live Streaming Gamers
 
@@ -115,5 +115,5 @@ I also want to mention [Ecamm Live](https://www.ecamm.com/mac/ecammlive/) which 
 
 If you can't tell from this article I really love everything you can learn from live coders. I am curious about your thoughts on developers live streaming. What do you get out of it? Who are some of your favorites? If I were to start live streaming what would you like to see from me? Until next time friends...
 
-Happy Coding
+Happy Coding<br/>
 Dan
