@@ -6,6 +6,7 @@ date: 2017-07-05T12:00:27-04:00
 tags: ['spring']
 excerpt: "How to read JSON data in Spring Boot and write to a database"
 cover: './pexels-photo-374899-760x506.jpeg'
+video: https://www.youtube.com/embed/rGdKmF2UzSc
 ---
 
 In this tutorial, we are taking a look at a student's question from my [Spring Boot Introduction Course](https://www.danvega.dev/spring-boot). 
