@@ -1,5 +1,6 @@
 <template>
   <div class="default-layout">
+    <announcements-banner></announcements-banner>
     <layout-navigation></layout-navigation>
     <section class="section">
       <div class="container">
@@ -11,11 +12,13 @@
 </template>
 
 <script>
+import AnnouncementsBanner from "@/components/AnnouncementsBanner";
 import LayoutNavigation from "@/components/LayoutNavigation";
 import LayoutFooter from "@/components/LayoutFooter";
 
 export default {
   components: {
+    AnnouncementsBanner,
     LayoutNavigation,
     LayoutFooter
   },
