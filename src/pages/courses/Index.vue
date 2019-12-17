@@ -59,8 +59,32 @@
               <div class="card-image">
                 <figure class="image">
                   <img
+                    src="@/assets/img/courses/vue_udemy_cover.png"
+                    alt="Up and Running with Vue.JS Course Cover Image"
+                    class="modal-button"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h4>Vue.js for Beginners: Up and Running with Vue</h4>
+                  <p>A beginner's guide to learn the basics of the JavaScript Framework Vue.js.</p>
+                  <a
+                    href="https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A"
+                    class="button is-info"
+                    target="_blank"
+                  >Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card is-shady">
+              <div class="card-image">
+                <figure class="image">
+                  <img
                     src="@/assets/img/courses/groovy-udemy.jpg"
-                    alt="Placeholder image"
+                    alt="The complete Apache Groovy Developer Course Cover Image"
                     class="modal-button"
                   />
                 </figure>
@@ -85,7 +109,7 @@
                 <figure class="image">
                   <img
                     src="@/assets/img/courses/spring-boot-2-udemy.jpg"
-                    alt="Placeholder image"
+                    alt="Getting Started with Spring Boot 2 Course Cover Image"
                     class="modal-button"
                   />
                 </figure>
@@ -102,21 +126,23 @@
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="columns">
           <div class="column">
             <div class="card is-shady">
               <div class="card-image">
                 <figure class="image">
                   <img
                     src="@/assets/img/courses/spring-boot-udemy.jpg"
-                    alt="Placeholder image"
+                    alt="Learn Spring Boot Course Cover Image"
                     class="modal-button"
                   />
                 </figure>
               </div>
               <div class="card-content">
                 <div class="content">
-                  <h4>Learn Spring Boot - Rapid Application Development</h4>
+                  <h4>Learn Spring Boot</h4>
                   <p>Spring Boot gives you all the power of the Spring Framework without all of the complexity.</p>
                   <a
                     href="https://courses.danvega.dev/p/spring-boot-intro"
@@ -126,16 +152,13 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="columns">
           <div class="column">
             <div class="card is-shady">
               <div class="card-image">
                 <figure class="image">
                   <img
                     src="@/assets/img/courses/angular-4-java-developers.jpg"
-                    alt="Placeholder image"
+                    alt="Angular 4 Java Developers Course Cover Image"
                     class="modal-button"
                   />
                 </figure>
@@ -149,37 +172,14 @@
               </div>
             </div>
           </div>
-          <div class="column">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image">
-                  <img
-                    src="@/assets/img/courses/intro-to-vue.png"
-                    alt="Placeholder image"
-                    class="modal-button"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>Getting Started with VueJS</h4>
-                  <p>Learn how to get started using the Vue Framework in existing and brand new applications.</p>
-                  <a
-                    href="https://danvega.ck.page/823d5f3bee"
-                    class="button is-info"
-                    target="_blank"
-                  >Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div class="column">
             <div class="card is-shady">
               <div class="card-image">
                 <figure class="image">
                   <img
                     src="@/assets/img/courses/java-free-udemy.jpg"
-                    alt="Placeholder image"
+                    alt="Getting Started with Java Course Cover Image"
                     class="modal-button"
                   />
                 </figure>
