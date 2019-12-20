@@ -1,7 +1,7 @@
 ---
 slug: "up-and-running-with-vuejs"
 title: "New Course: Up & Running with Vue.js"
-date: "2019-12-179T15:30:00.000Z"
+date: "2019-12-19T15:30:00.000Z"
 published: false
 excerpt: "I released a new course on how to get up and running with Vue.js for beginners"
 author: "Dan Vega"
