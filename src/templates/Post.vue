@@ -98,7 +98,7 @@ export default {
         { property: "og:image", content: this.getCoverImage },
         { property: "og:image:secure_url", content: this.getCoverImage }
       ],
-      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
+      script: [{ src: "https://platform.twitter.com/widgets.js" }]
     };
   },
   computed: {
