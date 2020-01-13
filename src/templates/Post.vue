@@ -117,7 +117,6 @@ export default {
       return coverImage;
     },
     getBaseUrl() {
-      console.log(process.env.GRIDSOME_BASE_URL);
       return process.env.GRIDSOME_BASE_URL;
     }
   },
