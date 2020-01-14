@@ -38,7 +38,12 @@ module.exports = {
                 theme: "nord"
               }
             ],
-            ["gridsome-plugin-remark-twitter", {}],
+            [
+              "gridsome-plugin-remark-twitter",
+              {
+                omitScript: true
+              }
+            ],
             ["gridsome-plugin-remark-codesandbox", {}]
           ]
         }
