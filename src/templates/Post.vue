@@ -2,7 +2,9 @@
   <Layout>
     <div class="article content">
       <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
-      <small class="about">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
+      <small class="about"
+        >{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small
+      >
       <div class="embed-container" v-if="$page.post.video">
         <iframe
           width="1000"
@@ -14,15 +16,22 @@
           v-if="$page.post.video"
         ></iframe>
       </div>
-      <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
+      <g-image
+        v-if="!$page.post.video && $page.post.cover"
+        :src="$page.post.cover"
+        class="cover"
+      />
       <article v-html="$page.post.content" class="article" />
       <bulma-tag :tags="$page.post.tags" />
       <div class="followme">
         Follow me on
         <a href="http://twitter.com/therealdanvega">Twitter</a>,
-        <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up for my
-        <a href="/newsletter">newsletter</a>.
-        <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
+        <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
+        for my <a href="/newsletter">newsletter</a>.
+        <convert-kit
+          uid="44cc02ed05"
+          script="https://f.convertkit.com/44cc02ed05/38739557e4.js"
+        ></convert-kit>
       </div>
       <div class="author">
         <div class="avatar">
@@ -30,10 +39,19 @@
         </div>
         <div class="bio">
           <h3>Dan Vega</h3>
-          <p>I’m a Husband, Father, Curriculum Developer and maker of things from Cleveland Ohio. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.</p>
+          <p>
+            I’m a Husband, Father, Curriculum Developer and maker of things from
+            Cleveland Ohio. I created this website as a place to document my
+            journey as I learn new things and share them with you. I have a real
+            passion for teaching and I hope that one of blog posts, videos or
+            courses helps you solve a problem or learn something new.
+          </p>
         </div>
       </div>
-      <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
+      <vue-disqus
+        shortname="danvega-dev"
+        :identifier="$page.post.title"
+      ></vue-disqus>
     </div>
   </Layout>
 </template>
@@ -98,7 +116,7 @@ export default {
         { property: "og:image", content: this.getCoverImage },
         { property: "og:image:secure_url", content: this.getCoverImage }
       ],
-      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
+      script: [{ src: "https://platform.twitter.com/widgets.js" }]
     };
   },
   computed: {
@@ -117,7 +135,6 @@ export default {
       return coverImage;
     },
     getBaseUrl() {
-      console.log(process.env.GRIDSOME_BASE_URL);
       return process.env.GRIDSOME_BASE_URL;
     }
   },
