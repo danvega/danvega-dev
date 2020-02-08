@@ -1,0 +1,81 @@
+---
+title: "Coffee & Code Newsletter: #25"
+issue: 25
+date: "2020-02-09T07:00:00.000Z"
+---
+
+Welcome to Coffee and Code with me, Dan Vega for the week of Feb 2 - Feb 9, 2020. This newsletter is a little insight into what I was up to this week, things I found interesting and anything on my radar for the upcoming week. If you don't already have one grab a cup and your favorite beverage and let's get to it.
+
+## Previous Week
+
+It was a busy week along with some pretty exciting personal news, so let's get into it...
+
+### Are you Rob Base?
+
+This week I put out a video where I wrote a silly application in Vue called [Are you Rob Base](https://www.youtube.com/watch?v=_dPX3tT3EnU&feature=youtu.be). I start out the tutorial by talking about how as a developer we need to keep building things, even if they seem silly. You can read all the articles, watch all the videos but until you start writing code you just aren't going to learn. I have started to take my own advice and have been building out some smaller demos. I hope you find this tutorial useful and learned something new.
+
+### Vue 3.0 Smaller, Faster and Stronger
+
+My talk from CodeMash was recorded and it has been [published on Pluralsight](Vue 3.0 Better, Faster, and Stronger: CodeMash). You should be able to watch the presentation even if you aren't a Pluralsight subscriber. I also gave this presentation to the [Vue CLE Meetup](https://www.meetup.com/vuecle/events/267933150/) this week and was happy to see a great turnout and some really good conversation about Vue 3.
+
+### Personal News
+
+In a bit of personal news, I am excited to finally share that our family will be growing in August. We had a gender reveal party this weekend with family and found out that Bella is going to have a baby sister. I can't wait to meet this little angel and we are officially on the clock!
+
+![Gender Party](./gender-party.jpeg)
+
+## Upcoming Week
+
+I think I have simplified my screencasting setup and hope to produce more videos. My plan for this week is to release 2 new videos on YouTube and I am going to be adding some new content to my Getting Started with Vue.js course. Stay tuned!!
+
+## Around the Web
+
+These are things I found cool around the web this week.
+
+### Articles
+
+- [Setting Up Your Webcam, Lights, and Audio for Remote Work, Podcasting, Videos, and Streaming](https://mattstauffer.com/blog/setting-up-your-webcam-lights-and-audio-for-remote-work-podcasting-videos-and-streaming/)
+- [How To Create A Headless WordPress Site On The JAMstack — Smashing Magazine](https://www.smashingmagazine.com/2020/02/headless-wordpress-site-jamstack/)
+- [Building Table Sorting and Pagination in Vue.js - with Async Data](https://www.raymondcamden.com/2020/02/01/building-table-sorting-and-pagination-in-vuejs-with-async-data)
+- [Introducing Firefox and Edge Support in Cypress 4.0](https://www.cypress.io/blog/2020/02/06/introducing-firefox-and-edge-support-in-cypress-4-0)
+
+### Videos
+
+- [Mirage JS with Vue](https://www.youtube.com/watch?v=d4I35tkZnNg)
+- [Groovy Podcast ep. 78 (S04E04)](https://www.youtube.com/watch?v=QpJOpgsS_SA)
+- [Building sustainable enterprise apps with Vue.js - Chris Fritz](https://www.youtube.com/watch?v=VHVKYDIEtaI)
+
+### Podcasts
+
+- [Enjoy the Vue: Welcome to Vue: Meet your panel](https://enjoythevue.io/episodes/1/)
+- [Enjoy the Vue: What We Love About Vue CLI](https://enjoythevue.io/episodes/2/)
+- [Grokking Go.dev](https://changelog.com/gotime/115)
+
+### Projects
+
+- [Tailwind CSS: Release v1.2.0](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.2.0#user-content-css-grid-support)
+- [Go.dev: Getting Started with Go](https://go.dev/)
+- [Visual Studio Code January 2020](https://code.visualstudio.com/updates/v1_42#_contributions-to-extensions)
+
+### Courses
+
+- [Here are 450 Ivy League courses you can take online right now for free](https://www.freecodecamp.org/news/here-are-380-ivy-league-courses-you-can-take-online-right-now-for-free-9b3ffcbd7b8c/)
+
+### Newsletters
+
+- [The Official Vue News](https://news.vuejs.org/issues/173)
+- [Tales from the jar side: Kotlin, Android, Spring, and LIV](https://kenkousen.substack.com/p/tales-from-the-jar-side-kotlin-android)
+- [Java Weekly, Issue 319 | Baeldung](https://www.baeldung.com/java-weekly-319)
+
+### Conferences
+
+- [CodeMash Conference Recordings](https://www.pluralsight.com/search?q=CodeMash&categories=course)
+
+## Until Next Week
+
+Thanks for sitting down and sharing a cup of coffee with me my friend. I hope you enjoyed this installment of Coffee & Code and I will see you next Sunday morning. If you have any links you would like me to include please contact me and I might add them to a future newsletter. I hope you have a great week and as always friends...
+
+Happy Coding<br/>
+Dan Vega<br/>
+danvega@gmail.com<br/>
+[https://www.danvega.dev](https://www.danvega.dev/)
