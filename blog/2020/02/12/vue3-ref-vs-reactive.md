@@ -1,13 +1,13 @@
 ---
-slug: 'vue3-ref-vs-reactive'
-title: 'Vue 3 Composition API: Ref vs Reactive'
-date: '2020-02-12T16:27:46.472Z'
+slug: "vue3-ref-vs-reactive"
+title: "Vue 3 Composition API: Ref vs Reactive"
+date: "2020-02-12T16:27:46.472Z"
 published: false
-excerpt: 'One question I keep hearing over and over is what method should I use to declare reactive data in the Vue 3 Composition API? In this article, I explain what ref() and reactive() are and try to answer that question.'
-author: 'Dan Vega'
+excerpt: "One question I keep hearing over and over is what method should I use to declare reactive data in the Vue 3 Composition API? In this article, I explain what ref() and reactive() are and try to answer that question."
+author: "Dan Vega"
 tags:
-  - 'vue'
-cover: './vue3-ref-vs-reactive-cover.png'
+  - "vue"
+cover: "./vue3-ref-vs-reactive-cover.png"
 ---
 
 At the time of writing this article, we are getting closer and closer to the release of Vue 3. I think what I am most excited about is to see how other developers embrace it and use it. While I have had a chance to play with it over the last few months I know that isn't the case for everyone.
@@ -32,13 +32,13 @@ To give this article a little context I want to quickly explore how to create re
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      title: 'Hello, Vue!'
+  export default {
+    data() {
+      return {
+        title: "Hello, Vue!"
+      };
     }
-  }
-}
+  };
 </script>
 ```
 
@@ -54,12 +54,12 @@ With the Options API, we have to follow some rules when defining reactive data a
 </template>
 
 <script>
-export default {
-  setup() {
-    let title = 'Hello, Vue 3!';
-    return { title };
-  }
-};
+  export default {
+    setup() {
+      let title = "Hello, Vue 3!";
+      return { title };
+    }
+  };
 </script>
 ```
 
@@ -71,17 +71,17 @@ This will work but the title property is not reactive. This means that if someth
 </template>
 
 <script>
-export default {
-  setup() {
-    let title = 'Hello, Vue 3!';
+  export default {
+    setup() {
+      let title = "Hello, Vue 3!";
 
-    setInterval(() => {
-      title = 'THIS IS A NEW TITLE';
-    }, 1000);
+      setTimeout(() => {
+        title = "THIS IS A NEW TITLE";
+      }, 5000);
 
-    return { title };
-  }
-};
+      return { title };
+    }
+  };
 </script>
 ```
 
@@ -93,21 +93,21 @@ To fix the example above we can `import { ref } from 'vue'` and use `ref()` whic
 </template>
 
 <script>
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-export default {
-  setup() {
-    const title = ref('Hello, Vue 3!');
+  export default {
+    setup() {
+      const title = ref("Hello, Vue 3!");
 
-    setInterval(() => {
-      // you might be asking yourself, what is this .value all about...
-      // more about that soon
-      title.value = 'New Title';
-    }, 2000);
+      setTimeout(() => {
+        // you might be asking yourself, what is this .value all about...
+        // more about that soon
+        title.value = "New Title";
+      }, 5000);
 
-    return { title };
-  }
-};
+      return { title };
+    }
+  };
 </script>
 ```
 
@@ -126,11 +126,11 @@ If you want to make a primitive data type a reactive property, `ref()` is going 
 - Undefined
 
 ```js
-import { ref } from 'vue';
+import { ref } from "vue";
 
 export default {
   setup() {
-    const title = ref('');
+    const title = ref("");
     const one = ref(1);
     const isValid = ref(true);
     const foo = ref(null);
@@ -141,17 +141,17 @@ export default {
 From the previous example, we had a String called title so `ref()` was a good choice for declaring reactive data. If you have some questions about that code we wrote below don't worry, I had the same questions.
 
 ```js
-import { ref } from 'vue';
+import { ref } from "vue";
 
 export default {
   setup() {
-    const title = ref('Hello, Vue 3!');
+    const title = ref("Hello, Vue 3!");
 
-    setInterval(() => {
-      title.value = 'New Title';
-    }, 2000);
+    setTimeout(() => {
+      title.value = "New Title";
+    }, 5000);
 
-    return { title }
+    return { title };
   }
 };
 ```
@@ -190,13 +190,13 @@ You just examples of using `ref()` when you want to define reactive data on prim
 On the flip side of that `reactive()` will not work with primitive values. `reactive()` takes an object and returns a reactive proxy of the original. This is equivalent to 2.x's `Vue.observable()` and was renamed to avoid confusion with RxJS observables.
 
 ```js
-import { reactive } from 'vue';
+import { reactive } from "vue";
 
 export default {
   setup() {
     const data = reactive({
-      title: 'Hello, Vue 3'
-    })
+      title: "Hello, Vue 3"
+    });
 
     return { data };
   }
@@ -211,17 +211,17 @@ The big difference here is when you want to access data defined using `reactive(
 </template>
 
 <script>
-import { ref } from 'vue';
+  import { ref } from "vue";
 
-export default {
-  setup() {
-    const data = ref({
-      title: 'Hello, Vue 3'
-    });
+  export default {
+    setup() {
+      const data = ref({
+        title: "Hello, Vue 3"
+      });
 
-    return { data };
-  }
-};
+      return { data };
+    }
+  };
 </script>
 ```
 
@@ -236,9 +236,9 @@ I started thinking about that and it led me to the following conclusion. In the 
 ```js
 export default {
   setup() {
-    const title = ref('Hello, World!');
-    const description = ref('');
-    const content = ref('Hello world');
+    const title = ref("Hello, World!");
+    const description = ref("");
+    const content = ref("Hello world");
     const wordCount = computed(() => content.value.length);
 
     return { title, description, content, wordCount };
@@ -257,20 +257,20 @@ In JavaScript, I would look at these properties and determine that they are all 
 </template>
 
 <script>
-import { ref, computed, reactive } from 'vue';
+  import { ref, computed, reactive } from "vue";
 
-export default {
-  setup() {
-    const page = reactive({
-      title: 'Hello, World!',
-      description: '',
-      content: 'Hello world',
-      wordCount: computed(() => page.content.length)
-    });
+  export default {
+    setup() {
+      const page = reactive({
+        title: "Hello, World!",
+        description: "",
+        content: "Hello world",
+        wordCount: computed(() => page.content.length)
+      });
 
-    return { page };
-  }
-};
+      return { page };
+    }
+  };
 </script>
 ```
 
@@ -285,26 +285,26 @@ When you start writing composable functions though you need to understand the di
 You have been tasked with creating some logic that will keep track of a user's mouse position. You also need the ability to reuse this logic in any component that needs it. You create a composition function that tracks the x and y coordinates and then returns them to the consumer.
 
 ```js
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from "vue";
 
 export function useMousePosition() {
-  const x = ref(0)
-  const y = ref(0)
+  const x = ref(0);
+  const y = ref(0);
 
   function update(e) {
-    x.value = e.pageX
-    y.value = e.pageY
+    x.value = e.pageX;
+    y.value = e.pageY;
   }
 
   onMounted(() => {
-    window.addEventListener('mousemove', update)
-  })
+    window.addEventListener("mousemove", update);
+  });
 
   onUnmounted(() => {
-    window.removeEventListener('mousemove', update)
-  })
+    window.removeEventListener("mousemove", update);
+  });
 
-  return { x, y }
+  return { x, y };
 }
 ```
 
@@ -317,31 +317,31 @@ If you want to consume this logic in a component you can call the function, dest
 </template>
 
 <script>
-import { useMousePosition } from "./use/useMousePosition";
+  import { useMousePosition } from "./use/useMousePosition";
 
-export default {
-  setup() {
-    const { x, y } = useMousePosition();
-    return { x, y };
-  }
-};
+  export default {
+    setup() {
+      const { x, y } = useMousePosition();
+      return { x, y };
+    }
+  };
 </script>
 ```
 
 This will work but as you took a look at this function you decided to refactor x and y into a position object:
 
 ```js
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from "vue";
 
 export function useMousePosition() {
   const pos = {
     x: 0,
     y: 0
-  }
+  };
 
   function update(e) {
-    pos.x= e.pageX
-    pos.y = e.pageY
+    pos.x = e.pageX;
+    pos.y = e.pageY;
   }
 
   // ...
@@ -355,25 +355,25 @@ The problem with this approach is that the consumer of the composition function 
 export default {
   setup() {
     // reactivity lost!
-    const { x, y } = useMousePosition()
+    const { x, y } = useMousePosition();
     return {
       x,
       y
-    }
+    };
 
     // reactivity lost!
     return {
       ...useMousePosition()
-    }
+    };
 
     // this is the only way to retain reactivity.
     // you must return `pos` as-is and reference x and y as `pos.x` and `pos.y`
     // in the template.
     return {
       pos: useMousePosition()
-    }
+    };
   }
-}
+};
 ```
 
 This doesn't mean that you can't use reactive though. There is a `toRefs()` method that will convert a reactive object to a plain object, where each property on the resulting object is a ref pointing to the corresponding property in the original object.
@@ -383,14 +383,14 @@ function useMousePosition() {
   const pos = reactive({
     x: 0,
     y: 0
-  })
+  });
 
   // ...
-  return toRefs(pos)
+  return toRefs(pos);
 }
 
 // x & y are now refs!
-const { x, y } = useMousePosition()
+const { x, y } = useMousePosition();
 ```
 
 As you can see there are some things to consider when creating composition functions. As long as you understand how your functions might be consumed you should be ok.
@@ -401,5 +401,3 @@ When I first started creating components using the Composition API I was confuse
 
 Happy Coding<br/>
 Dan
-
-
