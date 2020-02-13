@@ -185,7 +185,7 @@ When a ref is returned as a property on the render context (the object returned 
 
 ### Reactive
 
-You just examples of using `ref()` when you want to define reactive data on primitive values. What happens if you want to create an reactive object? In that case, you could still use `ref()` but underneath the hood, it's just calling `reactive()` so I will stick to using `reactive()`.
+We just looked at some examples of using `ref()` when you want to define reactive data on primitive values. What happens if you want to create an reactive object? In that case, you could still use `ref()` but underneath the hood, it's just calling `reactive()` so I will stick to using `reactive()`.
 
 On the flip side of that `reactive()` will not work with primitive values. `reactive()` takes an object and returns a reactive proxy of the original. This is equivalent to 2.x's `Vue.observable()` and was renamed to avoid confusion with RxJS observables.
 
