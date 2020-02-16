@@ -8,6 +8,7 @@ author: "Dan Vega"
 tags:
   - "vue"
 cover: "./vue3-ref-vs-reactive-cover.png"
+video: https://www.youtube.com/embed/cRwG96MOHp0
 ---
 
 At the time of writing this article, we are getting closer and closer to the release of Vue 3. I think what I am most excited about is to see how other developers embrace it and use it. While I have had a chance to play with it over the last few months I know that isn't the case for everyone.
