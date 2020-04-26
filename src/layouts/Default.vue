@@ -1,21 +1,21 @@
 <template>
   <div>
     <div class="container grow">
-      <navigation-bar />
+      <layout-navigation />
       <slot />
     </div>
-    <navigation-footer />
+    <layout-footer />
   </div>
 </template>
 
 <script>
-import NavigationBar from "@/components/NavigationBar.vue";
-import NavigationFooter from "@/components/NavigationFooter.vue";
+import LayoutNavigation from "@/components/LayoutNavigation.vue";
+import LayoutFooter from "@/components/LayoutFooter.vue";
 
 export default {
   components: {
-    NavigationBar,
-    NavigationFooter
+    LayoutNavigation,
+    LayoutFooter
   },
   metaInfo: {
     link: [

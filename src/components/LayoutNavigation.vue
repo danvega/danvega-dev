@@ -1,102 +1,82 @@
 <template>
-  <nav class="navbar container" :class="{'is-transparent' : useTransparentBackground }" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <g-image :src="require(`@/assets/img/${useColorLogo == true ? logoColor : logoWhite }`)" alt="danvega.dev logo"/>
-      </a>
-      <a
-        role="button"
-        class="navbar-burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" width="89" height="44" viewBox="0 0 89 44">
+      <text
+        transform="translate(0 35)"
+        fill="#3273dc"
+        font-size="27"
+        font-family="Noteworthy-Bold, Noteworthy"
+        font-weight="700"
       >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+        <tspan x="0" y="0">dan</tspan>
+        <tspan
+          y="0"
+          class="logo-fill"
+          font-family="Noteworthy-Light, Noteworthy"
+          font-weight="300"
+        >vega</tspan>
+      </text>
+    </svg>
+    <nav class="flex-1 bg-gray-100">
+      <ul>
+        <li>
+          <g-link class to="/" exact="true">Home</g-link>
+        </li>
+        <li>
+          <g-link class to="/blog">Blog</g-link>
+        </li>
+        <li>
+          <g-link class to="/courses">Courses</g-link>
+        </li>
+        <li>
+          <g-link class to="/newsletter">Newsletter</g-link>
+        </li>
+        <li>
+          <g-link class to="/about">About</g-link>
+        </li>
+        <li>
+          <g-link class to="/contact">Contact</g-link>
+        </li>
+      </ul>
+    </nav>
+    <search-component v-if="hideSearch == true" />
+    <div class="toggle-container">
+      <i class="fas fa-moon fa-2x" @click="toggleDarkMode()" ref="toggleSwitch"></i>
     </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div :class="'navbar-' + navbarLocation">
-        <g-link class="navbar-item is-uppercase" to="/">Home</g-link>
-        <g-link class="navbar-item is-uppercase" to="/blog">Blog</g-link>
-        <g-link class="navbar-item is-uppercase" to="/courses">Courses</g-link>
-        <g-link class="navbar-item is-uppercase" to="/newsletter">Newsletter</g-link>
-        <g-link class="navbar-item is-uppercase" to="/about">About</g-link>
-        <g-link class="navbar-item is-uppercase" to="/contact">Contact</g-link>
-      </div>
+    <div class="hamburger">
+      <i class="fas fa-bars fa-2x"></i>
     </div>
-    <search-component v-if="hideSearch == true"/>
-  </nav>
+  </header>
 </template>
 
 <script>
 import SearchComponent from "@/components/SearchComponent";
 
 export default {
-  name: "LayoutNavigation",
   components: {
     SearchComponent
   },
   props: {
-    useColorLogo: {
-      type: Boolean,
-      default: true
-    },
-    useTransparentBackground: {
-      type: Boolean,
-      default: false
-    },
-    navbarLocation: {
-      type: String,
-      default: 'start'
-    },
     hideSearch: {
       type: Boolean,
       default: true
     }
   },
-  data() {
-    return {
-      logoColor: 'danvega_dev_logo.png',
-      logoWhite: 'danvega_dev_logo_white.png'
+  methods: {
+    toggleDarkMode() {
+      if (document.documentElement.getAttribute("data-theme") === null) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        this.$refs.toggleSwitch.classList.remove("fa-moon");
+        this.$refs.toggleSwitch.classList.add("fa-sun");
+      } else {
+        document.documentElement.removeAttribute("data-theme");
+        this.$refs.toggleSwitch.classList.remove("fa-sun");
+        this.$refs.toggleSwitch.classList.add("fa-moon");
+      }
     }
-  },
-  mounted() {
-    const navbarBurgers = document.querySelectorAll(".navbar-burger");
-    navbarBurgers.forEach(menu => {
-      menu.addEventListener("click", () => {
-        const target = document.getElementById(menu.dataset.target);
-        menu.classList.toggle("is-active");
-        target.classList.toggle("is-active");
-      });
-    });
   }
 };
 </script>
 
-<style scoped>
-.navbar-brand a.navbar-item {
-  margin-left: 0px !important;
-}
-
-.navbar-item {
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-}
-a.navbar-item:hover {
-  background-color: white;
-  color: #3273dc;
-}
-
-.navbar.is-transparent {
-  background-color: transparent;
-  background-image: none;
-}
-.navbar.is-transparent .navbar-item {
-  color: #fff;
-}
-.navbar.is-transparent .navbar-item:hover {
-  color: rgb(235, 235, 235);
-}
+<style>
 </style>
