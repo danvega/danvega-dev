@@ -1,5 +1,5 @@
 <template>
-  <div class="is-relative">
+  <div class="search-wrapper">
     <search-focus @keyup="focusSearch" />
     <div class="field search">
       <p class="control has-icons-left">
@@ -133,10 +133,15 @@ export default {
 </script>
 
 <style scoped>
+.search-wrapper {
+  position: relative;
+  margin-right: 20px;
+  border: 1px solid red;
+}
 .search {
   margin: 8px 0 0 0;
   padding: 0px;
-  min-width: 300px;
+  max-width: 100%;
   position: relative;
 }
 .close {
@@ -187,4 +192,76 @@ a.result:link {
 .fade-leave-to {
   opacity: 0;
 }
+
+.search-wrapper >>> input {
+  border-radius: 290486px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/*
+.control.has-icons-left .input,
+.control.has-icons-left .select select {
+  padding-left: 2.25em;
+}
+.input.is-rounded {
+  border-radius: 290486px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.input,
+.textarea {
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  max-width: 100%;
+  width: 100%;
+}
+.input,
+.select select,
+.textarea {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  color: #363636;
+}
+.button,
+.file-cta,
+.file-name,
+.input,
+.pagination-ellipsis,
+.pagination-link,
+.pagination-next,
+.pagination-previous,
+.select select,
+.textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding: calc(0.375em - 1px) calc(0.625em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 1rem;
+  position: relative;
+  text-align: left;
+}
+.control.has-icons-left .input,
+.control.has-icons-left .select select {
+  padding-left: 2.5em;
+}
+*/
 </style>

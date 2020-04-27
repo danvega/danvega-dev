@@ -20,7 +20,7 @@
     <nav class="flex-1 bg-gray-100">
       <ul>
         <li>
-          <g-link class to="/" exact="true">Home</g-link>
+          <g-link class to="/" exact>Home</g-link>
         </li>
         <li>
           <g-link class to="/blog">Blog</g-link>

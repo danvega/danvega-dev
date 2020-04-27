@@ -1,65 +1,128 @@
 <template>
-  <Layout>
-    <div class="content">
-      <div class="columns is-centered">
-        <div class="column is-two-thirds">
-          <h1 class="title is-2">Hi, I’m Dan Vega.</h1>
-          <p class="intro">
-            I’m a Husband, Father, Curriculum Developer and maker of things from
-            Cleveland Ohio. I created this website as a place to document my
-            journey as I learn new things and share them with you. I have a real
-            passion for teaching and I hope that one of blog posts, videos or
-            courses helps you solve a problem or learn something new.
-          </p>
-          <!-- <p>I'm a Software Developer, Curriculum Developer and life long learner from Cleveland Ohio.</p> -->
-          <!-- <p>I created this site so that I could document the things that I learn or enjoy working with and help you avoid the mistakes that I make. If you enjoy my content please share it with your friends.</p> -->
-
-          <p class="subscribe">
-            Subscribe to get my weekly newsletter and latest articles.
-          </p>
-          <convertkit
-            uid="e6035d0111"
-            script="https://f.convertkit.com/e6035d0111/99c16f05bd.js"
-          />
+  <div>
+    <div class="container grow">
+      <layout-navigation />
+      <header>
+        <div class="welcome">
+          <h1>
+            Learn to Code
+            <span>with Dan Vega</span>
+          </h1>
+          <form>
+            <p>Subscribe to get my weekly newsletter and latest articles.</p>
+            <label>Email Address</label>
+            <input type="email" />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
-        <div class="column right-side">
-          <g-image
-            src="../assets/img/danvega-avatar.png"
-            class="avatar"
-            alt="Dan Vega Avatar"
-          />
+        <div class="banner">
+          <g-image src="../assets/img/home-header.png" />
         </div>
-      </div>
+      </header>
+      <section>
+        <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar" />
+        <h2>Hi, I'm Dan Vega</h2>
+        <p>I’m a Husband, Father, Curriculum Developer and maker of things from Cleveland Ohio. I created this website as a place to document my journey as I learn new things and share them with you. I have a real passion for teaching and I hope that one of blog posts, videos or courses helps you solve a problem or learn something new.</p>
+      </section>
+      <section>
+        <h3>latest articles</h3>
+        <ul id="posts">
+          <li
+            v-for="post in $page.recentPosts.edges"
+            :key="post.node.id"
+            class="post"
+          >{{ post.node.date }} • ☕️ {{ post.node.timeToRead }} min read {{ post.node.title }}</li>
+        </ul>
+      </section>
     </div>
-    <h2 class="title is-3">Recent Blog Posts</h2>
-    <div class="posts">
-      <div
-        v-for="post in $page.recentPosts.edges"
-        :key="post.node.id"
-        class="post"
-      >
-        <g-link :to="post.node.path" :aria-label="post.node.title">
-          <div class="overlay"></div>
-          <g-image
-            :src="post.node.cover.src"
-            class="post-img"
-            :alt="post.node.title"
-          />
-          <div class="post-details fadeIn-bottom">
-            <h3 class="post-title">{{ post.node.title }}</h3>
-            <p class="post-text">
-              {{ post.node.date }} • ☕️ {{ post.node.timeToRead }} min read
-            </p>
+    <section id="featured-course">
+      <div class="container">
+        <h3>Featured Course</h3>
+        <div class="featured-course-wrapper">
+          <div>
+            <g-image src="../assets/img/feature-course-vuejs.png" />
+            <h4>VUE.JS FOR BEGINNERS: UP AND RUNNING WITH VUE</h4>
           </div>
-        </g-link>
+          <div>
+            <p>Vue has quickly become one of the most popular JavaScript frameworks around and in my opinion, it is the most approachable. Frameworks can be very intimidating and nobody wants to spend a long time setting up a local development environment just to spin up a basic application.</p>
+            <p>Vue is a progressive framework and that might sound like a bunch of marketing jargon to you but I promise you it isn’t. This means that you can get started using Vue quickly and easily and as your needs grow the framework will grow with you.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </Layout>
+    </section>
+    <section id="latest-videos">
+      <div class="container">
+        <h3>Latest Videos</h3>
+        <p>These are the latest videos from my YouTube channel, subscribe here to find out when I release a new one.</p>
+        <div class="latest-videos-wrapper">
+          <ul>
+            <li>Groovy Dynamic Methods</li>
+            <li>Groovy Dynamic Methods</li>
+            <li>Groovy Dynamic Methods</li>
+            <li>Groovy Dynamic Methods</li>
+            <li>Groovy Dynamic Methods</li>
+          </ul>
+          <div>
+            <g-image src="../assets/img/latest-videos-banner.png" alt />
+          </div>
+        </div>
+      </div>
+    </section>
+    <layout-footer />
+  </div>
 </template>
+
+<script>
+import LayoutNavigation from "@/components/LayoutNavigation.vue";
+import LayoutFooter from "@/components/LayoutFooter.vue";
+import Convertkit from "@/components/ConvertKit";
+
+export default {
+  components: {
+    LayoutNavigation,
+    LayoutFooter,
+    Convertkit
+  },
+  meta: [
+    { name: "author", content: "Dan Vega" },
+    {
+      name: "description",
+      content: "This is the personal blog of Dan Vega."
+    },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:description", content: "The personal blog of Dan Vega" },
+    { name: "twitter:title", content: "Dan Vega" },
+    { name: "twitter:site", content: "@therealdanvega" },
+    {
+      name: "twitter:image",
+      content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
+    },
+    { name: "twitter:creator", content: "@therealdanvega" }
+  ],
+  metaInfo: {
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Slab:300,400|Courgette&display=swap"
+      },
+      {
+        rel: "stylsheet",
+        href: "https://use.typekit.net/rfi8kwv.css"
+      }
+    ]
+  }
+};
+</script>
 
 <page-query>
 query Posts {
-  recentPosts: allPost(perPage: 9) {
+  recentPosts: allPost(perPage: 5) {
     edges {
       node {
         id
@@ -74,182 +137,113 @@ query Posts {
 }
 </page-query>
 
-<script>
-import convertkit from "@/components/ConvertKit";
-
-export default {
-  components: {
-    convertkit
-  },
-  metaInfo: {
-    title: "Welcome to my website",
-    meta: [
-      { name: "author", content: "Dan Vega" },
-      {
-        name: "description",
-        content: "This is the personal blog of Dan Vega."
-      },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:description", content: "The personal blog of Dan Vega" },
-      { name: "twitter:title", content: "Dan Vega" },
-      { name: "twitter:site", content: "@therealdanvega" },
-      {
-        name: "twitter:image",
-        content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
-      },
-      { name: "twitter:creator", content: "@therealdanvega" }
-    ]
-  }
-};
-</script>
-
 <style>
-.intro {
-  line-height: 2.3rem;
+body {
+  margin: 0;
+  padding: 0;
+  background: no-repeat url(../assets/img/home-header-bg.png);
+}
+header {
+  display: flex;
+  align-items: center;
+}
+header .welcome {
+  flex: 1;
+  padding: 0 40px 0 0;
+}
+.banner {
+  justify-self: flex-end;
+}
+.banner img {
+  justify-self: end;
+}
+h1 {
+  font-family: nove, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+}
+h1 span {
+  font-family: "Courgette", cursive;
+  color: #3273db;
+  display: block;
+  font-size: 2rem;
+}
+
+form {
+  margin-top: 30px;
+  border: 1px solid red;
+}
+
+section {
+  margin-top: 80px;
+}
+section > h2,
+section p {
+  color: white;
 }
 .avatar {
   max-width: 200px;
-  text-align: center;
-  margin: 30px auto;
+  float: right;
+  margin-left: 40px;
 }
-.right-side {
-  text-align: center;
-}
-
-/* We only want our complex grid layout when we are on larger screens */
-@media screen and (min-width: 769px) {
-  .posts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 30px;
-  }
-
-  .post {
-    position: relative;
-    overflow: hidden;
-  }
-  .post:nth-child(1),
-  .post:nth-child(6),
-  .post:nth-child(7) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  .post:nth-child(6) {
-    grid-column: 2/4;
-    grid-row: 3/5;
-  }
-  .post:nth-child(4),
-  .post:nth-child(5) {
-    grid-column: 1;
-  }
-  .post:nth-child(3),
-  .post:nth-child(5),
-  .post:nth-child(9) {
-    display: flex;
-    align-self: flex-end;
-  }
-  .post-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .post .overlay {
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
-  }
-
-  .post:hover .overlay {
-    opacity: 1;
-  }
-  .post-details {
-    position: absolute;
-    text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .post:hover .post-details {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-  }
-
-  .post-details h3 {
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
-  }
-
-  .post-details p {
-    color: #fff;
-    font-size: 0.8em;
-  }
-
-  .fadeIn-bottom {
-    top: 80%;
-  }
+section p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 1.7;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
-@media screen and (max-width: 768px) {
-  .post {
-    margin-bottom: 10px;
-  }
-  .post-details {
-    display: none;
-  }
+h3 {
+  text-transform: uppercase;
 }
 
-/* HOME PAGE SUBSCRIBE */
-.subscribe {
-  font-family: "Permanent Marker", cursive;
-  font-size: 21px;
+#posts {
+  margin: 0;
+  padding: 0;
 }
-#convertkit {
-  margin: 0px;
+#posts > li {
+  list-style-type: none;
+  margin-bottom: 1.2rem;
 }
-@media screen and (min-width: 767px) {
-  .formkit-form[data-uid="e6035d0111"] .formkit-fields {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: nowrap !important;
-    margin: 0 auto;
-  }
 
-  .formkit-form[data-uid="e6035d0111"] .formkit-field,
-  .formkit-form[data-uid="e6035d0111"] .formkit-submit {
-    margin: 0 0 15px 0;
-    -webkit-flex: none !important;
-    -ms-flex: none !important;
-    flex: none !important;
-  }
-  .formkit-form[data-uid="e6035d0111"] .formkit-field {
-    width: 40% !important;
-  }
+#featured-course {
+  background-color: #f4f4f4;
+}
+.featured-course-wrapper {
+  display: flex;
+}
+
+.featured-course-wrapper p {
+  color: black;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  padding-left: 10px;
+}
+
+#latest-videos {
+  margin-bottom: 20px;
+}
+.latest-videos-wrapper {
+  display: flex;
+}
+
+.latest-videos-wrapper ul {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.latest-videos-wrapper ul li {
+  list-style-type: none;
+}
+
+#latest-videos p {
+  color: black;
+  font-size: 1.1rem;
+  margin-top: 0px;
 }
 </style>
