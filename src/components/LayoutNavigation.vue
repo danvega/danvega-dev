@@ -1,6 +1,12 @@
 <template>
-  <header>
-    <svg xmlns="http://www.w3.org/2000/svg" width="89" height="44" viewBox="0 0 89 44">
+  <div class="navigation-bar">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="89"
+      height="44"
+      viewBox="0 0 89 44"
+      class="logo"
+    >
       <text
         transform="translate(0 35)"
         fill="#3273dc"
@@ -14,7 +20,9 @@
           class="logo-fill"
           font-family="Noteworthy-Light, Noteworthy"
           font-weight="300"
-        >vega</tspan>
+        >
+          vega
+        </tspan>
       </text>
     </svg>
     <nav class="flex-1 bg-gray-100">
@@ -41,12 +49,16 @@
     </nav>
     <search-component v-if="hideSearch == true" />
     <div class="toggle-container">
-      <i class="fas fa-moon fa-2x" @click="toggleDarkMode()" ref="toggleSwitch"></i>
+      <i
+        class="fas fa-moon fa-2x"
+        @click="toggleDarkMode()"
+        ref="toggleSwitch"
+      ></i>
     </div>
     <div class="hamburger">
       <i class="fas fa-bars fa-2x"></i>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -78,5 +90,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.logo {
+  border: 1px solid red;
+}
+.navigation-bar {
+  display: flex;
+  align-items: center;
+}
+.navigation-bar nav {
+  /* flex: 1; */
+}
 </style>

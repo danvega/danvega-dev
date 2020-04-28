@@ -1,16 +1,16 @@
 <template>
   <div class="search-wrapper">
     <search-focus @keyup="focusSearch" />
-    <div class="field search">
-      <p class="control has-icons-left">
+    <div class="search">
+      <p>
         <input
           type="text"
-          placeholder="Search (Press  &quot;/&quot; to focus)"
+          placeholder='Search (Press  "/" to focus)'
           class="input is-rounded"
           v-model="query"
           @blur="searchResultsVisible = false"
           @focus="searchResultsVisible = true"
-          @keydown.esc="searchResultsVisible = false"
+          @keydown.esc="reset"
           @input="softReset"
           ref="search"
           @keyup="performSearch"
@@ -18,7 +18,7 @@
           @keydown.down.prevent="highlightNext"
           @keydown.enter="gotoLink"
         />
-        <span class="icon is-small is-left">
+        <span class="icon">
           <i class="fas fa-search"></i>
         </span>
       </p>
@@ -38,14 +38,13 @@
             @mousedown.prevent="searchResultsVisible = true"
             class="result"
             :class="{ 'bg-blue-100': index === highlightedIndex }"
-          >{{ post.item.title }}</a>
-          <div
-            v-if="searchResults.length === 0"
-            class="font-normal w-full border-b cursor-pointer p-4"
+            >{{ post.item.title }}</a
           >
+          <div v-if="searchResults.length === 0">
             <p class="my-0">
               No results for '
-              <strong>{{ query }}</strong>'
+              <strong>{{ query }}</strong
+              >'
             </p>
           </div>
         </div>
@@ -53,7 +52,6 @@
     </transition>
   </div>
 </template>
-
 
 <script>
 import SearchFocus from "./SearchFocus";
@@ -136,13 +134,49 @@ export default {
 .search-wrapper {
   position: relative;
   margin-right: 20px;
-  border: 1px solid red;
 }
 .search {
   margin: 8px 0 0 0;
   padding: 0px;
   max-width: 100%;
+  min-width: 20rem;
   position: relative;
+}
+.search input {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.4rem 0.4rem 0.4rem 2.2rem;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  color: #363636;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  border-color: #dbdbdb;
+  font-size: 1.1rem;
+}
+.search input:focus {
+  outline: none;
+}
+
+.search input::placeholder {
+  color: lightgray;
+  font-size: 1rem;
+}
+.search .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  color: #dbdbdb;
+  height: 2.25em;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 2.25em;
+  z-index: 4;
+}
+.search input:focus .icon {
+  color: #7a7a7a;
 }
 .close {
   position: absolute;
@@ -153,11 +187,14 @@ export default {
   margin-right: 10px;
   color: #718096;
 }
+
+/* Search Results */
+
 .results-container {
   position: absolute;
   left: 0;
   right: 0;
-  width: 350px;
+  width: 400px;
   overflow: hidden;
   overflow-y: auto;
   z-index: 10;
@@ -176,9 +213,14 @@ a.result,
 a.result:hover,
 a.result:link {
   display: inline-block;
-  border: 5px #718096;
+  border: 3px #718096;
   cursor: pointer;
-  padding: 4px;
+  padding: 10px;
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+}
+a.result:hover {
+  background-color: rgb(236, 236, 236);
 }
 .description {
   display: block;
@@ -192,76 +234,6 @@ a.result:link {
 .fade-leave-to {
   opacity: 0;
 }
-
-.search-wrapper >>> input {
-  border-radius: 290486px;
-  padding-left: 1em;
-  padding-right: 1em;
+.bg-blue-100 {
 }
-
-/*
-.control.has-icons-left .input,
-.control.has-icons-left .select select {
-  padding-left: 2.25em;
-}
-.input.is-rounded {
-  border-radius: 290486px;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.input,
-.textarea {
-  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-  max-width: 100%;
-  width: 100%;
-}
-.input,
-.select select,
-.textarea {
-  background-color: #fff;
-  border-color: #dbdbdb;
-  border-radius: 4px;
-  color: #363636;
-}
-.button,
-.file-cta,
-.file-name,
-.input,
-.pagination-ellipsis,
-.pagination-link,
-.pagination-next,
-.pagination-previous,
-.select select,
-.textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-box-align: center;
-  align-items: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: none;
-  display: -webkit-inline-box;
-  display: inline-flex;
-  font-size: 1rem;
-  height: 2.25em;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  line-height: 1.5;
-  padding: calc(0.375em - 1px) calc(0.625em - 1px);
-  position: relative;
-  vertical-align: top;
-}
-
-.control {
-  box-sizing: border-box;
-  clear: both;
-  font-size: 1rem;
-  position: relative;
-  text-align: left;
-}
-.control.has-icons-left .input,
-.control.has-icons-left .select select {
-  padding-left: 2.5em;
-}
-*/
 </style>

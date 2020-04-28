@@ -25,7 +25,13 @@
 </template>
 
 <script>
-</script>
+import DefaultLayout from '@/layouts/Default'
 
+export default {
+  components: {
+    Layout: DefaultLayout
+  }
+}
+</script>
 <style lang="scss">
 </style>

@@ -78,6 +78,7 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import DefaultLayout from "@/layouts/Default";
 import moment from "moment";
 import BulmaTag from "@/components/BulmaTag";
 import ConvertKit from "@/components/ConvertKit";
@@ -85,6 +86,7 @@ import mediumZoom from "medium-zoom";
 
 export default {
   components: {
+    Layout: DefaultLayout,
     BulmaTag,
     ConvertKit
   },

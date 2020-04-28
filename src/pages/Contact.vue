@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Layout>
     <h1>Contact Me</h1>
     <p>Please feel free to use the form below to contact me about anything you want. You can also reach me on Twitter with any feedback you have or if you just want to say 👋</p>
     <br />
@@ -21,13 +21,18 @@
       </div>
       <button type="submit" class="button is-info is-medium">Submit</button>
     </form>
-  </div>
+  </Layout>
 </template>
 
 <script>
-export default {};
-</script>
+import DefaultLayout from '@/layouts/Default'
 
+export default {
+  components: {
+    Layout: DefaultLayout
+  }
+}
+</script>
 <style>
 </style>
 

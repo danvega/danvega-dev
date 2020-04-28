@@ -1,4 +1,5 @@
 <template>
+  <Layout>
   <main>
     <h1>Hi, I’m Dan Vega.</h1>
     <img src="../assets/img/dv-headshot.jpg" alt="Dan Vega" class="headshot" />
@@ -17,8 +18,18 @@
     <p>I live just outside of Cleveland, Ohio with my amazing wife, Jen, our daughter Isabella. When I am not spending time with my family, I have a number of things that keep me busy. I love to read books, listen to podcasts and watch online courses. I have a real thirst for knowledge and it consumes me every single day of the week. I also love to run & lift heavy weights, which keep me balanced throughout the week.</p>
     <p>I am also the president of a nonprofit here in Northeast Ohio called CLE Cares. Our mission is to try and help as many people as we can in the area and give back to a place that we hold near and dear to our hearts. I also love to speak at user group meetings and conferences around the country. If you are interested in having me speak at your event, please contact me.</p>
   </main>
+  </Layout>
 </template>
 
+<script>
+import DefaultLayout from '@/layouts/Default'
+
+export default {
+  components: {
+    Layout: DefaultLayout
+  }
+}
+</script>
 
 <style scoped>
 .headshot {
