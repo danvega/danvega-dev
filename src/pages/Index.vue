@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-    <!-- <section id="latest-videos">
+    <section id="latest-videos">
       <div class="container">
         <h3>Latest Videos</h3>
         <p>
@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
     <layout-footer />
   </div>
 </template>
