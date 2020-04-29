@@ -1,10 +1,8 @@
 <template>
   <Layout>
     <div class="article content">
-      <h1 class="title is-2 article-title">{{ $page.post.title }}</h1>
-      <small class="about"
-        >{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small
-      >
+      <h1>{{ $page.post.title }}</h1>
+      <small class="about">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
       <div class="embed-container" v-if="$page.post.video">
         <iframe
           width="1000"
@@ -16,22 +14,16 @@
           v-if="$page.post.video"
         ></iframe>
       </div>
-      <g-image
-        v-if="!$page.post.video && $page.post.cover"
-        :src="$page.post.cover"
-        class="cover"
-      />
+      <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
       <article v-html="$page.post.content" class="article" />
       <bulma-tag :tags="$page.post.tags" />
       <div class="followme">
         Follow me on
         <a href="http://twitter.com/therealdanvega">Twitter</a>,
         <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
-        for my <a href="/newsletter">newsletter</a>.
-        <convert-kit
-          uid="44cc02ed05"
-          script="https://f.convertkit.com/44cc02ed05/38739557e4.js"
-        ></convert-kit>
+        for my
+        <a href="/newsletter">newsletter</a>.
+        <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
       </div>
       <div class="author">
         <div class="avatar">
@@ -48,10 +40,7 @@
           </p>
         </div>
       </div>
-      <vue-disqus
-        shortname="danvega-dev"
-        :identifier="$page.post.title"
-      ></vue-disqus>
+      <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
     </div>
   </Layout>
 </template>
@@ -149,6 +138,19 @@ export default {
 </script>
 
 <style>
+h1 {
+  margin: 0;
+}
+.article p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--font-color);
+  line-height: 1.7;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
 .cover {
   margin-top: 10px;
 }
@@ -156,8 +158,11 @@ export default {
   margin-top: 20px;
   /* margin-bottom: 60px; */
 }
+.article img {
+  max-width: 100%;
+}
 .article h2 {
-  margin: 20px 0 10px 0 !important;
+  margin: 10px 0 10px 0 !important;
 }
 .article-title {
   margin-bottom: 0px !important;
