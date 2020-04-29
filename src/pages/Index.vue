@@ -14,21 +14,14 @@
             send you my favorite resources for begginers who want to learn how
             to code.
           </p>
-          <convertkit
-            uid="52adfca2a6"
-            script="https://danvega.ck.page/52adfca2a6/index.js"
-          />
+          <convertkit uid="52adfca2a6" script="https://danvega.ck.page/52adfca2a6/index.js" />
         </div>
         <div class="banner">
           <g-image src="../assets/img/home-header.png" />
         </div>
       </header>
       <section>
-        <g-image
-          src="../assets/img/danvega-avatar.png"
-          class="avatar"
-          alt="Dan Vega Avatar"
-        />
+        <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar" />
         <h2>Hi, I'm Dan Vega</h2>
         <p>
           I’m a Husband, Father, Curriculum Developer and maker of things from
@@ -39,29 +32,20 @@
         </p>
       </section>
       <section>
-        <h3>Featured Articles</h3>
-        <div id="cards">
-          <div
-            class="card"
-            v-for="post in $page.recentPosts.edges"
-            :key="post.node.id"
-          >
-            <div
-              class="card-cover"
-              :style="{ backgroundImage: 'url(' + post.node.cover.src + ')' }"
-            ></div>
-            <div class="card-content">
-              <h4>{{ post.node.title }}</h4>
-              <p>{{ post.node.excerpt }}</p>
-              <g-link :to="post.node.path" :aria-label="post.node.title"
-                >Read More</g-link
-              >
+        <h3>Latest Articles</h3>
+        <div id="post-cards">
+          <div class="post-card" v-for="post in $page.recentPosts.edges" :key="post.node.id">
+            <div>
+              <g-link :to="post.node.path" :aria-label="post.node.title">
+                <g-image :src="post.node.cover.src" />
+              </g-link>
             </div>
-            <div class="card-footer">
-              <div class="date">🗓 {{ post.node.date }}</div>
-              <div>☕️ {{ post.node.timeToRead }} min read</div>
-            </div>
+            <h4>{{ post.node.title }}</h4>
+            <p>{{ post.node.excerpt }}</p>
           </div>
+        </div>
+        <div class="more-articles">
+          <g-link to="/blog" aria-label="visit blog for more content">Click for more articles</g-link>
         </div>
       </section>
     </div>
@@ -87,12 +71,14 @@
               that you can get started using Vue quickly and easily and as your
               needs grow the framework will grow with you.
             </p>
-            <button>Learn More</button>
+            <div class="learn-more">
+              <a href="#">Learn More</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="latest-videos">
+    <!-- <section id="latest-videos">
       <div class="container">
         <h3>Latest Videos</h3>
         <p>
@@ -113,7 +99,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <layout-footer />
   </div>
 </template>
@@ -167,7 +153,7 @@ export default {
 
 <page-query>
 query Posts {
-  recentPosts: allPost(perPage: 3) {
+  recentPosts: allPost(perPage: 6) {
     edges {
       node {
         id
@@ -254,6 +240,63 @@ h3 {
   margin-bottom: 1.2rem;
 }
 
+/* Latest Articles */
+
+#post-cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+}
+.post-card {
+  display: flex;
+  flex-direction: column;
+}
+.post-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.75rem;
+}
+.post-card h4 {
+  margin-top: 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+.post-card p {
+  color: black;
+  font-size: 0.9rem;
+}
+.post-card:hover {
+  transform: translateY(5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.more-articles {
+  margin-top: 1.3rem;
+  text-align: center;
+}
+.more-articles a {
+  display: inline-block;
+  padding: 20px;
+  background: #3273db;
+  color: #fff;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.more-articles a:hover {
+  background: #1964dd;
+  transform: translateY(3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Featured Course */
+
 #featured-course {
   background-color: #f4f4f4;
 }
@@ -267,6 +310,8 @@ h3 {
   margin-top: 0px;
   padding-left: 10px;
 }
+
+/* Latest Videos */
 
 #latest-videos {
   margin-bottom: 20px;
@@ -288,56 +333,5 @@ h3 {
   color: black;
   font-size: 1.1rem;
   margin-top: 0px;
-}
-
-form {
-  margin-top: 20px;
-}
-
-form input {
-  padding: 10px;
-  width: 75%;
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
-
-#cards {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 20px;
-}
-.card {
-  border: 1px solid lightgray;
-}
-.card-content {
-  padding: 10px;
-}
-.card-content h4 {
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  color: #4a4a4a;
-}
-.card-content p {
-  font-size: 1.1rem;
-  color: black;
-}
-.card-cover {
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center center;
-}
-.card-footer {
-  background-color: #f7f7f7;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  font-size: 0.9rem;
-}
-.card-footer .date {
-  flex: 1;
 }
 </style>

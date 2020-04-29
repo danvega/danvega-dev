@@ -20,9 +20,7 @@
           class="logo-fill"
           font-family="Noteworthy-Light, Noteworthy"
           font-weight="300"
-        >
-          vega
-        </tspan>
+        >vega</tspan>
       </text>
     </svg>
     <nav class="flex-1 bg-gray-100">
@@ -49,11 +47,7 @@
     </nav>
     <search-component v-if="hideSearch == true" />
     <div class="toggle-container">
-      <i
-        class="fas fa-moon fa-2x"
-        @click="toggleDarkMode()"
-        ref="toggleSwitch"
-      ></i>
+      <i class="fas fa-moon fa-2x" @click="toggleDarkMode()" ref="toggleSwitch"></i>
     </div>
     <div class="hamburger">
       <i class="fas fa-bars fa-2x"></i>
@@ -92,7 +86,8 @@ export default {
 
 <style scoped>
 .logo {
-  border: 1px solid red;
+  width: 92px;
+  margin-bottom: 8px;
 }
 .navigation-bar {
   display: flex;
