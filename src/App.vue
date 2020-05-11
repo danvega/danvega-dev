@@ -46,6 +46,7 @@ export default {
   --navigation: #4a4a4a;
   --headings: #363636;
   --logo-fill: #707070;
+  --home-hereo-wave-fill: #f4f4f4;
 }
 
 [data-theme="dark"] {
@@ -54,6 +55,7 @@ export default {
   --headings: #ebf1fc;
   --navigation: #ebf1fc;
   --logo-fill: #ebf1fc;
+  --home-hero-wave-fill: #0f2342;
 }
 
 html {
@@ -72,5 +74,6 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   border-top: 8px solid var(--bright-blue);
+  font-family: "Roboto Slab", serif;
 }
 </style>

@@ -122,7 +122,11 @@ nav a.active {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-transform: uppercase;

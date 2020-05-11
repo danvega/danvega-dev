@@ -1,38 +1,57 @@
 <template>
-  <div id="body">
-    <div class="container grow">
-      <layout-navigation />
-      <header>
-        <div class="welcome">
-          <h1>
-            Learn to Code
-            <span>with Dan Vega</span>
-          </h1>
-          <p>
-            If you want to learn how to code Subscribe to my weekly newsletter
-            for the latest articles and tutorials. As a special bonus I will
-            send you my favorite resources for begginers who want to learn how
-            to code.
-          </p>
-          <convertkit uid="52adfca2a6" script="https://danvega.ck.page/52adfca2a6/index.js" />
-        </div>
-        <div class="banner">
-          <g-image src="../assets/img/home-header.png" />
-        </div>
-      </header>
-      <section>
+  <div>
+    <div class="wave-container">
+      <div class="container grow">
+        <layout-navigation />
+        <header>
+          <div class="welcome">
+            <h1>
+              Learn to Code
+              <span>with Dan Vega</span>
+            </h1>
+            <p>
+              If you want to learn how to code Subscribe to my weekly newsletter
+              for the latest articles and tutorials. As a special bonus I will
+              send you my favorite resources for begginers who want to learn how
+              to code.
+            </p>
+            <convertkit uid="52adfca2a6" script="https://danvega.ck.page/52adfca2a6/index.js" />
+          </div>
+          <div class="banner">
+            <g-image src="../assets/img/home-header.png" />
+          </div>
+        </header>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921.281 145.82">
+        <path
+          d="M4221-1918.177s334.258-105.245,817.4-13.84,1103.883-108.889,1103.883-108.889v145.82H4221Z"
+          transform="translate(-4221 2040.906)"
+          fill="#3273db"
+        />
+      </svg>
+    </div>
+    <section id="about-me">
+      <div class="container">
         <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar" />
         <h2>Hi, I'm Dan Vega</h2>
         <p>
-          I’m a Husband, Father, Curriculum Developer and maker of things from
-          Cleveland Ohio. I created this website as a place to document my
-          journey as I learn new things and share them with you. I have a real
-          passion for teaching and I hope that one of blog posts, videos or
-          courses helps you solve a problem or learn something new.
+          I’m a Husband, Father,
+          <a href="#">Curriculum Developer</a> and maker of things from
+          <a href="#">Cleveland Ohio</a>. I created this website as a place
+          to
+          <a href="#">document my journey</a> as I learn new things and share them with you. I have a real
+          passion for teaching and I hope that one of
+          <a
+            href="#"
+          >blog posts</a>,
+          <a href="#">videos</a> or
+          <a href="#">courses</a> helps you solve a problem or learn something new.
         </p>
-      </section>
-      <section>
-        <h3>Latest Articles</h3>
+      </div>
+    </section>
+    <section id="latest-articles">
+      <div class="container">
+        <h2>Latest Articles</h2>
         <div id="post-cards">
           <div class="post-card" v-for="post in $page.recentPosts.edges" :key="post.node.id">
             <div>
@@ -40,22 +59,22 @@
                 <g-image :src="post.node.cover.src" />
               </g-link>
             </div>
-            <h4>{{ post.node.title }}</h4>
+            <h3>{{ post.node.title }}</h3>
             <p>{{ post.node.excerpt }}</p>
           </div>
         </div>
         <div class="more-articles">
           <g-link to="/blog" aria-label="visit blog for more content">Click for more articles</g-link>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section id="featured-course">
       <div class="container">
-        <h3>Featured Course</h3>
+        <h2>Featured Course</h2>
         <div class="featured-course-wrapper">
           <div>
             <g-image src="../assets/img/feature-course-vuejs.png" />
-            <h4>VUE.JS FOR BEGINNERS: UP AND RUNNING WITH VUE</h4>
+            <h3>VUE.JS FOR BEGINNERS: UP AND RUNNING WITH VUE</h3>
           </div>
           <div>
             <p>
@@ -80,23 +99,15 @@
     </section>
     <section id="latest-videos">
       <div class="container">
-        <h3>Latest Videos</h3>
+        <h2>YouTube Channel</h2>
         <p>
-          These are the latest videos from my YouTube channel, subscribe here to
-          find out when I release a new one.
+          If you didn't know I have a
+          <a href="http://www.youtube.com/danvega">YouTube Channel</a> where I attempt to upload new videos each week. I abosolutely love creating
+          content for YouTube so if you're not already following please consdider subscribing. If you are and would like to see me
+          create a video please reach out to me a make a suggestion. Thank you for all of your support 🙌🏻
         </p>
-        <p>Current Subscriber Count: 8,000</p>
-        <div class="latest-videos-wrapper">
-          <ul>
-            <li>Groovy Dynamic Methods</li>
-            <li>Groovy Dynamic Methods</li>
-            <li>Groovy Dynamic Methods</li>
-            <li>Groovy Dynamic Methods</li>
-            <li>Groovy Dynamic Methods</li>
-          </ul>
-          <div>
-            <g-image src="../assets/img/latest-videos-banner.png" alt />
-          </div>
+        <div class="youtube-setup">
+          <g-image src="../assets/img/YouTube_Desk_Illustration.svg" />
         </div>
       </div>
     </section>
@@ -173,8 +184,16 @@ query Posts {
 #app {
   margin: 0;
   padding: 0;
-  background: no-repeat url(../assets/img/home-header-bg.png);
-  background-position: top center;
+}
+.wave-container {
+  position: relative;
+  background: #f4f4f4;
+  color: #4a4a4a;
+  overflow: hidden;
+}
+
+.wave-container > svg {
+  display: block;
 }
 
 header {
@@ -205,10 +224,15 @@ h1 span {
 }
 
 section {
-  margin-top: 80px;
+  margin: 0;
+  padding: 0 0 20px 0;
 }
 section > h2,
 section p {
+  color: white;
+}
+h2 {
+  margin: 0;
   color: white;
 }
 .avatar {
@@ -231,6 +255,24 @@ h3 {
   text-transform: uppercase;
 }
 
+/* About Me */
+
+#about-me {
+  background-color: #3273db;
+}
+#about-me a:link {
+  background-color: rgba(105, 150, 223, 0.9);
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  font-size: 1.1rem;
+}
+#about-me a:hover {
+  background: none;
+  border-bottom: 1px dashed white;
+  color: white;
+}
+
 #posts {
   margin: 0;
   padding: 0;
@@ -242,9 +284,14 @@ h3 {
 
 /* Latest Articles */
 
+#latest-articles h2 {
+  margin-top: 20px;
+  color: #4a4a4a;
+}
+
 #post-cards {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   gap: 30px;
 }
 .post-card {
@@ -253,19 +300,15 @@ h3 {
 }
 .post-card img {
   width: 100%;
-  height: 200px;
   border-radius: 0.75rem;
 }
-.post-card h4 {
-  margin-top: 8px;
-  font-family: "Oswald", sans-serif;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+.post-card h3 {
   color: #4a4a4a;
+  margin-bottom: 0;
 }
 .post-card p {
   color: black;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 .post-card:hover {
   transform: translateY(5px);
@@ -278,14 +321,12 @@ h3 {
 }
 .more-articles a {
   display: inline-block;
-  padding: 20px;
+  padding: 18px;
   background: #3273db;
   color: #fff;
   margin: 0 auto;
   text-decoration: none;
   border-radius: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -297,8 +338,15 @@ h3 {
 
 /* Featured Course */
 
+#featured-course h2 {
+  margin-top: 20px;
+  color: #4a4a4a;
+}
 #featured-course {
   background-color: #f4f4f4;
+}
+#featured-course h3 {
+  text-align: center;
 }
 .featured-course-wrapper {
   display: flex;
@@ -311,27 +359,40 @@ h3 {
   padding-left: 10px;
 }
 
+.learn-more {
+  text-align: right;
+}
+.learn-more a:link {
+  text-decoration: none;
+}
+.learn-more a:hover {
+  text-decoration: underline;
+}
+
 /* Latest Videos */
 
 #latest-videos {
-  margin-bottom: 20px;
-}
-.latest-videos-wrapper {
-  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.latest-videos-wrapper ul {
-  flex: 1;
-  margin: 0;
-  padding: 0;
-}
-.latest-videos-wrapper ul li {
-  list-style-type: none;
+#latest-videos h2 {
+  margin: 20px 0;
+  color: #4a4a4a;
 }
 
 #latest-videos p {
   color: black;
   font-size: 1.1rem;
   margin-top: 0px;
+  margin-bottom: 40px;
+  line-height: 2.1rem;
+}
+
+.youtube-setup {
+  margin: 0 auto;
+}
+.youtube-setup img {
+  max-width: 600px;
 }
 </style>
