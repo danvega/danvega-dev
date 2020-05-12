@@ -9,11 +9,14 @@
         href="https://twitter.com/therealdanvega"
       >Twitter</a>.
     </p>
-    <p>
+    <p class="popular-tags">
       Most Popular Tags:
-      <a href="#">Spring Boot</a>,
-      <a href="#">Vue</a>,
-      <a href="#">Java</a>,
+      <g-link to="/tag/vue">Vue</g-link>,
+      <g-link to="/tag/spring">Spring</g-link>,
+      <g-link to="/tag/java">Java</g-link>,
+      <g-link to="/tag/groovy">Groovy</g-link>,
+      <g-link to="/tag/javascript">JavaScript</g-link>,
+      <g-link to="/tag/java">Java</g-link>
     </p>
     <div class="articles">
       <div v-for="post in $page.posts.edges" :key="post.node.id" class="article content">
@@ -26,13 +29,15 @@
         </small>
         <p v-if="post.node.excerpt">{{ post.node.excerpt }}</p>
       </div>
-      <BulmaPagination
-        baseUrl="/blog"
-        :currentPage="$page.posts.pageInfo.currentPage"
-        :totalPages="$page.posts.pageInfo.totalPages"
-        :maxVisibleButtons="5"
-        v-if="$page.posts.pageInfo.totalPages > 1"
-      />
+      <div class="pagingation">
+        <BlogPagination
+          baseUrl="/blog"
+          :currentPage="$page.posts.pageInfo.currentPage"
+          :totalPages="$page.posts.pageInfo.totalPages"
+          :maxVisibleButtons="5"
+          v-if="$page.posts.pageInfo.totalPages > 1"
+        />
+      </div>
     </div>
   </Layout>
 </template>
@@ -67,18 +72,18 @@ query Blog ($page: Int) {
 </page-query>
 
 <script>
-import BulmaPagination from "@/components/BulmaPagination";
+import BlogPagination from "@/components/BlogPagination";
 
 export default {
   components: {
-    BulmaPagination
+    BlogPagination
   }
 };
 </script>
 
 <style scoped>
-.articles h2 {
-  margin: 0;
+.article h2 {
+  margin: 20px 0 0 0;
   font-size: 1.7rem;
 }
 .article h2 a:link,
@@ -88,11 +93,18 @@ export default {
 }
 p {
   font-family: Roboto Slab;
-  /* font-size: 22px; */
   font-size: 1.3rem;
   font-weight: 300;
   color: var(--var-text-color);
   color: black;
   line-height: 1.6;
+  margin: 8px 0 0 0;
+}
+.popular-tags {
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+.pagination {
+  margin: 30px 0;
 }
 </style>

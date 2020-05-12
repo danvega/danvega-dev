@@ -80,12 +80,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 nav {
   display: flex;
+  align-items: center;
 }
 .pagination-list {
-  margin-left: 0px !important;
+  order: 1;
+  flex: 1;
 }
 .pagination-list li {
   list-style-type: none;
@@ -94,5 +96,52 @@ nav {
   background-color: var(--bright-blue);
   border-color: var(--bright-blue);
   color: white !important;
+}
+
+.pagination-link {
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  border-color: #dbdbdb;
+  color: var(--font-color);
+}
+
+.pagination-previous {
+  /* justify-content: center; */
+  margin: 0.25rem;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: center;
+  order: 2;
+}
+
+.pagination-next {
+  order: 3;
+}
+
+.pagination-link[disabled],
+.pagination-next[disabled],
+.pagination-previous[disabled] {
+  background-color: #dbdbdb;
+  border-color: #dbdbdb;
+  box-shadow: none;
+  color: #7a7a7a;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pagination-next,
+.pagination-previous {
+  font-size: 1rem;
+  color: var(--font-color);
+  border: 1px solid #dbdbdb;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  border-radius: 4px;
 }
 </style>
