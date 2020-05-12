@@ -81,6 +81,9 @@ export default {
 </script>
 
 <style>
+nav {
+  display: flex;
+}
 .pagination-list {
   margin-left: 0px !important;
 }

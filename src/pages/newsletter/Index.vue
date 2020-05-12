@@ -1,29 +1,31 @@
 <template>
-  <newsletter-layout>
+  <Layout>
     <section id="signup">
-      <div class="container">
-      </div>
+      <div class="container"></div>
     </section>
-  </newsletter-layout>
+    <g-link to="/newsletter/archives">Archives</g-link>
+    <br />
+    <g-link to="/newsletter/thank-you">Thank You</g-link>
+  </Layout>
 </template>
 
 <script>
-import NewsletterLayout from '@/layouts/NewsletterLayout'
-import Convertkit from '@/components/ConvertKit'
+import DefaultLayout from "@/layouts/Default";
+import Convertkit from "@/components/ConvertKit";
 
 export default {
   components: {
-    NewsletterLayout,
+    Layout: DefaultLayout,
     Convertkit
   },
   mounted() {
-    let ck = document.createElement('script');
-    ck.setAttribute('data-uid','2245659c84');
+    let ck = document.createElement("script");
+    ck.setAttribute("data-uid", "2245659c84");
     ck.setAttribute("async", true);
-    ck.setAttribute('src','https://danvega.ck.page/2245659c84/index.js');
-    document.querySelector('#signup .container').appendChild(ck);
+    ck.setAttribute("src", "https://danvega.ck.page/2245659c84/index.js");
+    document.querySelector("#signup .container").appendChild(ck);
   }
-}
+};
 </script>
 
 <style>

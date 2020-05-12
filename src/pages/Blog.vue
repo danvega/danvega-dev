@@ -1,26 +1,24 @@
 <template>
   <Layout>
-    <div class="content">
-      <h1 class="title is-2">Recent Articles</h1>
+    <div class>
+      <h1 class>Recent Articles</h1>
       <p>
         I like to write about anything thta I am currently working or something
         new that interests me. If you would like me to write about something or
         be a guest blogger on your blog please reach out to me on
-        <a href="https://twitter.com/therealdanvega">Twitter</a>.
+        <a
+          href="https://twitter.com/therealdanvega"
+        >Twitter</a>.
       </p>
       <div class="articles">
-        <div
-          v-for="post in $page.posts.edges"
-          :key="post.node.id"
-          class="article content"
-        >
-          <h2 class="title is-4">
+        <div v-for="post in $page.posts.edges" :key="post.node.id" class="article content">
+          <h2 class>
             <g-link :to="post.node.path">{{ post.node.title }}</g-link>
           </h2>
-          <small
-            >{{ new Date(post.node.date).toLocaleDateString() }} • ☕️
-            {{ post.node.timeToRead }} min read</small
-          >
+          <small>
+            {{ new Date(post.node.date).toLocaleDateString() }} • ☕️
+            {{ post.node.timeToRead }} min read
+          </small>
           <p v-if="post.node.excerpt">{{ post.node.excerpt }}</p>
         </div>
       </div>

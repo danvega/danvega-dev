@@ -1,9 +1,11 @@
 <template>
-  <newsletter-layout>
+  <Layout>
     <div class="container">
       <h4>Newsletter Archives</h4>
-      <p>This is a list of archives for my newsletter, Coffee and Code. If you're interested in signing up and getting this delivered to your inbox every
-        single Sunday morning <g-link to="/newsletter/">click here</g-link>.
+      <p>
+        This is a list of archives for my newsletter, Coffee and Code. If you're interested in signing up and getting this delivered to your inbox every
+        single Sunday morning
+        <g-link to="/newsletter/">click here</g-link>.
       </p>
       <ul>
         <li v-for="issue in $page.issues.edges" :key="issue.node.id">
@@ -12,7 +14,7 @@
         </li>
       </ul>
     </div>
-  </newsletter-layout>
+  </Layout>
 </template>
 
 <page-query>
@@ -33,23 +35,25 @@ query Newsletter {
 </page-query>
 
 <script>
-import NewsletterLayout from '@/layouts/NewsletterLayout'
+import DefaultLayout from "@/layouts/Default";
 
 export default {
   components: {
-    NewsletterLayout,
+    Layout: DefaultLayout
   }
-}
+};
 </script>
 
 <style scoped>
 p {
   line-height: 1.8;
 }
-h4 {
-  font-family: 'Caveat', cursive;
+/* h4 {
+  font-family: "Caveat", cursive;
   font-size: 24px;
   margin: 20px 0 10px 0;
+} */
+ul {
+  margin: 20px 0;
 }
-ul { margin: 20px 0; }
 </style>

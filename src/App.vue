@@ -83,4 +83,14 @@ body {
   border-top: 8px solid var(--bright-blue);
   font-family: "Roboto Slab", serif;
 }
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--font-color);
+  line-height: 1.6rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
 </style>
