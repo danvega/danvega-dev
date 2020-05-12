@@ -346,38 +346,25 @@ import LayoutFooter from "@/components/LayoutFooter.vue";
 export default {
   components: {
     LayoutNavigation
-  },
-  metaInfo: {
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Anton|Caveat&display=swap"
-      },
-      {
-        rel: "stylesheet",
-        href: "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      }
-    ]
   }
 };
 </script>
 
 <style scoped>
 #app {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   background: no-repeat url(../../assets/img/home-header-bg.png);
-  background-position: top center;
+  background-position: top center; */
 }
 .courses-container {
-  border-top: none !important;
+  /* border-top: none !important;
   width: 100vw;
   background: url("../../assets/img/courses-background.png");
   background-size: cover;
   font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+    sans-serif; */
 }
 nav {
   margin: 0 0 30px 0;
