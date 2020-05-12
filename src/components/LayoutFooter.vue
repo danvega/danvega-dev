@@ -61,5 +61,31 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+footer {
+  background-color: var(--bright-blue);
+  padding: 10px 0;
+}
+
+footer > .container {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.1rem;
+  color: #fff;
+  flex: 1;
+}
+
+footer a {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem;
+}
+
+footer a > svg {
+  fill: white;
+  width: 1.2rem;
+}
 </style>

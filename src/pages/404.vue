@@ -1,15 +1,12 @@
 <template>
   <Layout>
-      This is not the page you are looking for.
+    <main>This is not the page you are looking for.</main>
   </Layout>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
+<style scoped>
 </style>

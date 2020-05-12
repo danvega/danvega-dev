@@ -91,7 +91,8 @@ nav {
   list-style-type: none;
 }
 .is-current {
-  background-color: #3273dc !important;
-  border-color: #3273dc !important;
+  background-color: var(--bright-blue);
+  border-color: var(--bright-blue);
+  color: white !important;
 }
 </style>

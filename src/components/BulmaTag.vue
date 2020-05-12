@@ -1,10 +1,8 @@
 <template>
   <div class="tags">
     <a v-for="tag in tags" :key="tag.id" :href="'/tag/' + tag.title">
-      <span class="tag is-link">
-        <i class="fas fa-tags"></i>
-        &nbsp;{{tag.title}}
-      </span>
+      <i class="fas fa-tags"></i>
+      {{tag.title}}
     </a>
   </div>
 </template>
@@ -19,9 +17,19 @@ export default {
 
 <style>
 .tags {
-  margin-top: 20px;
+  margin: 40px 0;
 }
 .tags a {
-  margin-left: 5px;
+  background-color: var(--bright-blue);
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: hack, sans-serif;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.fas .fa-tags {
+  color: white;
 }
 </style>

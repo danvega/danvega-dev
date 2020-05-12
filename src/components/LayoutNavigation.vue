@@ -23,25 +23,25 @@
         >vega</tspan>
       </text>
     </svg>
-    <nav class="flex-1 bg-gray-100">
+    <nav>
       <ul>
         <li>
-          <g-link class to="/" exact>Home</g-link>
+          <g-link to="/" exact>Home</g-link>
         </li>
         <li>
-          <g-link class to="/blog">Blog</g-link>
+          <g-link to="/blog">Blog</g-link>
         </li>
         <li>
-          <g-link class to="/courses">Courses</g-link>
+          <g-link to="/courses">Courses</g-link>
         </li>
         <li>
-          <g-link class to="/newsletter">Newsletter</g-link>
+          <g-link to="/newsletter/">Newsletter</g-link>
         </li>
         <li>
-          <g-link class to="/about">About</g-link>
+          <g-link to="/about">About</g-link>
         </li>
         <li>
-          <g-link class to="/contact">Contact</g-link>
+          <g-link to="/contact">Contact</g-link>
         </li>
       </ul>
     </nav>
@@ -84,7 +84,38 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+nav {
+  flex: 1;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  color: var(--navigation);
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+}
+
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--bright-blue);
+  border-bottom: 2px solid var(--bright-blue);
+}
+
+nav a.active {
+  color: var(--bright-blue);
+}
 .logo {
   width: 92px;
   margin-bottom: 8px;
@@ -94,6 +125,37 @@ export default {
   align-items: center;
 }
 .navigation-bar nav {
-  /* flex: 1; */
+  flex: 1;
+}
+
+.navigation-bar > svg {
+  margin-right: 20px;
+  min-width: 100px;
+}
+
+.navigation-bar svg .logo-fill {
+  fill: var(--logo-fill);
+}
+
+.fa-moon,
+.fa-sun,
+.fa-bars {
+  cursor: pointer;
+}
+
+.fa-moon {
+  color: #0f2342;
+}
+
+.fa-sun {
+  color: #f7dc50;
+}
+
+.fa-bars {
+  color: var(--bright-blue);
+}
+
+.hamburger {
+  display: none;
 }
 </style>

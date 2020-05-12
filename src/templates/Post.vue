@@ -1,47 +1,45 @@
 <template>
   <Layout>
-    <div class="article content">
-      <h1>{{ $page.post.title }}</h1>
-      <small class="about">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</small>
-      <div class="embed-container" v-if="$page.post.video">
-        <iframe
-          width="1000"
-          height="563"
-          :src="$page.post.video"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          v-if="$page.post.video"
-        ></iframe>
-      </div>
-      <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
-      <article v-html="$page.post.content" class="article" />
-      <bulma-tag :tags="$page.post.tags" />
-      <div class="followme">
-        Follow me on
-        <a href="http://twitter.com/therealdanvega">Twitter</a>,
-        <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
-        for my
-        <a href="/newsletter">newsletter</a>.
-        <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
-      </div>
-      <div class="author">
-        <div class="avatar">
-          <g-image src="../assets/img/about_me_circle-300x295.png" />
-        </div>
-        <div class="bio">
-          <h3>Dan Vega</h3>
-          <p>
-            I’m a Husband, Father, Curriculum Developer and maker of things from
-            Cleveland Ohio. I created this website as a place to document my
-            journey as I learn new things and share them with you. I have a real
-            passion for teaching and I hope that one of blog posts, videos or
-            courses helps you solve a problem or learn something new.
-          </p>
-        </div>
-      </div>
-      <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
+    <h1>{{ $page.post.title }}</h1>
+    <p class="postDateTime">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</p>
+    <div class="embed-container" v-if="$page.post.video">
+      <iframe
+        width="1000"
+        height="563"
+        :src="$page.post.video"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        v-if="$page.post.video"
+      ></iframe>
     </div>
+    <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
+    <article v-html="$page.post.content" class="article" />
+    <bulma-tag :tags="$page.post.tags" />
+    <div class="followme">
+      Follow me on
+      <a href="http://twitter.com/therealdanvega">Twitter</a>,
+      <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
+      for my
+      <a href="/newsletter">newsletter</a>.
+      <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
+    </div>
+    <div class="author">
+      <div class="avatar">
+        <g-image src="../assets/img/about_me_circle-300x295.png" />
+      </div>
+      <div class="bio">
+        <h3>Dan Vega</h3>
+        <p>
+          I’m a Husband, Father, Curriculum Developer and maker of things from
+          Cleveland Ohio. I created this website as a place to document my
+          journey as I learn new things and share them with you. I have a real
+          passion for teaching and I hope that one of blog posts, videos or
+          courses helps you solve a problem or learn something new.
+        </p>
+      </div>
+    </div>
+    <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
   </Layout>
 </template>
 
@@ -67,7 +65,6 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
-import DefaultLayout from "@/layouts/Default";
 import moment from "moment";
 import BulmaTag from "@/components/BulmaTag";
 import ConvertKit from "@/components/ConvertKit";
@@ -75,7 +72,6 @@ import mediumZoom from "medium-zoom";
 
 export default {
   components: {
-    Layout: DefaultLayout,
     BulmaTag,
     ConvertKit
   },
@@ -107,7 +103,13 @@ export default {
         { property: "og:image", content: this.getCoverImage },
         { property: "og:image:secure_url", content: this.getCoverImage }
       ],
-      script: [{ src: "https://platform.twitter.com/widgets.js" }]
+      script: [{ src: "https://platform.twitter.com/widgets.js" }],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://use.typekit.net/rfi8kwv.css"
+        }
+      ]
     };
   },
   computed: {
@@ -137,46 +139,49 @@ export default {
 };
 </script>
 
+
 <style>
 h1 {
   margin: 0;
 }
+.postDateTime {
+  margin: 0 0 5px 0;
+}
 .article p {
-  font-family: "Roboto Slab", serif;
   font-weight: 300;
-  font-size: 1.4rem;
-  color: var(--font-color);
-  line-height: 1.7;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  /* font-size: 1.4rem; */
+  /* color: var(--font-color); */
+  /* line-height: 1.7; */
+  /* margin-block-start: 1em;
+  margin-block-end: 1em; */
 }
 
 .cover {
   margin-top: 10px;
+  max-width: 100%;
 }
 .article {
   margin-top: 20px;
-  /* margin-bottom: 60px; */
 }
 .article img {
   max-width: 100%;
 }
 .article h2 {
-  margin: 10px 0 10px 0 !important;
+  /* margin: 10px 0 10px 0 !important; */
 }
 .article-title {
-  margin-bottom: 0px !important;
+  /* margin-bottom: 0px !important; */
 }
+
 .icon.icon-link {
-  display: none;
+  /* display: none; */
 }
-a > span.fas.fa-hashtag {
-  color: rgb(100, 100, 100) !important;
-}
+
 .shiki-inline {
   background: #eeeeee !important;
   padding: 2px;
   color: #ff4e46 !important;
+  font-size: 1.1rem;
 }
 .twitter-tweet {
   margin: 30px auto !important;
@@ -186,9 +191,13 @@ a > span.fas.fa-hashtag {
   margin-left: auto;
   margin-right: auto;
 }
+code {
+  font-family: hack, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .shiki {
-  margin: 20px 0px !important;
-  font-size: 11px !important;
+  padding: 1rem;
 }
 .article .fa-youtube {
   color: red;
@@ -224,17 +233,11 @@ a > span.fas.fa-hashtag {
   margin: 40px 0;
 }
 .author p {
-  font-family: "Roboto Slab";
-  font-size: 22px;
-  font-weight: 300;
-  color: #3d455c;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  line-height: 1.6;
 }
 .author h3 {
-  font-size: 27px;
+  font-size: 1.8rem;
   border-bottom: 1px solid #f2f3f3;
   padding-bottom: 5px;
 }
@@ -251,5 +254,11 @@ a > span.fas.fa-hashtag {
 }
 #convertkit {
   margin: 15px;
+}
+
+table {
+  width: 100%;
+}
+.article table tr {
 }
 </style>
