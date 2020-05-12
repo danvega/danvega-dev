@@ -27,6 +27,13 @@ export default {
           name: "description",
           content: this.$static.metadata.siteDescription
         }
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Slab:300,400&display=swap"
+        }
       ]
     };
   }

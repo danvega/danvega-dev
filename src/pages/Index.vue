@@ -141,24 +141,7 @@ export default {
       content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
     },
     { name: "twitter:creator", content: "@therealdanvega" }
-  ],
-  metaInfo: {
-    link: [
-      {
-        rel: "stylesheet",
-        href: "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Slab:300,400|Courgette&display=swap"
-      },
-      {
-        rel: "stylsheet",
-        href: "https://use.typekit.net/rfi8kwv.css"
-      }
-    ]
-  }
+  ]
 };
 </script>
 
@@ -202,14 +185,14 @@ header {
 }
 
 header h1 {
-  font-family: nove, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  /* font-family: nove, sans-serif;
+  font-weight: 400; */
+  /* font-style: normal; */
   font-size: 2.5rem;
   color: #4a4a4a;
 }
 h1 span {
-  font-family: "Noteworthy";
+  /* font-family: "Noteworthy"; */
   color: #3273db;
   display: block;
   font-size: 2rem;
@@ -217,7 +200,6 @@ h1 span {
   margin-top: -10px;
 }
 .welcome p {
-  font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 2.2rem;
@@ -242,7 +224,6 @@ h2 {
 }
 
 section p {
-  font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 1.4rem;
   color: white;
@@ -390,7 +371,7 @@ h3 {
 }
 
 .youtube-setup {
-  margin: 0 auto;
+  text-align: center;
 }
 .youtube-setup img {
   max-width: 600px;

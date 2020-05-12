@@ -16,19 +16,6 @@ export default {
   components: {
     LayoutNavigation,
     LayoutFooter
-  },
-  metaInfo: {
-    link: [
-      {
-        rel: "stylesheet",
-        href: "https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Slab:300,400&display=swap"
-      }
-    ]
   }
 };
 </script>
