@@ -18,27 +18,7 @@
       <g-link to="/tag/javascript">JavaScript</g-link>,
       <g-link to="/tag/java">Java</g-link>
     </p>
-    <div class="articles">
-      <div v-for="post in $page.posts.edges" :key="post.node.id" class="article content">
-        <h2>
-          <g-link :to="post.node.path">{{ post.node.title }}</g-link>
-        </h2>
-        <small>
-          {{ new Date(post.node.date).toLocaleDateString() }} • ☕️
-          {{ post.node.timeToRead }} min read
-        </small>
-        <p v-if="post.node.excerpt">{{ post.node.excerpt }}</p>
-      </div>
-      <div class="pagingation">
-        <BlogPagination
-          baseUrl="/blog"
-          :currentPage="$page.posts.pageInfo.currentPage"
-          :totalPages="$page.posts.pageInfo.totalPages"
-          :maxVisibleButtons="5"
-          v-if="$page.posts.pageInfo.totalPages > 1"
-        />
-      </div>
-    </div>
+    <blog-post-list :posts="$page.posts.edges" :page-info="$page.posts.pageInfo" />
   </Layout>
 </template>
 
@@ -72,39 +52,20 @@ query Blog ($page: Int) {
 </page-query>
 
 <script>
+import BlogPostList from "@/components/BlogPostList";
 import BlogPagination from "@/components/BlogPagination";
 
 export default {
   components: {
+    BlogPostList,
     BlogPagination
   }
 };
 </script>
 
 <style scoped>
-.article h2 {
-  margin: 20px 0 0 0;
-  font-size: 1.7rem;
-}
-.article h2 a:link,
-.article h2 a:visited {
-  color: #3273dc;
-  text-decoration: none;
-}
-p {
-  font-family: Roboto Slab;
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: var(--var-text-color);
-  color: black;
-  line-height: 1.6;
-  margin: 8px 0 0 0;
-}
 .popular-tags {
   padding-bottom: 5px;
   border-bottom: 1px solid lightgray;
-}
-.pagination {
-  margin: 30px 0;
 }
 </style>

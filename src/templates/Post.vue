@@ -166,15 +166,8 @@ h1 {
 .article img {
   max-width: 100%;
 }
-.article h2 {
-  /* margin: 10px 0 10px 0 !important; */
-}
-.article-title {
-  /* margin-bottom: 0px !important; */
-}
-
-.icon.icon-link {
-  /* display: none; */
+.fas.fa-hashtag {
+  display: none; /* there is probably a better way to do this */
 }
 
 .shiki-inline {
@@ -258,7 +251,12 @@ code {
 
 table {
   width: 100%;
+  border-spacing: 1rem;
 }
 .article table tr {
+}
+th {
+  text-align: left;
+  font-weight: bold;
 }
 </style>
