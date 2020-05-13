@@ -1,16 +1,41 @@
 <template>
   <Layout>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum explicabo necessitatibus perferendis impedit, sit officiis vel id obcaecati enim quasi quia nulla. Enim quae a deserunt porro non dolor.</p>
-    <p>Quisquam nisi culpa provident distinctio debitis facere adipisci expedita sequi vero molestiae nostrum delectus numquam nobis laborum reprehenderit modi beatae, accusamus aliquam perferendis? Impedit in cumque magni iste, nobis veniam!</p>
-    <p>Expedita laborum aliquid necessitatibus sint facilis distinctio error quidem exercitationem quae quibusdam doloribus consectetur ratione eveniet quo natus aspernatur incidunt, omnis nostrum dignissimos fugiat, velit, molestiae autem. Qui, eos perferendis?</p>
+    <h1>Newsletter</h1>
+    <p>
+      I started this newsletter as a way to keep myself writing each and every week. I have a blog that I like to write for but a blog post
+      can be a lot of a pressure. This is a no pressure way for me to write and in the meantime connect with you on a weekly basis. You should
+      receieve your first issue of Coffee and Code this Sunday at 7:00 AM EST. In the meantime here are a few recent issues.
+    </p>
     <section id="signup"></section>
     <section>
-      <g-link to="/newsletter/archives">Archives</g-link>
-      <br />
-      <g-link to="/newsletter/thank-you">Thank You</g-link>
+      <h2>Archives</h2>
+      <p>If you want a taste of what you will get here are my most recent newseltters</p>
+      <ul>
+        <li v-for="issue in $page.issues.edges" :key="issue.node.id">
+          <small>{{ issue.node.date }}</small> -
+          <g-link :to="issue.node.path">{{issue.node.title}}</g-link>
+        </li>
+      </ul>
     </section>
   </Layout>
 </template>
+
+<page-query>
+query Newsletter {
+  issues: allNewsletter(limit:3) {
+    edges {
+      node {
+        id
+        title
+        issue
+        date(format:"MM/DD/YYYY")
+        timeToRead
+        path
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import Convertkit from "@/components/ConvertKit";
