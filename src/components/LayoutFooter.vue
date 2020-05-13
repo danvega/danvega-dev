@@ -88,4 +88,15 @@ footer a > svg {
   fill: white;
   width: 1.2rem;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 600px) {
+  footer > .container {
+    flex-direction: column;
+  }
+}
 </style>
