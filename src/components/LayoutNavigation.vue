@@ -159,8 +159,25 @@ nav a.active {
   }
 }
 @media (max-width: 768px) {
-  nav {
-    border: 1px solid red;
+  .navigation-bar {
+    flex-direction: column;
+  }
+  .navigation-bar svg {
+    align-self: flex-start;
+  }
+  .toggle-container {
+    align-self: flex-end;
+    order: 2;
+  }
+  .toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
   nav ul {
     position: absolute;

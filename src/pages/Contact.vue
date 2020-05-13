@@ -28,6 +28,9 @@ export default {};
 </script>
 
 <style scoped>
+form {
+  margin-bottom: 40px;
+}
 .field {
   margin: 10px 0;
 }
@@ -39,6 +42,7 @@ textarea {
   font-weight: 300;
   font-size: 1.1rem;
   color: var(--font-color);
+  border-color: rgb(230, 230, 230);
 }
 button {
   background-color: #209cee;

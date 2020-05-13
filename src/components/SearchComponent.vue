@@ -239,4 +239,11 @@ a.result:hover {
 .bg-blue {
   background-color: #ebf8ff;
 }
+
+/* media queries */
+@media (max-width: 768px) {
+  .results-container {
+    width: 100%;
+  }
+}
 </style>

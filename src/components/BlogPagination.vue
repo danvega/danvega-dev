@@ -161,4 +161,11 @@ nav a:visited {
   padding-right: 0.8rem;
   border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+  .pagination-next,
+  .pagination-previous {
+    display: none;
+  }
+}
 </style>

@@ -33,4 +33,10 @@ export default {};
   margin-left: 20px;
   filter: drop-shadow(4px 4px 4px rgb(59, 60, 64, 0.5));
 }
+
+@media (max-width: 768px) {
+  .headshot {
+    width: 100%;
+  }
+}
 </style>
