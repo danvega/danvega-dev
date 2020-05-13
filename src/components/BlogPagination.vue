@@ -85,6 +85,23 @@ nav {
   display: flex;
   align-items: center;
 }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: var(--navigation);
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+}
+
+nav a:link,
+nav a:visited {
+  text-decoration: none;
+}
+
 .pagination-list {
   order: 1;
   flex: 1;
