@@ -371,9 +371,46 @@ h3 {
 }
 
 .youtube-setup {
-  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
 }
 .youtube-setup img {
-  max-width: 600px;
+  max-width: 100%;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+  }
+  #about-me > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #post-cards {
+    grid-template-columns: 1fr;
+  }
+  .featured-course-wrapper {
+    flex-direction: column;
+  }
+  .featured-course-wrapper img {
+    width: 100%;
+  }
 }
 </style>
