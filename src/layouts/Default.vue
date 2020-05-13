@@ -134,6 +134,7 @@ a:hover {
 /* media queries */
 @media (max-width: 1024px) {
   .container {
+    margin: 0;
     padding: 0 20px;
   }
 }

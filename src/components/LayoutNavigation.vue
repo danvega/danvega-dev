@@ -141,7 +141,8 @@ nav a.active {
   cursor: pointer;
 }
 .fa-moon {
-  color: #0f2342;
+  /* color: #0f2342; */
+  color: var(--bright-blue);
 }
 .fa-sun {
   color: #f7dc50;

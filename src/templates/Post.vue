@@ -16,6 +16,7 @@
     <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
     <article v-html="$page.post.content" class="article" />
     <blog-tag :tags="$page.post.tags" />
+
     <div class="followme">
       Follow me on
       <a href="http://twitter.com/therealdanvega">Twitter</a>,
@@ -39,6 +40,7 @@
         </p>
       </div>
     </div>
+
     <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
   </Layout>
 </template>
@@ -80,14 +82,12 @@ export default {
       title: this.$page.post.title,
       meta: [
         { name: "description", content: this.$page.post.excerpt },
-
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: this.$page.post.excerpt },
         { name: "twitter:title", content: this.$page.post.title },
         { name: "twitter:site", content: "@therealdanvega" },
         { name: "twitter:image", content: this.getCoverImage },
         { name: "twitter:creator", content: "@therealdanvega" },
-
         { property: "og:type", content: "article" },
         { property: "og:title", content: this.$page.post.title },
         { property: "og:description", content: this.$page.post.excerpt },
@@ -147,15 +147,6 @@ h1 {
 .postDateTime {
   margin: 0 0 5px 0;
 }
-.article p {
-  font-weight: 300;
-  /* font-size: 1.4rem; */
-  /* color: var(--font-color); */
-  /* line-height: 1.7; */
-  /* margin-block-start: 1em;
-  margin-block-end: 1em; */
-}
-
 .cover {
   margin-top: 10px;
   max-width: 100%;
@@ -167,9 +158,8 @@ h1 {
   max-width: 100%;
 }
 .fas.fa-hashtag {
-  display: none; /* there is probably a better way to do this */
+  display: none; /* hides the hashtag next to each heading */
 }
-
 .shiki-inline {
   background: #eeeeee !important;
   padding: 2px;
@@ -177,17 +167,13 @@ h1 {
   font-size: 1.1rem;
 }
 .twitter-tweet {
-  margin: 30px auto !important;
-}
-.g-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
 }
 code {
   font-family: hack, sans-serif;
   font-weight: 400;
   font-style: normal;
+  width: 100%;
 }
 .shiki {
   padding: 1rem;
@@ -196,15 +182,12 @@ code {
   color: red;
   margin: 0 5px 0 0;
 }
-.article iframe {
-  height: 563px !important;
-}
+
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
   overflow: hidden;
-  max-width: 100%;
+  padding-top: 56.25%;
+  height: 0;
 }
 .embed-container iframe,
 .embed-container object,
@@ -214,6 +197,7 @@ code {
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 .followme {
@@ -238,7 +222,7 @@ code {
   padding: 0 30px;
 }
 .avatar {
-  width: 90%;
+  /* width: 90%;s */
 }
 .avatar img {
   border-radius: 50%;
@@ -253,10 +237,40 @@ table {
   width: 100%;
   border-spacing: 1rem;
 }
-.article table tr {
-}
+
 th {
   text-align: left;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .author {
+    flex-direction: column;
+  }
+  .bio p {
+    font-size: 1rem;
+  }
+  .author .avatar {
+    order: 2;
+    align-self: center;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  h1 {
+    display: none;
+  }
+  .bio {
+    margin: 0;
+    padding: 0;
+  }
+  pre.shiki {
+    font-size: 0.8rem;
+    max-width: 89vw;
+    overflow-x: scroll;
+  }
 }
 </style>
