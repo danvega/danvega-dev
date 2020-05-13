@@ -15,7 +15,7 @@
     </div>
     <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
     <article v-html="$page.post.content" class="article" />
-    <bulma-tag :tags="$page.post.tags" />
+    <blog-tag :tags="$page.post.tags" />
     <div class="followme">
       Follow me on
       <a href="http://twitter.com/therealdanvega">Twitter</a>,

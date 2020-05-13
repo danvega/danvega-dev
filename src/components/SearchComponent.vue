@@ -5,8 +5,8 @@
       <p>
         <input
           type="text"
-          placeholder='Search (Press  "/" to focus)'
-          class="input is-rounded"
+          placeholder="Search (Press '/' to focus)"
+          class="input"
           v-model="query"
           @blur="searchResultsVisible = false"
           @focus="searchResultsVisible = true"
@@ -37,14 +37,12 @@
             :href="post.item.path"
             @mousedown.prevent="searchResultsVisible = true"
             class="result"
-            :class="{ 'bg-blue-100': index === highlightedIndex }"
-            >{{ post.item.title }}</a
-          >
+            :class="{ 'bg-blue': index === highlightedIndex }"
+          >{{ post.item.title }}</a>
           <div v-if="searchResults.length === 0">
             <p class="my-0">
               No results for '
-              <strong>{{ query }}</strong
-              >'
+              <strong>{{ query }}</strong>'
             </p>
           </div>
         </div>
@@ -134,12 +132,12 @@ export default {
 .search-wrapper {
   position: relative;
   margin-right: 20px;
+  width: 80%;
 }
 .search {
   margin: 8px 0 0 0;
   padding: 0px;
   max-width: 100%;
-  min-width: 20rem;
   position: relative;
 }
 .search input {
@@ -160,7 +158,7 @@ export default {
 
 .search input::placeholder {
   color: lightgray;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .search .icon {
   display: inline-flex;
@@ -168,11 +166,11 @@ export default {
   align-items: center;
   left: 0;
   color: #dbdbdb;
-  height: 2.25em;
+  height: 2em;
   pointer-events: none;
   position: absolute;
   top: 0;
-  width: 2.25em;
+  width: 2em;
   z-index: 4;
 }
 .search input:focus .icon {
@@ -212,6 +210,10 @@ export default {
 a.result,
 a.result:hover,
 a.result:link {
+  font-family: hack, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
   display: inline-block;
   border: 3px #718096;
   cursor: pointer;
@@ -234,6 +236,7 @@ a.result:hover {
 .fade-leave-to {
   opacity: 0;
 }
-.bg-blue-100 {
+.bg-blue {
+  background-color: #ebf8ff;
 }
 </style>
