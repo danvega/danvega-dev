@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <div class="newsletter content">
-      <h1 class="title is-2 title">{{ $page.newsletter.title }}</h1>
+    <div>
+      <h1>{{ $page.newsletter.title }}</h1>
       <small>{{ $page.newsletter.date }} • ☕️ {{ $page.newsletter.timeToRead }} min read</small>
       <article v-html="$page.newsletter.content" class="newsletter" />
     </div>
@@ -71,14 +71,11 @@ export default {
 };
 </script>
 
-<style scoped>
-.newsletter {
-  margin-top: 20px;
+<style>
+h1 {
+  margin-bottom: 0;
 }
-.newsletter h2 {
-  margin: 20px 0 10px 0 !important;
-}
-.title {
-  margin-bottom: 0px !important;
+.newsletter img {
+  max-width: 100%;
 }
 </style>
