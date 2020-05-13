@@ -18,7 +18,6 @@
         :maxVisibleButtons="5"
         v-if="pageInfo.totalPages > 1"
       />
-      <div v-else class="spacer"></div>
     </div>
   </div>
 </template>
@@ -55,9 +54,5 @@ export default {
 }
 .pagination {
   margin: 30px 0;
-}
-.spacer {
-  min-width: 1024px;
-  margin-bottom: 40px;
 }
 </style>

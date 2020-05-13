@@ -53,12 +53,10 @@ query Blog ($page: Int) {
 
 <script>
 import BlogPostList from "@/components/BlogPostList";
-import BlogPagination from "@/components/BlogPagination";
 
 export default {
   components: {
-    BlogPostList,
-    BlogPagination
+    BlogPostList
   }
 };
 </script>
