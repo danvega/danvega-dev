@@ -175,7 +175,7 @@ nav a.active {
     opacity: 0.98;
     border-right: 1px #6a6a6a solid;
     padding: 30px;
-    transform: translateX(-500px);
+    transform: translateX(-800px);
     /* transition: transform 0.5s ease-in-out; */
   }
   nav ul.show {
