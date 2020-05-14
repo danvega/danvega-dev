@@ -1,28 +1,31 @@
 <template>
   <nav class="pagination" role="navigation" aria-label="pagination">
     <a
-      :href="previousPage(currentPage,totalPages)"
+      :href="previousPage(currentPage, totalPages)"
       class="pagination-previous"
       :disabled="currentPage == 1"
       aria-label="previous page"
-    >Previous</a>
+      >Previous</a
+    >
     <ul class="pagination-list">
       <li v-for="page in pages" :key="page.name">
         <a
           :href="page.link"
           class="pagination-link"
-          :class="{'is-current': page.name == currentPage}"
+          :class="{ 'is-current': page.name == currentPage }"
           :aria-label="page.name"
-          :aria-current="page"
-        >{{page.name}}</a>
+          :aria-current="page.name == currentPage"
+          >{{ page.name }}</a
+        >
       </li>
     </ul>
     <a
-      :href="nextPage(currentPage,totalPages)"
+      :href="nextPage(currentPage, totalPages)"
       class="pagination-next"
       :disabled="currentPage == totalPages"
       aria-label="next page"
-    >Next page</a>
+      >Next page</a
+    >
   </nav>
 </template>
 
