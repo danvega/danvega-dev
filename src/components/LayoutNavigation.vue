@@ -25,6 +25,31 @@
     </svg>
     <nav>
       <ul :class="{ show: showMobileMenu }">
+        <li class="mobileLogo" :class="{ hidden: !showMobileMenu }">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="89"
+            height="44"
+            viewBox="0 0 89 44"
+            class="logo"
+          >
+            <text
+              transform="translate(0 35)"
+              fill="#3273dc"
+              font-size="27"
+              font-family="Noteworthy-Bold, Noteworthy"
+              font-weight="700"
+            >
+              <tspan x="0" y="0">dan</tspan>
+              <tspan
+                y="0"
+                class="logo-fill"
+                font-family="Noteworthy-Light, Noteworthy"
+                font-weight="300"
+              >vega</tspan>
+            </text>
+          </svg>
+        </li>
         <li>
           <g-link to="/" exact>Home</g-link>
         </li>
@@ -135,6 +160,9 @@ nav a.active {
   width: 92px;
   margin-bottom: 8px;
 }
+.hidden {
+  display: none;
+}
 .fa-moon,
 .fa-sun,
 .fa-bars {
@@ -185,7 +213,7 @@ nav a.active {
     top: 0;
     left: 0;
     margin: 0;
-    background-color: rgb(196, 196, 196);
+    background-color: var(--mobile-menu-background);
     height: 100vh;
     width: 80%;
     flex-direction: column;
@@ -203,17 +231,23 @@ nav a.active {
     border-bottom: 1px solid #6a6a6a;
     padding: 10px 0;
   }
-  nav ul li a {
+  nav ul li a:link,
+  nav ul li a:visited {
+    color: var(--mobile-menu-link-color);
     display: block;
   }
   nav a:hover {
-    color: var(--bright-blue);
+    color: var(--link-color-hover);
     border-bottom: none;
   }
   .hamburger {
     display: block;
     margin-left: 10px;
     cursor: pointer;
+  }
+  li.mobileLogo {
+    padding: 0;
+    margin: 0;
   }
 }
 </style>

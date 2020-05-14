@@ -49,6 +49,8 @@ query {
   --shiki-inline-background: #eeeeee;
   --shiki-inline-color: #ff4e46;
   --font-color-inverse: #ebf1fc;
+  --mobile-menu-background: #efefef;
+  --mobile-menu-link-color: #0f2342;
 }
 
 [data-theme="dark"] {
@@ -70,6 +72,8 @@ query {
   --shiki-inline-background: white;
   --shiki-inline-color: #81a1c1;
   --font-color-inverse: #3d455c;
+  --mobile-menu-background: #d1d1d1;
+  --mobile-menu-link-color: #0f2342;
 }
 
 html {
@@ -145,7 +149,7 @@ a:hover {
 }
 
 blockquote {
-  margin: 0;
+  margin: 20px 0;
   background-color: #f5f5f5;
   border-left: 5px solid #dbdbdb;
   padding: 1.25em 1.5em;

@@ -205,6 +205,10 @@ code {
   background-color: rgb(242, 242, 242);
   padding: 10px;
 }
+.followme a:link,
+.followme a:visited {
+  color: var(--bright-blue);
+}
 .author {
   display: flex;
   margin: 40px 0;
@@ -220,9 +224,6 @@ code {
 }
 .bio {
   padding: 0 30px;
-}
-.avatar {
-  /* width: 90%;s */
 }
 .avatar img {
   border-radius: 50%;
@@ -260,9 +261,6 @@ th {
 }
 
 @media (max-width: 850px) {
-  h1 {
-    display: none;
-  }
   .bio {
     margin: 0;
     padding: 0;
