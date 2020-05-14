@@ -4,6 +4,7 @@
       :href="previousPage(currentPage,totalPages)"
       class="pagination-previous"
       :disabled="currentPage == 1"
+      aria-label="previous page"
     >Previous</a>
     <ul class="pagination-list">
       <li v-for="page in pages" :key="page.name">
@@ -20,6 +21,7 @@
       :href="nextPage(currentPage,totalPages)"
       class="pagination-next"
       :disabled="currentPage == totalPages"
+      aria-label="next page"
     >Next page</a>
   </nav>
 </template>

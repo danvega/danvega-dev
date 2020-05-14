@@ -17,6 +17,7 @@
           @keydown.up.prevent="highlightPrevious"
           @keydown.down.prevent="highlightNext"
           @keydown.enter="gotoLink"
+          aria-label="Search Blog Posts"
         />
         <span class="icon">
           <i class="fas fa-search"></i>
@@ -38,11 +39,13 @@
             @mousedown.prevent="searchResultsVisible = true"
             class="result"
             :class="{ 'bg-blue': index === highlightedIndex }"
-          >{{ post.item.title }}</a>
+            >{{ post.item.title }}</a
+          >
           <div v-if="searchResults.length === 0">
             <p class="my-0">
               No results for '
-              <strong>{{ query }}</strong>'
+              <strong>{{ query }}</strong
+              >'
             </p>
           </div>
         </div>
