@@ -15,7 +15,10 @@
               send you my favorite resources for begginers who want to learn how
               to code.
             </p>
-            <convertkit uid="52adfca2a6" script="https://danvega.ck.page/52adfca2a6/index.js" />
+            <convertkit
+              uid="52adfca2a6"
+              script="https://danvega.ck.page/52adfca2a6/index.js"
+            />
           </div>
           <div class="banner">
             <g-image src="../assets/img/home-header.png" />
@@ -32,20 +35,21 @@
     </div>
     <section id="about-me">
       <div class="container">
-        <g-image src="../assets/img/danvega-avatar.png" class="avatar" alt="Dan Vega Avatar" />
+        <g-image
+          src="../assets/img/danvega-avatar.png"
+          class="avatar"
+          alt="Dan Vega Avatar"
+        />
         <h2>Hi, I'm Dan Vega</h2>
         <p>
           I’m a Husband, Father,
           <a href="#">Curriculum Developer</a> and maker of things from
-          <a href="#">Cleveland Ohio</a>. I created this website as a place
-          to
-          <a href="#">document my journey</a> as I learn new things and share them with you. I have a real
-          passion for teaching and I hope that one of
-          <a
-            href="#"
-          >blog posts</a>,
-          <a href="#">videos</a> or
-          <a href="#">courses</a> helps you solve a problem or learn something new.
+          <a href="#">Cleveland Ohio</a>. I created this website as a place to
+          <a href="#">document my journey</a> as I learn new things and share
+          them with you. I have a real passion for teaching and I hope that one
+          of <a href="#">blog posts</a>, <a href="#">videos</a> or
+          <a href="#">courses</a> helps you solve a problem or learn something
+          new.
         </p>
       </div>
     </section>
@@ -53,7 +57,11 @@
       <div class="container">
         <h2>Latest Articles</h2>
         <div id="post-cards">
-          <div class="post-card" v-for="post in $page.recentPosts.edges" :key="post.node.id">
+          <div
+            class="post-card"
+            v-for="post in $page.recentPosts.edges"
+            :key="post.node.id"
+          >
             <div>
               <g-link :to="post.node.path" :aria-label="post.node.title">
                 <g-image :src="post.node.cover.src" loading="lazy" />
@@ -64,7 +72,9 @@
           </div>
         </div>
         <div class="more-articles">
-          <g-link to="/blog" aria-label="visit blog for more content">Click for more articles</g-link>
+          <g-link to="/blog" aria-label="visit blog for more content"
+            >Click for more articles</g-link
+          >
         </div>
       </div>
     </section>
@@ -102,9 +112,12 @@
         <h2>YouTube Channel</h2>
         <p>
           If you didn't know I have a
-          <a href="http://www.youtube.com/danvega">YouTube Channel</a> where I attempt to upload new videos each week. I abosolutely love creating
-          content for YouTube so if you're not already following please consdider subscribing. If you are and would like to see me
-          create a video please reach out to me a make a suggestion. Thank you for all of your support 🙌🏻
+          <a href="http://www.youtube.com/danvega">YouTube Channel</a> where I
+          attempt to upload new videos each week. I abosolutely love creating
+          content for YouTube so if you're not already following please
+          consdider subscribing. If you are and would like to see me create a
+          video please reach out to me a make a suggestion. Thank you for all of
+          your support 🙌🏻
         </p>
         <div class="youtube-setup">
           <g-image src="../assets/img/svg/YouTube_Desk_Illustration.svg" />
@@ -378,17 +391,14 @@ section p {
   .container {
     padding: 0 20px;
   }
+}
+@media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
   }
   .welcome {
     text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
   }
   .banner img {
     width: 100%;
