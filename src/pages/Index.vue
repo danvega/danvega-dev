@@ -126,22 +126,29 @@ export default {
     LayoutFooter,
     Convertkit
   },
-  meta: [
-    { name: "author", content: "Dan Vega" },
-    {
-      name: "description",
-      content: "This is the personal blog of Dan Vega."
-    },
-    { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:description", content: "The personal blog of Dan Vega" },
-    { name: "twitter:title", content: "Dan Vega" },
-    { name: "twitter:site", content: "@therealdanvega" },
-    {
-      name: "twitter:image",
-      content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
-    },
-    { name: "twitter:creator", content: "@therealdanvega" }
-  ]
+  metaInfo() {
+    return {
+      meta: [
+        { name: "author", content: "Dan Vega" },
+        {
+          name: "description",
+          content: "This is the personal blog of Dan Vega."
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "twitter:description",
+          content: "The personal blog of Dan Vega"
+        },
+        { name: "twitter:title", content: "Dan Vega" },
+        { name: "twitter:site", content: "@therealdanvega" },
+        {
+          name: "twitter:image",
+          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
+        },
+        { name: "twitter:creator", content: "@therealdanvega" }
+      ]
+    };
+  }
 };
 </script>
 
@@ -202,14 +209,9 @@ h1 span {
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
-
 section {
   margin: 0;
   padding: 0 0 20px 0;
-}
-section > h2,
-section p {
-  /* color: white; */
 }
 h2 {
   margin: 0;
@@ -219,7 +221,6 @@ h2 {
   float: right;
   margin-left: 40px;
 }
-
 section p {
   font-weight: 300;
   font-size: 1.4rem;
@@ -227,10 +228,6 @@ section p {
   line-height: 1.7;
   margin-block-start: 1em;
   margin-block-end: 1em;
-}
-
-h3 {
-  text-transform: uppercase;
 }
 
 /* About Me */

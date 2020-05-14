@@ -28,7 +28,6 @@ export default {
       title: this.$page.newsletter.title,
       meta: [
         { name: "description", content: this.$page.newsletter.title },
-
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: this.$page.newsletter.title },
         { name: "twitter:title", content: this.$page.newsletter.title },
@@ -38,7 +37,6 @@ export default {
           content: "https://unsplash.com/photos/ZMraoOybTLQ"
         },
         { name: "twitter:creator", content: "@therealdanvega" },
-
         { property: "og:type", content: "article" },
         { property: "og:title", content: this.$page.newsletter.title },
         { property: "og:description", content: this.$page.newsletter.title },

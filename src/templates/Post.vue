@@ -161,9 +161,9 @@ h1 {
   display: none; /* hides the hashtag next to each heading */
 }
 .shiki-inline {
-  background: #eeeeee !important;
+  background: var(--shiki-inline-background) !important;
   padding: 2px;
-  color: #ff4e46 !important;
+  color: var(--shiki-inline-color) !important;
   font-size: 1.1rem;
 }
 .twitter-tweet {

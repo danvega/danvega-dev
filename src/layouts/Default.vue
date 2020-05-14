@@ -31,13 +31,11 @@ query {
 <style>
 :root {
   --background: white;
-
   --home-header-background: #f4f4f4;
   --home-postcard-font-color: #3d455c;
   --home-featured-background: #f4f4f4;
   --home-featured-font-color: #3d455c;
   --home-youtube-font-color: #3d455c;
-
   --bg-color: white;
   --font-color: #3d455c;
   --bright-blue: #3273dc;
@@ -48,17 +46,18 @@ query {
   --link-color: #3273dc;
   --link-color-hover: #0256dd;
   --link-text-decoration: none;
+  --shiki-inline-background: #eeeeee;
+  --shiki-inline-color: #ff4e46;
+  --font-color-inverse: #ebf1fc;
 }
 
 [data-theme="dark"] {
   --background: #0f2342;
-
   --home-header-background: #0f2342;
   --home-featured-background: var(--bright-blue);
   --home-postcard-font-color: #ebf1fc;
   --home-featured-font-color: #ebf1fc;
   --home-youtube-font-color: #ebf1fc;
-
   --bg-color: #0f2342;
   --font-color: #ebf1fc;
   --headings: #ebf1fc;
@@ -68,6 +67,9 @@ query {
   --link-color: #ffffff;
   --link-color-hover: #ffffff;
   --link-text-decoration: underline;
+  --shiki-inline-background: white;
+  --shiki-inline-color: #81a1c1;
+  --font-color-inverse: #3d455c;
 }
 
 html {
@@ -140,6 +142,16 @@ a:visited {
 a:hover {
   color: var(--link-color-hover);
   text-decoration: underline;
+}
+
+blockquote {
+  margin: 0;
+  background-color: #f5f5f5;
+  border-left: 5px solid #dbdbdb;
+  padding: 1.25em 1.5em;
+}
+blockquote > p {
+  color: #3d455c;
 }
 
 .container {
