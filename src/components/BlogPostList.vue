@@ -47,10 +47,12 @@ export default {
   font-family: Roboto Slab;
   font-size: 1.3rem;
   font-weight: 300;
-  color: var(--var-text-color);
-  color: black;
+  color: var(--font-color);
   line-height: 1.6;
   margin: 8px 0 0 0;
+}
+small {
+  color: var(--font-color);
 }
 .pagination {
   margin: 30px 0;
