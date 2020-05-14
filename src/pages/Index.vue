@@ -171,7 +171,26 @@ export default {
           name: "twitter:image",
           content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
         },
-        { name: "twitter:creator", content: "@therealdanvega" }
+        { name: "twitter:creator", content: "@therealdanvega" },
+
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "Dan Vega" },
+        {
+          property: "og:description",
+          content: "This is the personal blog of Dan Vega."
+        },
+        {
+          property: "og:url",
+          content: "https://www.danvega.dev"
+        },
+        {
+          property: "og:image",
+          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
+        },
+        {
+          property: "og:image:secure_url",
+          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
+        }
       ]
     };
   }
