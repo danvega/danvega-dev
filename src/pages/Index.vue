@@ -64,7 +64,11 @@
           >
             <div>
               <g-link :to="post.node.path" :aria-label="post.node.title">
-                <g-image :src="post.node.cover.src" loading="lazy" />
+                <g-image
+                  :src="post.node.cover.src"
+                  :alt="post.node.title"
+                  loading="lazy"
+                />
               </g-link>
             </div>
             <h3>{{ post.node.title }}</h3>
