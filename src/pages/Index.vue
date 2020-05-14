@@ -170,7 +170,7 @@ query Posts {
 }
 .wave-container {
   position: relative;
-  background: #f4f4f4;
+  background: var(--home-header-background);
   color: #4a4a4a;
   overflow: hidden;
 }
@@ -188,8 +188,6 @@ header h1 {
   /* font-family: nove, sans-serif;
   font-weight: 400; */
   /* font-style: normal; */
-  font-size: 2.5rem;
-  color: #4a4a4a;
 }
 h1 span {
   /* font-family: "Noteworthy"; */
@@ -211,11 +209,10 @@ section {
 }
 section > h2,
 section p {
-  color: white;
+  /* color: white; */
 }
 h2 {
   margin: 0;
-  color: white;
 }
 .avatar {
   max-width: 200px;
@@ -267,7 +264,6 @@ h3 {
 
 #latest-articles h2 {
   margin-top: 20px;
-  color: #4a4a4a;
 }
 
 #post-cards {
@@ -284,11 +280,10 @@ h3 {
   border-radius: 0.75rem;
 }
 .post-card h3 {
-  color: #4a4a4a;
   margin-bottom: 0;
 }
 .post-card p {
-  color: black;
+  color: var(--home-postcard-font-color);
   font-size: 1.1rem;
 }
 .post-card:hover {
@@ -321,10 +316,9 @@ h3 {
 
 #featured-course h2 {
   margin-top: 20px;
-  color: #4a4a4a;
 }
 #featured-course {
-  background-color: #f4f4f4;
+  background-color: var(--home-featured-background);
 }
 #featured-course h3 {
   text-align: center;
@@ -334,7 +328,7 @@ h3 {
 }
 
 .featured-course-wrapper p {
-  color: black;
+  color: var(--home-featured-font-color);
   font-size: 1.1rem;
   margin-top: 0px;
   padding-left: 10px;
@@ -359,15 +353,14 @@ h3 {
 
 #latest-videos h2 {
   margin: 20px 0;
-  color: #4a4a4a;
 }
 
 #latest-videos p {
-  color: black;
   font-size: 1.1rem;
   margin-top: 0px;
   margin-bottom: 40px;
   line-height: 2.1rem;
+  color: var(--home-youtube-font-color);
 }
 
 .youtube-setup {

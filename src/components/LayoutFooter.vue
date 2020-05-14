@@ -84,6 +84,10 @@ footer a {
   padding: 0.5rem 0.75rem;
 }
 
+footer a:hover {
+  color: #e6e6e6;
+}
+
 footer a > svg {
   fill: white;
   width: 1.2rem;

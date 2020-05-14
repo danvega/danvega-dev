@@ -30,6 +30,14 @@ query {
 
 <style>
 :root {
+  --background: white;
+
+  --home-header-background: #f4f4f4;
+  --home-postcard-font-color: #3d455c;
+  --home-featured-background: #f4f4f4;
+  --home-featured-font-color: #3d455c;
+  --home-youtube-font-color: #3d455c;
+
   --bg-color: white;
   --font-color: #3d455c;
   --bright-blue: #3273dc;
@@ -39,15 +47,27 @@ query {
   --home-hereo-wave-fill: #f4f4f4;
   --link-color: #3273dc;
   --link-color-hover: #0256dd;
+  --link-text-decoration: none;
 }
 
 [data-theme="dark"] {
+  --background: #0f2342;
+
+  --home-header-background: #0f2342;
+  --home-featured-background: var(--bright-blue);
+  --home-postcard-font-color: #ebf1fc;
+  --home-featured-font-color: #ebf1fc;
+  --home-youtube-font-color: #ebf1fc;
+
   --bg-color: #0f2342;
   --font-color: #ebf1fc;
   --headings: #ebf1fc;
   --navigation: #ebf1fc;
   --logo-fill: #ebf1fc;
   --home-hero-wave-fill: #0f2342;
+  --link-color: #ffffff;
+  --link-color-hover: #ffffff;
+  --link-text-decoration: underline;
 }
 
 html {
@@ -64,7 +84,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-color);
+  background-color: var(--background);
   border-top: 8px solid var(--bright-blue);
   font-family: "Roboto Slab", serif;
 }
@@ -114,7 +134,7 @@ h3 {
 a:link,
 a:visited {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: var(--link-text-decoration);
   font-weight: normal;
 }
 a:hover {
