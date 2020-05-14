@@ -72,10 +72,10 @@
     </nav>
     <search-component v-if="hideSearch == true" />
     <div class="toggle-container">
-      <i class="fas fa-moon fa-2x" @click="toggleDarkMode()" ref="toggleSwitch"></i>
+      <i class="fas fa-moon fa-2x" @click="toggleDarkMode()" ref="toggleSwitch" aria-label="toggle dark mode"></i>
     </div>
     <div class="hamburger">
-      <i class="fas fa-bars fa-2x" @click="showMobileMenu = !showMobileMenu"></i>
+      <i class="fas fa-bars fa-2x" @click="showMobileMenu = !showMobileMenu" aria-label="toggle mobile menu"></i>
     </div>
   </div>
 </template>
