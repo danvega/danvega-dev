@@ -56,7 +56,7 @@
           <div class="post-card" v-for="post in $page.recentPosts.edges" :key="post.node.id">
             <div>
               <g-link :to="post.node.path" :aria-label="post.node.title">
-                <g-image :src="post.node.cover.src" />
+                <g-image :src="post.node.cover.src" loading="lazy" />
               </g-link>
             </div>
             <h3>{{ post.node.title }}</h3>
@@ -160,7 +160,7 @@ query Posts {
         id
         title
         excerpt
-        cover
+        cover (width: 550, height: 286, quality: 90)
         path
         date(format: "MMMM DD, YYYY")
         timeToRead
@@ -274,8 +274,10 @@ section p {
   flex-direction: column;
 }
 .post-card img {
-  width: 100%;
-  border-radius: 0.75rem;
+  max-width: 100%;
+  height: 265px;
+  object-fit: cover;
+  border-radius: 0.25rem;
 }
 .post-card h3 {
   margin-bottom: 0;
