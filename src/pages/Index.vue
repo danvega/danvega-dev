@@ -192,15 +192,13 @@ header {
 }
 
 header h1 {
-  /* font-family: nove, sans-serif;
-  font-weight: 400; */
-  /* font-style: normal; */
+  font-weight: 400;
+  font-style: normal;
 }
 h1 span {
-  /* font-family: "Noteworthy"; */
   color: #3273db;
   display: block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: none;
   margin-top: -10px;
 }
