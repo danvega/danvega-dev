@@ -107,7 +107,7 @@
           create a video please reach out to me a make a suggestion. Thank you for all of your support 🙌🏻
         </p>
         <div class="youtube-setup">
-          <g-image src="../assets/img/YouTube_Desk_Illustration.svg" />
+          <g-image src="../assets/img/svg/YouTube_Desk_Illustration.svg" />
         </div>
       </div>
     </section>
@@ -233,6 +233,9 @@ section p {
 #about-me {
   background-color: #3273db;
 }
+#about-me h2 {
+  color: #ebf1fc;
+}
 #about-me a:link {
   background-color: rgba(105, 150, 223, 0.9);
   text-decoration: none;
@@ -292,13 +295,13 @@ section p {
 }
 .more-articles a {
   display: inline-block;
-  padding: 18px;
+  padding: 12px;
   background: #3273db;
   color: #fff;
   margin: 0 auto;
   text-decoration: none;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  font-weight: 300;
 }
 
 .more-articles a:hover {
@@ -316,7 +319,9 @@ section p {
   background-color: var(--home-featured-background);
 }
 #featured-course h3 {
+  font-size: 1.3rem;
   text-align: center;
+  margin: 0;
 }
 .featured-course-wrapper {
   display: flex;
@@ -393,6 +398,9 @@ section p {
   }
   #post-cards {
     grid-template-columns: 1fr;
+  }
+  #featured-course h3 {
+    margin-bottom: 10px;
   }
   .featured-course-wrapper {
     flex-direction: column;
