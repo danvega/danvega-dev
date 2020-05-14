@@ -4,35 +4,47 @@
     <div class="container">
       <header>
         <div class="logo">
-          <g-image src="../../assets/img/danvega-avatar.png" width="80" />
+          <g-image
+            src="../../assets/img/danvega-avatar.png"
+            width="80"
+            alt="dan vega avatar"
+          />
         </div>
       </header>
       <div class="content">
         <div class="about">
           <h1>FREE Introduction to VueJS Course</h1>
-          <h2>Do you want to learn how to get up and running with VueJS in just 1 hour?</h2>
+          <h2>
+            Do you want to learn how to get up and running with VueJS in just 1
+            hour?
+          </h2>
           <p>
-            If you're interested in getting started with VueJS I have a free course that is really going to help you. With over 75,000 students worldwide
-            and lots of metrics to back it up I have found that developers take courses to learn a specific topic.
+            If you're interested in getting started with VueJS I have a free
+            course that is really going to help you. With over 75,000 students
+            worldwide and lots of metrics to back it up I have found that
+            developers take courses to learn a specific topic.
           </p>
           <p>
-            In this course I will explain to you what VueJS is and why it's a great choice for beginners. After that you will get your development
-            enviornment setup and write your first application. The best part about this course is that you only need an hour to get up and running.
+            In this course I will explain to you what VueJS is and why it's a
+            great choice for beginners. After that you will get your development
+            enviornment setup and write your first application. The best part
+            about this course is that you only need an hour to get up and
+            running.
           </p>
           <p>
             If you're interested in learning more you can check out
             <a
               href="https://www.danvega.dev/blog/2019/04/30/up-and-running-with-vue"
-            >this article</a> I wrote on how to get started with Vue.
-            If you have any questions please feel free to reach out to me on
-            <a
-              href="https://twitter.com/therealdanvega"
-            >Twitter</a>.
+              >this article</a
+            >
+            I wrote on how to get started with Vue. If you have any questions
+            please feel free to reach out to me on
+            <a href="https://twitter.com/therealdanvega">Twitter</a>.
           </p>
           <p>
             Thank You
             <br />
-            <g-image src="../../assets/img/signature.png" />
+            <g-image src="../../assets/img/signature.png" alt="dan vega" />
           </p>
         </div>
         <div class="signup">

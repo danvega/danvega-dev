@@ -21,7 +21,10 @@
             />
           </div>
           <div class="banner">
-            <g-image src="../assets/img/home-header.png" />
+            <g-image
+              src="../assets/img/home-header.png"
+              alt="Learn to code with Dan Vega"
+            />
           </div>
         </header>
       </div>
@@ -87,7 +90,10 @@
         <h2>Featured Course</h2>
         <div class="featured-course-wrapper">
           <div>
-            <g-image src="../assets/img/feature-course-vuejs.png" />
+            <g-image
+              src="../assets/img/feature-course-vuejs.png"
+              alt="VueJS for Beginners: Up and Running with Vue"
+            />
             <h3>VUE.JS FOR BEGINNERS: UP AND RUNNING WITH VUE</h3>
           </div>
           <div>
@@ -124,7 +130,10 @@
           your support 🙌🏻
         </p>
         <div class="youtube-setup">
-          <g-image src="../assets/img/svg/YouTube_Desk_Illustration.svg" />
+          <g-image
+            src="../assets/img/svg/YouTube_Desk_Illustration.svg"
+            alt="Subscribe to my YouTube Channel"
+          />
         </div>
       </div>
     </section>

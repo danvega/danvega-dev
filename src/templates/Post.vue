@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <h1>{{ $page.post.title }}</h1>
-    <p class="postDateTime">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</p>
+    <p class="postDateTime">
+      {{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read
+    </p>
     <div class="embed-container" v-if="$page.post.video">
       <iframe
         width="1000"
@@ -13,7 +15,12 @@
         v-if="$page.post.video"
       ></iframe>
     </div>
-    <g-image v-if="!$page.post.video && $page.post.cover" :src="$page.post.cover" class="cover" />
+    <g-image
+      v-if="!$page.post.video && $page.post.cover"
+      :src="$page.post.cover"
+      class="cover"
+      :alt="$page.post.title"
+    />
     <article v-html="$page.post.content" class="article" />
     <blog-tag :tags="$page.post.tags" />
 
@@ -21,13 +28,18 @@
       Follow me on
       <a href="http://twitter.com/therealdanvega">Twitter</a>,
       <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
-      for my
-      <a href="/newsletter">newsletter</a>.
-      <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
+      for my <a href="/newsletter">newsletter</a>.
+      <convert-kit
+        uid="44cc02ed05"
+        script="https://f.convertkit.com/44cc02ed05/38739557e4.js"
+      ></convert-kit>
     </div>
     <div class="author">
       <div class="avatar">
-        <g-image src="../assets/img/about_me_circle-300x295.png" />
+        <g-image
+          src="../assets/img/about_me_circle-300x295.png"
+          alt="Dan Vega"
+        />
       </div>
       <div class="bio">
         <h3>Dan Vega</h3>
@@ -41,7 +53,10 @@
       </div>
     </div>
 
-    <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
+    <vue-disqus
+      shortname="danvega-dev"
+      :identifier="$page.post.title"
+    ></vue-disqus>
   </Layout>
 </template>
 
@@ -138,7 +153,6 @@ export default {
   }
 };
 </script>
-
 
 <style>
 h1 {
