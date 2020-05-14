@@ -4,12 +4,25 @@
       Learn to Code
       <span>with Dan Vega</span>
     </h1>
-    <p>I have 20+ years of software development experience and have helped over 110,000+ students online learn how to code. If you want to level up your skills you have come to the right place. If you're interested in learning Vue I am currently giving away my VueJS for begginers course for FREE. All you have to do is enter your email address below and I will send it to you.</p>
-    <convert-kit uid="52adfca2a6" script="https://danvega.ck.page/52adfca2a6/index.js" />
+    <p>
+      I have 20+ years of software development experience and have helped over
+      110,000+ students online learn how to code. If you want to level up your
+      skills you have come to the right place. If you're interested in learning
+      Vue I am currently giving away my VueJS for begginers course for FREE. All
+      you have to do is enter your email address below and I will send it to
+      you.
+    </p>
+    <convert-kit
+      uid="52adfca2a6"
+      script="https://danvega.ck.page/52adfca2a6/index.js"
+    />
     <section id="courses">
       <h2>Courses</h2>
       <p>
-        Below you will find a list of courses that I currently have available. I put a lot of effort and passion into each one of my courses and I hope that shows. If you're interested in a topic that I don't have listed here please
+        Below you will find a list of courses that I currently have available. I
+        put a lot of effort and passion into each one of my courses and I hope
+        that shows. If you're interested in a topic that I don't have listed
+        here please
         <g-link to="/contact">contact me.</g-link>
       </p>
       <div class="cards">
@@ -26,12 +39,16 @@
           <div class="card-content">
             <div class="content">
               <h4>Vue.js for Beginners: Up and Running with Vue</h4>
-              <p>A beginner's guide to learn the basics of the JavaScript Framework Vue.js.</p>
+              <p>
+                A beginner's guide to learn the basics of the JavaScript
+                Framework Vue.js.
+              </p>
               <a
                 href="https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A"
                 class="button is-info"
                 target="_blank"
-              >Learn More</a>
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
@@ -48,12 +65,16 @@
           <div class="card-content">
             <div class="content">
               <h4>The Complete Apache Groovy Developer Course</h4>
-              <p>Everything you need to know to get started with the Groovy Programming Language</p>
+              <p>
+                Everything you need to know to get started with the Groovy
+                Programming Language
+              </p>
               <!-- <span class="button is-info">Learn More</span> -->
               <a
                 href="https://courses.danvega.dev/p/the-complete-apache-groovy-developer-course"
                 class="button is-info"
-              >Learn More</a>
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
@@ -70,11 +91,15 @@
           <div class="card-content">
             <div class="content">
               <h4>Getting Started with Spring Boot 2</h4>
-              <p>Learn how to build a real application using Spring Framework 5 & Spring Boot 2</p>
+              <p>
+                Learn how to build a real application using Spring Framework 5 &
+                Spring Boot 2
+              </p>
               <a
                 href="https://courses.danvega.dev/p/spring-boot-2"
                 class="button is-info"
-              >Learn More</a>
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
@@ -91,11 +116,15 @@
           <div class="card-content">
             <div class="content">
               <h4>Learn Spring Boot</h4>
-              <p>Spring Boot gives you all the power of the Spring Framework without all of the complexity.</p>
+              <p>
+                Spring Boot gives you all the power of the Spring Framework
+                without all of the complexity.
+              </p>
               <a
                 href="https://courses.danvega.dev/p/spring-boot-intro"
                 class="button is-info"
-              >Learn More</a>
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
@@ -112,8 +141,15 @@
           <div class="card-content">
             <div class="content">
               <h4>Angular 4 Java Developers</h4>
-              <p>Learn how to build Spring Boot & Angular apps by building a real world application with JHipster.</p>
-              <a href="https://courses.danvega.dev/p/jhipster" class="button is-info">Learn More</a>
+              <p>
+                Learn how to build Spring Boot & Angular apps by building a real
+                world application with JHipster.
+              </p>
+              <a
+                href="https://courses.danvega.dev/p/jhipster"
+                class="button is-info"
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
@@ -130,11 +166,15 @@
           <div class="card-content">
             <div class="content">
               <h4>Getting Started with Java</h4>
-              <p>Everything you need to know about setting up your local development environment.</p>
+              <p>
+                Everything you need to know about setting up your local
+                development environment.
+              </p>
               <a
                 href="https://courses.danvega.dev/p/getting-started-with-java"
                 class="button is-info"
-              >Learn More</a>
+                >Learn More</a
+              >
             </div>
           </div>
         </div>
@@ -173,14 +213,6 @@ figure {
 }
 .card-image img {
   width: 100%;
-}
-
-.testimonials {
-  background: #fff;
-  padding: 30px 0;
-}
-.testimonials .content p {
-  line-height: 1.9;
 }
 
 @media (max-width: 768px) {
