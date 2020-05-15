@@ -136,6 +136,12 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
 
 a:link,
 a:visited {

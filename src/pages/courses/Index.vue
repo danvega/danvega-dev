@@ -36,7 +36,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Vue.js for Beginners: Up and Running with Vue</h4>
+              <h3>Vue.js for Beginners: Up and Running with Vue</h3>
               <p>
                 A beginner's guide to learn the basics of the JavaScript
                 Framework Vue.js.
@@ -63,7 +63,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>The Complete Apache Groovy Developer Course</h4>
+              <h3>The Complete Apache Groovy Developer Course</h3>
               <p>
                 Everything you need to know to get started with the Groovy
                 Programming Language
@@ -89,7 +89,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Getting Started with Spring Boot 2</h4>
+              <h3>Getting Started with Spring Boot 2</h3>
               <p>
                 Learn how to build a real application using Spring Framework 5 &
                 Spring Boot 2
@@ -114,7 +114,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Learn Spring Boot</h4>
+              <h3>Learn Spring Boot</h3>
               <p>
                 Spring Boot gives you all the power of the Spring Framework
                 without all of the complexity.
@@ -139,7 +139,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Angular 4 Java Developers</h4>
+              <h3>Angular 4 Java Developers</h3>
               <p>
                 Learn how to build Spring Boot & Angular apps by building a real
                 world application with JHipster.
@@ -164,7 +164,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Getting Started with Java</h4>
+              <h3>Getting Started with Java</h3>
               <p>
                 Everything you need to know about setting up your local
                 development environment.
