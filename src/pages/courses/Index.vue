@@ -7,10 +7,8 @@
     <p>
       I have 20+ years of software development experience and have helped over
       110,000+ students online learn how to code. If you want to level up your
-      skills you have come to the right place. If you're interested in learning
-      Vue I am currently giving away my VueJS for begginers course for FREE. All
-      you have to do is enter your email address below and I will send it to
-      you.
+      skills you have come to the right place. Please enter your email address
+      below to be notified when new content is released.
     </p>
     <convert-kit
       uid="52adfca2a6"

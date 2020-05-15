@@ -28,7 +28,8 @@
       Follow me on
       <a href="http://twitter.com/therealdanvega">Twitter</a>,
       <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
-      for my <a href="/newsletter">newsletter</a>.
+      for my <a href="/newsletter">newsletter</a> to get my latest articles and
+      tutorials.
       <convert-kit
         uid="44cc02ed05"
         script="https://f.convertkit.com/44cc02ed05/38739557e4.js"

@@ -2,18 +2,22 @@
   <Layout>
     <h1>Newsletter</h1>
     <p>
-      I started this newsletter as a way to keep myself writing each and every week. I have a blog that I like to write for but a blog post
-      can be a lot of a pressure. This is a no pressure way for me to write and in the meantime connect with you on a weekly basis. You should
-      receieve your first issue of Coffee and Code this Sunday at 7:00 AM EST.
+      I started this newsletter as a way to keep myself writing each and every
+      week. I have a blog that I like to write for but a blog post can be a lot
+      of a pressure. This is a no pressure way for me to write and in the
+      meantime connect with you on a weekly basis.
     </p>
     <section id="signup"></section>
     <section>
       <h2>Archives</h2>
-      <p>If you want a taste of what you will get here are my most recent newseltters</p>
+      <p>
+        If you want a taste of what you will get here are my most recent
+        newseltters
+      </p>
       <ul>
         <li v-for="issue in $page.issues.edges" :key="issue.node.id">
           <small>{{ issue.node.date }}</small> -
-          <g-link :to="issue.node.path">{{issue.node.title}}</g-link>
+          <g-link :to="issue.node.path">{{ issue.node.title }}</g-link>
         </li>
       </ul>
     </section>
@@ -22,7 +26,7 @@
 
 <page-query>
 query Newsletter {
-  issues: allNewsletter(limit:3) {
+  issues: allNewsletter(limit:5) {
     edges {
       node {
         id

@@ -10,10 +10,10 @@
               <span>with Dan Vega</span>
             </h1>
             <p>
-              If you want to learn how to code Subscribe to my weekly newsletter
-              for the latest articles and tutorials. As a special bonus I will
-              send you my favorite resources for begginers who want to learn how
-              to code.
+              I am passionate about software development, learning new things,
+              and teaching them to you. If you want to learn how to code
+              subscribe to my weekly newsletter for the latest articles and
+              tutorials.
             </p>
             <convertkit
               uid="52adfca2a6"
