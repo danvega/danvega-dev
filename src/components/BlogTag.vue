@@ -1,8 +1,8 @@
 <template>
   <div class="tags">
     <a v-for="tag in tags" :key="tag.id" :href="'/tag/' + tag.title">
-      <i class="fas fa-tags"></i>
-      {{tag.title}}
+      <font-awesome-icon :icon="['fas', 'tags']" />
+      {{ tag.title }}
     </a>
   </div>
 </template>

@@ -20,7 +20,7 @@
           aria-label="Search Blog Posts"
         />
         <span class="icon">
-          <i class="fas fa-search"></i>
+          <font-awesome-icon icon="search" />
         </span>
       </p>
       <div v-if="query.length > 0" class="close" @click="reset">&times;</div>

@@ -10,7 +10,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-twitter"></i>
+          <font-awesome-icon :icon="['fab', 'twitter']" />
         </a>
         <a
           href="https://github.com/danvega/"
@@ -18,7 +18,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-github"></i>
+          <font-awesome-icon :icon="['fab', 'github']" />
         </a>
         <a
           href="http://www.youtube.com/danvega"
@@ -26,7 +26,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-youtube"></i>
+          <font-awesome-icon :icon="['fab', 'youtube']" />
         </a>
         <a
           href="https://www.reddit.com/u/therealdanvega"
@@ -34,7 +34,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-reddit"></i>
+          <font-awesome-icon :icon="['fab', 'reddit']" />
         </a>
         <a
           href="https://www.instagram.com/thedanvega/"
@@ -42,7 +42,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-instagram"></i>
+          <font-awesome-icon :icon="['fab', 'instagram']" />
         </a>
         <a
           href="https://www.linkedin.com/in/danvega/"
@@ -50,7 +50,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-linkedin"></i>
+          <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>
       </div>
     </div>

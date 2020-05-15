@@ -20,7 +20,9 @@
           class="logo-fill"
           font-family="Noteworthy-Light, Noteworthy"
           font-weight="300"
-        >vega</tspan>
+        >
+          vega
+        </tspan>
       </text>
     </svg>
     <nav>
@@ -46,7 +48,9 @@
                 class="logo-fill"
                 font-family="Noteworthy-Light, Noteworthy"
                 font-weight="300"
-              >vega</tspan>
+              >
+                vega
+              </tspan>
             </text>
           </svg>
         </li>
@@ -72,10 +76,29 @@
     </nav>
     <search-component v-if="hideSearch == true" />
     <div class="toggle-container">
-      <i class="fas fa-moon fa-2x" @click="toggleDarkMode()" ref="toggleSwitch" aria-label="toggle dark mode"></i>
+      <font-awesome-icon
+        icon="moon"
+        size="2x"
+        @click="toggleDarkMode()"
+        ref="moon"
+        aria-label="toggle dark mode"
+      />
+      <font-awesome-icon
+        icon="sun"
+        size="2x"
+        class="hidden"
+        @click="toggleDarkMode()"
+        ref="sun"
+        aria-label="toggle dark mode"
+      />
     </div>
     <div class="hamburger">
-      <i class="fas fa-bars fa-2x" @click="showMobileMenu = !showMobileMenu" aria-label="toggle mobile menu"></i>
+      <font-awesome-icon
+        icon="bars"
+        size="2x"
+        @click="showMobileMenu = !showMobileMenu"
+        aria-label="toggle mobile menu"
+      />
     </div>
   </div>
 </template>
@@ -102,12 +125,12 @@ export default {
     toggleDarkMode() {
       if (document.documentElement.getAttribute("data-theme") === null) {
         document.documentElement.setAttribute("data-theme", "dark");
-        this.$refs.toggleSwitch.classList.remove("fa-moon");
-        this.$refs.toggleSwitch.classList.add("fa-sun");
+        this.$refs.moon.classList.add("hidden");
+        this.$refs.sun.classList.remove("hidden");
       } else {
         document.documentElement.removeAttribute("data-theme");
-        this.$refs.toggleSwitch.classList.remove("fa-sun");
-        this.$refs.toggleSwitch.classList.add("fa-moon");
+        this.$refs.sun.classList.add("hidden");
+        this.$refs.moon.classList.remove("hidden");
       }
     }
   }
@@ -169,7 +192,6 @@ nav a.active {
   cursor: pointer;
 }
 .fa-moon {
-  /* color: #0f2342; */
   color: var(--bright-blue);
 }
 .fa-sun {
@@ -181,7 +203,9 @@ nav a.active {
 .hamburger {
   display: none;
 }
-
+.hidden {
+  display: none;
+}
 @media (max-width: 1024px) {
   nav a {
     padding: 0.3rem 0.5rem;
