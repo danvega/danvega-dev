@@ -223,22 +223,10 @@ query Posts {
   margin: 0;
   padding: 0;
 }
-.wave-container {
-  position: relative;
-  background: var(--home-header-background);
-  color: #4a4a4a;
-  overflow: hidden;
-}
-
-.wave-container > svg {
-  display: block;
-}
-
 header {
   display: flex;
   align-items: flex-start;
 }
-
 header h1 {
   font-weight: 400;
   font-style: normal;
@@ -250,10 +238,22 @@ h1 span {
   text-transform: none;
   margin-top: -10px;
 }
+.wave-container {
+  position: relative;
+  background: var(--home-header-background);
+  color: #4a4a4a;
+  overflow: hidden;
+}
+.wave-container > svg {
+  display: block;
+}
 .welcome p {
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 2.2rem;
+}
+.banner img {
+  margin-top: 20px;
 }
 section {
   margin: 0;
@@ -436,6 +436,7 @@ section p {
     text-align: center;
   }
   .banner img {
+    margin-top: 10px;
     width: 100%;
   }
   #about-me > .container {
