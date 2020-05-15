@@ -158,7 +158,7 @@ export default {
         { name: "author", content: "Dan Vega" },
         {
           name: "description",
-          content: "This is the personal blog of Dan Vega."
+          content: "Learn to code with Dan Vega."
         },
         { name: "twitter:card", content: "summary_large_image" },
         {
@@ -177,7 +177,7 @@ export default {
         { property: "og:title", content: "Dan Vega" },
         {
           property: "og:description",
-          content: "This is the personal blog of Dan Vega."
+          content: "Learn to code with Dan Vega."
         },
         {
           property: "og:url",
