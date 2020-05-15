@@ -27,7 +27,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-              <img
+              <g-image
                 src="@/assets/img/courses/vue_udemy_cover.png"
                 alt="Up and Running with Vue.JS Course Cover Image"
                 class="modal-button"
@@ -45,7 +45,8 @@
                 href="https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A"
                 class="button is-info"
                 target="_blank"
-                >Learn More</a
+                rel="noopener"
+                >Learn More about VueJs for Beginners</a
               >
             </div>
           </div>
@@ -53,7 +54,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-              <img
+              <g-image
                 src="@/assets/img/courses/groovy-udemy.jpg"
                 alt="The complete Apache Groovy Developer Course Cover Image"
                 class="modal-button"
@@ -71,7 +72,7 @@
               <a
                 href="https://courses.danvega.dev/p/the-complete-apache-groovy-developer-course"
                 class="button is-info"
-                >Learn More</a
+                >Learn More about Apache Groovy</a
               >
             </div>
           </div>
@@ -79,7 +80,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-              <img
+              <g-image
                 src="@/assets/img/courses/spring-boot-2-udemy.jpg"
                 alt="Getting Started with Spring Boot 2 Course Cover Image"
                 class="modal-button"
@@ -96,7 +97,7 @@
               <a
                 href="https://courses.danvega.dev/p/spring-boot-2"
                 class="button is-info"
-                >Learn More</a
+                >Learn More about Spring Boot 2</a
               >
             </div>
           </div>
@@ -104,7 +105,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-              <img
+              <g-image
                 src="@/assets/img/courses/spring-boot-udemy.jpg"
                 alt="Learn Spring Boot Course Cover Image"
                 class="modal-button"
@@ -121,7 +122,7 @@
               <a
                 href="https://courses.danvega.dev/p/spring-boot-intro"
                 class="button is-info"
-                >Learn More</a
+                >Learn More about Spring Boot</a
               >
             </div>
           </div>
@@ -129,7 +130,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-              <img
+              <g-image
                 src="@/assets/img/courses/angular-4-java-developers.jpg"
                 alt="Angular 4 Java Developers Course Cover Image"
                 class="modal-button"
@@ -146,7 +147,7 @@
               <a
                 href="https://courses.danvega.dev/p/jhipster"
                 class="button is-info"
-                >Learn More</a
+                >Learn More about Angular 4 Java Developers</a
               >
             </div>
           </div>
@@ -154,7 +155,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image">
-              <img
+              <g-image
                 src="@/assets/img/courses/java-free-udemy.jpg"
                 alt="Getting Started with Java Course Cover Image"
                 class="modal-button"
@@ -171,7 +172,7 @@
               <a
                 href="https://courses.danvega.dev/p/getting-started-with-java"
                 class="button is-info"
-                >Learn More</a
+                >Learn More about Java</a
               >
             </div>
           </div>
