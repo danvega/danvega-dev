@@ -111,7 +111,10 @@
               needs grow the framework will grow with you.
             </p>
             <div class="learn-more">
-              <a href="#">Learn More</a>
+              <a
+                href="https://www.udemy.com/course/vue-intro/?referralCode=E9DECFF78CA706D7A68A"
+                >Learn more about VueJS</a
+              >
             </div>
           </div>
         </div>
