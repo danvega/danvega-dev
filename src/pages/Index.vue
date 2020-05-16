@@ -349,19 +349,20 @@ section p {
 }
 .more-articles a {
   display: inline-block;
-  padding: 12px;
-  background: #3273db;
-  color: #fff;
-  margin: 0 auto;
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: normal;
   text-decoration: none;
-  border-radius: 0.3rem;
-  font-weight: 300;
 }
-
 .more-articles a:hover {
-  background: #1964dd;
+  background: var(--link-color-hover);
+  color: var(--font-color-inverse);
+  text-decoration: none;
   transform: translateY(3px);
-  transition: all 0.2s ease-in-out;
 }
 
 /* Featured Course */
