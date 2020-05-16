@@ -314,7 +314,7 @@ section p {
 
 #post-cards {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 .post-card {
@@ -323,7 +323,7 @@ section p {
 }
 .post-card img {
   max-width: 100%;
-  height: 265px;
+  /* height: 265px; */
   object-fit: cover;
   border-radius: 0.25rem;
 }
