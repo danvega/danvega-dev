@@ -230,6 +230,7 @@ header {
 header h1 {
   font-weight: 400;
   font-style: normal;
+  margin-top: 20px;
 }
 h1 span {
   color: #3273db;
