@@ -11,14 +11,14 @@
         transform="translate(0 35)"
         fill="#3273dc"
         font-size="27"
-        font-family="Noteworthy-Bold, Noteworthy"
+        font-family="'Handlee', cursive"
         font-weight="700"
       >
         <tspan x="0" y="0">dan</tspan>
         <tspan
           y="0"
           class="logo-fill"
-          font-family="Noteworthy-Light, Noteworthy"
+          font-family="'Handlee', cursive"
           font-weight="300"
         >
           vega
@@ -39,14 +39,14 @@
               transform="translate(0 35)"
               fill="#3273dc"
               font-size="27"
-              font-family="Noteworthy-Bold, Noteworthy"
+              font-family="'Handlee', cursive"
               font-weight="700"
             >
               <tspan x="0" y="0">dan</tspan>
               <tspan
                 y="0"
                 class="logo-fill"
-                font-family="Noteworthy-Light, Noteworthy"
+                font-family="'Handlee', cursive"
                 font-weight="300"
               >
                 vega

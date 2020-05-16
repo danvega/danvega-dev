@@ -238,6 +238,7 @@ h1 span {
   font-size: 1.8rem;
   text-transform: none;
   margin-top: -10px;
+  font-family: "Handlee", cursive;
 }
 .wave-container {
   position: relative;

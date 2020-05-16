@@ -27,7 +27,7 @@ export default {
         {
           rel: "stylesheet",
           href:
-            "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Slab:300,400&display=swap"
+            "https://fonts.googleapis.com/css?family=Oswald:400,600,700|Roboto+Slab:300,400|Handlee&display=swap"
         }
       ]
     };
