@@ -46,13 +46,14 @@
         <h2>Hi, I'm Dan Vega</h2>
         <p>
           I’m a Husband, Father,
-          <a href="#">Curriculum Developer</a> and maker of things from
-          <a href="#">Cleveland Ohio</a>. I created this website as a place to
-          <a href="#">document my journey</a> as I learn new things and share
-          them with you. I have a real passion for teaching and I hope that one
-          of <a href="#">blog posts</a>, <a href="#">videos</a> or
-          <a href="#">courses</a> helps you solve a problem or learn something
-          new.
+          <a href="https://www.techelevator.com">Curriculum Developer</a> and
+          maker of things from Cleveland Ohio. I created this website as a place
+          to document my journey as I learn new things and share them with you.
+          I have a real passion for teaching and I hope that one of
+          <a href="/blog">blog posts</a>,
+          <a href="http://www.youtube.com/danvega">videos</a> or
+          <a href="/courses">courses</a> helps you solve a problem or learn
+          something new.
         </p>
       </div>
     </section>
@@ -286,16 +287,17 @@ section p {
 #about-me h2 {
   color: #ebf1fc;
 }
-#about-me a:link {
-  background-color: rgba(105, 150, 223, 0.9);
+#about-me a:link,
+#about-me a:visited {
   text-decoration: none;
   color: white;
   padding: 6px;
   font-size: 1.1rem;
+  border-bottom: 1px dashed white;
 }
 #about-me a:hover {
   background: none;
-  border-bottom: 1px dashed white;
+  border-bottom: 1px solid white;
   color: white;
 }
 
