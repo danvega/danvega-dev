@@ -6,7 +6,6 @@
         <input
           type="text"
           placeholder="Search (Press '/' to focus)"
-          class="input"
           v-model="query"
           @blur="searchResultsVisible = false"
           @focus="searchResultsVisible = true"
@@ -20,7 +19,7 @@
           aria-label="Search Blog Posts"
         />
         <span class="icon">
-          <font-awesome-icon icon="search" />
+          <font-awesome-icon icon="search" size="xs" />
         </span>
       </p>
       <div v-if="query.length > 0" class="close" @click="reset">&times;</div>
@@ -135,17 +134,15 @@ export default {
 .search-wrapper {
   position: relative;
   margin-right: 20px;
-  width: 80%;
+  width: 325px;
 }
 .search {
   margin: 8px 0 0 0;
   padding: 0px;
-  max-width: 100%;
   position: relative;
+  width: 100%;
 }
 .search input {
-  width: 100%;
-  max-width: 100%;
   padding: 0.4rem 0.4rem 0.4rem 2.2rem;
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   color: #363636;
@@ -154,6 +151,8 @@ export default {
   background-color: #fff;
   border-color: #dbdbdb;
   font-size: 1.1rem;
+  width: 100%;
+  display: block;
 }
 .search input:focus {
   outline: none;
@@ -169,7 +168,7 @@ export default {
   align-items: center;
   left: 0;
   color: #dbdbdb;
-  height: 2em;
+  height: 1.7em;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -247,6 +246,9 @@ a.result:hover {
 @media (max-width: 768px) {
   .results-container {
     width: 100%;
+  }
+  .search-wrapper {
+    width: 80%;
   }
 }
 </style>
