@@ -141,4 +141,4 @@ I still have some work to do here but I am trying to take my own advice and not 
 
 ### Conclusion
 
-I have had a lot of fun working on the redesign for my website and I hope it shows. If you have any questions about anything I did here you can check out the source code for it here. If you would like me to explain anything in more detail please leave me a comment below or reach out to me on Twitter.
+I have had a lot of fun working on the redesign for my website and I hope it shows. If you have any questions about anything I did here you can check out the [source code](https://github.com/danvega/danvega-dev) for it here. If you would like me to explain anything in more detail please leave me a comment below or reach out to me on [Twitter](http://twitter.com/therealdanvega).
