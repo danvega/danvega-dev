@@ -25,7 +25,7 @@ query {
   metadata {
     siteName
   },
-    metaInfo() {
+  metaInfo() {
     return {
       meta: [
         { name: "author", content: "Dan Vega" },
