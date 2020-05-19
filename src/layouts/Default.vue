@@ -16,14 +16,6 @@ export default {
   components: {
     LayoutNavigation,
     LayoutFooter
-  }
-};
-</script>
-
-<static-query>
-query {
-  metadata {
-    siteName
   },
   metaInfo() {
     return {
@@ -36,7 +28,7 @@ query {
         { name: "twitter:card", content: "summary_large_image" },
         {
           name: "twitter:description",
-          content: "Learn to code with Dan Vega."
+          content: "The personal blog of Dan Vega"
         },
         { name: "twitter:title", content: "Dan Vega" },
         { name: "twitter:site", content: "@therealdanvega" },
@@ -66,6 +58,14 @@ query {
         }
       ]
     };
+  }
+};
+</script>
+
+<static-query>
+query {
+  metadata {
+    siteName
   }
 }
 </static-query>
