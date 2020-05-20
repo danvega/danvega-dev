@@ -7,7 +7,12 @@
       be a guest blogger on your blog please reach out to me on
       <a
         href="https://twitter.com/therealdanvega"
-      >Twitter</a>.
+        aria-label="Dan Vega on Twitter"
+      >Twitter</a>. If you would like to subscribe to an RSS feed you can find it
+      <a
+        href="https://www.danvega.dev/rss.xml"
+        aria-label="RSS Feed"
+      >here</a>.
     </p>
     <p class="popular-tags">
       Most Popular Tags:
