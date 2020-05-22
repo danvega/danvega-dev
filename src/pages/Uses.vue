@@ -16,6 +16,22 @@
         aria-label="uses.tech"
       >uses.tech</a>.
     </p>
+    <h2>This Website</h2>
+    <ul>
+      <li>
+        <a href="https://vuejs.org/" aria-label="JavaScript Framework">VueJS</a>
+      </li>
+      <li>
+        <a
+          href="https://gridsome.org/"
+          aria-label="Gridsome - Static Site Generator for Vue"
+        >Gridsome</a>
+      </li>
+      <li>
+        Hosted on
+        <a href="https://www.netlify.com/" aria-label="Netlify Hosting">Netlify</a>
+      </li>
+    </ul>
     <h2>Editor + Terminal</h2>
     <ul>
       <li>
