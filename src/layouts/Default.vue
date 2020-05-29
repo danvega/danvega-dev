@@ -16,48 +16,6 @@ export default {
   components: {
     LayoutNavigation,
     LayoutFooter
-  },
-  metaInfo() {
-    return {
-      meta: [
-        { name: "author", content: "Dan Vega" },
-        {
-          name: "description",
-          content: "Learn to code with Dan Vega."
-        },
-        { name: "twitter:card", content: "summary_large_image" },
-        {
-          name: "twitter:description",
-          content: "The personal blog of Dan Vega"
-        },
-        { name: "twitter:title", content: "Dan Vega" },
-        { name: "twitter:site", content: "@therealdanvega" },
-        {
-          name: "twitter:image",
-          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
-        },
-        { name: "twitter:creator", content: "@therealdanvega" },
-
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: "Dan Vega" },
-        {
-          property: "og:description",
-          content: "Learn to code with Dan Vega."
-        },
-        {
-          property: "og:url",
-          content: "https://www.danvega.dev"
-        },
-        {
-          property: "og:image",
-          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
-        },
-        {
-          property: "og:image:secure_url",
-          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`
-        }
-      ]
-    };
   }
 };
 </script>
