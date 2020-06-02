@@ -28,6 +28,11 @@
         >Gridsome</a>
       </li>
       <li>
+        Illustrations from
+        <a href="https://undraw.co/" aria-label="Undraw">Undraw</a> and
+        <a href="https://lukaszadam.com/illustrations" aria-label="Lukasz Adam">Lukasz Adam</a>
+      </li>
+      <li>
         Hosted on
         <a href="https://www.netlify.com/" aria-label="Netlify Hosting">Netlify</a>
       </li>
