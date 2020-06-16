@@ -1,9 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.post.title }}</h1>
-    <p class="postDateTime">
-      {{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read
-    </p>
+    <p class="postDateTime">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</p>
     <div class="embed-container" v-if="$page.post.video">
       <iframe
         width="1000"
@@ -28,19 +26,14 @@
       Follow me on
       <a href="http://twitter.com/therealdanvega">Twitter</a>,
       <a href="https://www.linkedin.com/in/danvega/">LinkedIn</a>, or sign up
-      for my <a href="/newsletter">newsletter</a> to get my latest articles and
+      for my
+      <a href="/newsletter">newsletter</a> to get my latest articles and
       tutorials.
-      <convert-kit
-        uid="44cc02ed05"
-        script="https://f.convertkit.com/44cc02ed05/38739557e4.js"
-      ></convert-kit>
+      <convert-kit uid="44cc02ed05" script="https://f.convertkit.com/44cc02ed05/38739557e4.js"></convert-kit>
     </div>
     <div class="author">
       <div class="avatar">
-        <g-image
-          src="../assets/img/about_me_circle-300x295.png"
-          alt="Dan Vega"
-        />
+        <g-image src="../assets/img/about_me_circle-300x295.png" alt="Dan Vega" />
       </div>
       <div class="bio">
         <h3>Dan Vega</h3>
@@ -54,10 +47,7 @@
       </div>
     </div>
 
-    <vue-disqus
-      shortname="danvega-dev"
-      :identifier="$page.post.title"
-    ></vue-disqus>
+    <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
   </Layout>
 </template>
 
@@ -257,6 +247,17 @@ table {
 th {
   text-align: left;
   font-weight: bold;
+}
+
+#table-of-contents {
+}
+
+.article li,
+.article li > p {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 @media (max-width: 1024px) {
