@@ -1,23 +1,13 @@
-//import { exists } from "https://deno.land/std/fs/mod.ts";
 import { slugify } from "https://deno.land/x/slugify/mod.ts";
-import {
-  prettier,
-  prettierPlugins,
-} from "https://denolib.com/denolib/prettier/prettier.ts";
-import init, {
-  parse,
-  stringify,
-} from "https://deno.land/x/yaml_wasm@0.1.9/index.js";
+import init, { stringify } from "https://deno.land/x/yaml_wasm@0.1.9/index.js";
 await init();
 
 const title = await prompt("Post Title");
-const manualSlug = await prompt("Slug (Leave blank to generate)");
+let slug = await prompt("Slug (Leave blank to generate)");
 const excerpt = await prompt("Post Excerpt");
 const tags = await prompt("Tags (comma separated)");
 
-const slug = manualSlug === ""
-  ? slugify(title).toLowerCase()
-  : manualSlug.toLowerCase();
+slug = slug === "" ? slugify(title).toLowerCase() : slug.toLowerCase();
 const createdOn = new Date();
 const year = createdOn.getFullYear();
 const month = `${
@@ -27,11 +17,7 @@ const day = `${createdOn.getDate() < 10 ? "0" : ""}${createdOn.getDate()}`;
 const blogPostFolder = `./blog/${year}/${month}/${day}`;
 const tagsList = tags.split(",").map((t) => t.trim());
 
-// if (!exists(blogPostFolder)) {
-//   Deno.mkdirSync(blogPostFolder, {
-//     recursive: true,
-//   });
-// }
+await Deno.mkdir(blogPostFolder, { recursive: true });
 
 const yaml = stringify({
   title,
@@ -42,18 +28,13 @@ const yaml = stringify({
   author: "Dan Vega",
   tags: tagsList,
   cover: "",
+  video: "",
 });
 
-console.log(yaml);
-
-const markdown = prettier.format(`---\n${yaml}\n---\n`, {
-  parser: "markdown",
-  singleQuote: true,
-});
-
-console.log(markdown);
-
-// Deno.writeFileSync(`${blogPostFolder}/${slug}.md`, markdown);
+await Deno.writeFile(
+  `${blogPostFolder}/${slug}.md`,
+  new TextEncoder().encode(`${yaml}\n---\n`),
+);
 
 /*
  * Prompt for a response
