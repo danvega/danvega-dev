@@ -13,6 +13,21 @@ cover: "./hello-deno-cover.png"
 
 After two years of development, [Deno 1.0](https://deno.land/v1) was recently released and it has everyone talking. In this article, I want to give you a quick introduction to Deno, how to install it and how to create your first application. Finally, we will take a look at some of the features that make Deno an exciting project to pay attention to.
 
+## Summary
+
+- [What is Deno](#what-is-deno)
+- [Installing Deno](#installing-deno)
+- [Deno Features](#deno-features)
+  - [Secure Runtime](#secure-runtime)
+  - [TypeScript Support](#typescript-support)
+  - [Standard Library](#standard-library)
+  - [Built-in Testing Library](#built-in-testing-library)
+  - [Promises, Async & Await](#promises-async--await)
+  - [Browser Compatible APIs (fetch, Window object)](#browser-compatible-apis-fetch-window-object)
+  - [ECMAScript Modules (ES Modules)](#ecmascript-modules-es-modules)
+  - [Built-in tools](#built-in-tools)
+- [Conclusion](#conclusion)
+
 ## What is Deno?
 
 Deno is a **secure** runtime for **JavaScript** and **TypeScript**. Wait, a runtime for JavaScript, isn't that what Node is? Yes, and Deno was created by Ryan Dahl, the creator of Node.

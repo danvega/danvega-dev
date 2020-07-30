@@ -12,7 +12,7 @@ module.exports = {
   templates: {
     Post: "/blog/:year/:month/:day/:slug",
     Tag: "/tag/:title",
-    Newsletter: "/newsletter/coffee-and-code/:issue"
+    Newsletter: "/newsletter/coffee-and-code/:issue",
   },
   plugins: [
     {
@@ -23,8 +23,8 @@ module.exports = {
         refs: {
           tags: {
             typeName: "Tag",
-            create: true
-          }
+            create: true,
+          },
         },
         resolveAbsolutePaths: true,
         remark: {
@@ -35,19 +35,19 @@ module.exports = {
             [
               "gridsome-plugin-remark-shiki",
               {
-                theme: "nord"
-              }
+                theme: "nord",
+              },
             ],
             [
               "gridsome-plugin-remark-twitter",
               {
-                omitScript: true
-              }
+                omitScript: true,
+              },
             ],
-            ["gridsome-plugin-remark-codesandbox", {}]
-          ]
-        }
-      }
+            ["gridsome-plugin-remark-codesandbox", {}],
+          ],
+        },
+      },
     },
     {
       use: "@gridsome/source-filesystem",
@@ -57,9 +57,9 @@ module.exports = {
         resolveAbsolutePaths: true,
         remark: {
           autolinkHeadings: false,
-          plugins: [["gridsome-plugin-remark-twitter", {}]]
-        }
-      }
+          plugins: [["gridsome-plugin-remark-twitter", {}]],
+        },
+      },
     },
     {
       use: "gridsome-plugin-rss",
@@ -68,9 +68,9 @@ module.exports = {
         feedOptions: {
           title: "Dan Vega",
           feed_url: "https://danvega.dev/rss.xml",
-          site_url: "https://danvega.dev"
+          site_url: "https://danvega.dev",
         },
-        feedItemOptions: node => ({
+        feedItemOptions: (node) => ({
           title: node.title,
           description: node.excerpt,
           url: getPostURL(node.date, node.slug),
@@ -78,15 +78,15 @@ module.exports = {
           date: node.date,
           custom_elements: [
             {
-              published: node.date.toString()
-            }
-          ]
+              published: node.date.toString(),
+            },
+          ],
         }),
         output: {
           dir: "./static",
-          name: "rss.xml"
-        }
-      }
+          name: "rss.xml",
+        },
+      },
     },
     {
       use: "@gridsome/plugin-sitemap",
@@ -95,12 +95,20 @@ module.exports = {
         config: {
           "/blog/*": {
             changefreq: "daily",
-            priority: 0.5
-          }
-        }
-      }
-    }
-  ]
+            priority: 0.5,
+          },
+          "/tag/*": {
+            changefreq: "daily",
+            priority: 0.7,
+          },
+          "/newsletter/*": {
+            changefreq: "weekly",
+            priority: 0.9,
+          },
+        },
+      },
+    },
+  ],
 };
 
 function getPostURL(date, slug) {
