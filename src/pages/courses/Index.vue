@@ -68,9 +68,8 @@
                 Everything you need to know to get started with the Groovy
                 Programming Language
               </p>
-              <!-- <span class="button is-info">Learn More</span> -->
               <a
-                href="https://courses.danvega.dev/p/the-complete-apache-groovy-developer-course"
+                href="https://www.udemy.com/course/apache-groovy/?referralCode=7FB8CB67D3D3D17CF1EA"
                 class="button is-info"
                 >Learn More about Apache Groovy</a
               >
@@ -95,7 +94,7 @@
                 Spring Boot 2
               </p>
               <a
-                href="https://courses.danvega.dev/p/spring-boot-2"
+                href="https://www.udemy.com/course/spring-boot-2/?referralCode=ECB6B9F8EF104672AF4A"
                 class="button is-info"
                 >Learn More about Spring Boot 2</a
               >
@@ -120,7 +119,7 @@
                 without all of the complexity.
               </p>
               <a
-                href="https://courses.danvega.dev/p/spring-boot-intro"
+                href="https://www.udemy.com/course/spring-boot-intro/?referralCode=2B0F1F9DE0DC40C97DC5"
                 class="button is-info"
                 >Learn More about Spring Boot</a
               >
@@ -145,7 +144,7 @@
                 world application with JHipster.
               </p>
               <a
-                href="https://courses.danvega.dev/p/jhipster"
+                href="https://www.udemy.com/course/angular-4-java-developers/?referralCode=A41B357F43F549BB7722"
                 class="button is-info"
                 >Learn More about Angular 4 Java Developers</a
               >
