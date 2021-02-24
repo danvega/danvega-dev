@@ -8,7 +8,8 @@ author: 'Dan Vega'
 tags:
   - 'java'
   - 'vue'
-cover: './caspar-camille-rubin-0qvBNep1Y04-unsplash.jpg'
+cover: './full-stack-java-spring-vue.png'
+video: https://www.youtube.com/embed/2G6r2f40Lps
 ---
 
 In this tutorial, you will learn how to build a full-stack application that uses Vue for the frontend and Spring Boot for the backend. As always you can find the code associated with this over on [Github](https://github.com/danvega/full-stack-java-vue).
