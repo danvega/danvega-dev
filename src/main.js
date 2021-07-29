@@ -21,12 +21,13 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueFuse);
   Vue.use(VueDisqus);
   Sentry.init({
+    Vue,
     dsn: process.env.SENTURY_DSN,
     integrations: [
-      new Integrations.Vue({
-        Vue,
-        attachProps: true
-      })
+      new Integrations.BrowserTracing({
+        routingInstrumentation: Sentry.vueRouterInstrumentation(router),
+        tracingOrigins: ["danvega.dev", /^\//],
+      }),
     ]
   });
 }
