@@ -108,6 +108,14 @@ module.exports = {
         },
       },
     },
+    {
+      use: 'gridsome-plugin-sentry',
+      options: {
+        dsn: process.env.SENTURY_DSN,
+        attachProps: true, // defaults to true
+        logErrors: process.env.NODE_ENV === 'development' // defaults to false, see below for further info
+      }
+    },
   ],
 };
 
