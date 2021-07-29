@@ -1,11 +1,12 @@
 ---
-slug: create-sql-insert-statements-from-a-spreadsheet
-title: "Create SQL Insert Statements from a Spreadsheet"
+slug: 'create-sql-insert-statements-from-a-spreadsheet'
+title: 'Create SQL Insert Statements from a Spreadsheet'
 published: true
-date: 2010-08-04T15:08:00-00:00
-tags: ["sql"]
-excerpt: "In this article, I will show you how to create SQL insert statements from a spreadsheet"
-cover: ./sql-cover.png
+date: '2010-08-04T15:08:00.000Z'
+tags:
+  - 'sql'
+excerpt: 'In this article, I will show you how to create SQL insert statements from a spreadsheet'
+cover: './sql-cover.png'
 ---
 
 I know this is probably old news to most but I was helping a friend out yesterday who didn’t know this little trick so I thought I would share it. While some of you may have access to production databases its pretty common that these servers are guarded by a DBA. If I get a huge spread sheet of data I can’t really import the data I need to send the sql statements to the dba and the script is run against the production database.

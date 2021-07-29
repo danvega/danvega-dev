@@ -2,8 +2,9 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from "~/layouts/Default.vue";
-import * as Sentry from "@sentry/browser";
-import * as Integrations from "@sentry/integrations";
+import * as Sentry from "@sentry/vue";
+import { Integrations } from "@sentry/tracing";
+
 import VueFuse from "vue-fuse";
 import VueDisqus from "vue-disqus";
 
@@ -26,8 +27,12 @@ export default function(Vue, { router, head, isClient }) {
     integrations: [
       new Integrations.BrowserTracing({
         routingInstrumentation: Sentry.vueRouterInstrumentation(router),
-        tracingOrigins: ["danvega.dev", /^\//],
+        tracingOrigins: ["localhost", "danvega.dev", /^\//],
       }),
-    ]
+    ],
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 0.4
   });
 }
