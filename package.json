@@ -13,7 +13,7 @@
     "@gridsome/transformer-remark": "^0.5.0",
     "@sentry/browser": "^5.15.5",
     "@sentry/integrations": "^5.15.5",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.14",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "gridsome-plugin-remark-shiki": "^0.3.1",
