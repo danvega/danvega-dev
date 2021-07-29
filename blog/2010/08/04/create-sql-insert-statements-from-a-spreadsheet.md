@@ -1,11 +1,12 @@
 ---
 slug: 'create-sql-insert-statements-from-a-spreadsheet'
 title: 'Create SQL Insert Statements from a Spreadsheet'
-published: true
 date: '2010-08-04T15:08:00.000Z'
+published: true
+excerpt: 'In this article, I will show you how to create SQL insert statements from a spreadsheet'
+author: 'Dan Vega'
 tags:
   - 'sql'
-excerpt: 'In this article, I will show you how to create SQL insert statements from a spreadsheet'
 cover: './sql-cover.png'
 ---
 
