@@ -6,6 +6,7 @@
 
 # pretty urls
 /feed /rss.xml 301
+/spring-one-2021 /blog/spring-one-2021 301
 
 # courses
 /courses/getting-started-with-java https://therealdanvega.teachable.com/p/getting-started-with-java 301
