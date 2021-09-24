@@ -45,7 +45,3 @@ https://github.com/danvega/spring-one-2021
 ### Feedback
 
 I love putting presentations together but without your feedback, they can sometimes leave me feeling incomplete. If you have any feedback (positive or negative) please reach out to me and let me know. I hope to give this talk again so I would love to know what I can do to improve it for next time.
-
-## Post Conference Thoughts
-
-Please check back and I will share some thoughts on my talk after I am done.
