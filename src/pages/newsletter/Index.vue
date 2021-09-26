@@ -5,7 +5,8 @@
       I started this newsletter as a way to keep myself writing each and every
       week. I have a blog that I like to write for but a blog post can be a lot
       of a pressure. This is a no pressure way for me to write and in the
-      meantime connect with you on a weekly basis.
+      meantime connect with you on a weekly basis. Enter your email below to
+      recieve my weekly newsletter every Sunday morning.
     </p>
     <section id="signup"></section>
     <section>
@@ -14,7 +15,7 @@
         If you want a taste of what you will get here are my most recent
         newseltters
       </p>
-      <ul>
+      <ul id="newsletter-list">
         <li v-for="issue in $page.issues.edges" :key="issue.node.id">
           <small>{{ issue.node.date }}</small> -
           <g-link :to="issue.node.path">{{ issue.node.title }}</g-link>
@@ -26,7 +27,7 @@
 
 <page-query>
 query Newsletter {
-  issues: allNewsletter(limit:5) {
+  issues: allNewsletter(limit:10) {
     edges {
       node {
         id
@@ -46,7 +47,7 @@ import Convertkit from "@/components/ConvertKit";
 
 export default {
   components: {
-    Convertkit
+    Convertkit,
   },
   mounted() {
     let ck = document.createElement("script");
@@ -54,7 +55,7 @@ export default {
     ck.setAttribute("async", true);
     ck.setAttribute("src", "https://danvega.ck.page/2245659c84/index.js");
     document.querySelector("#signup").appendChild(ck);
-  }
+  },
 };
 </script>
 
@@ -65,5 +66,16 @@ section {
 }
 .formkit-form[data-uid="2245659c84"] {
   margin: auto;
+}
+#newsletter-list {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+}
+#newsletter-list li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
 }
 </style>

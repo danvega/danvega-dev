@@ -127,10 +127,10 @@
           If you didn't know I have a
           <a href="http://www.youtube.com/danvega">YouTube Channel</a> where I
           attempt to upload new videos each week. I abosolutely love creating
-          content for YouTube so if you're not already following please
-          consdider subscribing. If you are and would like to see me create a
-          video please reach out to me a make a suggestion. Thank you for all of
-          your support 🙌🏻
+          content for YouTube so if you're not already following please consider
+          subscribing. If you are and would like to see me create a video please
+          reach out to me a make a suggestion. Thank you for all of your support
+          🙌🏻
         </p>
         <div class="youtube-setup">
           <g-image

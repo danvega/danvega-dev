@@ -12,7 +12,7 @@ module.exports = {
   templates: {
     Post: "/blog/:year/:month/:day/:slug",
     Tag: "/tag/:title",
-    Newsletter: "/newsletter/coffee-and-code/:issue",
+    Newsletter: ["/newsletter/:issue","/newsletter/:slug"]
   },
   plugins: [
     {
@@ -52,7 +52,7 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "newsletter/coffee-and-code/**/*.md",
+        path: "newsletter/**/*.md",
         typeName: "Newsletter",
         resolveAbsolutePaths: true,
         remark: {
