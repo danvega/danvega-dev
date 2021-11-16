@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus>
+    <!-- <vue-disqus shortname="danvega-dev" :identifier="$page.post.title"></vue-disqus> -->
   </Layout>
 </template>
 
