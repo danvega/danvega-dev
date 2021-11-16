@@ -2,8 +2,8 @@
 title: GitHub Copilot for Java Develpers
 slug: github-copilot-java-developers
 date: "2021-11-08T10:00:00.000Z"
-published: false
-excerpt:  GitHub Copilot for Java Develpers
+published: true
+excerpt: Earlier this year GitHub launched Copilot, an AI pair-programmer. With GitHub Copilot, get suggestions for whole lines or entire functions right inside your editor.
 author: Dan Vega
 tags:
   - java
