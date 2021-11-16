@@ -258,6 +258,7 @@ th {
   padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  line-height: 1.5;
 }
 
 @media (max-width: 1024px) {
@@ -286,5 +287,33 @@ th {
     max-width: 89vw;
     overflow-x: scroll;
   }
+}
+
+section {
+  border: 1px solid #eee;
+  padding: 20px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+section.tldr {
+  border-color: var(--bright-blue);
+  color: var(--font-color);
+  font-size: 1rem;
+}
+section.promo {
+  border: 1px dashed var(--bright-blue);
+}
+section.promo small {
+  font-size: 0.99rem;
+}
+section.promo h3 {
+  margin:0px;
+  padding:0px;
+}
+section.promo.tip-jar {
+  text-align: center;
+  color:var(--font-color);
 }
 </style>
