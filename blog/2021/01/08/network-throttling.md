@@ -14,7 +14,7 @@ cover: './network-throttling-cover.png'
 
 So you have this amazing loading animation, and you want to test it out but you have a problem. When you're working on your local machine there isn't much latency so you never see your animated art.
 
-![Fancy Animation](./bean-eater-200px.gif)
+![Fancy Animation](./bean-eater-200px_small.jpeg)
 
 While it's good that you want to test this out this is also an opportunity to test our application for visitors that might be on a slower connection. We have to remember that not everyone is lucky enough to have access to hi-speed internet like you and I do. There are many ways that you can test this out but we are going to cover the following in this tutorial.
 
