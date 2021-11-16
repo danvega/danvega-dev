@@ -61,7 +61,7 @@ If you use `>` you can run commands. In this example, I want to quickly switch o
 
 This is entirely new but since we are talking about GitHub I thought I would share this little tip with you. If you're looking at a particular file in your repo you can edit the raw file but you lose out on all that code assistance and completion that we all love. Press the`.` or swap `.com` with `.dev` in the URL and you will be taken directly to a Visual Studio Code environment in your browser.
 
-![github_dev.gif](./github_dev.gif)
+![github_dev.jpg](./github_dev.jpeg)
 
 It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
 
