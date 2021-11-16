@@ -289,7 +289,7 @@ th {
   }
 }
 
-section {
+section.tldr, section.promo {
   border: 1px solid #eee;
   padding: 20px;
   font-family: "Roboto Slab", serif;
