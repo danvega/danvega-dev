@@ -169,7 +169,7 @@
                 development environment.
               </p>
               <a
-                href="https://courses.danvega.dev/p/getting-started-with-java"
+                href="https://www.udemy.com/course/java-development-environment/?referralCode=1B9FFD1113DE44AF0814"
                 class="button is-info"
                 >Learn More about Java</a
               >
