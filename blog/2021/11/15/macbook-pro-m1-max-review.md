@@ -106,6 +106,16 @@ I originally wanted to create videos around each step of my setup process and qu
 
 [new-macbook-setup/2021 at master · danvega/new-macbook-setup](https://github.com/danvega/new-macbook-setup/tree/master/2021)
 
+## MacBook 2021 Price
+
+![https://images.unsplash.com/photo-1459257831348-f0cdd359235f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb](https://images.unsplash.com/photo-1459257831348-f0cdd359235f?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb)
+
+If there is a con it's the price of these new machines, they aren't cheap. I feel pretty fortunate to even be in a position to buy one because for most of my tech life I have never been able to buy the latest tech. The only reason I am in this position is that I have a business where and it's almost the end of the year which means I am looking for tax write-offs.
+
+I haven't actually used the MacBook Air or the MacBook M1 from 2020 but from everything I have seen and heard they are amazing machines. In fact, if you aren't creating content I might recommend going that route if the price is an issue.
+
+That said if you are live streaming, editing video, and producing content I think it's worth every penny. I also think there is a way that you can talk your boss into buying you one if you're building larger software projects.
+
 ## Conclusion
 
 I'm usually a pretty patient person but I don't like waiting for my computer to perform builds or exports videos. While we haven't reached the ultimate goal of instant gratification It is incredible what this machine can do. I think the biggest thing for me is that this is only the 2nd iteration of this chip. I am excited about the future of Apple Silicon and can't wait to see what they do next!
