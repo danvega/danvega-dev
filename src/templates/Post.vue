@@ -151,6 +151,7 @@ h1 {
 }
 .postDateTime {
   margin: 0 0 5px 0;
+  font-size: 1.1rem;
 }
 .cover {
   margin-top: 10px;
