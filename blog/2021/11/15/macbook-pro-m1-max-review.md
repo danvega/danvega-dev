@@ -8,8 +8,8 @@ author: Dan Vega
 tags:
   - Apple
 cover: "./macbook-pro-review-thumbnail.png"
+video: https://www.youtube.com/embed/t-hEOyUnaXQ
 ---
-
 
 I have been using the new MacBook Pro for about a week and wanted to give you my initial thoughts from a developer & content creator perspective. If you're looking for an in-depth review full of Geekbench benchmarks you aren't going to find them here. Instead, I will share with you what I like or don't like about it some day-to-day workflows I am using it for.
 
