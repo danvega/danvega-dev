@@ -6,7 +6,7 @@
       week. I have a blog that I like to write for but a blog post can be a lot
       of a pressure. This is a no pressure way for me to write and in the
       meantime connect with you on a weekly basis. Enter your email below to
-      recieve my weekly newsletter every Sunday morning.
+      recieve my weekly newsletter every Monday morning.
     </p>
     <section id="signup"></section>
     <section>
