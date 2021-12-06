@@ -69,13 +69,12 @@ section {
 }
 #newsletter-list {
   list-style: none;
-  padding: 0;
-  width: 50%;
+  padding:0px;
 }
 #newsletter-list li {
   border-bottom: 1px solid #eee;
   margin-bottom: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 1.2rem;
 }
 </style>
