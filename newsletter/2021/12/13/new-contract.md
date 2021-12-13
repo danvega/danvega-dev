@@ -30,7 +30,7 @@ There is a really [great explanation from Microsoft](https://msrc-blog.microsoft
 
 ### Spring Boot Users
 
-If you're a Spring Boot users this shouldn't affect unless you have moved away from the default logging library, SL4J. There is a good article on the [Spring Blog](https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot) that shares some details about this and how to fix it.
+If you're a Spring Boot users this shouldn't affect unless you have moved away from the default logging system, Logback. There is a good article on the [Spring Blog](https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot) that shares some details about this and how to fix it.
 
 ## Egghead holiday courses
 
