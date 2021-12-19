@@ -16,6 +16,7 @@
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-remark-twitter": "^0.2.1",
+    "gridsome-plugin-remark-youtube": "^1.0.1",
     "gridsome-plugin-rss": "^1.2.0",
     "gridsome-plugin-sentry": "^1.1.0",
     "lodash.pick": "^4.4.0",

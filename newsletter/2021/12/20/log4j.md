@@ -107,7 +107,7 @@ This doesn’t mean that you can’t use Log4J2, it just means you can’t use t
 
 Everything that we just talked about here is in the video below.
 
-[https://youtu.be/nGqVYiwu8uo](https://youtu.be/nGqVYiwu8uo)
+`youtube:https://www.youtube.com/watch?v=nGqVYiwu8uo`
 
 As a small YouTuber you need to try and jump on trends as they are happening. I know these are numbers are all relative but for me it was best performing video of all time in the first 1,3, and 5 days. At the time of this writing I have had over 2,000 views in the first 5 videos. If you were one of those 2,000 viewers, thank you!
 

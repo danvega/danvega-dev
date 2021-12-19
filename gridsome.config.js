@@ -59,6 +59,7 @@ module.exports = {
           autolinkHeadings: false,
           plugins: [
             ["gridsome-plugin-remark-twitter", {}],
+            ['gridsome-plugin-remark-youtube', {}],
             [
               "gridsome-plugin-remark-shiki",
               {

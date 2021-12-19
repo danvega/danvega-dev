@@ -76,4 +76,19 @@ h1 {
 .newsletter img {
   max-width: 100%;
 }
+.shiki-inline {
+  background: var(--shiki-inline-background) !important;
+  padding: 2px;
+  color: var(--shiki-inline-color) !important;
+  font-size: 1.1rem;
+}
+code {
+  font-family: hack, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+.shiki {
+  padding: 1rem;
+}
 </style>
