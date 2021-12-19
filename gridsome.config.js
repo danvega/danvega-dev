@@ -57,7 +57,15 @@ module.exports = {
         resolveAbsolutePaths: true,
         remark: {
           autolinkHeadings: false,
-          plugins: [["gridsome-plugin-remark-twitter", {}]],
+          plugins: [
+            ["gridsome-plugin-remark-twitter", {}],
+            [
+              "gridsome-plugin-remark-shiki",
+              {
+                theme: "nord",
+              },
+            ],
+          ],
         },
       },
     },
