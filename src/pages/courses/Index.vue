@@ -36,7 +36,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h3>Vue.js for Beginners: Up and Running with Vue</h3>
+              <h3>Vue for Beginners: Up and Running with Vue</h3>
               <p>
                 A beginner's guide to learn the basics of the JavaScript
                 Framework Vue.js.
@@ -55,7 +55,7 @@
           <div class="card-image">
             <figure class="image">
               <g-image
-                src="@/assets/img/courses/groovy-udemy.jpg"
+                src="@/assets/img/courses/apache-groovy.jpg"
                 alt="The complete Apache Groovy Developer Course Cover Image"
                 class="modal-button"
               />
@@ -63,7 +63,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <h3>The Complete Apache Groovy Developer Course</h3>
+              <h3>The Complete Apache Groovy Course</h3>
               <p>
                 Everything you need to know to get started with the Groovy
                 Programming Language
