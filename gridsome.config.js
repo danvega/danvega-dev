@@ -44,6 +44,7 @@ module.exports = {
                 omitScript: true,
               },
             ],
+            ['gridsome-plugin-remark-youtube', {}],
             ["gridsome-plugin-remark-codesandbox", {}],
           ],
         },
