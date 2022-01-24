@@ -10,9 +10,9 @@
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.5.0",
+    "@gridsome/transformer-remark": "^0.6.4",
     "axios": "^0.21.2",
-    "gridsome": "^0.7.14",
+    "gridsome": "^0.7.23",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "gridsome-plugin-remark-twitter": "^0.2.1",
