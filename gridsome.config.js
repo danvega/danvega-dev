@@ -70,53 +70,53 @@ module.exports = {
         },
       },
     },
-    // {
-    //   use: "gridsome-plugin-rss",
-    //   options: {
-    //     contentTypeName: "Post",
-    //     feedOptions: {
-    //       title: "Dan Vega",
-    //       feed_url: "https://danvega.dev/rss.xml",
-    //       site_url: "https://danvega.dev",
-    //     },
-    //     feedItemOptions: (node) => ({
-    //       title: node.title,
-    //       description: node.excerpt,
-    //       url: getPostURL(node.date, node.slug),
-    //       author: node.author,
-    //       date: node.date,
-    //       custom_elements: [
-    //         {
-    //           published: node.date.toString(),
-    //         },
-    //       ],
-    //     }),
-    //     output: {
-    //       dir: "./static",
-    //       name: "rss.xml",
-    //     },
-    //   },
-    // },
-    // {
-    //   use: "@gridsome/plugin-sitemap",
-    //   options: {
-    //     cacheTime: 600000, // default
-    //     config: {
-    //       "/blog/*": {
-    //         changefreq: "daily",
-    //         priority: 0.5,
-    //       },
-    //       "/tag/*": {
-    //         changefreq: "daily",
-    //         priority: 0.7,
-    //       },
-    //       "/newsletter/*": {
-    //         changefreq: "weekly",
-    //         priority: 0.9,
-    //       },
-    //     },
-    //   },
-    // },
+    {
+      use: "gridsome-plugin-rss",
+      options: {
+        contentTypeName: "Post",
+        feedOptions: {
+          title: "Dan Vega",
+          feed_url: "https://danvega.dev/rss.xml",
+          site_url: "https://danvega.dev",
+        },
+        feedItemOptions: (node) => ({
+          title: node.title,
+          description: node.excerpt,
+          url: getPostURL(node.date, node.slug),
+          author: node.author,
+          date: node.date,
+          custom_elements: [
+            {
+              published: node.date.toString(),
+            },
+          ],
+        }),
+        output: {
+          dir: "./static",
+          name: "rss.xml",
+        },
+      },
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000, // default
+        config: {
+          "/blog/*": {
+            changefreq: "daily",
+            priority: 0.5,
+          },
+          "/tag/*": {
+            changefreq: "daily",
+            priority: 0.7,
+          },
+          "/newsletter/*": {
+            changefreq: "weekly",
+            priority: 0.9,
+          },
+        },
+      },
+    },
     {
       use: 'gridsome-plugin-sentry',
       options: {
