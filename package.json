@@ -11,6 +11,7 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
+    "@notionhq/client": "^1.0.0",
     "axios": "^0.21.2",
     "gridsome": "^0.7.23",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
