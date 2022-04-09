@@ -22,7 +22,7 @@
     "gridsome-plugin-sentry": "^1.1.0",
     "lodash.pick": "^4.4.0",
     "medium-zoom": "^1.0.5",
-    "moment": "^2.25.3",
+    "moment": "^2.29.2",
     "vue-disqus": "^3.0.5",
     "vue-fuse": "^2.1.0",
     "yaml-front-matter": "^4.1.1"
