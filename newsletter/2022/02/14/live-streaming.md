@@ -1,7 +1,7 @@
 ---
 title: Live Streaming, Netlify Serverless Functions and Vue 3 Docs
 slug: live-streaming
-date: "2022-02-07T08:00:00.000Z"
+date: "2022-02-14T08:00:00.000Z"
 ---
 
 It’s Monday, February 14th and I am once again petitioning for the day after the Super Bowl to be a national holiday. I’m writing this before the game takes place so I don’t know how it ends. I’m just hoping for a good game and a great halftime show. In this week's edition of the newsletter, I want to talk about Live Streaming, Netlify Serverless Functions, Vue 3, and The Dropout.
