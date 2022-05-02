@@ -56,18 +56,18 @@
 
       <div class="footer-links">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/courses">Courses</a></li>
+          <li><a href="/" aria-label="Home">Home</a></li>
+          <li><a href="/blog" aria-label="Blog">Blog</a></li>
+          <li><a href="/courses" aria-label="Courses">Courses</a></li>
         </ul>
         <ul>
-          <li><a href="/newsletter">Newsletter</a></li>
-          <li><a href="/speaking">Speaking</a></li>
-          <li><a href="/uses">Uses</a></li>
+          <li><a href="/newsletter" aria-label="Newsletter">Newsletter</a></li>
+          <li><a href="/speaking" aria-label="Speaking">Speaking</a></li>
+          <li><a href="/uses" aria-label="Uses">Uses</a></li>
         </ul>
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about" aria-label="About">About</a></li>
+          <li><a href="/contact" aria-label="Contact">Contact</a></li>
         </ul>
       </div>
 
