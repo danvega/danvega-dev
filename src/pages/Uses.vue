@@ -97,14 +97,6 @@
           aria-label="Pocket Casts Podcast Player"
         >Pocket Casts</a>.
       </li>
-      <li>
-        I love
-        <a href="http://discord.com/" aria-label="Discord Communities">Discord</a> for running
-        <a
-          href="https://discord.gg/gx4Z8XY"
-          aria-label="Join my Discord community"
-        >my community</a> and being a part of so many great ones.
-      </li>
     </ul>
 
     <h2>Recording</h2>
@@ -117,6 +109,10 @@
         >macOS Screenshot Utility</a> to record what is on my screen.
       </li>
       <li>
+        When I need to record talking head videos or a combination of me and the screen I use
+        <a href="https://www.ecamm.com/">Ecamm</a>. When I am live Streaming I use Ecamm or <a href="https://streamyard.com/">StreamYard</a>.
+      </li>
+      <li>
         When I am recording screencasts I use the
         <a
           href="https://amzn.to/3dWTkwX"
@@ -126,14 +122,14 @@
       <li>
         Speaking of Audio.. I ❤️ my
         <a
-          href="https://amzn.to/2LHbZAK"
-          aria-label="Beats Headphones"
-        >Beats Solo</a> wireless headphones.
+          href="StreamYard"
+          aria-label="Wyze Bluetooth Headphones"
+        >Wyze Bluetooth</a> headphones.
       </li>
       <li>
         I use a
-        <a href="https://amzn.to/36cuV43" aria-label="Canon 70D Camera">Canon 70D</a> with a
-        <a href="https://amzn.to/2ZkquCD" aria-label="24mm f/2.8 Lens">24mm f/2.8 STM Lens</a> for all of my a-roll.
+        <a href="hhttps://amzn.to/3F5XnG8" aria-label="Sony A6100">Sony A6100</a> with a
+        <a href="Sony A6100" aria-label="Sigma 16mm f1.4 lens">Sigma 16mm f1.4 lens</a> for all of my a-roll.
       </li>
       <li>
         When I am filming a-roll I use the
@@ -144,14 +140,7 @@
       </li>
       <li>
         I use the
-        <a
-          href="https://amzn.to/2X7XzPF"
-          aria-label="Fovitec StudioPro Lights"
-        >Fovitec StudioPro lights</a> for ligthing when I need it. These are a bit large for my small studio so I am looking at picking up a couple of the
-        <a
-          href="https://amzn.to/2X3qPXG"
-          aria-label="Elgato Key Lights"
-        >Elgato Key Lights</a>
+        <a href="https://amzn.to/2X3qPXG" aria-label="Elgato Key Lights">Elgato Key Lights</a> for lighting.
       </li>
       <li>
         My webcam is the
@@ -176,13 +165,6 @@
       </li>
       <li>
         I use
-        <a
-          href="https://www.ecamm.com/mac/ecammlive/"
-          aria-label="Ecamm Live Streaming Software"
-        >Ecamm Live</a> for Streaming.
-      </li>
-      <li>
-        I use
         <a href="https://www.dropbox.com/" aria-label="Dropbox for Storage">Dropbox</a> for storage and backup.
       </li>
       <li>
@@ -194,62 +176,29 @@
       </li>
     </ul>
 
-    <div class="center">
-      <g-image src="@/assets/img/uses/canon70d.jpg" alt="Canon 70D and 24mm Lens" />
-    </div>
-
     <h2>Desk Setup</h2>
     <ul>
       <li>
-        <a href="https://amzn.to/2ZrkS9Z" aria-label="MacBook Pro">MacBook Pro</a> (Retina, 15-inch, Mid 2015) 2.2GHz Quad-Core Intel i7 / 16GB RAM
+        <a href="https://amzn.to/3F7Mfs6" aria-label="MacBook Pro">MacBook Pro</a> (14-inch, 2021) Apple M1 Max / 32GB RAM
       </li>
       <li>
         <a href="https://amzn.to/2Zrlbl9" aria-label="Laptop Stand">Bestand Laptop Stand</a>
       </li>
       <li>
-        <a href="https://amzn.to/3g2jiks" aria-label="Dell Ultrawide Monitor">Dell UltraSharp U3415W</a> 34" Curved Widescreen Monitor
+        <a href="https://amzn.to/3g2jiks" aria-label="Dell Ultrawide Monitor">Dell UltraSharp U3415W</a> 34" Curved Widescreen Monitor and a <a href="https://amzn.to/3kufQmi" aria-label="LG 4k HDR Monitor">LG 4k HDR Monitor</a>
       </li>
       <li>
         <a href="https://amzn.to/2WFflKQ" aria-label="Apple Magic Keyboard">Apple Magic Keyboard</a>
       </li>
       <li>
-        <a href="https://amzn.to/36gFIKn" aria-label="Logitech Mouse">Logitech Mouse</a> - I really need to upgrade this.
+        <a href="https://amzn.to/3yg6fr4" aria-label="Logitech Mx Master 3">Logitech Mx Master 3</a>
       </li>
-      <li>My speakers are embarasingly like 20 years old and I have no excuse 🤦‍♂️</li>
       <li>
         My desk is not actually a desk. It's the Ikea the
         <a
           href="https://www.ikea.com/us/en/p/karlby-countertop-walnut-veneer-70335212/"
           aria-label="IKEA Countertop"
         >Karlby countertop</a> on top of 2 cabinets hack that you have probably seen a million times by now. I really like this setup and it works well for my space.
-      </li>
-    </ul>
-
-    <div class="center">
-      <g-image src="@/assets/img/uses/desk-setup.jpg" alt="My desk setup" />
-    </div>
-
-    <h2>Work Setup</h2>
-    <p>I work from home a lot (full time at the time of writing this) so I put together another desk setup. I don't like having to switch out laptops everytime I move from work to personal so I like having a 2nd setup I can just sit down and get to work at.</p>
-    <ul>
-      <li>
-        I love the
-        <a
-          href="https://www.autonomous.ai/standing-desks/smartdesk-2-home"
-          aria-label="Standup Desk"
-        >Autonomous Smart Desk 2</a> which allows me to sit down and stand up when I need a break.
-      </li>
-      <li>
-        <a href="https://amzn.to/2ZrkS9Z" aria-label="MacBook Pro">MacBook Pro</a> (13-inch, 2017, Two Thunderbolt 3 Ports) 2.3GHz Quad-Core Intel i5 / 16GB RAM
-      </li>
-      <li>
-        <a href="https://amzn.to/3bJBaNy" aria-label="Monitor Arm">Amazon Basics Monitor Arm</a>
-      </li>
-      <li>
-        <a href="https://amzn.to/2zQUOtO" aria-label="Asus 27 Monitor">Asus 27" Monitor</a>
-      </li>
-      <li>
-        <a href="https://amzn.to/2Xfmfpw" aria-label="USB-C Hub">HooToo USB C Hub</a> for connecting all of my devices
       </li>
     </ul>
 
