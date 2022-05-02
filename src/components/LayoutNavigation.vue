@@ -67,7 +67,7 @@
           <g-link to="/newsletter/">Newsletter</g-link>
         </li>
         <li>
-          <g-link to="/Speaking">Speaking</g-link>
+          <g-link to="/speaking">Speaking</g-link>
         </li>
       </ul>
     </nav>
