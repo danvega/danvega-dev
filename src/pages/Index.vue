@@ -45,8 +45,7 @@
         />
         <h2>Hi, I'm Dan Vega</h2>
         <p>
-          I’m a Husband, Father, Enterprise Java Architect and maker of things
-          from Cleveland Ohio. I created this website as a place to document my
+          I’m a Husband, Father, <a href="https://tanzu.vmware.com/developer/team/dan-vega/">Spring Developer Advocate</a> and maker of things from Cleveland Ohio. I created this website as a place to document my
           journey as I learn new things and share them with you. I have a real
           passion for teaching and I hope that one of
           <a href="/blog">blog posts</a>,

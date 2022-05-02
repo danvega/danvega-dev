@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container">
-      <div class="row-one">
+      <div class="social-links">
         <p>Made with ❤️ in Cleveland, OH.</p>
         <!-- https://developers.google.com/web/tools/lighthouse/audits/noopener -->
         <a
@@ -59,7 +59,6 @@
           <li><a href="/">Home</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/courses">Courses</a></li>
-
         </ul>
         <ul>
           <li><a href="/newsletter">Newsletter</a></li>
@@ -68,7 +67,7 @@
         </ul>
         <ul>
           <li><a href="/about">About</a></li>
-          <li><a href="/about">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
 
@@ -81,9 +80,6 @@ export default {};
 </script>
 
 <style scoped>
-/* * {
-  border: 1px solid red;
-} */
 footer {
   background-color: var(--bright-blue);
   padding: 10px 0;
@@ -110,10 +106,12 @@ footer a > svg {
   width: 1.2rem;
 }
 
-footer .row-one {
+footer .social-links {
   display: flex;
 }
-
+.social-links p {
+  margin:8px;
+}
 footer .footer-links {
   display: flex;
 }

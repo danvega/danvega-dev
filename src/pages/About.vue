@@ -17,7 +17,7 @@
       <p>
         I have been writing software for over 20+ years now and I use my
         knowledge, passion, and influence to help other developers achieve their
-        goals. I teach online and currently, have over 100,000 students.
+        goals. I teach online and currently, have over 150,000 students.
       </p>
       <p>
         In my personal life I am a husband to my best friend in the world and a
