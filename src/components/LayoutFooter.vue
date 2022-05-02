@@ -1,8 +1,8 @@
 <template>
   <footer>
     <div class="container">
-      <p>Made with ❤️ in Cleveland, OH.</p>
-      <div>
+      <div class="row-one">
+        <p>Made with ❤️ in Cleveland, OH.</p>
         <!-- https://developers.google.com/web/tools/lighthouse/audits/noopener -->
         <a
           href="http://twitter.com/therealdanvega"
@@ -53,6 +53,25 @@
           <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>
       </div>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/courses">Courses</a></li>
+
+        </ul>
+        <ul>
+          <li><a href="/newsletter">Newsletter</a></li>
+          <li><a href="/speaking">Speaking</a></li>
+          <li><a href="/uses">Uses</a></li>
+        </ul>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/about">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
   </footer>
 </template>
@@ -62,14 +81,12 @@ export default {};
 </script>
 
 <style scoped>
+/* * {
+  border: 1px solid red;
+} */
 footer {
   background-color: var(--bright-blue);
   padding: 10px 0;
-}
-
-footer > .container {
-  display: flex;
-  align-items: center;
 }
 
 footer p {
@@ -91,6 +108,23 @@ footer a:hover {
 footer a > svg {
   fill: white;
   width: 1.2rem;
+}
+
+footer .row-one {
+  display: flex;
+}
+
+footer .footer-links {
+  display: flex;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  margin:0 40px 0 0;
+  padding:0px;
+}
+.footer-links li {
+  padding:8px;
 }
 
 @media (max-width: 1024px) {

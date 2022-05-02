@@ -67,10 +67,7 @@
           <g-link to="/newsletter/">Newsletter</g-link>
         </li>
         <li>
-          <g-link to="/about">About</g-link>
-        </li>
-        <li>
-          <g-link to="/contact">Contact</g-link>
+          <g-link to="/Speaking">Speaking</g-link>
         </li>
       </ul>
     </nav>
