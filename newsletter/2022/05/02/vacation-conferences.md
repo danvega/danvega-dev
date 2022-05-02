@@ -32,6 +32,10 @@ I think what I am looking forward to most is meeting so many people from the Vue
 
 A few days later I got notice that I had been accepted to [Code on the Beach](https://www.codeonthebeach.com/). This conference also takes place in FL but this time we move up the coast to Atlantic Beach. I have heard some great things about this conference and I was excited to hear I will be joined by a couple of coworkers. In this talk, you will learn how to build Full Stack Java applications with Spring Boot.
 
+### Kansas City Developer Conference (KCDC)
+
+Late on Friday I found out that I was accepted to KCDC. This will be my first time speaking at this conference and I am really looking forward to it. I will be presenting with my friend and coworker Nate Schutta. In this talk we will be presenting on Spring Recipes: A Collection of Common Sense Solutions.
+
 ## VMware
 
 I celebrated 3 months last week at VMware! I can’t remember the last time I was this happy at work. The company I work for is amazing on so many levels. I get to go to work every single day and do what I love with a really great team.
