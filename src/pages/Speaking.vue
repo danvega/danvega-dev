@@ -26,7 +26,7 @@
         </tr>
         <tr>
           <td>June 21, 2022</td>
-          <td>Introduction to GraphQL</td>
+          <td><a href="https://tanzu.vmware.com/content/webinars/jun-introduction-to-spring-for-graphql">Introduction to GraphQL</a></td>
           <td>Online</td>
         </tr>
         <tr>
