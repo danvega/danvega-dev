@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.post.title }}</h1>
-    <p class="postDateTime">{{ formatCreatedOn }} | <span v-if="$page.post.updatedOn">Updated On: {{ formatDate($page.post.updatedOn) }}</span> • ☕️ {{ $page.post.timeToRead }} min read</p>
+    <p class="postDateTime">Published On: {{ formatCreatedOn }} <span v-if="$page.post.updatedOn">| Updated On:{{ formatDate($page.post.updatedOn) }}</span> • ☕️ {{ $page.post.timeToRead }} min read</p>
     <div class="embed-container" v-if="$page.post.video">
       <iframe
         :src="$page.post.video"
