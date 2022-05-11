@@ -32,19 +32,8 @@ module.exports = {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: [
-            [
-              "gridsome-plugin-remark-shiki",
-              {
-                theme: "nord",
-                skipInline: true
-              },
-            ],
-            [
-              "gridsome-plugin-remark-twitter",
-              {
-                omitScript: true,
-              },
-            ],
+            ["gridsome-plugin-remark-shiki",{theme: "nord",skipInline: true}],
+            ["gridsome-plugin-remark-twitter",{ omitScript: true,}],
             ["gridsome-plugin-remark-codesandbox", {}],
             ['gridsome-plugin-remark-youtube', {}],
           ],
@@ -62,12 +51,7 @@ module.exports = {
           plugins: [
             ["gridsome-plugin-remark-twitter", {}],
             ['gridsome-plugin-remark-youtube', {}],
-            [
-              "gridsome-plugin-remark-shiki",
-              {
-                theme: "nord",
-              },
-            ],
+            ["gridsome-plugin-remark-shiki",{theme: "nord",skipInline: true}],
           ],
         },
       },
