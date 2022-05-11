@@ -4,8 +4,6 @@
     <p class="postDateTime">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</p>
     <div class="embed-container" v-if="$page.post.video">
       <iframe
-        width="1000"
-        height="563"
         :src="$page.post.video"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -322,5 +320,19 @@ section.promo h3 {
 section.promo.tip-jar {
   text-align: center;
   color:var(--font-color);
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+
+.callout {
+  margin: 0px;
+  background-color: var(--callout-background);
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 </style>

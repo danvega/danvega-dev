@@ -11,6 +11,8 @@ video: https://www.youtube.com/embed/vLSyFktOm4g
 github: https://github.com/danvega/spring-boot-value-annotation
 ---
 
+<div class="callout">💡 The video tutorial for this blog post can be found above or you can <a href="https://youtu.be/vLSyFktOm4g">click here</a> to watch it on YouTube.</div>
+
 Spring Boot allows you to configure your application through a number of property sources. A property source, simply put, is a source for your configuration such as Java properties files, YAML files, environment variables, command line arguments and more.
 
 In this article you will learn about how to set configuration properties and values and then inject them into your application using the `@Value` annotation. You will also learn about Spring Boot’s property source order and how to override configuration values.

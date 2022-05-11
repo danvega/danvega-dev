@@ -51,6 +51,7 @@ query {
   --font-color-inverse: #ebf1fc;
   --mobile-menu-background: #efefef;
   --mobile-menu-link-color: #0f2342;
+  --callout-background: rgb(244, 244, 244);
 }
 
 [data-theme="dark"] {
@@ -69,11 +70,12 @@ query {
   --link-color: #ffffff;
   --link-color-hover: #ffffff;
   --link-text-decoration: underline;
-  --shiki-inline-background: white;
+  --shiki-inline-background: #0f2342;
   --shiki-inline-color: #81a1c1;
   --font-color-inverse: #3d455c;
   --mobile-menu-background: #d1d1d1;
   --mobile-menu-link-color: #0f2342;
+  --callout-background: #adc1d6;
 }
 
 html {
