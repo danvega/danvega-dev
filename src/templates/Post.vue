@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.post.title }}</h1>
-    <p class="postDateTime">{{ formatCreatedOn }} • ☕️ {{ $page.post.timeToRead }} min read</p>
+    <p class="postDateTime">{{ formatCreatedOn }} | <span v-if="$page.post.updatedOn">Updated On: {{ formatDate($page.post.updatedOn) }}</span> • ☕️ {{ $page.post.timeToRead }} min read</p>
     <div class="embed-container" v-if="$page.post.video">
       <iframe
         :src="$page.post.video"
@@ -59,6 +59,7 @@ query Post ($path: String!) {
     video
     slug
     date
+    updatedOn
     excerpt
     path
     tags {
@@ -116,7 +117,13 @@ export default {
       ]
     };
   },
+  methods: {
+    formatDate(date) {
+      return moment(date).format("MMMM DD, YYYY");
+    },
+  },
   computed: {
+
     formatCreatedOn() {
       const formattedDate = moment(this.$page.post.date).format(
         "MMMM DD, YYYY"
@@ -149,7 +156,7 @@ h1 {
 }
 .postDateTime {
   margin: 0 0 5px 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .cover {
   margin-top: 10px;
