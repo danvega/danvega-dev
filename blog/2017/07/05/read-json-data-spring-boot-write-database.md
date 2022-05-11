@@ -176,6 +176,14 @@ public class UserService {
 
 ### Read & Write JSON Data to Database
 
+Before you can write to a database you need to make sure that you have a database configured. In this tutorial you are using an in-memory H2 database. The in-memory part just means that each time we restart the application the database will be wiped clean. If you're new H2 you can check out [this tutorial](https://youtu.be/tSJW5NKPhcM). For now you will need to open up `application.properties` and add the following lines:
+
+```
+spring.h2.console.enabled=true
+spring.datasource.generate-unique-name=false
+spring.datasource.name=users
+```
+
 With our application in place, there is only one step left to do. To read the JSON and write it to a database you are going to use a command-line runner. If you're not familiar with a command-line runner it is an interface that you can implement to executed some code before the application starts up. If you want to read more on this you can check out [my blog post here](/blog/2017/04/07/spring-boot-command-line-runner/).
 
 When you bring in the Web dependency you also get the jackson-databind dependency. This contains an Object Mapper class which allows us to easily map JSON data to our domain model.
@@ -216,7 +224,7 @@ public class JsondbApplication {
 }
 ```
 
-If you run our application and look at the H2 Database console you can see the 10 records have been inserted.
+If you run our application and look visit the [H2 Database console](http://localhost:8080/h2-console) you should see the 10 records have been inserted. Congratulations, you just read data from a JSON file and inserted it into a database.
 
 ![Spring Boot H2 Console](./spring-boot-h2-console.png)
 
