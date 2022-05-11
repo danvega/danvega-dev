@@ -3,13 +3,16 @@ slug: read-json-data-spring-boot-write-database
 title: "How to read JSON data in Spring Boot and write to a database"
 published: true
 date: 2017-07-05T12:00:27-04:00
-tags: ['spring']
+updatedOn: 2022-05-11T11:00:00-05:00
+tags: ["spring"]
 excerpt: "How to read JSON data in Spring Boot and write to a database"
-cover: './pexels-photo-374899-760x506.jpeg'
+cover: "./pexels-photo-374899-760x506.jpeg"
 video: https://www.youtube.com/embed/rGdKmF2UzSc
 ---
 
-In this tutorial, we are taking a look at a student's question from my [Spring Boot Introduction Course](https://www.danvega.dev/spring-boot). 
+<div class="callout">💡 The video tutorial for this blog post can be found above or you can <a href="https://youtu.be/rGdKmF2UzSc">click here</a> to watch it on YouTube.</div>
+
+In this tutorial, we are taking a look at a student's question from my [Spring Boot Introduction Course](/courses). If you have a question you would like me to answer please feel free to reach out and ask me. The question I am answering today is:
 
 > How can I read in a JSON file in Spring Boot and save the records to a database?
 
@@ -17,13 +20,13 @@ If you have ever had to read and write JSON data you know that this can be trick
 
 ## Spring Boot Application
 
-The first thing we need to do is to create a new Spring Boot application using the following dependencies. 
+The first thing you need to do is to create a new Spring Boot application using the Spring Initalizr. This will create a new Spring Boot application and you will want to select the following dependencies:
 
-![Spring Boot JSON](./2017-07-05_11-40-42-1024x645.png)
+![Spring Boot Init](./spring-boot-init.png)
 
 ### JSON Data
 
-The first thing we need to do is to get some dummy JSON data and one of my favorite services for doing this is [JSON Placeholder](https://jsonplaceholder.typicode.com/). We are going to grab a [list of users](https://jsonplaceholder.typicode.com/users) and save that to a file called users.json and place it inside of /src/main/resources/json/. Each JSON record for a user will look something like this.
+Next you need some sample JSON data and one of my favorite services for doing this is [JSON Placeholder](https://jsonplaceholder.typicode.com/). We are going to grab a [list of users](https://jsonplaceholder.typicode.com/users) and save that to a file called users.json and place it inside of /src/main/resources/json/. Each JSON record for a user will look something like this.
 
 ```json
   {
@@ -51,16 +54,9 @@ The first thing we need to do is to get some dummy JSON data and one of my favor
   },
 ```
 
-Now that we have our list of users saved we need to model a domain after our user. We could create relationships between each of our domain models but to keep this simple I am going to store all of this data in a single user table. To accomplish this I am going to have embedded and embeddable domain models. 
+Now that you have a list of users saved you need to model a domain after a user. You could create relationships between each of your domain models but to keep this simple I would just store all of this data in a single user table. To accomplish this you are going to use an embedded address and company domain.
 
 ```java
-package com.therealdanvega.domain;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-import javax.persistence.*;
-
 @Data
 @AllArgsConstructor
 @Entity
@@ -81,18 +77,11 @@ public class User {
     private Company company;
 
     public User() {}
+
 }
 ```
 
 ```java
-package com.therealdanvega.domain;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
-
 @Data
 @AllArgsConstructor
 @Embeddable
@@ -111,13 +100,6 @@ public class Address {
 ```
 
 ```java
-package com.therealdanvega.domain;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-import javax.persistence.Embeddable;
-
 @Data
 @AllArgsConstructor
 @Embeddable
@@ -127,19 +109,11 @@ public class Geo {
     private String lng;
 
     public Geo() {}
+
 }
 ```
 
 ```java
-
-package com.therealdanvega.domain;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-
 @Data
 @AllArgsConstructor
 @Embeddable
@@ -151,19 +125,20 @@ public class Company {
     private String bs;
 
     public Company() {}
+
 }
 ```
 
 ### Spring Boot REST Application
 
-Now that we have our domain model in place we are going to build out a REST controller that uses a service & Repository to list and save data. 
+Now that you have our domain model in place you are going to build out a REST controller that uses a service & Repository to list and save data.
 
 ```java
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public UserController(UserService userService) {
         this.userService = userService;
@@ -182,7 +157,7 @@ The important thing about our service here is that it takes a list of users and 
 @Service
 public class UserService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -201,7 +176,9 @@ public class UserService {
 
 ### Read & Write JSON Data to Database
 
-With our application in place, there is only one step left to do. To read the JSON and write it to a database we are going to use a command line runner. When we bring in the Web dependency we also get the jackson-databind dependency. This contains an Object Mapper class which allows us to easily map JSON data to our domain model.
+With our application in place, there is only one step left to do. To read the JSON and write it to a database you are going to use a command-line runner. If you're not familiar with a command-line runner it is an interface that you can implement to executed some code before the application starts up. If you want to read more on this you can check out [my blog post here](/blog/2017/04/07/spring-boot-command-line-runner/).
+
+When you bring in the Web dependency you also get the jackson-databind dependency. This contains an Object Mapper class which allows us to easily map JSON data to our domain model.
 
 ```xml
 <dependency>
@@ -210,7 +187,7 @@ With our application in place, there is only one step left to do. To read the JS
 </dependency>
 ```
 
-Using that Object Mapper and our well-crafted domain model from above we have what we need to accomplish our goal. We are going to read in our users.json file and then map that data to our domain model. 
+Using that Object Mapper and our well-crafted domain model from above we have what we need to accomplish our goal. You can read in users.json file and then map that data to the domain model.
 
 ```java
 @SpringBootApplication
@@ -239,16 +216,13 @@ public class JsondbApplication {
 }
 ```
 
-If we run our application and look at the H2 Database console we can see the 10 records have been inserted. 
+If you run our application and look at the H2 Database console you can see the 10 records have been inserted.
 
-![JSON Data](./2017-07-05_11-58-32-1024x309.png)
-
-## Screencast
-
-https://youtu.be/rGdKmF2UzSc
+![Spring Boot H2 Console](./spring-boot-h2-console.png)
 
 ## Conclusion
 
-If you want to check out the [source code for this project you can do so here](https://github.com/cfaddict/spring-boot-jsontodb).
+I often get quetions like the one we looked at today. The first thing you need to do is to break down this problem into smaller pieces. The first problem to solve for was creating some sample JSON, modeling our domain model after it and reading it in. Once you have that you can move on to persisting that data into a database.
 
-_**Question:** Are you facing any issues with JSON in your applications? _
+If you want to check out the source code head over to [Github](https://github.com/cfaddict/spring-boot-jsontodb).
+
