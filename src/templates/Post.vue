@@ -172,6 +172,12 @@ h1 {
   color: var(--shiki-inline-color) !important;
   font-size: 1.1rem;
 }
+p > code {
+  background: var(--shiki-inline-background) !important;
+  padding: 2px;
+  color: var(--shiki-inline-color) !important;
+  font-size: 0.9rem;
+}
 .twitter-tweet {
   margin: 10px auto;
 }

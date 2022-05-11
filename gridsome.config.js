@@ -36,6 +36,7 @@ module.exports = {
               "gridsome-plugin-remark-shiki",
               {
                 theme: "nord",
+                skipInline: true
               },
             ],
             [
@@ -45,6 +46,7 @@ module.exports = {
               },
             ],
             ["gridsome-plugin-remark-codesandbox", {}],
+            ['gridsome-plugin-remark-youtube', {}],
           ],
         },
       },
