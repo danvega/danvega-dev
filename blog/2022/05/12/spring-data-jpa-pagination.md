@@ -1,5 +1,5 @@
 ---
-title: Spring Boot @Value Annotation
+title: Spring Data JPA Pagination
 date: "2022-05-12T16:00:00.000Z"
 published: true
 excerpt: In this tutorial, you are going to learn how to work with pagination in Spring Data JPA.
