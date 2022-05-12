@@ -351,7 +351,9 @@ If you notice the return type of the endpoint it is a `Page<Person>`. At this po
 
 ## Conclusion
 
-Congratulations 🥳 You just created an application that uses the Spring Data Paging and Sorting Repository. This allows the client to display a small number of records when working with a large dataset. If you have any questions about what you built today, please let me know. As always friends...
+Congratulations 🥳 You just created an application that uses the Spring Data Paging and Sorting Repository. This allows the client to display a small number of records when working with a large dataset.
+
+If you want to check out the code for this tutorial you can view [this repo on Github](https://github.com/danvega/graphql-paging) which is part of a bigger tutorial I am working on. If you have any questions about what you built today, please let me know. As always friends...
 
 Happy Coding!<br/>
 Dan
