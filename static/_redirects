@@ -1,14 +1,18 @@
 # 301 Redirects
-/blog/creating-your-first-npm-package    /blog/2019/02/10/creating-your-first-npm-package   301
+
+/blog/creating-your-first-npm-package /blog/2019/02/10/creating-your-first-npm-package 301
 /blog/hello-gridsome /blog/2019/01/31/hello-gridsome 301
 /signup /newsletter
 /subscriber-thank-you /newsletter/thank-you
 
 # pretty urls
+
 /feed /rss.xml 301
 /spring-one-2021 /blog/2021/08/30/spring-one-2021/ 301
+/command-line-runner /blog/2017/04/07/spring-boot-command-line-runner/ 301
 
 # courses
+
 /courses/getting-started-with-java https://therealdanvega.teachable.com/p/getting-started-with-java 301
 /courses/learn-spring-boot https://therealdanvega.teachable.com/p/spring-boot-intro
 /courses/spring-boot-2 https://therealdanvega.teachable.com/p/spring-boot-2
@@ -19,10 +23,13 @@
 /courses/vue-3 https://danvega.ck.page/d3777e0d2e
 
 # docs
+
 /spring-boot-2-docs /docs/spring-boot-2-docs 301
 
 # social urls
+
 /twitter http://twitter.com/therealdanvega
 /youtube http://www.youtube.com/danvega
 /instagram https://www.instagram.com/thedanvega/
 /linkedin https://www.linkedin.com/in/danvega/
+
