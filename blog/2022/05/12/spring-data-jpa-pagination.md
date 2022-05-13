@@ -58,7 +58,7 @@ public class Person {
         this.address = address;
     }
 
-		// getters, setters & toString
+    // getters, setters & toString
 
 }
 ```
@@ -84,7 +84,7 @@ public class Address {
         this.zip = zip;
     }
 
-		// getters, setters & toString
+    // getters, setters & toString
 
 }
 ```
@@ -98,7 +98,7 @@ Create a new interface (you heard me right) named `PersonRepository`. Alone this
 - [Repository<T,ID>](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/Repository.html)
 - [CrudRepository<T,ID>](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html)
 - [PagingAndSortingRepository<T,ID>](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/PagingAndSortingRepository.html)
-- Reactive versions...
+- [JpaRepository<T,ID>](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html)
 
 You are going to extend the `PagingAndSortingRepository` which gives you 2 methods you will need for pagination. This interface in turn extends the `CrudRepostiory` so you will also get all of the CRUD methods for free.
 
@@ -230,17 +230,18 @@ public interface PagingAndSortingRepository<T, ID> extends CrudRepository<T, ID>
 	/**
 	 * Returns all entities sorted by the given options.
 	 *
-	 * @param sort the {@link Sort} specification to sort the results by, can be {@link Sort#unsorted()}, must not be
-	 *          {@literal null}.
+	 * @param sort the {@link Sort} specification to sort the results by,
+   * can be {@link Sort#unsorted()}, must not be {@literal null}.
 	 * @return all entities sorted by the given options
 	 */
 	Iterable<T> findAll(Sort sort);
 
 	/**
-	 * Returns a {@link Page} of entities meeting the paging restriction provided in the {@link Pageable} object.
+	 * Returns a {@link Page} of entities meeting the paging restriction provided in
+   * the {@link Pageable} object.
 	 *
-	 * @param pageable the pageable to request a paged result, can be {@link Pageable#unpaged()}, must not be
-	 *          {@literal null}.
+	 * @param pageable the pageable to request a paged result, can be
+   * {@link Pageable#unpaged()}, must not be {@literal null}.
 	 * @return a page of entities
 	 */
 	Page<T> findAll(Pageable pageable);
