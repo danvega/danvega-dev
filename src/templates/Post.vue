@@ -17,6 +17,9 @@
       class="cover"
       :alt="$page.post.title"
     />
+
+    <div v-if="$page.post.video" class="callout">💡 The video tutorial for this blog post can be found above or you can <a :href="getCalloutUrl($page.post.video)">click here</a> to watch it on YouTube.</div>
+
     <article v-html="$page.post.content" class="article" />
     <blog-tag :tags="$page.post.tags" />
 
@@ -121,9 +124,13 @@ export default {
     formatDate(date) {
       return moment(date).format("MMMM DD, YYYY");
     },
+    getCalloutUrl(url) {
+      const parts = url.split("/");
+      const id = parts[parts.length-1];
+      return "https://youtu.be/" + id;
+    }
   },
   computed: {
-
     formatCreatedOn() {
       const formattedDate = moment(this.$page.post.date).format(
         "MMMM DD, YYYY"

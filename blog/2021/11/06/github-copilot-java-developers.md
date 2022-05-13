@@ -13,8 +13,6 @@ cover: "./github_copilot_thumbnail.png"
 video: https://www.youtube.com/embed/97C3fQqzj-I
 ---
 
-<div class="callout">💡 The video tutorial for this blog post can be found above or you can <a href="https://youtu.be/97C3fQqzj-I">click here</a> to watch it on YouTube.</div>
-
 Earlier this year GitHub launched Copilot, an AI pair-programmer. With GitHub Copilot, get suggestions for whole lines or entire functions right inside your editor. I'm not sure if it supported Java when it was first launched but at the time of writing this, the technical preview supports Python, JavaScript, TypeScript, Ruby, Java & Go.
 
 When it was released back in June of 2021 they only had support for Visual Studio Code. At Github Universe 2021 they announced support for NeoVim and Jetbrains. This means that if you're running any flavor of the JetBrains IDE like IntelliJ, GoLand, or Webstorm you can use Github Copilot.
