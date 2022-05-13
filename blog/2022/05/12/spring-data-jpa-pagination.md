@@ -8,6 +8,7 @@ tags:
   - spring
   - spring-data
 cover: "./spring-data-jpa-pagination-thumbnail.png"
+video: https://www.youtube.com/embed/oq-c3D67WqM
 github: https://github.com/danvega/graphql-paging
 ---
 
