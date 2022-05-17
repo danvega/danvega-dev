@@ -171,7 +171,7 @@ export default {
         { name: "twitter:site", content: "@therealdanvega" },
         {
           name: "twitter:image",
-          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`,
+          content: "http://www.danvega.dev/images/danvega_dev_cover.png",
         },
         { name: "twitter:creator", content: "@therealdanvega" },
 
@@ -187,11 +187,11 @@ export default {
         },
         {
           property: "og:image",
-          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`,
+          content: "http://www.danvega.dev/images/danvega_dev_cover.png",
         },
         {
           property: "og:image:secure_url",
-          content: `${process.env.GRIDSOME_BASE_URL}/images/danvega_dev_cover.png`,
+          content: "http://www.danvega.dev/images/danvega_dev_cover.png",
         },
       ],
     };

@@ -138,15 +138,17 @@ export default {
       return formattedDate;
     },
     getCoverImage() {
+      console.log(this.$page.post.cover);
       let coverImage = "";
       const cover = this.$page.post.cover;
       if (cover != null) {
         coverImage = `${this.getBaseUrl}${this.$page.post.cover.src}`;
+        console.log(coverImage)
       }
       return coverImage;
     },
     getBaseUrl() {
-      return process.env.GRIDSOME_BASE_URL;
+      return process.env.GRIDSOME_BASE_URL == undefined ? "http://www.danvega.dev" : process.env.GRIDSOME_BASE_URL;
     }
   },
   mounted() {

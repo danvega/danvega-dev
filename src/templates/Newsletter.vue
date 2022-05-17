@@ -63,7 +63,7 @@ export default {
   },
   computed: {
     getBaseUrl() {
-      return process.env.GRIDSOME_BASE_URL;
+      return process.env.GRIDSOME_BASE_URL == undefined ? "http://www.danvega.dev" : process.env.GRIDSOME_BASE_URL;
     }
   }
 };
