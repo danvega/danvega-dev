@@ -1,5 +1,6 @@
 ---
 title: GraphQL Spring Boot - Up and Running with Spring for GraphQL
+slug: spring-for-graphql
 date: "2022-05-17T16:00:00.000Z"
 published: true
 excerpt: In this tutorial you are going to learn how to get up and running with Spring for GraphQL.

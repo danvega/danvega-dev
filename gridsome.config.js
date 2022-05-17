@@ -73,7 +73,7 @@ module.exports = {
           date: node.date,
           custom_elements: [
             {
-              published: node.date.toString(),
+              published: node.date?.toString(),
             },
           ],
         }),

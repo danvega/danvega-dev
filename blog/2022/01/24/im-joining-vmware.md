@@ -1,5 +1,6 @@
 ---
 title: Im Joining VMware
+slug: im-joining-vmware
 date: "2022-01-24T08:00:00.000Z"
 published: true
 excerpt: I'm so excited to announce that I am joining VMware as a Spring Developer Advocate!
@@ -9,9 +10,9 @@ tags:
 cover: "./im-joining-vmware-cover.png"
 ---
 
-I am thrilled to announce that I have joined **VMWare** as a *Spring Developer Advocate*. I have so many emotions going through my head right now as I sit down to write this article. The ones that stand out the most to me are excited and proud.
+I am thrilled to announce that I have joined **VMWare** as a _Spring Developer Advocate_. I have so many emotions going through my head right now as I sit down to write this article. The ones that stand out the most to me are excited and proud.
 
-I’m excited for the opportunity that lies ahead and I know that this is just the start, there is a lot of work ahead. I’m proud of always believing in myself even when I had doubts if this was the career for me. I’m a  self-taught developer and over my 22+ years, the only person I have been trying to prove anything to was myself. A job should never define you or your worth but this is a dream job and you better believe I’m going to celebrate this one 🥳
+I’m excited for the opportunity that lies ahead and I know that this is just the start, there is a lot of work ahead. I’m proud of always believing in myself even when I had doubts if this was the career for me. I’m a self-taught developer and over my 22+ years, the only person I have been trying to prove anything to was myself. A job should never define you or your worth but this is a dream job and you better believe I’m going to celebrate this one 🥳
 
 ![1642029002280.jpeg](./1642029002280.jpeg)
 
@@ -46,7 +47,6 @@ It was in the opening night Keynote that I first heard about Spring Boot. Adrian
 A quote that stuck out to me then and stays true today:
 
 > “Spring Boot really puts the developer enjoyment back.”
->
 
 As I said before as a developer my experience with Spring wasn’t a great first impression. Spring could have a solution for every problem under the sun but if developers didn’t enjoy using it, it might not be as popular as it is today. While I was excited to hear about the work they were doing with Spring Boot it was still new and I was focused on working with Groovy and Grails.
 
@@ -137,7 +137,7 @@ I really enjoy mentoring and teaching so these are some of my fondest memories o
 
 ![mia-baker-ctRgcY-lY8I-unsplash.jpg](./mia-baker-ctRgcY-lY8I-unsplash.jpg)
 
-Now that you know a little bit of my history I want to take some time to tell you why this is a ***dream job*** for me. I have always had a passion for the art of Software Development. For as long as I can remember though what has brought me the most joy throughout my career is helping others.
+Now that you know a little bit of my history I want to take some time to tell you why this is a **_dream job_** for me. I have always had a passion for the art of Software Development. For as long as I can remember though what has brought me the most joy throughout my career is helping others.
 
 I come from a time when there was no StackOverflow or YouTube. I remember struggling with something and thinking to myself, someone else is having a hard time with this too so I am going to blog about it and hopefully save someone the stress of figuring this out.
 
@@ -184,3 +184,4 @@ There are so many people that I would like to thank for being there for me throu
 ## Conclusion
 
 If you can’t tell I am beyond excited about the opportunity that lies ahead of me. I’m going to find a good way for you to reach out and let me know what content you want me to create around Spring. Until I have something in place please feel free to reach out to me on [Twitter](http://twitter.com/therealdanvega).
+
