@@ -12,7 +12,7 @@ cover: "./spring-for-graphql-thumbnail.png"
 github: https://github.com/danvega/spring-books
 ---
 
-In this tutorial you are going to learn how to get up and running with [Spring for GraphQL](https://spring.io/projects/spring-graphql). At the time of this article being published Spring for GraphQL 1.0 hit GA. This is a huge milestone and the culmination of a really great collaboration between the Spring team and the [GraphQL Java](https://www.graphql-java.com/) team.
+In this tutorial you are going to learn how to get up and running with [Spring for GraphQL](https://spring.io/projects/spring-graphql). At the time of this article being published Spring for GraphQL 1.0 is close to being released. This is a huge milestone and the culmination of a really great collaboration between the Spring team and the [GraphQL Java](https://www.graphql-java.com/) team.
 
 Before you start writing code you should take some time to understand what GraphQL is and why you might reach for it in your next application. By the end of this tutorial you will have what you need to build your first GraphQL API using Spring for GraphQL.
 
