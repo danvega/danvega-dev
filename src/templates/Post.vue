@@ -64,6 +64,7 @@ query Post ($path: String!) {
     date
     updatedOn
     excerpt
+    keywords
     path
     tags {
       id
@@ -90,6 +91,7 @@ export default {
       title: this.$page.post.title,
       meta: [
         { name: "description", content: this.$page.post.excerpt },
+        { name: "keywords", content: this.$page.post?.keywords},
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:description", content: this.$page.post.excerpt },
         { name: "twitter:title", content: this.$page.post.title },

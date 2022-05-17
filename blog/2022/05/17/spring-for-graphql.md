@@ -10,6 +10,7 @@ tags:
   - graphql
 cover: "./spring-for-graphql-thumbnail.png"
 github: https://github.com/danvega/spring-books
+keywords: spring, graphql, spring boot, spring for graphql, graphql spring boot, graphql java, api, http, websock, rsocket
 ---
 
 In this tutorial you are going to learn how to get up and running with [Spring for GraphQL](https://spring.io/projects/spring-graphql). At the time of this article being published Spring for GraphQL 1.0 is close to being released. This is a huge milestone and the culmination of a really great collaboration between the Spring team and the [GraphQL Java](https://www.graphql-java.com/) team.
