@@ -9,6 +9,7 @@ tags:
   - spring
   - graphql
 cover: "./spring-for-graphql-thumbnail.png"
+video: https://www.youtube.com/embed/3PCNqXrU-2g
 github: https://github.com/danvega/spring-books
 keywords: spring, graphql, spring boot, spring for graphql, graphql spring boot, graphql java, api, http, websock, rsocket
 ---
