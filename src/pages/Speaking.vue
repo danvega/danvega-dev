@@ -19,6 +19,11 @@
         <td>Online</td>
       </tr>
       <tr>
+        <td>June 21, 2002</td>
+        <td><a href="https://www.meetup.com/cleveland-java/events/286289533/">Java Frameworks Panel Discussion</a></td>
+        <td>Cleveland, OH</td>
+      </tr>
+      <tr>
         <td>June 28 - 29, 2022</td>
         <td>
           <a href="https://tanzu.vmware.com/developer/springone-tour/2022/new-york/">
@@ -91,6 +96,12 @@
             SpringOne Tour
           </a>
         </td>
+        <td>Toronto, CA</td>
+      </tr>
+      <tr>
+        <td>June 6th, 2022</td>
+        <td><a href="https://www.meetup.com/toronto-spring-users-group/events/286270337">Level Up Your Integration
+            Testing With Testcontainers</a></td>
         <td>Toronto, CA</td>
       </tr>
       <tr>
