@@ -1,7 +1,7 @@
 ---
 title: Happy Memorial Day, Spring for GraphQL and Office Hours
 slug: happy-memorial-day
-date: "2022-05-31T010:00:00.000Z"
+date: "2022-05-31T07:30:00.000Z"
 ---
 
 Good morning friends. I hope everyone in the US had a happy Memorial day weekend. I want to thank every one of you who has served or is currently serving. Your dedication and bravery to this country are inspiring and we are lucky to have you protecting us.
