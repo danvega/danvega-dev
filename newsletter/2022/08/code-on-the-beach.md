@@ -93,6 +93,10 @@ There are 2 new recordings up of Spring Office Hours. This is our chance to talk
 
 `youtube:https://youtu.be/p4gC7M6fjMU`
 
+## KCDC
+
+I will be presenting at KCDC next week. If you're there please make sure to find me!
+
 ## Around the Web
 
 ### 📝 Articles
