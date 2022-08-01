@@ -26,7 +26,7 @@ I will start with my talk on Full-Stack Java Development with Spring Boot. I gav
 
 When I finally sat down and started to think about what I wanted to cover I quickly realized that this was going to be a whole new talk. I ended up putting this presentation together in about 4 days which is an improvement over the months it used to take me. I guess it does help when you get to devote your entire day to it and you don’t have to constantly context switch.
 
-What I really wanted to cover in this talk was the responsibilities of a full-stack developer and then talk about the particular stack that I am working with on the front and backend. This talk was recorded but I am not sure if it will be available to the general public or not. Either way, I will probably create another version of this for YouTube so stay on the lookout for that. If you want to check out the code and slides from my talk you can get them [here](https://www.notion.so/Florida-is-HOT-SpringOne-Workshop-and-Spring-Office-Hours-8b44c2358d4f4b20a51d8d19a5aa852f).
+What I really wanted to cover in this talk was the responsibilities of a full-stack developer and then talk about the particular stack that I am working with on the front and backend. This talk was recorded but I am not sure if it will be available to the general public or not. Either way, I will probably create another version of this for YouTube so stay on the lookout for that. If you want to check out the code and slides from my talk you can get them [here](https://github.com/danvega/full-stack-java-spring).
 
 ### Code on the Beach Sessions
 
