@@ -11,6 +11,7 @@ tags:
 cover: "./spring-security-jwt-cover.jpeg"
 keywords: spring, spring boot, spring security, java
 github: https://github.com/danvega/jwt
+video: https://www.youtube.com/embed/KYNR5js2cXE
 ---
 
 If you perform a quick search on how to secure REST APIs in Spring Boot using JSON Web Tokens you will find a lot of the same results. These results contain a method that involves writing a custom filter chain and pulling in a 3rd party library for encoding and decoding JWTs.
