@@ -28,16 +28,12 @@ You will find the video below but I also [created a blog post](https://www.danve
 
 ## Upcoming Talks
 
-- [Sept 22nd - Spring Recipes: A collection of common sense solutions](https://www.brighttalk.com/topic/vmware/)
+- [Sept 22nd - Spring Recipes: A collection of common sense solutions](https://tanzu.vmware.com/content/webinars/sep-22-spring-recipes-a-collection-of-common-sense-solutions)
 In this session, you will learn about common situations you will encounter as a developer and how Spring can make the right thing to do the easy thing to do. Cutting through the cruft, you will leave armed with practical code examples you can use on your projects.
 - Oct 5th: Creating GraphQL APIs in Java
 I am giving a lunch and learn to over 100 developers for an awesome Fortune 500 company. In this talk I am going to introduce them to GraphQL and how they can start using it today in their Java / Spring applications.
 - [Dec 6th - 8th: SpringOne Workshop](https://springone.io/2022/workshops/spring-boot)
 In this workshop we are going to introduce you to Spring Boot. If you’re new to Spring and what to learn what types of applications you can build and how to get started this is the workshop for you. By the end of this session you will be able to build your first Spring Boot application.
-
-Spring Boot makes it easy to create production-grade, Spring-based Applications that you can “just run.” We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss.
-
-Most Spring Boot applications need minimal Spring configuration. In this 120-minute workshop, you’ll get a quick introduction to key Spring Boot concepts, and learn how to quickly build a working Spring Boot application.
 
 If you would like me to speak at your conference, meetup group or company wide meeting please feel free to reach out to me.
 
