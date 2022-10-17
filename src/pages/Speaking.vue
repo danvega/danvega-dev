@@ -13,64 +13,7 @@
         <th>Location</th>
       </tr>
       <tr>
-        <td>June 21, 2022</td>
-        <td><a href="https://tanzu.vmware.com/content/webinars/jun-introduction-to-spring-for-graphql">Introduction to
-            GraphQL</a></td>
-        <td>Online</td>
-      </tr>
-      <tr>
-        <td>June 21, 2002</td>
-        <td><a href="https://www.meetup.com/cleveland-java/events/286289533/">Java Frameworks Panel Discussion</a></td>
-        <td>Cleveland, OH</td>
-      </tr>
-      <tr>
-        <td>June 28 - 29, 2022</td>
-        <td>
-          <a href="https://tanzu.vmware.com/developer/springone-tour/2022/new-york/">
-            SpringOne Tour
-          </a>
-        </td>
-        <td>New York, NY</td>
-      </tr>
-      <tr>
-        <td>July 12 - 13, 2022</td>
-        <td>
-          <a href="https://tanzu.vmware.com/developer/springone-tour/2022/seattle/">
-            SpringOne Tour
-          </a>
-        </td>
-        <td>Seattle, WA</td>
-      </tr>
-      <tr>
-        <td>July 25 - 27, 2022</td>
-        <td><a href="https://www.codeonthebeach.com/">Code On The Beach</a></td>
-        <td>Atlantic Beach, FL</td>
-      </tr>
-      <tr>
-        <td>August 08 - 10, 2022</td>
-        <td><a href="https://www.kcdc.info/">Kansas City Developer Conference (KCDC)</a></td>
-        <td>Kansas City, KS</td>
-      </tr>
-      <tr>
-        <td>October 04 - 05, 2022</td>
-        <td>
-          <a href="https://tanzu.vmware.com/developer/springone-tour/2022/atlanta/">
-            SpringOne Tour
-          </a>
-        </td>
-        <td>Atlanta, GA</td>
-      </tr>
-      <tr>
-        <td>October 11 - 12, 2022</td>
-        <td>
-          <a href="https://tanzu.vmware.com/developer/springone-tour/2022/amsterdam/">
-            SpringOne Tour
-          </a>
-        </td>
-        <td>Amsterdam, Netherlands</td>
-      </tr>
-      <tr>
-        <td>December 03 - 10, 2022</td>
+        <td>December 06 - 8, 2022</td>
         <td><a href="https://springone.io/">SpringOne</a></td>
         <td>San Francisco, CA</td>
       </tr>
@@ -83,6 +26,43 @@
         <th>Date</th>
         <th>Event</th>
         <th>Location</th>
+      </tr>
+      <tr>
+        <td>September 22, 2022</td>
+        <td><a
+            href="https://tanzu.vmware.com/content/webinars/sep-22-spring-recipes-a-collection-of-common-sense-solutions">BrightTalk
+            Webinar: Spring Recipes</a></td>
+        <td>Online</td>
+      </tr>
+      <tr>
+        <td>August 08 - 10, 2022</td>
+        <td><a href="https://www.kcdc.info/">Kansas City Developer Conference (KCDC)</a></td>
+        <td>Kansas City, KS</td>
+      </tr>
+      <tr>
+        <td>July 25 - 27, 2022</td>
+        <td><a href="https://www.codeonthebeach.com/">Code On The Beach</a></td>
+        <td>Atlantic Beach, FL</td>
+      </tr>
+      <tr>
+        <td>June 21, 2022</td>
+        <td><a href="https://tanzu.vmware.com/content/webinars/jun-introduction-to-spring-for-graphql">Introduction to
+            GraphQL</a></td>
+        <td>Online</td>
+      </tr>
+      <tr>
+        <td>June 21, 2002</td>
+        <td><a href="https://www.meetup.com/cleveland-java/events/286289533/">Java Frameworks Panel Discussion</a></td>
+        <td>Cleveland, OH</td>
+      </tr>
+      <tr>
+        <td>July 12 - 13, 2022</td>
+        <td>
+          <a href="https://tanzu.vmware.com/developer/springone-tour/2022/seattle/">
+            SpringOne Tour
+          </a>
+        </td>
+        <td>Seattle, WA</td>
       </tr>
       <tr>
         <td>June 8 - 10, 2022</td>

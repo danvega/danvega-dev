@@ -1,14 +1,14 @@
 ---
-title: Spring Boot JWT: How to Secure your REST APIs with Spring Security and Json Web Tokens
+title: Spring Boot JWT - How to Secure your REST APIs with Spring Security and Json Web Tokens
 slug: spring-security-jwt
 date: "2022-09-06T16:00:00.000Z"
 published: true
-excerpt: "In this tutorial, you will learn how to secure REST APIs with Spring Security and Json Web Tokens.
+excerpt: In this tutorial, you will learn how to secure REST APIs with Spring Security and Json Web Tokens.
 author: Dan Vega
 tags:
   - spring
   - spring-security
-cover: "./spring-security-jwt-cover.jpeg"
+cover: ./spring-security-jwt-cover.jpeg
 keywords: spring, spring boot, spring security, java
 github: https://github.com/danvega/jwt
 video: https://www.youtube.com/embed/KYNR5js2cXE
