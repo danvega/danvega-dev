@@ -27,7 +27,7 @@
 
 <page-query>
 query Newsletter {
-  issues: allNewsletter(limit:10) {
+  issues: allNewsletter(limit:5) {
     edges {
       node {
         id
@@ -64,13 +64,16 @@ section {
   padding: 20px 0;
   margin: auto;
 }
+
 .formkit-form[data-uid="2245659c84"] {
   margin: auto;
 }
+
 #newsletter-list {
   list-style: none;
-  padding:0px;
+  padding: 0px;
 }
+
 #newsletter-list li {
   border-bottom: 1px solid #eee;
   margin-bottom: 30px;
