@@ -1,0 +1,28 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+concurrency:
+  group: main
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'npm'
+      - name: Install netlify
+        run: npm i -g netlify-cli
+      - name: Install JS dependencies
+        run: npm install
+      - name: Build
+        run: npm build
+      - name: Deploy to netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: netlify deploy --prod
