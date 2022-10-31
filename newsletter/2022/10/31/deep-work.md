@@ -4,7 +4,7 @@ slug: deep-work
 date: "2022-10-31T17:00:00.000Z"
 ---
 
-Happy Monday and welcome to another edition of my newsletter. Happy Monday and welcome to another edition of my newsletter. I want to wish all of you a very happy and spooky Halloween 🎃 If you’re enjoying this newsletter and wouldn’t mind [sharing](https://www.danvega.dev/newsletter/) it with a friend that would mean the world to me. In today’s episode, I want to talk about some books I’m currently reading, YouTube, and Spring Office Hours. I will also give you a little bit of a peek into what I am working on this week.
+Happy Monday and welcome to another edition of my newsletter. I want to wish all of you a very happy and spooky Halloween 🎃 If you’re enjoying this newsletter and wouldn’t mind [sharing](https://www.danvega.dev/newsletter/) it with a friend that would mean the world to me. In today’s episode, I want to talk about some books I’m currently reading, YouTube, and Spring Office Hours. I will also give you a little bit of a peek into what I am working on this week.
 
 ## Current Status
 
