@@ -34,7 +34,7 @@ export default {
         { name: "twitter:site", content: "@therealdanvega" },
         {
           name: "twitter:image",
-          content: "https://unsplash.com/photos/ZMraoOybTLQ"
+          content: "http://www.danvega.dev/images/danvega_dev_cover.png",
         },
         { name: "twitter:creator", content: "@therealdanvega" },
         { property: "og:type", content: "article" },
@@ -51,11 +51,11 @@ export default {
         { property: "og:updated_time", content: this.$page.newsletter.date },
         {
           property: "og:image",
-          content: "https://unsplash.com/photos/ZMraoOybTLQ"
+          content: "http://www.danvega.dev/images/danvega_dev_cover.png"
         },
         {
           property: "og:image:secure_url",
-          content: "https://unsplash.com/photos/ZMraoOybTLQ"
+          content: "http://www.danvega.dev/images/danvega_dev_cover.png"
         }
       ],
       script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
@@ -73,21 +73,25 @@ export default {
 h1 {
   margin-bottom: 0;
 }
+
 .newsletter img {
   max-width: 100%;
 }
+
 .shiki-inline {
   background: var(--shiki-inline-background) !important;
   padding: 2px;
   color: var(--shiki-inline-color) !important;
   font-size: 1.1rem;
 }
+
 code {
   font-family: hack, sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 100%;
 }
+
 .shiki {
   padding: 1rem;
 }
