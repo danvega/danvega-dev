@@ -1,5 +1,5 @@
 ---
-title: Happy Holidays, Spring Workshop and new content
+title: Happy Holidays, Spring Workshop, and new content
 slug: happy-holidays
 date: "2022-12-19T19:00:00.000Z"
 ---
@@ -12,9 +12,9 @@ I am working a few days this week and then I am out until the new year. During t
 
 ## Getting Started with Spring Workshop
 
-I’m currently working on a workshop that I will be delivering the 2nd week of January at CodeMash. I have talked about this before but this will be a 4 hour workshop which I think is the longest live presentation I have ever given. I have created a few 12-14 hour courses but those are totally different animals. DaShaun and I had another [Spring Office Hours](https://youtu.be/Rx-qq3likgM) last week where we discussed our plans for the workshop.
+I’m currently working on a workshop that I will be delivering the 2nd week of January at CodeMash. I have talked about this before but this will be a 4-hour workshop which I think is the longest live presentation I have ever given. I have created a few 12-14 hour courses but those are totally different animals. DaShaun and I had another [Spring Office Hours](https://youtu.be/Rx-qq3likgM) last week where we discussed our plans for the workshop.
 
-In this episode, we had a chance to talk about the application we are going to build in the workshop which is called Runnerz. We both love to run and needed a domain to speak on so we figured this would be perfect. We had a chance to discuss what part of the domain model we would cover without getting too far into it and off topic.
+In this episode, we had a chance to talk about the application we are going to build in the workshop which is called Runnerz. We both love to run and needed a domain to speak on so we figured this would be perfect. We had a chance to discuss what part of the domain model we would cover without getting too far into it and off-topic.
 
 I also had a chance to really start diving into each of the sections that I am going to deliver and come up with a plan. The first section I went through was the core fundamentals and features of Spring & Spring Boot. I want to keep this section around an hour long so I had to be selective with what I wanted to teach and this is what I settled on:
 
@@ -33,7 +33,7 @@ I have a video on [Dependency Injection](https://youtu.be/aX-bgylmprA) that come
 
 ## Presentations in 2023
 
-I have spent a lot of time lately identifying what conferences, meetups, or anyone that will have me present next year. This involved going through past conferences as well as asking my friends on the bird app for some resources on upcoming conferences. I have also spent a lot of time working on abstracts of topics that I am in interested in focusing on next year.
+I have spent a lot of time lately identifying what conferences, meetups, or anyone that will have me present next year. This involved going through past conferences as well as asking my friends on the bird app for some resources on upcoming conferences. I have also spent a lot of time working on abstracts of topics that I am interested in focusing on next year.
 
 I’m happy to announce that some of that hard work has already paid off I have been accepted to speak at Devnexus in Atlanta. I will be presenting with my friend Nate Schutta on [Spring Recipes - A collection of common sense solutions](https://devnexus.com/presentations/spring-recipes-a-collection-of-common-sense-solutions). We gave this talk to KCDC last year but we are working on a major update so even if you had a chance to see this talk please consider checking it out as it will be different.
 
