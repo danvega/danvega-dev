@@ -13,9 +13,29 @@
         <th>Location</th>
       </tr>
       <tr>
-        <td>December 06 - 8, 2022</td>
-        <td><a href="https://springone.io/">SpringOne</a></td>
+        <td>January 10 - 13, 2023</td>
+        <td><a href="https://www.codemash.org/">CodeMash</a></td>
+        <td>Sandusky, OH</td>
+      </tr>
+      <tr>
+        <td>January 17, 2023</td>
+        <td>What's new in Spring Boot 3</td>
+        <td>Virtual</td>
+      </tr>
+      <tr>
+        <td>January 17, 2023</td>
+        <td><a href="https://www.meetup.com/cleveland-java/">Cleveland Java User Group (CJUG)</a></td>
+        <td>Cleveland, OH</td>
+      </tr>
+      <tr>
+        <td>January 24-26, 2023</td>
+        <td><a href="https://springone.io/">SpringOne Essentials Tour Stop</a></td>
         <td>San Francisco, CA</td>
+      </tr>
+      <tr>
+        <td>April 4-6, 2023</td>
+        <td><a href="https://springone.io/">DevNexus</a></td>
+        <td>Atlanta, GA</td>
       </tr>
     </table>
 
