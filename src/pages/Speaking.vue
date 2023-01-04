@@ -29,12 +29,13 @@
       </tr>
       <tr>
         <td>January 24-26, 2023</td>
-        <td><a href="https://springone.io/">SpringOne Essentials Tour Stop</a></td>
+        <td><a href="https://connect.tanzu.vmware.com/SpringOne-Essentials-Watch-Parties-2022">SpringOne Essentials
+            Watch Party</a></td>
         <td>San Francisco, CA</td>
       </tr>
       <tr>
         <td>April 4-6, 2023</td>
-        <td><a href="https://springone.io/">DevNexus</a></td>
+        <td><a href="https://devnexus.com/">DevNexus</a></td>
         <td>Atlanta, GA</td>
       </tr>
     </table>
