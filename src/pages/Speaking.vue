@@ -19,11 +19,6 @@
       </tr>
       <tr>
         <td>January 17, 2023</td>
-        <td>What's new in Spring Boot 3</td>
-        <td>Virtual</td>
-      </tr>
-      <tr>
-        <td>January 17, 2023</td>
         <td><a href="https://www.meetup.com/cleveland-java/">Cleveland Java User Group (CJUG)</a></td>
         <td>Cleveland, OH</td>
       </tr>
@@ -47,6 +42,18 @@
         <th>Date</th>
         <th>Event</th>
         <th>Location</th>
+      </tr>
+      <tr>
+        <td>January 11, 2022</td>
+        <td><a href="https://www.codemash.org/session-details/?id=380331">CodeMash: Getting Started with Spring
+            Workshop</a></td>
+        <td>Sandusky, OH</td>
+      </tr>
+      <tr>
+        <td>January 12, 2022</td>
+        <td><a href="https://www.codemash.org/session-details/?id=380324">CodeMash: Give your APIs a REST & Make the
+            move to GraphQL</a></td>
+        <td>Sandusky, OH</td>
       </tr>
       <tr>
         <td>September 22, 2022</td>
