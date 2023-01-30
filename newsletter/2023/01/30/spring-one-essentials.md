@@ -1,5 +1,5 @@
 ---
-title: SpringOne Essentials
+title: SpringOne Essentials, Jakarta EE 10, and Upcoming Content
 slug: spring-one-essentials
 date: "2023-01-30T08:30:00.000Z"
 ---
