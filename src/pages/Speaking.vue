@@ -13,20 +13,10 @@
         <th>Location</th>
       </tr>
       <tr>
-        <td>January 10 - 13, 2023</td>
-        <td><a href="https://www.codemash.org/">CodeMash</a></td>
-        <td>Sandusky, OH</td>
-      </tr>
-      <tr>
-        <td>January 17, 2023</td>
-        <td><a href="https://www.meetup.com/cleveland-java/">Cleveland Java User Group (CJUG)</a></td>
-        <td>Cleveland, OH</td>
-      </tr>
-      <tr>
-        <td>January 24-26, 2023</td>
-        <td><a href="https://connect.tanzu.vmware.com/SpringOne-Essentials-Watch-Parties-2022">SpringOne Essentials
-            Watch Party</a></td>
-        <td>San Francisco, CA</td>
+        <td>February 7, 2023</td>
+        <td><a href="https://tanzu.vmware.com/content/webinars/feb-7-whats-new-with-spring-6-and-boot-3">What's new in
+            Spring Boot 3</a></td>
+        <td>Online</td>
       </tr>
       <tr>
         <td>April 4-6, 2023</td>
@@ -42,6 +32,17 @@
         <th>Date</th>
         <th>Event</th>
         <th>Location</th>
+      </tr>
+      <tr>
+        <td>January 24-26, 2023</td>
+        <td><a href="https://connect.tanzu.vmware.com/SpringOne-Essentials-Watch-Parties-2022">SpringOne Essentials
+            Watch Party</a></td>
+        <td>San Francisco, CA</td>
+      </tr>
+      <tr>
+        <td>January 17, 2023</td>
+        <td><a href="https://www.meetup.com/cleveland-java/">Cleveland Java User Group (CJUG)</a></td>
+        <td>Cleveland, OH</td>
       </tr>
       <tr>
         <td>January 11, 2022</td>
