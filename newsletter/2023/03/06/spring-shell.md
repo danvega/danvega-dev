@@ -56,8 +56,6 @@ I enjoyed reading this article by Mark Thomas on [Web Applications and Project L
 
 I enjoyed listening to two podcasts from a recent episode of the Bootiful Podcast. Josh has started live-streaming the recording of the podcast, which I think is a wonderful addition. In the latest episode, Josh interviewed [Glenn Renfro](https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to) and [Oleg Zhurakousky](https://spring.io/blog/2023/03/02/a-bootiful-podcast-spring-cloud-stream-and-spring-cloud-function-lead-oleg), two amazing members of the Spring Team.
 
-[https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to](https://spring.io/blog/2023/02/23/a-bootiful-podcast-its-glenn-renfro-listen-to-this-episode-if-you-want-to)
-
 ### 🎬 Videos
 
 I really enjoyed this video on [How to Best Use Java Records as DTOs in Spring Boot 3](https://www.youtube.com/watch?v=uy6iN0d6J8E) from Yugabyte. I don’t think I ever knew that you could use a Query and cast the result to a class so I learned something new this weekend!
