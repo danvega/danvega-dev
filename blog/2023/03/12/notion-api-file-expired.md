@@ -8,7 +8,7 @@ author: Dan Vega
 tags:
   - javascript
   - notion
-cover: ./api-blog-home.png
+cover: ./notion-cover-image.png
 keywords: Notion, Notion API
 ---
 
