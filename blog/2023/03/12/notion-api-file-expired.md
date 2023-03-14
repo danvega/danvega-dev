@@ -2,6 +2,7 @@
 title: Notion API File Request has expired
 slug: notion-api-file-expired
 date: "2023-03-12T14:30:00.000Z"
+updatedOn: "2023-03-14T14:30:00.000Z"
 published: true
 excerpt:
 author: Dan Vega
@@ -112,7 +113,14 @@ I tried writing the download image function using Nuxt’s `$fetch` but I didn�
 
 [https://twitter.com/therealdanvega/status/1634977252931960832](https://twitter.com/therealdanvega/status/1634977252931960832)
 
+## Images Expiring Update
+
+I realized that after I deployed a test version of my Wife's new blog she was having the same problem on all of her post pages. This is because she was using her own images that she uploaded to Notion while I was using Unsplash Images on the AI Blog.
+
+This now presents the same problem in each of her posts. I can use the same technique to download each of the images and save them to the `public` directory. I'm not sure I want to do this for every single image and I sure don't want to do this all at build time. My current thought process is that I might look to see if this image exists first and if it doesn't then I will save it. This of course presents a problem if there is a newer version of the same file but I don't think I am going to run into that problem right now.
+
+I’m also interested in using the [Nuxt Image](https://image.nuxtjs.org/) module which would allow me to use a single image and translate it to different versions for different screen sizes. The Nuxt Image module has many different options when it comes to providers but this is something I haven’t done before. My next question is how do I take these images and programmatically push them to one of these providers? My small task of using Notion as a CMS has quickly created some interesting problems.
+
 ## Conclusion
 
 I’m having a lot of fun writing a blog that uses Notion as the CMS. It certainly hasn’t been easy but I am learning a lot and that always makes me happy. If you’re interested in the code for the AI Blog you can check it out [here](https://github.com/danvega/ai-blog).
-
