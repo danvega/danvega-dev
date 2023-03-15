@@ -3,7 +3,7 @@ slug: spring-component-vs-bean
 title: "Spring Beans @Component vs @Bean"
 published: true
 date: 2017-05-17T09:00:06-04:00
-updatedOn: 2023-04-15T12:00:00-04:00
+updatedOn: 2023-03-15T12:00:00-04:00
 tags: ["spring", "spring boot"]
 excerpt: "Spring Beans @Component vs @Bean"
 cover: "./bean-vs-component.png"
