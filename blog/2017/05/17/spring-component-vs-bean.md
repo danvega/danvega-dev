@@ -3,90 +3,157 @@ slug: spring-component-vs-bean
 title: "Spring Beans @Component vs @Bean"
 published: true
 date: 2017-05-17T09:00:06-04:00
-tags: ['spring']
+updatedOn: 2023-04-15T12:00:00-04:00
+tags: ["spring", "spring boot"]
 excerpt: "Spring Beans @Component vs @Bean"
-cover: './pexels-photo-89898-760x507.jpeg'
+cover: "./bean-vs-component.png"
+keywords: Spring Framework, Spring Boot, Spring Beans, @Component, @Bean
 ---
 
-I received a question from a student in my [Spring Boot Introduction course](https://danvega.dev/spring-boot) that I would like to share with you. 
+In this article, you will learn what a Spring Bean is and what the annotations `@Bean` vs `@Component` are used for, and how to use them. Before we dive into how each of these annotations is used it’s important to understand what a Spring Bean is. If you haven’t had a chance to check out my [Spring Boot Crash Course](https://www.danvega.dev/blog/2023/03/09/spring-boot-crash-course/) I cover this topic in more!
 
-> Dan uses @Service annotation for the NotificationService to add it to the application context yet the User class doesn't need any annotation to be added to the class itself.  He just used the @Bean annotation in the SpringBeansApplication class for it to be added to the application context.  Why is that? 
+## What is a Spring Bean? The Spring Framework
 
-This is actually something that a lot of people are confused by. In this article, we will look at the difference between @Component (Spring Stereotype Annotations) and @Bean.
+The Spring Framework was built on the principles of Inversion of Control (IoC) and Dependency Injection (DI). When your code depends on another class to function, that class is considered a dependency. Instead of creating an instance of the class yourself, you delegate that responsibility to the framework, creating an inverse of responsibility. This pattern emphasizes loose coupling between components, allowing for more modular and flexible code.
 
-## What are Spring Stereotype Annotations?
+A Spring Bean is an object that is managed by the Spring IoC container, along with some metadata. The data that describes the bean has the following properties: The data that describes a Spring Bean has the following properties:
 
-Before we get into the differences between @Bean and @Component I think it's important that we understand what @Component is. I could break this down for you here but luckily for me, I already wrote up a nice long post on what Spring Stereotype Annotations are and how to use them. Please read this article first and then come back and we will break this down. 
+- **Class**: the class of the bean
+- **Name**: the name of the bean
+- **Scope**: the scope of the bean (e.g. singleton or prototype)
+- **Constructor arguments**: any arguments that need to be passed to the constructor when creating the bean
+- **Properties**: any properties that need to be set on the bean after it is created
+- **Initialization method**: The `InitializingBean`interface lets a bean perform initialization work after the container has set all necessary properties on the bean.
+- **Destruction method**: Implementing the `DisposableBean` interface lets a bean get a callback when the container that contains it is destroyed.
 
-https://danvega.dev/blog/2017/03/27/spring-stereotype-annotations
+Beans are the building blocks of a Spring application, as they provide the necessary components and services that other parts of the application can use. Examples of beans might include a database connection pool, a service layer that handles business logic, or a controller that maps incoming requests to the appropriate handler method.
 
-I hope you enjoyed that article and I hope you have a better understanding of the different annotations. 
+If you would like to learn more about Spring Beans, we suggest reading the [reference documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-definition) after finishing this article.
 
-## @Component
+## Configuring Spring Beans
 
-If we mark a class with @Component or one of the other Stereotype annotations these classes will be auto-detected using classpath scanning. As long as these classes are in under our base package or Spring is aware of another package to scan, a new bean will be created for each of these classes. 
+Now that you understand what beans are, you need to be able to create and configure them in your applications. As we learn what we should do, it's important to start with what we shouldn't do. In the following example, the post controller depends on the post repository to function. Whenever you see the `new` keyword, it should raise alarm bells in your head that something may be wrong.
 
 ```java
-package com.therealdanvega.controller;
+@RestController
+@RequestMapping("/api/posts")
+public class PostController {
 
-import org.springframework.stereotype.Controller;
+    private PostRepository postRepository;
 
-@Controller
-public class HomeController {
-
-    public String home(){
-        return "Hello, World!";
+    public PostController() {
+        this.postRepository = new PostRepository();
     }
 
 }
 ```
 
-There's an implicit one-to-one mapping between the annotated class and the bean (i.e. one bean per class). Control of wiring is quite limited with this approach since it's purely declarative.  _It is also important to note that the stereotype annotations are class level annotations. _
+While the code above may work for a simple use case, it is not a best practice and does not scale well. A big issue you will run into is when you write tests against your controller class. If you try to isolate the controller class, you will also bring along the post repository with it. If that repository is talking to a database, you will have inadvertently written a full-blown integration test instead of a unit test with a mock of the repository.
 
-## @Bean
+There are several ways to define and configure beans in a Spring application. One approach that was used in the past was to use XML configuration files, which specify the beans, their dependencies, and any associated properties. Another approach is to use Java configuration classes, which use annotations to define the beans and their dependencies. Finally, there are also annotations like `@Component` and `@Bean`that can be used to define beans directly within Java code.
 
-@Bean is used to explicitly declare a single bean, rather than letting Spring do it automatically like we did with @Controller. It decouples the declaration of the bean from the class definition and lets you create and configure beans exactly how you choose. With @Bean you **aren't** placing this annotation at the class level. If you tried to do that you would get an invalid type error. [The @Bean documentation](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/annotation/Bean.html) defines it as:
+### @Component Annotation
 
-> Indicates that a method produces a bean to be managed by the Spring container.
-
-Typically,  `@Bean`  methods are declared within  `@Configuration`  classes. In this example, we have a user class that we needed to instantiate and then create a bean using that instance. This is where I said earlier that we have a little more control over how the bean is defined. 
+The @Component annotation is a class-level annotation. If you mark a class with `@Component` or any of the stereotype annotations (more on that below) the class will be auto-detected using classpath scanning.
 
 ```java
-package com.therealdanvega;
+@Component
+public class PostService {
 
-public class User {
+}
+```
 
-    private String first;
-    private String last;
+Spring will now create an instance of the post service, which is a singleton by default, and make it available through the application context. If you need an instance of that class, you can obtain it through dependency injection.
 
-    public User(String first, String last) {
-        this.first = first;
-        this.last = last;
+```java
+@RestController
+@RequestMapping("/api/posts")
+public class PostController {
+
+    private final PostService postService;
+
+    public PostController(PostService postService) {
+        this.postService = postService;
     }
 }
 ```
 
+This approach becomes particularly valuable when dealing with large dependency graphs that would otherwise be difficult to manage manually. For instance, consider the case where `PostService` has a dependency on `PostRepository`. With Spring, you no longer have to worry about manually managing this dependency: as Spring creates an instance of the `PostService`, it can see that it requires a `PostRepository`, create an instance of that class, and provide it to the constructor automatically.
+
 ```java
-package com.therealdanvega;
+@Component
+public class PostService {
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+    private final PostRepository postRepository;
 
+    public PostService(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
+}
+```
+
+There are specialized stereotype annotations that you can use that at the end of the day are also marked with the @Component annotation
+
+- @Controller
+- @RestController
+- @Service
+- @Repository
+
+This means that you can update your `PostService` to use the service annotation and it will continue to work as expected.
+
+```java
+import org.springframework.stereotype.Service;
+
+@Service
+public class PostService {
+
+    private final PostRepository postRepository;
+
+    public PostService(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
+}
+```
+
+### @Bean Annotation
+
+While the `@Component` is convenient and works it is a class-level annotation. What happens if you need to create a bean from a method call? The `@Bean` annotation is used to declare a bean in Spring. When applied to a method, this annotation specifies that the method returns a bean that should be managed by the Spring container. `@Bean` methods are usually declared within `@Configuration` classes.
+
+In the following example, you are creating an instance of a `RestTemplate`. There are two options: create a new instance in each class where it is needed, or create a single instance of the class and ask for that instance wherever it is needed in the app. The latter option can be achieved by having Spring manage the `RestTemplate` instance for you.
+
+```java
 @Configuration
-public class ApplicationConfig {
+public class WebConfig {
 
     @Bean
-    public User superUser() {
-        return new User("Dan","Vega");
+    public RestTemplate restTemplate() {
+        return new RestTemplateBuilder().build();
     }
 
 }
 ```
 
-The name of the method is actually going to be the name of our bean. If we pull up the /beans endpoint in the actuator we can see the bean defined. 
+If you forget to mark the class with `@Configuration` the bean will not be added to the application context. You might also see bean definitions in the main application class. In the following example, we are creating an instance of a command line runner. This is possible because the `@SpringBootApplication` annotation itself is annotated with `@Configuration`.
 
-![Results](./2017-05-17_08-30-18.png)
+```java
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+
+	@Bean
+	CommandLineRunner commandLineRunner() {
+		return args -> {
+			System.out.println("Hello 👋🏻");
+		};
+	}
+
+}
+```
 
 ## Conclusion
 
-I hope that cleared up some things on when to use @Component and when to use @Bean. It can be a little confusing but as you start to write more applications it will become pretty natural.
+I hope that cleared up some things on when to use the `@Component` and `@Bean` annotations in Spring. We covered what a Spring Bean is, how to configure them, and why it's important to use dependency injection instead of creating instances of classes manually.
+
