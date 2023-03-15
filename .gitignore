@@ -9,6 +9,7 @@ dist
 .env
 blog/410.txt
 .vscode/
+.idea/
 
 # Local Netlify folder
 .netlify
