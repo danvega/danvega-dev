@@ -10,8 +10,6 @@ cover: "./spring-boot-command-line-runner-thumbnail.png"
 video: https://www.youtube.com/embed/gBN8x4yN5Ks
 ---
 
-<div class="callout">💡 The video tutorial for this blog post can be found above or you can <a href="https://youtu.be/gBN8x4yN5Ks">click here</a> to watch it on YouTube.</div>
-
 A student asked me the other day what a Command Line Runner was and when can we use one. If you watch demos of Spring Boot features or applications you have probably seen this and said to yourself "What the heck is that?". If you take a look a look at the API Documentation for Command Line Runner you will get this elegant explanation.
 
 > Interface used to indicate that a bean should _run_ when it is contained within a SpringApplication. Multiple CommandLineRunner beans can be defined within the same application context and can be ordered using the Ordered interface or @Order annotation.

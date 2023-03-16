@@ -10,8 +10,6 @@ cover: "./pexels-photo-374899-760x506.jpeg"
 video: https://www.youtube.com/embed/rGdKmF2UzSc
 ---
 
-<div class="callout">💡 The video tutorial for this blog post can be found above or you can <a href="https://youtu.be/rGdKmF2UzSc">click here</a> to watch it on YouTube.</div>
-
 In this tutorial, we are taking a look at a student's question from my [Spring Boot Introduction Course](/courses). If you have a question you would like me to answer please feel free to reach out and ask me. The question I am answering today is:
 
 > How can I read in a JSON file in Spring Boot and save the records to a database?
