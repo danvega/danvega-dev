@@ -63,7 +63,7 @@ public class PostService {
 }
 ```
 
-Spring will now create an instance of the post service, which is a singleton by default, and make it available through the application context. If you need an instance of that class, you can obtain it through dependency injection.
+Spring will now create an instance of the post service, which is a singleton by default, and make it available through the application context. If you need an instance of that class, you can obtain it through [dependency injection](https://tanzu.vmware.com/developer/guides/dependency-injection/).
 
 ```java
 @RestController
@@ -152,6 +152,14 @@ public class Application {
 
 }
 ```
+
+## Resources
+
+- [Spring Boot Crash Course](https://www.danvega.dev/blog/2023/03/09/spring-boot-crash-course/)
+- [Spring Beans - Reference Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-definition)
+- [Spring Dependency Injection - Tanzu Dev Center Article](https://tanzu.vmware.com/developer/guides/dependency-injection/)
+- [Spring Dependency Injection - YouTube Tutorial](https://youtu.be/TBlB2_4_Sqo)
+- [Spring Constructor Injection - YouTube Tutorial](https://youtu.be/aX-bgylmprA)
 
 ## Conclusion
 
