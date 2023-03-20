@@ -9,38 +9,8 @@
       recieve my weekly newsletter every Monday morning.
     </p>
     <section id="signup"></section>
-    <section>
-      <h2>Archives</h2>
-      <p>
-        If you want a taste of what you will get here are my most recent
-        newseltters
-      </p>
-      <ul id="newsletter-list">
-        <li v-for="issue in $page.issues.edges" :key="issue.node.id">
-          <small>{{ issue.node.date }}</small> -
-          <g-link :to="issue.node.path">{{ issue.node.title }}</g-link>
-        </li>
-      </ul>
-    </section>
   </Layout>
 </template>
-
-<page-query>
-query Newsletter {
-  issues: allNewsletter(limit:5) {
-    edges {
-      node {
-        id
-        title
-        issue
-        date(format:"MM/DD/YYYY")
-        timeToRead
-        path
-      }
-    }
-  }
-}
-</page-query>
 
 <script>
 import Convertkit from "@/components/ConvertKit";
