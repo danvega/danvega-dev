@@ -8,7 +8,7 @@ author: Dan Vega
 tags:
   - GraphQL
   - Spring Boot
-cover: ./graphql-mutations-thumbnail.jpeg
+cover: ./graphql-mutations.png
 video: https://www.youtube.com/embed/u3FFRq3-0CM
 keywords: Spring Security, Spring Security Configuration, Spring Security Lambda DSL
 ---
