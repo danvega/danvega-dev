@@ -1,7 +1,7 @@
 ---
 title: Spring Boot Configuration proxy bean methods
 slug: spring-proxy-bean-methods
-date: "2023-03-16T10:00:00.000Z"
+date: "2022-12-19T10:00:00.000Z"
 published: true
 excerpt:
 author: Dan Vega
