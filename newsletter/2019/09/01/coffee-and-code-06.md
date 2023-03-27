@@ -8,13 +8,7 @@ Welcome to Coffee and Code with me, Dan Vega. This newsletter is a little insigh
 
 ## Previous Week
 
-This week was a busy week for me. I published a new blog article, a tutorial on YouTube, started my community on Discord and launched a back to school promotion for all of my courses on Udemy.
-
-### Blog
-
-This week I did something that I have been thinking about doing for a while now, start a Discord community. I [published an article](https://www.danvega.dev/blog/2019/08/27/join-my-discord-community) this week that gives you a quick introduction to Discord, why I chose it as a platform and some details on how to [join my community](https://discord.gg/gx4Z8XY).
-
-![Join my Discord Community](./join-my-discord.png)
+This week was a busy week for me. I published a new blog article, a tutorial on YouTube, and launched a back to school promotion for all of my courses on Udemy.
 
 ### YouTube
 
@@ -79,3 +73,4 @@ Thanks for sitting down and sharing a cup of coffee with me my friend. I hope yo
 
 Happy Coding<br/>
 Dan Vega
+
