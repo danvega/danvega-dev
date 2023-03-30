@@ -1,7 +1,7 @@
 ---
 title: Spring Boot Security Lambda DSL
 slug: spring-security-lambda-dsl
-date: "2023-03-15T9:30:00.000Z"
+date: "2023-03-15T09:30:00.000Z"
 published: true
 excerpt:
 author: Dan Vega
