@@ -6,7 +6,7 @@ published: true
 excerpt: In this tutorial you will learn how to use one of the new features in Jakarta EE 10 in a Spring Boot 3 application.
 author: Dan Vega
 tags:
-  - spring boot
+  - Spring Boot
 cover: ./jakarta_ee_10_uuid.png
 video: https://www.youtube.com/embed/ZWwqcH__kr4
 keywords: Java EE, Jakarta EE, Jakarta EE 10, Spring Boot 3, Spring Framework 6, Java, UUID, Spring Data, Spring Data JPA, Spring Data JPA UUID

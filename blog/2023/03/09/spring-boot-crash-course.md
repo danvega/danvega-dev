@@ -6,8 +6,8 @@ published: true
 excerpt:
 author: Dan Vega
 tags:
-  - spring boot
-  - spring framework
+  - Spring Boot
+  - Spring Framework
 cover: ./spring-boot-crash-course-new-thumbnail.png
 video: https://www.youtube.com/embed/UgX5lgv4uVM
 keywords: Spring Framework, Spring Boot, Learn Spring, Learn Spring Boot, Java, Spring Boot REST API,Spring Boot Crash Course, Spring Tutorial for Beginners
