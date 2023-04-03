@@ -6,8 +6,8 @@ published: true
 excerpt: In this tutorial, you are going to learn how to work with pagination in Spring Data JPA.
 author: Dan Vega
 tags:
-  - spring
-  - spring-data
+  - Spring
+  - Spring Data
 cover: "./spring-data-jpa-pagination-thumbnail.png"
 video: https://www.youtube.com/embed/oq-c3D67WqM
 github: https://github.com/danvega/graphql-paging

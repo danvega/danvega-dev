@@ -6,7 +6,7 @@ published: true
 excerpt:
 author: Dan Vega
 tags:
-  - spring security
+  - Spring Security
 cover: ./spring-security-lambda-dsl.png
 video: https://www.youtube.com/embed/PWnEZh_t0WI
 keywords: Spring Security, Spring Security Configuration, Spring Security Lambda DSL

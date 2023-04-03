@@ -7,7 +7,7 @@ excerpt: In this tutorial, you will learn how to secure REST APIs with Spring Se
 author: Dan Vega
 tags:
   - spring
-  - spring-security
+  - Spring Security
 cover: ./spring-security-jwt-cover.jpeg
 keywords: spring, spring boot, spring security, java
 github: https://github.com/danvega/jwt
@@ -28,7 +28,7 @@ Before we get into writing some code I want to make sure we are all on the same 
 
 This client application will make calls to a server application written in Spring Boot that exposes data via REST API. In the following example, it’s a monolith but the same would apply if you had a distributed architecture. There are currently 3 REST controllers that expose the resources products, orders, and customers.
 
-What you will do is secure all of the resources so that when the client makes a call to the REST API the client will get a *401 (Unauthorized)* which means the client request has not been completed because it lacks valid authentication credentials for the requested resource**.**
+What you will do is secure all of the resources so that when the client makes a call to the REST API the client will get a _401 (Unauthorized)_ which means the client request has not been completed because it lacks valid authentication credentials for the requested resource**.**
 
 ![Application Architecture: 401 Unauthorized](./app-arch-401.png)
 
@@ -425,7 +425,7 @@ The `-v` argument will print the request and the response
 
 ![Httpie with Authorization](./httpie-auth.png)
 
-The response will contain the generated JWT token. If you make a request to the root path without the authorization header or without the correct token you will receive a *401 (Denied)* response. If however, you include the Authorization header in the correct format you will get the string returned from the home method in the `HomeController`.
+The response will contain the generated JWT token. If you make a request to the root path without the authorization header or without the correct token you will receive a _401 (Denied)_ response. If however, you include the Authorization header in the correct format you will get the string returned from the home method in the `HomeController`.
 
 ```bash
 http :8080 'Authorization: Bearer JWT_TOKEN_HERE'
@@ -495,3 +495,4 @@ I feel very fortunate that I get to work for a company like VMware and that I ha
 - Rob Winch
 - Josh Cummings
 - Toshiaki Maki
+

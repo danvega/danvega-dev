@@ -4,7 +4,9 @@ title: "Spring Beans @Component vs @Bean"
 published: true
 date: 2017-05-17T09:00:06-04:00
 updatedOn: 2023-03-15T12:00:00-04:00
-tags: ["spring", "spring boot"]
+tags:
+  - Spring
+  - Spring Boot
 excerpt: "Spring Beans @Component vs @Bean"
 cover: "./bean-vs-component.png"
 keywords: Spring Framework, Spring Boot, Spring Beans, @Component, @Bean

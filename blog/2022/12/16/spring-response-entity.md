@@ -6,7 +6,7 @@ published: true
 excerpt: In this tutorial, you will learn what the ResponseEntity class is and how it can be used to customize the response in your Spring Boot application.
 author: Dan Vega
 tags:
-  - spring boot
+  - Spring Boot
 cover: ./spring-response-entity.png
 video: https://www.youtube.com/embed/B5Zrn1Tzyqw
 keywords: Spring Boot, Spring Framework, REST API, ResponseEntity, Spring Boot ResponseEntity, Spring Boot Response

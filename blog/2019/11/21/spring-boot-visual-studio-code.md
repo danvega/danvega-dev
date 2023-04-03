@@ -6,8 +6,8 @@ published: false
 excerpt: "In this tutorial I will show you how to create a new Spring Boot application in Visual Studio Code"
 author: "Dan Vega"
 tags:
-  - "spring boot"
-  - "java"
+  - Spring Boot
+  - java
 cover: "./spring-boot-in-vscode.png"
 ---
 
@@ -40,3 +40,4 @@ I hope you found value in this tutorial. Are you creating Spring Boot Applicatio
 
 Happy Coding<br/>
 Dan
+

@@ -3,7 +3,7 @@ slug: spring-boot-application-annotation
 title: "Spring Boot Application Annotation"
 published: true
 date: 2015-10-23T09:08:37-04:00
-tags: ["java","spring"]
+tags: [java, spring]
 excerpt: "Spring Boot Application Annotation"
 cover: ./access-code-connection-1181467.jpg
 ---
@@ -27,9 +27,9 @@ public class HelloSpringApplication {
 
 The Spring Boot Application Annotation is a convenience annotation that adds all of the following:
 
-*    `@Configuration`  tags the class as a source of bean definitions for the application context.
-*    `@EnableAutoConfiguration`  tells Spring Boot to start adding beans based on class path settings, other beans, and various property settings.
-*    `@ComponentScan`  tells Spring to look for other components, configurations, and services in the the  `com.therealdanvega ` package.
+- `@Configuration` tags the class as a source of bean definitions for the application context.
+- `@EnableAutoConfiguration` tells Spring Boot to start adding beans based on class path settings, other beans, and various property settings.
+- `@ComponentScan` tells Spring to look for other components, configurations, and services in the the `com.therealdanvega` package.
 
 If those 3 annotations look familiar to you its because the new annotation is the same as using those 3. It became so common to have to use those 3 on the main application class that they created the new one. It is perfectly fine to put the other 3 back especially if you get into a situation where you need to pass arguments to one of the annotations. In the following example I moved the 3 annotations back and customized the component scan to search 2 different packages instead of just the current one.
 
@@ -126,3 +126,4 @@ public @interface SpringBootApplication {
 
 }
 ```
+
