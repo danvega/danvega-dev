@@ -12,8 +12,13 @@ library.add(faMoon, faSun, faBars, faSearch, faTags, faGithub, faTwitter, faYout
 
 export default function(Vue, { router, head, isClient }) {
   Vue.component("font-awesome-icon", FontAwesomeIcon);
-  // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
-
   Vue.use(VueFuse);
+
+  head.script.push({
+    src: "https://cdn.usefathom.com/script.js",
+    "data-site": "ZWNSJLZA",
+    body: true,
+    defer:true,
+  });
 }
