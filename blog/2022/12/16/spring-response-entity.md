@@ -8,6 +8,7 @@ author: Dan Vega
 tags:
   - spring boot
 cover: ./spring-response-entity.png
+video: https://www.youtube.com/embed/B5Zrn1Tzyqw
 keywords: Spring Boot, Spring Framework, REST API, ResponseEntity, Spring Boot ResponseEntity, Spring Boot Response
 ---
 
