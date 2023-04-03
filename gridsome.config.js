@@ -115,8 +115,6 @@ module.exports = {
       use: 'gridsome-plugin-fathom',
         options: {
           siteId: 'ZWNSJLZA',
-          // declare this to ensure your tracking only occurs on a single host
-          host: 'danvega.dev',
           // set to true for local debugging; defaults to false
           debug: false
         }
