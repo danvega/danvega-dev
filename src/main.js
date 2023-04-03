@@ -3,7 +3,6 @@
 
 import DefaultLayout from "~/layouts/Default.vue";
 import VueFuse from "vue-fuse";
-import VueDisqus from "vue-disqus";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faMoon, faSun, faBars, faSearch, faTags } from "@fortawesome/free-solid-svg-icons";
@@ -17,5 +16,4 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component("Layout", DefaultLayout);
 
   Vue.use(VueFuse);
-  Vue.use(VueDisqus);
 }

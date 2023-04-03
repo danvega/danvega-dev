@@ -14,7 +14,6 @@
     "@notionhq/client": "^1.0.0",
     "axios": "^0.21.2",
     "gridsome": "^0.7.23",
-    "gridsome-plugin-fathom": "^0.0.16",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-remark-twitter": "^0.2.1",
@@ -24,7 +23,6 @@
     "lodash.pick": "^4.4.0",
     "medium-zoom": "^1.0.5",
     "moment": "^2.29.4",
-    "vue-disqus": "^3.0.5",
     "vue-fuse": "^2.1.0",
     "yaml-front-matter": "^4.1.1"
   },

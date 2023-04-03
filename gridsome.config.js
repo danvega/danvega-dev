@@ -110,15 +110,7 @@ module.exports = {
         attachProps: true, // defaults to true
         logErrors: process.env.NODE_ENV === 'development' // defaults to false, see below for further info
       }
-    },
-    {
-      use: 'gridsome-plugin-fathom',
-        options: {
-          siteId: 'ZWNSJLZA',
-          // set to true for local debugging; defaults to false
-          debug: false
-        }
-      }
+    }
   ],
 };
 
