@@ -3,7 +3,7 @@ slug: spring-component-vs-bean
 title: "Spring Beans @Component vs @Bean"
 published: true
 date: 2017-05-17T09:00:06-04:00
-updatedOn: 2023-03-15T12:00:00-04:00
+updatedOn: 2023-04-13T13:00:00-04:00
 tags:
   - Spring
   - Spring Boot
@@ -34,17 +34,17 @@ If you would like to learn more about Spring Beans, we suggest reading the [refe
 
 ## Configuring Spring Beans
 
-Now that you understand what beans are, you need to be able to create and configure them in your applications. As we learn what we should do, it's important to start with what we shouldn't do. In the following example, the post controller depends on the post repository to function. Whenever you see the `new` keyword, it should raise alarm bells in your head that something may be wrong.
+Now that you understand what beans are, you need to be able to create and configure them in your applications. As we learn what we should do, it's important to start with what we shouldn't do. In the following example, the post controller depends on the post service to function. Whenever you see the `new` keyword, it should raise alarm bells in your head that something may be wrong.
 
 ```java
 @RestController
 @RequestMapping("/api/posts")
 public class PostController {
 
-    private PostRepository postRepository;
+    private PostService postService;
 
     public PostController() {
-        this.postRepository = new PostRepository();
+        this.postService = new PostService();
     }
 
 }
