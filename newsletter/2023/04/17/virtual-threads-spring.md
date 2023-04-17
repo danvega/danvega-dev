@@ -30,8 +30,8 @@ I have been talking a lot lately about how to build GraphQL APIs but what happen
 
 I love creating YouTube shorts because they are a different format and because they come in under 60 seconds they take much less time to produce. I’m still playing with different formats. Last week I created 2 shorts around some basic concepts in Java.
 
-- **[How to convert a String into an Integer in Java](https://studio.youtube.com/video/WtWbR6UrT8E/edit)**
-- **[Master Java String Comparison: Unlock the Power of the Equals Method in Under 60 Seconds!](https://studio.youtube.com/video/HuGWdsHGcm4/edit)**
+- [How to convert a String into an Integer in Java](https://youtube.com/shorts/WtWbR6UrT8E?feature=share)
+- [Master Java String Comparison: Unlock the Power of the Equals Method in Under 60 Seconds!](https://studio.youtube.com/video/HuGWdsHGcm4/edit)
 
 ## Nuxt + Notion
 
