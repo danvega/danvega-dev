@@ -1,9 +1,9 @@
 ---
-title: Spring Security 6 Changes
+title: What's new in Spring Security 6
 slug: spring-security-6
 date: "2022-12-01T16:00:00.000Z"
 published: true
-excerpt:
+excerpt: In this article we will discuss the new features of Spring Security 6 and create a new Spring Boot 3 project together.
 author: Dan Vega
 tags:
   - Spring Boot
