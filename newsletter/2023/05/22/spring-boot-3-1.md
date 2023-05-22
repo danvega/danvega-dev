@@ -55,7 +55,7 @@ If you weren’t able to catch [my talk](https://www.youtube.com/watch?v=_jTBKo1
 - [Devnexus 2023 - Kontain Your Spring - Craig Walls](https://www.youtube.com/watch?v=EZBHAwuQl_U)
 - [Devnexus 2023 - My Children Will Never Deploy Active-Passive - DaShaun Carter](https://www.youtube.com/watch?v=h7RhUVRxqYY)
 - [Devnexus 2023 - Bootiful Spring Boot 3 - Josh Long](https://www.youtube.com/watch?v=98cwiZOhoOM)
-- [Devnexus 2023 - Live Diagramming of Knative - Core Concepts - Whitney Lee](https://www.notion.so/Spring-Boot-3-1-30K-Subscribers-and-AWS-Lambda-now-supports-Java-17-05fe848e7a124bcd9b625ec8541027a6)
+- [Devnexus 2023 - Live Diagramming of Knative - Core Concepts - Whitney Lee](https://www.youtube.com/watch?v=zoAG1oatOS0)
 
 ## SpringOne at VMware Explore
 
