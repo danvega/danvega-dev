@@ -1,7 +1,7 @@
 ---
 title: "Spring for GraphQL Schema Mapping Inspection Report"
 slug: graphql-schema-mapping-inspection
-date: "2023-07-17T15:00:00.000Z"
+date: "2023-07-13T15:00:00.000Z"
 published: true
 excerpt: Join VMware's Spring Developer Advocate, Dan Vega, as he explores the exciting new releases in Spring for GraphQL. Dive into the enhanced features of the inspection report, walk through how to create a project, and more!
 author: Dan Vega
