@@ -1,7 +1,7 @@
 ---
 title: 🔥 What’s new in Spring Boot 3.1
 slug: spring-boot-3-1-first-look
-date: "2023-04-17T10:300:00.000Z"
+date: "2023-04-17T10:30:00.000Z"
 ---
 
 Happy Monday and welcome to the start of another work week. I hope you had a wonderful weekend. Mine was great - this past weekend I had my first daddy-daughter dance with my oldest daughter, Bella (5). It was an amazing night and she was so excited to get “fancied up”, as she says. We had a delicious meal with friends, an ice cream bar, hula hoops, and of course, we danced the night away.

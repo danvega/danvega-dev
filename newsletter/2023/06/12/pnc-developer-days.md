@@ -1,7 +1,7 @@
 ---
 title: Virtual Threads, Tales from the JAR Side and a quick trip to Pittsburgh
 slug: pnc-developer-days
-date: "2023-06-12T8:000:00.000Z"
+date: "2023-06-12T08:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. It’s been a few weeks since we last connected and I apologize for that but I have been a busy bee 🐝 June is going to be a pretty busy travel month for me and I hope I get the chance to see some of you on the road this year.

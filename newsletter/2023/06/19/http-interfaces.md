@@ -1,7 +1,7 @@
 ---
 title: HTTP Interfaces, Building a portfolio with Nuxt 3 and KCDC!
 slug: http-interfaces
-date: "2023-06-19T14:000:00.000Z"
+date: "2023-06-19T14:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. Today is Monday, June 19th, also known as Juneteenth, a day to celebrate freedom!

@@ -1,7 +1,7 @@
 ---
 title: Spring Office Hours Podcast, Spring Boot Docker Compose & More!
 slug: spring-office-hours-podcast
-date: "2023-05-01T7:300:00.000Z"
+date: "2023-05-01T07:30:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. I just want to let you know that there will be no newsletter next week as I will be on vacation in Hilton Head SC with my family. We are really looking forward to some fun in the sun and I am even going to get some golf in. I haven’t golfed in 20 years so I’m just hoping I don’t embarrass myself 🤦‍♂️

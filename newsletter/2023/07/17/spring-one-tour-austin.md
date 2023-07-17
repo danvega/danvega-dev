@@ -1,7 +1,7 @@
 ---
 title: Hello Austin, Spring for GraphQL and the schedule for SpringOne is now live!
 slug: spring-one-tour-austin
-date: "2023-07-179T08:000:00.000Z"
+date: "2023-07-17T08:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter! In this issue, I'll share my quick trip to Austin, new features in Spring for GraphQL, and updates about SpringOne at VMware Explore.

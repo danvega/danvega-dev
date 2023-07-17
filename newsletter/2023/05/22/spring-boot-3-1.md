@@ -1,7 +1,7 @@
 ---
 title: Spring Boot 3.1, 30K Subscribers, and AWS Lambda now supports Java 17!
 slug: spring-boot-3-1
-date: "2023-05-22T8:000:00.000Z"
+date: "2023-05-22T08:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. It’s been a couple of weeks since my last update but it was for a good reason. I was able to take a week off and spend some fun in the sun with the family as we headed down to Hilton Head SC which is becoming a yearly tradition for us. I absolutely love Hilton Head, it’s just so calm and relaxing and fun for the whole family.

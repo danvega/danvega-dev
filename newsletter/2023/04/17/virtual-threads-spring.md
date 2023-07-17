@@ -1,7 +1,7 @@
 ---
 title: Virtual Threads in Spring & Launching a New Blog!
 slug: virtual-threads-spring
-date: "2023-04-17T10:300:00.000Z"
+date: "2023-04-17T10:30:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. The weather in Northeast Ohio was amazing last week, just what my mental health needed. After spending a week in Atlanta for Devnexus, the continuation of good weather was a welcome change. I was able to run outside and it instantly put me in a better mood.

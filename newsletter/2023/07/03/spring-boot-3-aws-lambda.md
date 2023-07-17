@@ -1,7 +1,7 @@
 ---
 title: Spring Boot 3 on AWS Lambda, Spring Cloud Gateway and Oracle GraalVM
 slug: spring-boot-3-aws-lambda
-date: "2023-07-039T08:000:00.000Z"
+date: "2023-07-03T08:00:00.000Z"
 ---
 
 Happy Monday and welcome to another edition of the newsletter. Tomorrow is the 4th of July, also known as Independence Day, which is a federal holiday in the United States commemorating the Declaration of Independence. This happens to be a family favorite holiday in our household that kicks with a kids bike parade behind a fire truck in our neighborhood. If you’re celebrating I hope you have an amazing holiday spent with family and friends. In this edition of the newsletter I want to talk to you about deploying Spring Boot 3 applications on AWS Lambda, A quick trip to Detroit and Oracle GraalVM.

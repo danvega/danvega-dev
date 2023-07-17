@@ -1,7 +1,7 @@
 ---
 title: Devnexus 2023
 slug: devnexus-2023
-date: "2023-04-11T10:300:00.000Z"
+date: "2023-04-11T10:30:00.000Z"
 ---
 
 Happy Tuesday and welcome to another edition of the newsletter. In this episode I want to tell you all about my trip to Atlanta for Devnexus 2023. Spring is now in full swing here in Northeast Ohio and I couldn’t be happier. It’s amazing how much getting out for a run or a trip to the park with the family can help your mental well being.
