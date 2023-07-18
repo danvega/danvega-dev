@@ -3,7 +3,7 @@ title: "Spring HTTP Interface Clients: Consuming HTTP services in Spring Boot"
 slug: spring-http-interfaces
 date: "2023-06-14T08:00:00.000Z"
 published: true
-excerpt:
+excerpt: Learn all about the new HTTP Interfaces in Spring Framework 6 and Spring Boot 3 by building out a real world example.
 author: Dan Vega
 tags:
   - Spring Framework

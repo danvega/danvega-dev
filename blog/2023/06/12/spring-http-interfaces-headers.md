@@ -15,7 +15,7 @@ keywords: Spring Boot, Spring Framework, Spring Boot 3, Spring Framework 6, REST
 
 In this article, we'll be exploring how to customize **HTTP interfaces in Spring Boot 3**. This stemmed from a question that popped up during a recent presentation I gave: *How do you add headers to requests?* Be it for a single request, where you may want to add one header and its value, or for multiple or all requests sent to a certain service – how do you accomplish that? This post aims to dive right into these questions!
 
-If you’re new to HTTP Interfaces check out this article for an introduction to what they are and how to get started with them.
+If you’re new to HTTP Interfaces check out [this article](https://www.danvega.dev/blog/2023/06/14/spring-http-interfaces/) for an introduction to what they are and how to get started with them.
 
 ## Building a Demo Project
 
