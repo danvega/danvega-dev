@@ -13,15 +13,24 @@
         <th>Location</th>
       </tr>
       <tr>
-        <td>February 7, 2023</td>
-        <td><a href="https://tanzu.vmware.com/content/webinars/feb-7-whats-new-with-spring-6-and-boot-3">What's new in
-            Spring Boot 3</a></td>
-        <td>Online</td>
+        <td>October 17, 2023</td>
+        <td><a href="https://springonetour.io/">SpringOne Tour (Virtual)</a></td>
+        <td>Virtual</td>
       </tr>
       <tr>
-        <td>April 4-6, 2023</td>
-        <td><a href="https://devnexus.com/">DevNexus</a></td>
+        <td>October 24-26, 2023</td>
+        <td><a href="https://2023.connect.tech/">Connect Tech</a></td>
         <td>Atlanta, GA</td>
+      </tr>
+      <tr>
+        <td>November 6-9, 2023</td>
+        <td><a href="https://www.vmware.com/explore/eu.html">VMware Barcelona</a></td>
+        <td>Barcelona, Spain</td>
+      </tr>
+      <tr>
+        <td>January 9-12, 2024</td>
+        <td><a href="https://codemash.org/">CodeMash</a></td>
+        <td>Sandusky, OH</td>
       </tr>
     </table>
 
@@ -32,6 +41,27 @@
         <th>Date</th>
         <th>Event</th>
         <th>Location</th>
+      </tr>
+      <tr>
+        <td>August 21-24, 2023</td>
+        <td><a href="https://springone.io/">SpringOne</a></td>
+        <td>Las Vegas, NV</td>
+      </tr>
+      <tr>
+        <td>June 20-23, 2023</td>
+        <td><a href="https://www.kcdc.info/">KCDC</a></td>
+        <td>Kansas City, MO</td>
+      </tr>
+      <tr>
+        <td>April 4-6, 2023</td>
+        <td><a href="https://devnexus.com/">DevNexus</a></td>
+        <td>Atlanta, GA</td>
+      </tr>
+      <tr>
+        <td>February 7, 2023</td>
+        <td><a href="https://tanzu.vmware.com/content/webinars/feb-7-whats-new-with-spring-6-and-boot-3">What's new in
+            Spring Boot 3</a></td>
+        <td>Online</td>
       </tr>
       <tr>
         <td>January 24-26, 2023</td>
